@@ -586,6 +586,14 @@ def compose_with_model(facts):
         return None
 
 
+def with_flag(text, facts):
+    flag = facts.get("flag")
+    if not flag or flag in text:
+        return text
+    out = f"{text} {flag}"
+    return out if len(out) <= TWEET_LIMIT else text
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--post", action="store_true", help="publish to X")
@@ -643,6 +651,7 @@ def main():
         drafted = compose_with_model(facts)
         if not drafted:
             continue
+        drafted["post"] = with_flag(drafted["post"], facts)
         problems = validate(drafted, facts)
         if not problems:
             break
