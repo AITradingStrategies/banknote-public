@@ -378,6 +378,7 @@ def build_facts(entry, cid, name, fixing, news):
         "ccy": entry["ccy"],
         "country": name,
         "hashtag": hashtag(name),
+        "cashtag": f"${entry['ccy']}",
         "flag": flag_emoji(cca2_of(cid)),
         "language": LANGUAGES.get(entry["ccy"], "English"),
         "rate": fmt_rate(fixing["rate"]) if fixing else None,
@@ -494,6 +495,10 @@ def validate(drafted, facts):
         problems.append("more than one cashtag (X rejects it)")
     if text.count("#") > 1:
         problems.append("more than one hashtag")
+    for kind in ("cashtag", "hashtag"):
+        want = facts.get(kind)
+        if want and want not in text:
+            problems.append(f"{kind} is not the supplied {want!r}")
 
     allowed = allowed_numbers(facts)
     for n in numbers_in(text):
