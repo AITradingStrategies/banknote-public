@@ -20,10 +20,6 @@ on:
         description: "Force a currency (e.g. GHS) instead of picking one"
         type: string
         default: ""
-      template:
-        description: "Skip the model — compose from the deterministic template"
-        type: boolean
-        default: false
 
 concurrency:
   group: banknote-ai-commentary
@@ -63,13 +59,11 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DRY_RUN: ${{ inputs.dry_run }}
           CCY: ${{ inputs.ccy }}
-          TEMPLATE: ${{ inputs.template }}
           GAP_SECONDS: "1680"  # 28 min, clear of MIN_POST_GAP_MIN
         run: |
           ARGS="--post"
           if [ "${DRY_RUN}" = "true" ]; then ARGS=""; fi
           if [ -n "${CCY}" ]; then ARGS="$ARGS --ccy ${CCY}"; fi
-          if [ "${TEMPLATE}" = "true" ]; then ARGS="$ARGS --template"; fi
           # One delivered run posts twice, half an hour apart, instead of
           # relying on a second run that does not arrive. Asking for slots
           # more often does not work: this workflow is delivered about once

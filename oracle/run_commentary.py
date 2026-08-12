@@ -375,14 +375,31 @@ for countries no financial press reports on.
 Voice: a news anchor reading a bulletin. Third person. Declarative. Lead with \
 what happened, then the context that makes it mean something, then stop.
 
+USE THE HEADLINES. You are given up to six recent stories from the country. \
+Where one bears on the economy, politics, trade, public finances or prices, \
+work it into the post - what is going on in the country, beside what the rate \
+is doing. Skip the ones that do not: crime, sport, accidents, human interest. \
+A currency report is not a news roundup, and a rate sitting next to an \
+unrelated tragedy reads badly. Name the headline you used in cited_headline. \
+If none of them is relevant, write the rate on its own; that is a normal day.
+
+Do not file the same post every time. A reader who follows this account sees \
+several a day, and a run of interchangeable sentences is the failure mode to \
+avoid. Vary where you start: some days the level, some days the move, some \
+days what the country is dealing with. Rates and figures are the material, \
+not the structure.
+
 Absolute rules:
 - Every number you write must appear in the facts you are given. You may round \
 (0.404 -> 0.4). You may never compute, estimate, or recall a figure.
-- You may state WHY a rate moved only by attributing it to a supplied headline. \
-If the headlines you were given do not explain it, say nothing about the cause \
-at all. Do NOT write that no reporting exists whenever any headline was \
-supplied - that is a claim about the world, and it is false. Never supply a \
-cause from your own knowledge of the country.
+- Causation is the one thing you may not infer. Putting a headline beside a \
+rate is context and is welcome. Saying the rate moved BECAUSE of it is a \
+claim, and you may write it only where the headline itself says so. When you \
+are unsure, place the two facts side by side and let the reader join them.
+- Never supply a cause, a policy, or an event from your own knowledge of the \
+country. If it is not in the facts you were given, it does not exist.
+- Do NOT write that no reporting exists whenever any headline was supplied - \
+that is a claim about the world, and it is false.
 - Only discuss a cause when there is a move to explain. A rate that is little \
 changed needs no explanation and no remark about the absence of one.
 - No forecasts. No advice. No opinion about whether this is good or bad.
@@ -397,7 +414,7 @@ def compose_with_model(facts):
     try:
         import anthropic
     except ImportError:
-        log("anthropic SDK not installed - falling back to the template")
+        log("anthropic SDK not installed - no post this slot")
         return None
 
     schema = {
@@ -436,42 +453,18 @@ def compose_with_model(facts):
             messages=[{"role": "user", "content": json.dumps(facts, ensure_ascii=False)}],
         )
     except Exception as e:
-        log(f"model call failed ({type(e).__name__}: {e}) - falling back to the template")
+        log(f"model call failed ({type(e).__name__}: {e})")
         return None
 
     if resp.stop_reason == "refusal":
-        log("model declined this request - falling back to the template")
+        log("model declined this request")
         return None
     text = next((b.text for b in resp.content if b.type == "text"), "")
     try:
         return json.loads(text)
     except ValueError:
-        log("model output was not the requested JSON - falling back to the template")
+        log("model output was not the requested JSON")
         return None
-
-
-def entry_moved(facts):
-    return bool(facts.get("moved"))
-
-
-def compose_from_template(facts):
-    claims = facts["claims"]
-    lead = claims[0] if claims else "moved at the latest fixing"
-    parts = [f"{facts['country']}'s currency: {lead}."]
-    if facts.get("rate"):
-        parts.append(f"{facts['rate']}/USD.")
-    for extra in claims[1:3]:
-        parts.append(extra.capitalize() + ".")
-    if not facts["news"] and entry_moved(facts):
-        parts.append("No public reporting explains the move.")
-    body = " ".join(parts)
-    tag = f"{facts['hashtag']} ${facts['ccy']}" if facts.get("hashtag") \
-        else f"${facts['ccy']}"
-    tail = "\n\n" + (f"{tag} {facts['flag']}" if facts.get("flag") else tag)
-    while len(body) + len(tail) > TWEET_LIMIT and len(parts) > 1:
-        parts.pop()
-        body = " ".join(parts)
-    return {"post": body + tail, "back_translation": body + tail, "cited_headline": None}
 
 
 def main():
@@ -479,7 +472,6 @@ def main():
     ap.add_argument("--post", action="store_true", help="publish to X")
     ap.add_argument("--commit", action="store_true", help="save state without posting")
     ap.add_argument("--ccy", help="force a currency instead of picking one")
-    ap.add_argument("--template", action="store_true", help="skip the model entirely")
     args = ap.parse_args()
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -527,27 +519,21 @@ def main():
     for c in facts["claims"]:
         log(f"  claim: {c}")
 
-    drafted = None if args.template else compose_with_model(facts)
-    source = "model"
-    if drafted:
+    drafted = None
+    for attempt in (1, 2):
+        drafted = compose_with_model(facts)
+        if not drafted:
+            continue
         problems = validate(drafted, facts)
-        if problems:
-            for p in problems:
-                log(f"  REJECTED: {p}")
-            drafted = None
-    if not drafted and facts["language"] != "English":
-        log(f"model unavailable and the template cannot write {facts['language']}"
-            f" - skipping {ccy} rather than posting English")
-        return 0
+        if not problems:
+            break
+        for p in problems:
+            log(f"  REJECTED (attempt {attempt}): {p}")
+        drafted = None
     if not drafted:
-        drafted = compose_from_template(facts)
-        source = "template"
-        problems = validate(drafted, facts)
-        if problems:
-            for p in problems:
-                log(f"  FATAL: template failed validation: {p}")
-            return 1
-
+        log(f"no acceptable post for {ccy} this slot - skipping")
+        return 0
+    source = "model"
     log(f"--- post ({source}, {len(drafted['post'])} chars, {facts['language']}) ---")
     for line in drafted["post"].split("\n"):
         log("  | " + line)
