@@ -36,14 +36,14 @@
    },
    "country": "United Arab Emirates",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.019,
+    "spread_pct": 0.022,
     "typical_pct": 0.003,
-    "vs_typical": 6.3,
+    "vs_typical": 7.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -147,14 +147,14 @@
    },
    "country": "Afghanistan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 8,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.711,
-    "typical_pct": 0.582,
-    "vs_typical": 1.2,
+    "spread_pct": 0.665,
+    "typical_pct": 0.601,
+    "vs_typical": 1.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -258,14 +258,14 @@
    },
    "country": "Albania",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.146,
-    "typical_pct": 0.185,
-    "vs_typical": 0.8,
+    "spread_pct": 0.148,
+    "typical_pct": 0.153,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -376,14 +376,14 @@
    },
    "country": "Armenia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.151,
-    "typical_pct": 0.157,
-    "vs_typical": 1.0,
+    "spread_pct": 0.223,
+    "typical_pct": 0.153,
+    "vs_typical": 1.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -487,14 +487,14 @@
    },
    "country": "Angola",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 1.362,
-    "typical_pct": 0.867,
-    "vs_typical": 1.6,
+    "spread_pct": 1.511,
+    "typical_pct": 0.887,
+    "vs_typical": 1.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -598,14 +598,14 @@
    },
    "country": "Argentina",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 10,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.377,
-    "typical_pct": 0.115,
-    "vs_typical": 3.3,
+    "spread_pct": 0.09,
+    "typical_pct": 0.128,
+    "vs_typical": 0.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -709,14 +709,14 @@
    },
    "country": null,
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.088,
-    "typical_pct": 0.294,
-    "vs_typical": 0.3,
+    "spread_pct": 0.205,
+    "typical_pct": 0.243,
+    "vs_typical": 0.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -820,14 +820,14 @@
    },
    "country": "Azerbaijan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.04,
-    "typical_pct": 0.034,
-    "vs_typical": 1.2,
+    "spread_pct": 0.041,
+    "typical_pct": 0.037,
+    "vs_typical": 1.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -931,14 +931,14 @@
    },
    "country": "Bosnia and Herzegovina",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.073,
-    "typical_pct": 0.143,
-    "vs_typical": 0.5,
+    "spread_pct": 0.126,
+    "typical_pct": 0.132,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -1042,12 +1042,12 @@
    },
    "country": "Barbados",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.0,
+    "spread_pct": 0.064,
     "typical_pct": 0.0,
     "vs_typical": null,
     "widest_in_archive": false
@@ -1153,14 +1153,14 @@
    },
    "country": "Bangladesh",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 4,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 5,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.267,
-    "typical_pct": 0.292,
-    "vs_typical": 0.9,
+    "spread_pct": 0.316,
+    "typical_pct": 0.289,
+    "vs_typical": 1.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -1264,14 +1264,14 @@
    },
    "country": "Bahrain",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.022,
-    "typical_pct": 0.064,
-    "vs_typical": 0.3,
+    "spread_pct": 0.006,
+    "typical_pct": 0.062,
+    "vs_typical": 0.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -1375,14 +1375,14 @@
    },
    "country": "Burundi",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.443,
+    "spread_pct": 0.398,
     "typical_pct": 0.559,
-    "vs_typical": 0.8,
+    "vs_typical": 0.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -1486,14 +1486,14 @@
    },
    "country": "Brunei",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.012,
-    "typical_pct": 0.099,
-    "vs_typical": 0.1,
+    "spread_pct": 0.146,
+    "typical_pct": 0.098,
+    "vs_typical": 1.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -1597,14 +1597,14 @@
    },
    "country": "Brazil",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 4,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 6,
-    "spread_pct": 1.366,
-    "typical_pct": 0.427,
-    "vs_typical": 3.2,
+    "spread_pct": 0.954,
+    "typical_pct": 0.458,
+    "vs_typical": 2.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -1708,8 +1708,8 @@
    },
    "country": "Bahamas",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": null,
     "notable": false,
     "sources": 5,
@@ -1819,14 +1819,14 @@
    },
    "country": "Botswana",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 5.276,
-    "typical_pct": 3.425,
-    "vs_typical": 1.5,
+    "spread_pct": 5.134,
+    "typical_pct": 3.567,
+    "vs_typical": 1.4,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -1930,14 +1930,14 @@
    },
    "country": "Belarus",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.401,
-    "typical_pct": 0.459,
-    "vs_typical": 0.9,
+    "spread_pct": 0.957,
+    "typical_pct": 0.401,
+    "vs_typical": 2.4,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -2041,13 +2041,13 @@
    },
    "country": "Belize",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 4,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.679,
-    "typical_pct": 0.666,
+    "spread_pct": 0.656,
+    "typical_pct": 0.668,
     "vs_typical": 1.0,
     "widest_in_archive": false
    },
@@ -2152,14 +2152,14 @@
    },
    "country": "Canada",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.162,
-    "typical_pct": 0.161,
-    "vs_typical": 1.0,
+    "spread_pct": 0.135,
+    "typical_pct": 0.162,
+    "vs_typical": 0.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -2269,14 +2269,14 @@
    },
    "country": "DR Congo",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.959,
-    "typical_pct": 1.807,
-    "vs_typical": 0.5,
+    "spread_pct": 1.166,
+    "typical_pct": 1.772,
+    "vs_typical": 0.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -2380,14 +2380,14 @@
    },
    "country": null,
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.236,
-    "typical_pct": 0.209,
-    "vs_typical": 1.1,
+    "spread_pct": 0.245,
+    "typical_pct": 0.211,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -2491,14 +2491,14 @@
    },
    "country": "Chile",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.413,
-    "typical_pct": 0.4,
-    "vs_typical": 1.0,
+    "spread_pct": 0.24,
+    "typical_pct": 0.404,
+    "vs_typical": 0.6,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -2602,14 +2602,14 @@
    },
    "country": "China",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.153,
-    "typical_pct": 0.182,
-    "vs_typical": 0.8,
+    "spread_pct": 0.229,
+    "typical_pct": 0.181,
+    "vs_typical": 1.3,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -2720,14 +2720,14 @@
    },
    "country": "Colombia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 1.208,
-    "typical_pct": 0.397,
-    "vs_typical": 3.0,
+    "spread_pct": 0.241,
+    "typical_pct": 0.442,
+    "vs_typical": 0.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -2831,15 +2831,15 @@
    },
    "country": "Costa Rica",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": null,
-    "notable": true,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
+    "notable": false,
     "sources": 5,
-    "spread_pct": 0.588,
-    "typical_pct": 0.39,
-    "vs_typical": 1.5,
-    "widest_in_archive": true
+    "spread_pct": 0.481,
+    "typical_pct": 0.395,
+    "vs_typical": 1.2,
+    "widest_in_archive": false
    },
    "extreme_windows": {
     "30d": {
@@ -2888,15 +2888,7 @@
     "notable": false,
     "percentile": 6.2
    },
-   "signals": [
-    {
-     "archive_days": 17,
-     "sources": 5,
-     "spread_pct": 0.588,
-     "type": "divergence",
-     "typical_pct": 0.39
-    }
-   ],
+   "signals": [],
    "stateless": false,
    "streak": {
     "days": 0,
@@ -2950,14 +2942,14 @@
    },
    "country": "Cape Verde",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.152,
-    "typical_pct": 0.15,
-    "vs_typical": 1.0,
+    "spread_pct": 0.107,
+    "typical_pct": 0.152,
+    "vs_typical": 0.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -3061,12 +3053,12 @@
    },
    "country": "Czechia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.108,
+    "spread_pct": 0.094,
     "typical_pct": 0.197,
     "vs_typical": 0.5,
     "widest_in_archive": false
@@ -3172,14 +3164,14 @@
    },
    "country": "Djibouti",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 4,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.215,
-    "typical_pct": 0.137,
-    "vs_typical": 1.6,
+    "spread_pct": 0.211,
+    "typical_pct": 0.144,
+    "vs_typical": 1.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -3283,13 +3275,13 @@
    },
    "country": "Denmark",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 5,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 7,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.251,
-    "typical_pct": 0.233,
+    "spread_pct": 0.265,
+    "typical_pct": 0.242,
     "vs_typical": 1.1,
     "widest_in_archive": false
    },
@@ -3394,14 +3386,14 @@
    },
    "country": "Dominican Republic",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 5,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.2,
-    "typical_pct": 0.208,
-    "vs_typical": 1.0,
+    "spread_pct": 0.348,
+    "typical_pct": 0.204,
+    "vs_typical": 1.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -3505,14 +3497,14 @@
    },
    "country": "Algeria",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.553,
-    "typical_pct": 0.096,
-    "vs_typical": 5.8,
+    "spread_pct": 0.417,
+    "typical_pct": 0.097,
+    "vs_typical": 4.3,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -3616,14 +3608,14 @@
    },
    "country": "Egypt",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.589,
-    "typical_pct": 0.162,
-    "vs_typical": 3.6,
+    "spread_pct": 0.104,
+    "typical_pct": 0.169,
+    "vs_typical": 0.6,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -3727,14 +3719,14 @@
    },
    "country": "Ethiopia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.37,
-    "typical_pct": 0.491,
-    "vs_typical": 0.8,
+    "spread_pct": 0.391,
+    "typical_pct": 0.434,
+    "vs_typical": 0.9,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -3845,14 +3837,14 @@
    },
    "country": null,
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.079,
-    "typical_pct": 0.138,
-    "vs_typical": 0.6,
+    "spread_pct": 0.138,
+    "typical_pct": 0.133,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -3956,14 +3948,14 @@
    },
    "country": "Fiji",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.956,
-    "typical_pct": 0.851,
-    "vs_typical": 1.1,
+    "spread_pct": 0.808,
+    "typical_pct": 0.898,
+    "vs_typical": 0.9,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -4067,14 +4059,14 @@
    },
    "country": "United Kingdom",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.076,
-    "typical_pct": 0.208,
-    "vs_typical": 0.4,
+    "spread_pct": 0.198,
+    "typical_pct": 0.187,
+    "vs_typical": 1.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -4178,13 +4170,13 @@
    },
    "country": "Georgia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.239,
-    "typical_pct": 0.198,
+    "spread_pct": 0.243,
+    "typical_pct": 0.203,
     "vs_typical": 1.2,
     "widest_in_archive": false
    },
@@ -4289,14 +4281,14 @@
    },
    "country": "Ghana",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": null,
     "notable": true,
     "sources": 5,
-    "spread_pct": 1.395,
-    "typical_pct": 0.163,
-    "vs_typical": 8.6,
+    "spread_pct": 3.889,
+    "typical_pct": 0.176,
+    "vs_typical": 22.1,
     "widest_in_archive": true
    },
    "extreme_windows": {
@@ -4360,11 +4352,11 @@
      "type": "level"
     },
     {
-     "archive_days": 17,
+     "archive_days": 18,
      "sources": 5,
-     "spread_pct": 1.395,
+     "spread_pct": 3.889,
      "type": "divergence",
-     "typical_pct": 0.163
+     "typical_pct": 0.176
     }
    ],
    "stateless": false,
@@ -4420,13 +4412,13 @@
    },
    "country": "Gambia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 3.55,
-    "typical_pct": 2.937,
+    "spread_pct": 3.688,
+    "typical_pct": 2.952,
     "vs_typical": 1.2,
     "widest_in_archive": false
    },
@@ -4531,14 +4523,14 @@
    },
    "country": "Guinea",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.565,
-    "typical_pct": 0.345,
-    "vs_typical": 1.6,
+    "spread_pct": 0.544,
+    "typical_pct": 0.359,
+    "vs_typical": 1.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -4642,14 +4634,14 @@
    },
    "country": "Guatemala",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 4,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.146,
-    "typical_pct": 0.104,
-    "vs_typical": 1.4,
+    "spread_pct": 0.034,
+    "typical_pct": 0.112,
+    "vs_typical": 0.3,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -4753,14 +4745,14 @@
    },
    "country": "Guyana",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.29,
-    "typical_pct": 0.195,
-    "vs_typical": 1.5,
+    "spread_pct": 0.239,
+    "typical_pct": 0.204,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -4864,14 +4856,14 @@
    },
    "country": "Honduras",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.087,
+    "spread_pct": 0.143,
     "typical_pct": 0.124,
-    "vs_typical": 0.7,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -4975,13 +4967,13 @@
    },
    "country": "Haiti",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 1.646,
-    "typical_pct": 0.455,
+    "spread_pct": 1.64,
+    "typical_pct": 0.461,
     "vs_typical": 3.6,
     "widest_in_archive": false
    },
@@ -5086,14 +5078,14 @@
    },
    "country": "Hungary",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.442,
-    "typical_pct": 0.501,
-    "vs_typical": 0.9,
+    "spread_pct": 0.393,
+    "typical_pct": 0.497,
+    "vs_typical": 0.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -5197,14 +5189,14 @@
    },
    "country": "Indonesia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.454,
-    "typical_pct": 0.392,
-    "vs_typical": 1.2,
+    "spread_pct": 0.185,
+    "typical_pct": 0.396,
+    "vs_typical": 0.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -5308,14 +5300,14 @@
    },
    "country": null,
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.327,
-    "typical_pct": 0.371,
-    "vs_typical": 0.9,
+    "spread_pct": 0.693,
+    "typical_pct": 0.327,
+    "vs_typical": 2.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -5419,14 +5411,14 @@
    },
    "country": null,
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.078,
-    "typical_pct": 0.241,
-    "vs_typical": 0.3,
+    "spread_pct": 0.13,
+    "typical_pct": 0.24,
+    "vs_typical": 0.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -5530,13 +5522,13 @@
    },
    "country": "Iraq",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.179,
-    "typical_pct": 0.178,
+    "spread_pct": 0.181,
+    "typical_pct": 0.179,
     "vs_typical": 1.0,
     "widest_in_archive": false
    },
@@ -5641,14 +5633,14 @@
    },
    "country": "Iceland",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.138,
-    "typical_pct": 0.334,
-    "vs_typical": 0.4,
+    "spread_pct": 0.328,
+    "typical_pct": 0.333,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -5752,14 +5744,14 @@
    },
    "country": "Jamaica",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.686,
-    "typical_pct": 0.257,
-    "vs_typical": 2.7,
+    "spread_pct": 0.4,
+    "typical_pct": 0.272,
+    "vs_typical": 1.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -5863,14 +5855,14 @@
    },
    "country": "Jordan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.141,
+    "spread_pct": 0.144,
     "typical_pct": 0.003,
-    "vs_typical": 43.7,
+    "vs_typical": 42.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -5974,14 +5966,14 @@
    },
    "country": "Japan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.204,
-    "typical_pct": 0.177,
-    "vs_typical": 1.2,
+    "spread_pct": 0.209,
+    "typical_pct": 0.187,
+    "vs_typical": 1.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -6085,14 +6077,14 @@
    },
    "country": "Kenya",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.039,
-    "typical_pct": 0.071,
-    "vs_typical": 0.5,
+    "spread_pct": 0.06,
+    "typical_pct": 0.07,
+    "vs_typical": 0.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -6204,14 +6196,14 @@
    },
    "country": "Kyrgyzstan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.044,
-    "typical_pct": 0.038,
-    "vs_typical": 1.2,
+    "spread_pct": 0.043,
+    "typical_pct": 0.039,
+    "vs_typical": 1.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -6315,14 +6307,14 @@
    },
    "country": "Cambodia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 16,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.405,
-    "typical_pct": 0.24,
-    "vs_typical": 1.7,
+    "spread_pct": 0.176,
+    "typical_pct": 0.245,
+    "vs_typical": 0.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -6426,13 +6418,13 @@
    },
    "country": "Comoros",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.112,
-    "typical_pct": 0.16,
+    "spread_pct": 0.115,
+    "typical_pct": 0.158,
     "vs_typical": 0.7,
     "widest_in_archive": false
    },
@@ -6537,13 +6529,13 @@
    },
    "country": "South Korea",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.369,
-    "typical_pct": 0.516,
+    "spread_pct": 0.341,
+    "typical_pct": 0.493,
     "vs_typical": 0.7,
     "widest_in_archive": false
    },
@@ -6648,14 +6640,14 @@
    },
    "country": "Kuwait",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.339,
+    "spread_pct": 0.365,
     "typical_pct": 0.344,
-    "vs_typical": 1.0,
+    "vs_typical": 1.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -6759,14 +6751,14 @@
    },
    "country": "Kazakhstan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.135,
-    "typical_pct": 0.212,
-    "vs_typical": 0.6,
+    "spread_pct": 0.342,
+    "typical_pct": 0.171,
+    "vs_typical": 2.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -6876,14 +6868,14 @@
    },
    "country": "Laos",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 4,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 1.489,
-    "typical_pct": 0.953,
-    "vs_typical": 1.6,
+    "spread_pct": 1.281,
+    "typical_pct": 0.978,
+    "vs_typical": 1.3,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -6987,14 +6979,14 @@
    },
    "country": "Lebanon",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 12,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.43,
-    "typical_pct": 0.295,
-    "vs_typical": 1.5,
+    "spread_pct": 0.5,
+    "typical_pct": 0.3,
+    "vs_typical": 1.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7098,14 +7090,14 @@
    },
    "country": "Sri Lanka",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 5,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.309,
-    "typical_pct": 0.2,
-    "vs_typical": 1.5,
+    "spread_pct": 0.144,
+    "typical_pct": 0.231,
+    "vs_typical": 0.6,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7209,14 +7201,14 @@
    },
    "country": "Liberia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.628,
-    "typical_pct": 0.338,
-    "vs_typical": 1.9,
+    "spread_pct": 0.629,
+    "typical_pct": 0.35,
+    "vs_typical": 1.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7320,14 +7312,14 @@
    },
    "country": "Lesotho",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.165,
-    "typical_pct": 0.365,
-    "vs_typical": 0.5,
+    "spread_pct": 0.441,
+    "typical_pct": 0.363,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7431,14 +7423,14 @@
    },
    "country": "Libya",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.263,
-    "typical_pct": 0.264,
-    "vs_typical": 1.0,
+    "spread_pct": 0.135,
+    "typical_pct": 0.263,
+    "vs_typical": 0.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7542,14 +7534,14 @@
    },
    "country": "Morocco",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.199,
-    "typical_pct": 0.115,
-    "vs_typical": 1.7,
+    "spread_pct": 0.116,
+    "typical_pct": 0.129,
+    "vs_typical": 0.9,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7653,14 +7645,14 @@
    },
    "country": "Moldova",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.527,
+    "spread_pct": 0.879,
     "typical_pct": 0.371,
-    "vs_typical": 1.4,
+    "vs_typical": 2.4,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7764,14 +7756,14 @@
    },
    "country": "Madagascar",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.321,
-    "typical_pct": 0.564,
-    "vs_typical": 0.6,
+    "spread_pct": 0.135,
+    "typical_pct": 0.514,
+    "vs_typical": 0.3,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7875,14 +7867,14 @@
    },
    "country": "North Macedonia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.244,
-    "typical_pct": 0.285,
-    "vs_typical": 0.9,
+    "spread_pct": 0.413,
+    "typical_pct": 0.265,
+    "vs_typical": 1.6,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -7986,14 +7978,14 @@
    },
    "country": "Myanmar",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 5,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.136,
-    "typical_pct": 0.089,
-    "vs_typical": 1.5,
+    "spread_pct": 0.044,
+    "typical_pct": 0.091,
+    "vs_typical": 0.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -8097,15 +8089,15 @@
    },
    "country": "Mongolia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": null,
-    "notable": true,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
+    "notable": false,
     "sources": 5,
-    "spread_pct": 1.064,
-    "typical_pct": 0.49,
-    "vs_typical": 2.2,
-    "widest_in_archive": true
+    "spread_pct": 0.788,
+    "typical_pct": 0.514,
+    "vs_typical": 1.5,
+    "widest_in_archive": false
    },
    "extreme_windows": {
     "30d": {
@@ -8154,15 +8146,7 @@
     "notable": false,
     "percentile": 44.2
    },
-   "signals": [
-    {
-     "archive_days": 17,
-     "sources": 5,
-     "spread_pct": 1.064,
-     "type": "divergence",
-     "typical_pct": 0.49
-    }
-   ],
+   "signals": [],
    "stateless": false,
    "streak": {
     "days": 0,
@@ -8216,14 +8200,14 @@
    },
    "country": "Mauritania",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 5,
     "notable": false,
     "sources": 4,
-    "spread_pct": 0.452,
-    "typical_pct": 0.465,
-    "vs_typical": 1.0,
+    "spread_pct": 0.531,
+    "typical_pct": 0.452,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -8327,14 +8311,14 @@
    },
    "country": "Mauritius",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.234,
-    "typical_pct": 0.245,
-    "vs_typical": 1.0,
+    "spread_pct": 0.214,
+    "typical_pct": 0.234,
+    "vs_typical": 0.9,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -8438,14 +8422,14 @@
    },
    "country": "Maldives",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.259,
-    "typical_pct": 0.256,
-    "vs_typical": 1.0,
+    "spread_pct": 0.236,
+    "typical_pct": 0.257,
+    "vs_typical": 0.9,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -8549,14 +8533,14 @@
    },
    "country": "Malawi",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.546,
-    "typical_pct": 0.561,
-    "vs_typical": 1.0,
+    "spread_pct": 0.651,
+    "typical_pct": 0.558,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -8660,14 +8644,14 @@
    },
    "country": "Mexico",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.184,
-    "typical_pct": 0.214,
-    "vs_typical": 0.9,
+    "spread_pct": 0.205,
+    "typical_pct": 0.208,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -8777,14 +8761,14 @@
    },
    "country": "Malaysia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 6,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.066,
-    "typical_pct": 0.119,
-    "vs_typical": 0.6,
+    "spread_pct": 0.171,
+    "typical_pct": 0.112,
+    "vs_typical": 1.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -8888,13 +8872,13 @@
    },
    "country": "Mozambique",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.431,
-    "typical_pct": 0.375,
+    "spread_pct": 0.43,
+    "typical_pct": 0.397,
     "vs_typical": 1.1,
     "widest_in_archive": false
    },
@@ -8999,14 +8983,14 @@
    },
    "country": "Namibia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.165,
-    "typical_pct": 0.365,
-    "vs_typical": 0.5,
+    "spread_pct": 0.355,
+    "typical_pct": 0.363,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -9110,14 +9094,14 @@
    },
    "country": "Nigeria",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 5,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 6,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.307,
+    "spread_pct": 0.357,
     "typical_pct": 0.275,
-    "vs_typical": 1.1,
+    "vs_typical": 1.3,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -9221,14 +9205,14 @@
    },
    "country": "Nicaragua",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 4,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.176,
-    "typical_pct": 0.14,
-    "vs_typical": 1.3,
+    "spread_pct": 0.151,
+    "typical_pct": 0.149,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -9332,14 +9316,14 @@
    },
    "country": "Norway",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.177,
-    "typical_pct": 0.381,
-    "vs_typical": 0.5,
+    "spread_pct": 0.254,
+    "typical_pct": 0.373,
+    "vs_typical": 0.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -9443,14 +9427,14 @@
    },
    "country": "Nepal",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.098,
-    "typical_pct": 0.232,
-    "vs_typical": 0.4,
+    "spread_pct": 0.156,
+    "typical_pct": 0.227,
+    "vs_typical": 0.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -9554,14 +9538,14 @@
    },
    "country": "New Zealand",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.095,
+    "spread_pct": 0.398,
     "typical_pct": 0.217,
-    "vs_typical": 0.4,
+    "vs_typical": 1.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -9665,14 +9649,14 @@
    },
    "country": "Oman",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.159,
-    "typical_pct": 0.104,
-    "vs_typical": 1.5,
+    "spread_pct": 0.157,
+    "typical_pct": 0.109,
+    "vs_typical": 1.4,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -9776,8 +9760,8 @@
    },
    "country": "Panama",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
@@ -9887,14 +9871,14 @@
    },
    "country": "Peru",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 5,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.238,
-    "typical_pct": 0.164,
-    "vs_typical": 1.5,
+    "spread_pct": 0.487,
+    "typical_pct": 0.178,
+    "vs_typical": 2.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -9998,15 +9982,15 @@
    },
    "country": "Papua New Guinea",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
-    "notable": false,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": null,
+    "notable": true,
     "sources": 5,
-    "spread_pct": 1.725,
-    "typical_pct": 1.265,
-    "vs_typical": 1.4,
-    "widest_in_archive": false
+    "spread_pct": 3.53,
+    "typical_pct": 1.281,
+    "vs_typical": 2.8,
+    "widest_in_archive": true
    },
    "extreme_windows": {
     "30d": {
@@ -10061,6 +10045,13 @@
      "scope": "window",
      "since": "2024-03-06",
      "type": "level"
+    },
+    {
+     "archive_days": 18,
+     "sources": 5,
+     "spread_pct": 3.53,
+     "type": "divergence",
+     "typical_pct": 1.281
     }
    ],
    "stateless": false,
@@ -10116,15 +10107,15 @@
    },
    "country": "Philippines",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": null,
-    "notable": true,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
+    "notable": false,
     "sources": 6,
-    "spread_pct": 0.695,
-    "typical_pct": 0.161,
-    "vs_typical": 4.3,
-    "widest_in_archive": true
+    "spread_pct": 0.245,
+    "typical_pct": 0.18,
+    "vs_typical": 1.4,
+    "widest_in_archive": false
    },
    "extreme_windows": {
     "30d": {
@@ -10173,15 +10164,7 @@
     "notable": false,
     "percentile": 71.6
    },
-   "signals": [
-    {
-     "archive_days": 17,
-     "sources": 6,
-     "spread_pct": 0.695,
-     "type": "divergence",
-     "typical_pct": 0.161
-    }
-   ],
+   "signals": [],
    "stateless": false,
    "streak": {
     "days": 1,
@@ -10235,14 +10218,14 @@
    },
    "country": "Pakistan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
     "spread_pct": 0.129,
-    "typical_pct": 0.154,
-    "vs_typical": 0.8,
+    "typical_pct": 0.146,
+    "vs_typical": 0.9,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -10346,14 +10329,14 @@
    },
    "country": "Poland",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.106,
-    "typical_pct": 0.227,
-    "vs_typical": 0.5,
+    "spread_pct": 0.224,
+    "typical_pct": 0.221,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -10457,14 +10440,14 @@
    },
    "country": "Paraguay",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 6,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.528,
-    "typical_pct": 0.427,
-    "vs_typical": 1.2,
+    "spread_pct": 0.59,
+    "typical_pct": 0.437,
+    "vs_typical": 1.3,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -10568,14 +10551,14 @@
    },
    "country": "Qatar",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
     "spread_pct": 0.027,
     "typical_pct": 0.015,
-    "vs_typical": 1.9,
+    "vs_typical": 1.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -10679,14 +10662,14 @@
    },
    "country": "Romania",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.081,
-    "typical_pct": 0.253,
-    "vs_typical": 0.3,
+    "spread_pct": 0.102,
+    "typical_pct": 0.226,
+    "vs_typical": 0.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -10790,13 +10773,13 @@
    },
    "country": "Serbia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.108,
-    "typical_pct": 0.156,
+    "spread_pct": 0.1,
+    "typical_pct": 0.148,
     "vs_typical": 0.7,
     "widest_in_archive": false
    },
@@ -10901,14 +10884,14 @@
    },
    "country": "Russia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.356,
-    "typical_pct": 0.548,
-    "vs_typical": 0.7,
+    "spread_pct": 0.523,
+    "typical_pct": 0.515,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -11012,14 +10995,14 @@
    },
    "country": "Rwanda",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.246,
-    "typical_pct": 0.264,
-    "vs_typical": 0.9,
+    "spread_pct": 0.361,
+    "typical_pct": 0.246,
+    "vs_typical": 1.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -11123,14 +11106,14 @@
    },
    "country": "Saudi Arabia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.133,
+    "spread_pct": 0.123,
     "typical_pct": 0.024,
-    "vs_typical": 5.6,
+    "vs_typical": 5.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -11234,14 +11217,14 @@
    },
    "country": "Solomon Islands",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 1.486,
-    "typical_pct": 1.422,
-    "vs_typical": 1.0,
+    "spread_pct": 1.288,
+    "typical_pct": 1.429,
+    "vs_typical": 0.9,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -11345,14 +11328,14 @@
    },
    "country": "Seychelles",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 4.461,
+    "spread_pct": 4.045,
     "typical_pct": 3.941,
-    "vs_typical": 1.1,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -11456,14 +11439,14 @@
    },
    "country": "Sweden",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 8,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.315,
-    "typical_pct": 0.283,
-    "vs_typical": 1.1,
+    "spread_pct": 0.603,
+    "typical_pct": 0.284,
+    "vs_typical": 2.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -11567,14 +11550,14 @@
    },
    "country": "Singapore",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.023,
-    "typical_pct": 0.097,
-    "vs_typical": 0.2,
+    "spread_pct": 0.141,
+    "typical_pct": 0.092,
+    "vs_typical": 1.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -11678,15 +11661,15 @@
    },
    "country": "Somalia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": null,
-    "notable": true,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
+    "notable": false,
     "sources": 5,
-    "spread_pct": 1.473,
-    "typical_pct": 0.341,
-    "vs_typical": 4.3,
-    "widest_in_archive": true
+    "spread_pct": 0.218,
+    "typical_pct": 0.342,
+    "vs_typical": 0.6,
+    "widest_in_archive": false
    },
    "extreme_windows": {
     "30d": {
@@ -11735,15 +11718,7 @@
     "notable": false,
     "percentile": 84.4
    },
-   "signals": [
-    {
-     "archive_days": 17,
-     "sources": 5,
-     "spread_pct": 1.473,
-     "type": "divergence",
-     "typical_pct": 0.341
-    }
-   ],
+   "signals": [],
    "stateless": false,
    "streak": {
     "days": 1,
@@ -11797,14 +11772,14 @@
    },
    "country": "Suriname",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 4,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.544,
-    "typical_pct": 0.393,
-    "vs_typical": 1.4,
+    "spread_pct": 0.748,
+    "typical_pct": 0.394,
+    "vs_typical": 1.9,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -11908,14 +11883,14 @@
    },
    "country": "South Sudan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 4,
-    "spread_pct": 7.971,
-    "typical_pct": 2.825,
-    "vs_typical": 2.8,
+    "spread_pct": 10.25,
+    "typical_pct": 2.85,
+    "vs_typical": 3.6,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12026,14 +12001,14 @@
    },
    "country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 4,
-    "spread_pct": 0.663,
-    "typical_pct": 0.772,
-    "vs_typical": 0.9,
+    "spread_pct": 0.741,
+    "typical_pct": 0.765,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12137,14 +12112,14 @@
    },
    "country": "Eswatini",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.186,
-    "typical_pct": 0.365,
-    "vs_typical": 0.5,
+    "spread_pct": 0.355,
+    "typical_pct": 0.363,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12248,14 +12223,14 @@
    },
    "country": "Thailand",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.415,
-    "typical_pct": 0.2,
-    "vs_typical": 2.1,
+    "spread_pct": 0.297,
+    "typical_pct": 0.209,
+    "vs_typical": 1.4,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12365,14 +12340,14 @@
    },
    "country": "Tajikistan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.274,
-    "typical_pct": 0.303,
-    "vs_typical": 0.9,
+    "spread_pct": 0.404,
+    "typical_pct": 0.298,
+    "vs_typical": 1.4,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12476,14 +12451,14 @@
    },
    "country": "Turkmenistan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.189,
-    "typical_pct": 0.108,
-    "vs_typical": 1.7,
+    "spread_pct": 0.235,
+    "typical_pct": 0.12,
+    "vs_typical": 2.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12587,14 +12562,14 @@
    },
    "country": "Tunisia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.36,
-    "typical_pct": 0.286,
-    "vs_typical": 1.3,
+    "spread_pct": 0.464,
+    "typical_pct": 0.29,
+    "vs_typical": 1.6,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12698,14 +12673,14 @@
    },
    "country": "Tonga",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 1.709,
-    "typical_pct": 1.264,
-    "vs_typical": 1.4,
+    "spread_pct": 1.573,
+    "typical_pct": 1.279,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12809,14 +12784,14 @@
    },
    "country": "T\u00fcrkiye",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.043,
+    "spread_pct": 0.049,
     "typical_pct": 0.041,
-    "vs_typical": 1.0,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -12920,14 +12895,14 @@
    },
    "country": "Trinidad and Tobago",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.851,
-    "typical_pct": 0.435,
-    "vs_typical": 2.0,
+    "spread_pct": 0.957,
+    "typical_pct": 0.448,
+    "vs_typical": 2.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -13031,13 +13006,13 @@
    },
    "country": "Taiwan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.197,
-    "typical_pct": 0.222,
+    "spread_pct": 0.191,
+    "typical_pct": 0.216,
     "vs_typical": 0.9,
     "widest_in_archive": false
    },
@@ -13142,14 +13117,14 @@
    },
    "country": "Tanzania",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 6,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 7,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.586,
-    "typical_pct": 0.364,
-    "vs_typical": 1.6,
+    "spread_pct": 0.64,
+    "typical_pct": 0.374,
+    "vs_typical": 1.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -13253,15 +13228,15 @@
    },
    "country": "Ukraine",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
-    "notable": false,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": null,
+    "notable": true,
     "sources": 5,
-    "spread_pct": 0.241,
-    "typical_pct": 0.159,
-    "vs_typical": 1.5,
-    "widest_in_archive": false
+    "spread_pct": 0.622,
+    "typical_pct": 0.162,
+    "vs_typical": 3.8,
+    "widest_in_archive": true
    },
    "extreme_windows": {
     "30d": {
@@ -13310,7 +13285,15 @@
     "notable": false,
     "percentile": 57.2
    },
-   "signals": [],
+   "signals": [
+    {
+     "archive_days": 18,
+     "sources": 5,
+     "spread_pct": 0.622,
+     "type": "divergence",
+     "typical_pct": 0.162
+    }
+   ],
    "stateless": false,
    "streak": {
     "days": 1,
@@ -13364,14 +13347,14 @@
    },
    "country": "Uganda",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 3,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 1.052,
-    "typical_pct": 0.859,
-    "vs_typical": 1.2,
+    "spread_pct": 0.839,
+    "typical_pct": 0.86,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -13475,14 +13458,14 @@
    },
    "country": "Uruguay",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.192,
-    "typical_pct": 0.338,
-    "vs_typical": 0.6,
+    "spread_pct": 0.162,
+    "typical_pct": 0.324,
+    "vs_typical": 0.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -13586,14 +13569,14 @@
    },
    "country": "Uzbekistan",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.309,
-    "typical_pct": 0.625,
-    "vs_typical": 0.5,
+    "spread_pct": 0.422,
+    "typical_pct": 0.598,
+    "vs_typical": 0.7,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -13697,14 +13680,14 @@
    },
    "country": "Venezuela",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 4,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 1,
     "notable": false,
     "sources": 4,
-    "spread_pct": 0.689,
+    "spread_pct": 0.356,
     "typical_pct": 0.295,
-    "vs_typical": 2.3,
+    "vs_typical": 1.2,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -13808,14 +13791,14 @@
    },
    "country": "Vietnam",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.289,
-    "typical_pct": 0.327,
-    "vs_typical": 0.9,
+    "spread_pct": 0.407,
+    "typical_pct": 0.312,
+    "vs_typical": 1.3,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -13925,14 +13908,14 @@
    },
    "country": "Vanuatu",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.832,
-    "typical_pct": 0.963,
-    "vs_typical": 0.9,
+    "spread_pct": 0.768,
+    "typical_pct": 0.962,
+    "vs_typical": 0.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -14036,13 +14019,13 @@
    },
    "country": "Samoa",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 1,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 2,
     "notable": false,
     "sources": 5,
-    "spread_pct": 1.182,
-    "typical_pct": 0.702,
+    "spread_pct": 1.35,
+    "typical_pct": 0.788,
     "vs_typical": 1.7,
     "widest_in_archive": false
    },
@@ -14153,14 +14136,14 @@
    },
    "country": null,
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.074,
-    "typical_pct": 0.147,
-    "vs_typical": 0.5,
+    "spread_pct": 0.104,
+    "typical_pct": 0.132,
+    "vs_typical": 0.8,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -14264,13 +14247,13 @@
    },
    "country": null,
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.255,
-    "typical_pct": 0.263,
+    "spread_pct": 0.249,
+    "typical_pct": 0.262,
     "vs_typical": 1.0,
     "widest_in_archive": false
    },
@@ -14375,14 +14358,14 @@
    },
    "country": null,
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.074,
-    "typical_pct": 0.141,
-    "vs_typical": 0.5,
+    "spread_pct": 0.139,
+    "typical_pct": 0.132,
+    "vs_typical": 1.1,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -14486,14 +14469,14 @@
    },
    "country": "Yemen",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
+    "archive_days": 18,
+    "date": "2026-08-12",
     "days_since_wider": 1,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.242,
-    "typical_pct": 0.137,
-    "vs_typical": 1.8,
+    "spread_pct": 0.069,
+    "typical_pct": 0.148,
+    "vs_typical": 0.5,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -14597,14 +14580,14 @@
    },
    "country": "South Africa",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 6,
-    "spread_pct": 0.179,
-    "typical_pct": 0.373,
-    "vs_typical": 0.5,
+    "spread_pct": 0.382,
+    "typical_pct": 0.365,
+    "vs_typical": 1.0,
     "widest_in_archive": false
    },
    "extreme_windows": {
@@ -14708,13 +14691,13 @@
    },
    "country": "Zambia",
    "divergence": {
-    "archive_days": 17,
-    "date": "2026-08-11",
-    "days_since_wider": 2,
+    "archive_days": 18,
+    "date": "2026-08-12",
+    "days_since_wider": 3,
     "notable": false,
     "sources": 5,
-    "spread_pct": 0.637,
-    "typical_pct": 0.42,
+    "spread_pct": 0.639,
+    "typical_pct": 0.435,
     "vs_typical": 1.5,
     "widest_in_archive": false
    },
@@ -14784,6 +14767,6 @@
    "window_change_pct": 27.82
   }
  },
- "generated": "2026-08-12T06:37:03+00:00",
+ "generated": "2026-08-12T17:12:19+00:00",
  "source": "history/daily.jsonl"
 }
