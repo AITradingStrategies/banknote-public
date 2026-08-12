@@ -56,6 +56,19 @@ def country_index():
     return {c: v[0] for c, v in owners.items() if len(v) == 1}
 
 
+def flag_emoji(cca2):
+    c = (cca2 or "").strip().upper()
+    if len(c) != 2 or not c.isalpha():
+        return ""
+    return "".join(chr(0x1F1E6 + ord(ch) - ord("A")) for ch in c)
+
+
+def cca2_of(cid):
+    d = load_json(COUNTRIES, {})
+    codes = d.get("cca2") or []
+    return codes[cid] if 0 <= cid < len(codes) else ""
+
+
 def latest_fixing(ccy):
     if not os.path.isdir(ARCHIVE):
         return None
@@ -183,10 +196,18 @@ def phrase_context(entry):
     month = (ch.get("30d") or {}).get("pct")
     if month is not None and abs(month) >= 0.5:
         out.append(f"{'up' if month > 0 else 'down'} {abs(month):.1f}% over 30 days")
+    said_year = False
     for pct, phrase in ((ytd, "this year"), (year, "over the past year")):
         if pct is not None and abs(pct) >= 0.5:
             out.append(f"{'stronger' if pct > 0 else 'weaker'} by {abs(pct):.1f}% {phrase}")
-            return out
+            said_year = phrase == "over the past year"
+            break
+    if (not said_year and year is not None and ytd is not None
+            and abs(year) >= 3.0 and abs(year) >= 1.5 * abs(ytd)):
+        out.append(f"{'stronger' if year > 0 else 'weaker'} by {abs(year):.1f}% "
+                   f"over the past year")
+    if out:
+        return out
     win = entry.get("window_change_pct")
     if win is not None and abs(win) >= 0.5:
         out.append(f"{'stronger' if win > 0 else 'weaker'} by {abs(win):.1f}% "
@@ -224,6 +245,7 @@ def build_facts(entry, cid, name, fixing, news):
         "ccy": entry["ccy"],
         "country": name,
         "hashtag": hashtag(name),
+        "flag": flag_emoji(cca2_of(cid)),
         "language": LANGUAGES.get(entry["ccy"], "English"),
         "rate": fmt_rate(fixing["rate"]) if fixing else None,
         "rate_day": fixing["day"] if fixing else None,
@@ -438,13 +460,14 @@ def compose_from_template(facts):
     parts = [f"{facts['country']}'s currency: {lead}."]
     if facts.get("rate"):
         parts.append(f"{facts['rate']}/USD.")
-    if len(claims) > 1:
-        parts.append(claims[1].capitalize() + ".")
+    for extra in claims[1:3]:
+        parts.append(extra.capitalize() + ".")
     if not facts["news"] and entry_moved(facts):
         parts.append("No public reporting explains the move.")
     body = " ".join(parts)
-    tail = f"\n\n{facts['hashtag']} ${facts['ccy']}" if facts.get("hashtag") \
-        else f"\n\n${facts['ccy']}"
+    tag = f"{facts['hashtag']} ${facts['ccy']}" if facts.get("hashtag") \
+        else f"${facts['ccy']}"
+    tail = "\n\n" + (f"{tag} {facts['flag']}" if facts.get("flag") else tag)
     while len(body) + len(tail) > TWEET_LIMIT and len(parts) > 1:
         parts.pop()
         body = " ".join(parts)
@@ -512,6 +535,10 @@ def main():
             for p in problems:
                 log(f"  REJECTED: {p}")
             drafted = None
+    if not drafted and facts["language"] != "English":
+        log(f"model unavailable and the template cannot write {facts['language']}"
+            f" - skipping {ccy} rather than posting English")
+        return 0
     if not drafted:
         drafted = compose_from_template(facts)
         source = "template"
