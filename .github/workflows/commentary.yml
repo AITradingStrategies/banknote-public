@@ -35,6 +35,10 @@ permissions:
 jobs:
   commentary:
     runs-on: ubuntu-latest
+    # Two rounds with a 28-minute sleep between them, plus setup. Anything
+    # past this is wedged, not slow - fail rather than hold a runner for the
+    # 6-hour default.
+    timeout-minutes: 45
     environment: x-posting
     env:
       BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
@@ -60,13 +64,26 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run }}
           CCY: ${{ inputs.ccy }}
           TEMPLATE: ${{ inputs.template }}
+          GAP_SECONDS: "1680"  # 28 min, clear of MIN_POST_GAP_MIN
         run: |
           ARGS="--post"
           if [ "${DRY_RUN}" = "true" ]; then ARGS=""; fi
           if [ -n "${CCY}" ]; then ARGS="$ARGS --ccy ${CCY}"; fi
           if [ "${TEMPLATE}" = "true" ]; then ARGS="$ARGS --template"; fi
-          echo "running: python run_commentary.py $ARGS"
-          python run_commentary.py $ARGS
+          # One delivered run posts twice, half an hour apart, instead of
+          # relying on a second run that does not arrive. Asking for slots
+          # more often does not work: this workflow is delivered about once
+          # an hour whatever the cron says. A manual run does one round.
+          ROUNDS=2
+          if [ "${DRY_RUN}" = "true" ] || [ -n "${CCY}" ]; then ROUNDS=1; fi
+          for i in $(seq 1 $ROUNDS); do
+            if [ "$i" -gt 1 ]; then
+              echo "--- sleeping ${GAP_SECONDS}s before round $i of $ROUNDS ---"
+              sleep "${GAP_SECONDS}"
+            fi
+            echo "running (round $i/$ROUNDS): python run_commentary.py $ARGS"
+            python run_commentary.py $ARGS
+          done
 
       - name: Commit the picker state
         if: always()
