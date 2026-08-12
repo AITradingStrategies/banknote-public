@@ -32,6 +32,11 @@
      "from_date": "2026-05-13",
      "from_rate": 3.6725,
      "pct": 0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 3.6725,
+     "pct": 0.0
     }
    },
    "country": "United Arab Emirates",
@@ -143,6 +148,11 @@
      "from_date": "2026-05-13",
      "from_rate": 63.96325993,
      "pct": -2.33
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 65.51055132,
+     "pct": 0.03
     }
    },
    "country": "Afghanistan",
@@ -254,6 +264,11 @@
      "from_date": "2026-05-13",
      "from_rate": 81.34897172,
      "pct": 0.96
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 82.37497066,
+     "pct": 2.23
     }
    },
    "country": "Albania",
@@ -372,6 +387,11 @@
      "from_date": "2026-05-13",
      "from_rate": 368.31290585,
      "pct": 0.65
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 381.39423064,
+     "pct": 4.22
     }
    },
    "country": "Armenia",
@@ -483,6 +503,11 @@
      "from_date": "2026-05-13",
      "from_rate": 917.11330862,
      "pct": 0.12
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 915.49604403,
+     "pct": -0.05
     }
    },
    "country": "Angola",
@@ -594,6 +619,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1384.86763283,
      "pct": -7.58
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1451.42740866,
+     "pct": -3.14
     }
    },
    "country": "Argentina",
@@ -705,6 +735,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1.38173729,
      "pct": -2.48
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1.49850264,
+     "pct": 5.76
     }
    },
    "country": null,
@@ -816,6 +851,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1.69999432,
      "pct": -0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1.69999996,
+     "pct": 0.0
     }
    },
    "country": "Azerbaijan",
@@ -927,6 +967,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1.66652039,
      "pct": -1.62
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1.66513331,
+     "pct": -1.7
     }
    },
    "country": "Bosnia and Herzegovina",
@@ -1036,6 +1081,11 @@
     },
     "90d": {
      "from_date": "2026-05-13",
+     "from_rate": 2.0,
+     "pct": 0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
      "from_rate": 2.0,
      "pct": 0.0
     }
@@ -1149,6 +1199,11 @@
      "from_date": "2026-05-13",
      "from_rate": 122.91217803,
      "pct": -0.59
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 122.33330698,
+     "pct": -1.06
     }
    },
    "country": "Bangladesh",
@@ -1258,6 +1313,11 @@
     },
     "90d": {
      "from_date": "2026-05-13",
+     "from_rate": 0.376,
+     "pct": 0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
      "from_rate": 0.376,
      "pct": 0.0
     }
@@ -1371,6 +1431,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2974.30587298,
      "pct": -0.5
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2962.66257037,
+     "pct": -0.89
     }
    },
    "country": "Burundi",
@@ -1482,6 +1547,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1.2718395,
      "pct": -0.64
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1.2855248,
+     "pct": 0.43
     }
    },
    "country": "Brunei",
@@ -1593,6 +1663,11 @@
      "from_date": "2026-05-13",
      "from_rate": 4.90850584,
      "pct": -3.9
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 5.51379765,
+     "pct": 7.95
     }
    },
    "country": "Brazil",
@@ -1702,6 +1777,11 @@
     },
     "90d": {
      "from_date": "2026-05-13",
+     "from_rate": 1.0,
+     "pct": 0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
      "from_rate": 1.0,
      "pct": 0.0
     }
@@ -1815,6 +1895,11 @@
      "from_date": "2026-05-13",
      "from_rate": 13.45171603,
      "pct": -0.28
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 13.1389692,
+     "pct": -2.6
     }
    },
    "country": "Botswana",
@@ -1926,6 +2011,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.79041075,
      "pct": -6.23
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2.93510144,
+     "pct": -1.36
     }
    },
    "country": "Belarus",
@@ -2037,6 +2127,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.01383986,
      "pct": 0.01
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2.01468588,
+     "pct": 0.05
     }
    },
    "country": "Belize",
@@ -2148,6 +2243,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1.36892517,
      "pct": -1.75
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1.37223414,
+     "pct": -1.52
     }
    },
    "country": "Canada",
@@ -2265,6 +2365,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2279.99996943,
      "pct": -0.44
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2280.21902759,
+     "pct": -0.43
     }
    },
    "country": "DR Congo",
@@ -2376,6 +2481,11 @@
      "from_date": "2026-05-13",
      "from_rate": 0.78051121,
      "pct": -3.63
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 0.79222041,
+     "pct": -2.18
     }
    },
    "country": null,
@@ -2487,6 +2597,11 @@
      "from_date": "2026-05-13",
      "from_rate": 904.82128879,
      "pct": -1.23
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 899.88648123,
+     "pct": -1.77
     }
    },
    "country": "Chile",
@@ -2598,6 +2713,11 @@
      "from_date": "2026-05-13",
      "from_rate": 6.79227647,
      "pct": 0.7
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 6.99423286,
+     "pct": 3.69
     }
    },
    "country": "China",
@@ -2716,6 +2836,11 @@
      "from_date": "2026-05-13",
      "from_rate": 3785.83929237,
      "pct": 20.6
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 3766.84945306,
+     "pct": 20.0
     }
    },
    "country": "Colombia",
@@ -2827,6 +2952,11 @@
      "from_date": "2026-05-13",
      "from_rate": 456.44540881,
      "pct": 0.58
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 497.45190124,
+     "pct": 9.61
     }
    },
    "country": "Costa Rica",
@@ -2938,6 +3068,11 @@
      "from_date": "2026-05-13",
      "from_rate": 93.95867924,
      "pct": -1.62
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 93.88047553,
+     "pct": -1.7
     }
    },
    "country": "Cape Verde",
@@ -3049,6 +3184,11 @@
      "from_date": "2026-05-13",
      "from_rate": 20.73912816,
      "pct": -1.28
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 20.58053678,
+     "pct": -2.04
     }
    },
    "country": "Czechia",
@@ -3160,6 +3300,11 @@
      "from_date": "2026-05-13",
      "from_rate": 178.12077083,
      "pct": 0.01
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 177.92065349,
+     "pct": -0.1
     }
    },
    "country": "Djibouti",
@@ -3271,6 +3416,11 @@
      "from_date": "2026-05-13",
      "from_rate": 6.3665069,
      "pct": -1.67
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 6.36039133,
+     "pct": -1.77
     }
    },
    "country": "Denmark",
@@ -3382,6 +3532,11 @@
      "from_date": "2026-05-13",
      "from_rate": 58.99787255,
      "pct": 1.11
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 63.08892988,
+     "pct": 8.13
     }
    },
    "country": "Dominican Republic",
@@ -3493,6 +3648,11 @@
      "from_date": "2026-05-13",
      "from_rate": 132.39798179,
      "pct": -0.36
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 129.55345113,
+     "pct": -2.5
     }
    },
    "country": "Algeria",
@@ -3604,6 +3764,11 @@
      "from_date": "2026-05-13",
      "from_rate": 52.92031045,
      "pct": 6.06
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 47.70320713,
+     "pct": -4.4
     }
    },
    "country": "Egypt",
@@ -3715,6 +3880,11 @@
      "from_date": "2026-05-13",
      "from_rate": 156.55491384,
      "pct": -3.12
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 155.30451159,
+     "pct": -3.89
     }
    },
    "country": "Ethiopia",
@@ -3833,6 +4003,11 @@
      "from_date": "2026-05-13",
      "from_rate": 0.85207835,
      "pct": -1.62
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 0.85136914,
+     "pct": -1.7
     }
    },
    "country": null,
@@ -3944,6 +4119,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.18605367,
      "pct": -1.19
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2.27277494,
+     "pct": 2.73
     }
    },
    "country": "Fiji",
@@ -4055,6 +4235,11 @@
      "from_date": "2026-05-13",
      "from_rate": 0.73862841,
      "pct": -0.21
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 0.74206457,
+     "pct": 0.25
     }
    },
    "country": "United Kingdom",
@@ -4166,6 +4351,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.67737235,
      "pct": 2.4
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2.69156264,
+     "pct": 2.94
     }
    },
    "country": "Georgia",
@@ -4277,6 +4467,11 @@
      "from_date": "2026-05-13",
      "from_rate": 11.30098106,
      "pct": -3.92
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 10.50110481,
+     "pct": -10.72
     }
    },
    "country": "Ghana",
@@ -4408,6 +4603,11 @@
      "from_date": "2026-05-13",
      "from_rate": 73.82163093,
      "pct": -0.37
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 73.89526202,
+     "pct": -0.27
     }
    },
    "country": "Gambia",
@@ -4519,6 +4719,11 @@
      "from_date": "2026-05-13",
      "from_rate": 8779.94439966,
      "pct": -0.1
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 8754.00351266,
+     "pct": -0.4
     }
    },
    "country": "Guinea",
@@ -4630,6 +4835,11 @@
      "from_date": "2026-05-13",
      "from_rate": 7.6289722,
      "pct": -0.03
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 7.66973296,
+     "pct": 0.51
     }
    },
    "country": "Guatemala",
@@ -4741,6 +4951,11 @@
      "from_date": "2026-05-13",
      "from_rate": 209.2121357,
      "pct": -0.18
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 209.33987564,
+     "pct": -0.12
     }
    },
    "country": "Guyana",
@@ -4852,6 +5067,11 @@
      "from_date": "2026-05-13",
      "from_rate": 26.59860479,
      "pct": -0.84
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 26.44012192,
+     "pct": -1.43
     }
    },
    "country": "Honduras",
@@ -4963,6 +5183,11 @@
      "from_date": "2026-05-13",
      "from_rate": 130.95186862,
      "pct": 0.07
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 131.06855268,
+     "pct": 0.16
     }
    },
    "country": "Haiti",
@@ -5074,6 +5299,11 @@
      "from_date": "2026-05-13",
      "from_rate": 304.78631293,
      "pct": -3.5
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 327.48523858,
+     "pct": 3.69
     }
    },
    "country": "Hungary",
@@ -5185,6 +5415,11 @@
      "from_date": "2026-05-13",
      "from_rate": 17512.41174445,
      "pct": -1.6
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 16700.24782056,
+     "pct": -6.16
     }
    },
    "country": "Indonesia",
@@ -5296,6 +5531,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.91211886,
      "pct": -2.82
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 3.18566824,
+     "pct": 6.31
     }
    },
    "country": null,
@@ -5407,6 +5647,11 @@
      "from_date": "2026-05-13",
      "from_rate": 95.55922465,
      "pct": 0.16
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 89.87900494,
+     "pct": -5.8
     }
    },
    "country": null,
@@ -5518,6 +5763,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1310.28915893,
      "pct": -0.08
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1310.71842758,
+     "pct": -0.05
     }
    },
    "country": "Iraq",
@@ -5629,6 +5879,11 @@
      "from_date": "2026-05-13",
      "from_rate": 122.36523317,
      "pct": -0.65
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 125.37807383,
+     "pct": 1.8
     }
    },
    "country": "Iceland",
@@ -5740,6 +5995,11 @@
      "from_date": "2026-05-13",
      "from_rate": 158.03111075,
      "pct": -0.56
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 158.94289387,
+     "pct": 0.01
     }
    },
    "country": "Jamaica",
@@ -5849,6 +6109,11 @@
     },
     "90d": {
      "from_date": "2026-05-13",
+     "from_rate": 0.709,
+     "pct": 0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
      "from_rate": 0.709,
      "pct": 0.0
     }
@@ -5962,6 +6227,11 @@
      "from_date": "2026-05-13",
      "from_rate": 157.66435704,
      "pct": -0.96
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 156.70086294,
+     "pct": -1.56
     }
    },
    "country": "Japan",
@@ -6073,6 +6343,11 @@
      "from_date": "2026-05-13",
      "from_rate": 129.16715923,
      "pct": -0.16
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 129.01539893,
+     "pct": -0.27
     }
    },
    "country": "Kenya",
@@ -6192,6 +6467,11 @@
      "from_date": "2026-05-13",
      "from_rate": 87.49386312,
      "pct": 0.01
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 87.45247919,
+     "pct": -0.04
     }
    },
    "country": "Kyrgyzstan",
@@ -6303,6 +6583,11 @@
      "from_date": "2026-05-13",
      "from_rate": 4011.86472706,
      "pct": -1.12
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 4010.16571842,
+     "pct": -1.17
     }
    },
    "country": "Cambodia",
@@ -6414,6 +6699,11 @@
      "from_date": "2026-05-13",
      "from_rate": 419.19506684,
      "pct": -1.62
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 418.8461623,
+     "pct": -1.7
     }
    },
    "country": "Comoros",
@@ -6525,6 +6815,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1495.0934717,
      "pct": 5.63
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1442.29570512,
+     "pct": 1.9
     }
    },
    "country": "South Korea",
@@ -6636,6 +6931,11 @@
      "from_date": "2026-05-13",
      "from_rate": 0.30808123,
      "pct": -0.28
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 0.30790587,
+     "pct": -0.33
     }
    },
    "country": "Kuwait",
@@ -6747,6 +7047,11 @@
      "from_date": "2026-05-13",
      "from_rate": 465.11370071,
      "pct": -0.35
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 507.33752717,
+     "pct": 8.7
     }
    },
    "country": "Kazakhstan",
@@ -6864,6 +7169,11 @@
      "from_date": "2026-05-13",
      "from_rate": 21937.94623562,
      "pct": -3.16
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 21615.92324372,
+     "pct": -4.58
     }
    },
    "country": "Laos",
@@ -6975,6 +7285,11 @@
      "from_date": "2026-05-13",
      "from_rate": 89275.58570263,
      "pct": -0.68
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 89993.28564116,
+     "pct": 0.12
     }
    },
    "country": "Lebanon",
@@ -7086,6 +7401,11 @@
      "from_date": "2026-05-13",
      "from_rate": 322.60299159,
      "pct": -3.82
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 309.84864292,
+     "pct": -7.62
     }
    },
    "country": "Sri Lanka",
@@ -7197,6 +7517,11 @@
      "from_date": "2026-05-13",
      "from_rate": 183.66982686,
      "pct": 1.73
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 178.77541178,
+     "pct": -0.98
     }
    },
    "country": "Liberia",
@@ -7308,6 +7633,11 @@
      "from_date": "2026-05-13",
      "from_rate": 16.49390344,
      "pct": 1.89
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 16.52612523,
+     "pct": 2.08
     }
    },
    "country": "Lesotho",
@@ -7419,6 +7749,11 @@
      "from_date": "2026-05-13",
      "from_rate": 6.32769884,
      "pct": -0.79
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 5.41943697,
+     "pct": -15.03
     }
    },
    "country": "Libya",
@@ -7530,6 +7865,11 @@
      "from_date": "2026-05-13",
      "from_rate": 9.13543126,
      "pct": -1.95
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 9.11813986,
+     "pct": -2.14
     }
    },
    "country": "Morocco",
@@ -7641,6 +7981,11 @@
      "from_date": "2026-05-13",
      "from_rate": 17.11561031,
      "pct": -1.59
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 16.81309877,
+     "pct": -3.33
     }
    },
    "country": "Moldova",
@@ -7752,6 +8097,11 @@
      "from_date": "2026-05-13",
      "from_rate": 4178.01527967,
      "pct": -2.81
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 4590.95904345,
+     "pct": 6.8
     }
    },
    "country": "Madagascar",
@@ -7863,6 +8213,11 @@
      "from_date": "2026-05-13",
      "from_rate": 52.51471529,
      "pct": -1.44
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 52.44010279,
+     "pct": -1.58
     }
    },
    "country": "North Macedonia",
@@ -7974,6 +8329,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2099.76514863,
      "pct": -0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2099.08727521,
+     "pct": -0.03
     }
    },
    "country": "Myanmar",
@@ -8085,6 +8445,11 @@
      "from_date": "2026-05-13",
      "from_rate": 3579.5717278,
      "pct": -0.45
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 3560.25425839,
+     "pct": -0.99
     }
    },
    "country": "Mongolia",
@@ -8196,6 +8561,11 @@
      "from_date": "2026-05-13",
      "from_rate": 39.89529464,
      "pct": -0.61
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 39.77131909,
+     "pct": -0.92
     }
    },
    "country": "Mauritania",
@@ -8307,6 +8677,11 @@
      "from_date": "2026-05-13",
      "from_rate": 46.70695048,
      "pct": -0.6
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 46.23295976,
+     "pct": -1.61
     }
    },
    "country": "Mauritius",
@@ -8418,6 +8793,11 @@
      "from_date": "2026-05-13",
      "from_rate": 15.44001963,
      "pct": -0.1
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 15.45901959,
+     "pct": 0.02
     }
    },
    "country": "Maldives",
@@ -8529,6 +8909,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1733.89657134,
      "pct": -0.07
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1735.29183159,
+     "pct": 0.01
     }
    },
    "country": "Malawi",
@@ -8640,6 +9025,11 @@
      "from_date": "2026-05-13",
      "from_rate": 17.21805076,
      "pct": 0.49
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 18.01180009,
+     "pct": 5.12
     }
    },
    "country": "Mexico",
@@ -8757,6 +9147,11 @@
      "from_date": "2026-05-13",
      "from_rate": 3.92713545,
      "pct": -4.07
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 4.05549869,
+     "pct": -0.94
     }
    },
    "country": "Malaysia",
@@ -8868,6 +9263,11 @@
      "from_date": "2026-05-13",
      "from_rate": 63.86064483,
      "pct": 0.06
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 63.84830649,
+     "pct": 0.04
     }
    },
    "country": "Mozambique",
@@ -8979,6 +9379,11 @@
      "from_date": "2026-05-13",
      "from_rate": 16.49390344,
      "pct": 1.89
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 16.52612523,
+     "pct": 2.08
     }
    },
    "country": "Namibia",
@@ -9090,6 +9495,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1371.96206227,
      "pct": 0.56
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1445.79286662,
+     "pct": 5.97
     }
    },
    "country": "Nigeria",
@@ -9201,6 +9611,11 @@
      "from_date": "2026-05-13",
      "from_rate": 36.80375114,
      "pct": -0.02
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 36.8090423,
+     "pct": -0.01
     }
    },
    "country": "Nicaragua",
@@ -9312,6 +9727,11 @@
      "from_date": "2026-05-13",
      "from_rate": 9.18048613,
      "pct": -3.26
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 10.09120304,
+     "pct": 6.34
     }
    },
    "country": "Norway",
@@ -9423,6 +9843,11 @@
      "from_date": "2026-05-13",
      "from_rate": 152.96642885,
      "pct": 0.16
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 143.87381715,
+     "pct": -5.8
     }
    },
    "country": "Nepal",
@@ -9534,6 +9959,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1.68146459,
      "pct": -1.04
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1.73973367,
+     "pct": 2.39
     }
    },
    "country": "New Zealand",
@@ -9645,6 +10075,11 @@
      "from_date": "2026-05-13",
      "from_rate": 0.38493487,
      "pct": 0.03
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 0.38477257,
+     "pct": -0.02
     }
    },
    "country": "Oman",
@@ -9754,6 +10189,11 @@
     },
     "90d": {
      "from_date": "2026-05-13",
+     "from_rate": 1.0,
+     "pct": 0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
      "from_rate": 1.0,
      "pct": 0.0
     }
@@ -9867,6 +10307,11 @@
      "from_date": "2026-05-13",
      "from_rate": 3.43047202,
      "pct": 1.52
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 3.36101695,
+     "pct": -0.53
     }
    },
    "country": "Peru",
@@ -9978,6 +10423,11 @@
      "from_date": "2026-05-13",
      "from_rate": 4.35654547,
      "pct": -2.79
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 4.26241006,
+     "pct": -4.89
     }
    },
    "country": "Papua New Guinea",
@@ -10103,6 +10553,11 @@
      "from_date": "2026-05-13",
      "from_rate": 61.48108027,
      "pct": 0.82
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 58.90768264,
+     "pct": -3.4
     }
    },
    "country": "Philippines",
@@ -10214,6 +10669,11 @@
      "from_date": "2026-05-13",
      "from_rate": 278.62311472,
      "pct": 0.28
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 280.20999084,
+     "pct": 0.85
     }
    },
    "country": "Pakistan",
@@ -10325,6 +10785,11 @@
      "from_date": "2026-05-13",
      "from_rate": 3.62370915,
      "pct": -2.77
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 3.5897913,
+     "pct": -3.68
     }
    },
    "country": "Poland",
@@ -10436,6 +10901,11 @@
      "from_date": "2026-05-13",
      "from_rate": 6101.99311804,
      "pct": 2.44
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 6749.06209896,
+     "pct": 13.31
     }
    },
    "country": "Paraguay",
@@ -10545,6 +11015,11 @@
     },
     "90d": {
      "from_date": "2026-05-13",
+     "from_rate": 3.64,
+     "pct": 0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
      "from_rate": 3.64,
      "pct": 0.0
     }
@@ -10658,6 +11133,11 @@
      "from_date": "2026-05-13",
      "from_rate": 4.4317062,
      "pct": -2.43
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 4.33899569,
+     "pct": -4.47
     }
    },
    "country": "Romania",
@@ -10769,6 +11249,11 @@
      "from_date": "2026-05-13",
      "from_rate": 100.01745618,
      "pct": -1.61
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 99.87753121,
+     "pct": -1.75
     }
    },
    "country": "Serbia",
@@ -10880,6 +11365,11 @@
      "from_date": "2026-05-13",
      "from_rate": 73.81139267,
      "pct": -10.54
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 78.98726486,
+     "pct": -4.27
     }
    },
    "country": "Russia",
@@ -10991,6 +11481,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1462.99452867,
      "pct": -0.52
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1457.93307878,
+     "pct": -0.87
     }
    },
    "country": "Rwanda",
@@ -11100,6 +11595,11 @@
     },
     "90d": {
      "from_date": "2026-05-13",
+     "from_rate": 3.75,
+     "pct": 0.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
      "from_rate": 3.75,
      "pct": 0.0
     }
@@ -11213,6 +11713,11 @@
      "from_date": "2026-05-13",
      "from_rate": 8.0138238,
      "pct": -0.23
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 8.13497756,
+     "pct": 1.28
     }
    },
    "country": "Solomon Islands",
@@ -11324,6 +11829,11 @@
      "from_date": "2026-05-13",
      "from_rate": 14.64136195,
      "pct": 3.51
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 15.12843602,
+     "pct": 6.95
     }
    },
    "country": "Seychelles",
@@ -11435,6 +11945,11 @@
      "from_date": "2026-05-13",
      "from_rate": 9.28700445,
      "pct": -2.12
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 9.21146653,
+     "pct": -2.92
     }
    },
    "country": "Sweden",
@@ -11546,6 +12061,11 @@
      "from_date": "2026-05-13",
      "from_rate": 1.2718395,
      "pct": -0.64
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 1.2855248,
+     "pct": 0.43
     }
    },
    "country": "Singapore",
@@ -11657,6 +12177,11 @@
      "from_date": "2026-05-13",
      "from_rate": 571.43015081,
      "pct": 0.01
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 571.48745456,
+     "pct": 0.02
     }
    },
    "country": "Somalia",
@@ -11768,6 +12293,11 @@
      "from_date": "2026-05-13",
      "from_rate": 37.21459782,
      "pct": -1.43
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 38.09213027,
+     "pct": 0.89
     }
    },
    "country": "Suriname",
@@ -11879,6 +12409,11 @@
      "from_date": "2026-05-13",
      "from_rate": 4702.76732148,
      "pct": -7.26
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 4551.19033835,
+     "pct": -10.25
     }
    },
    "country": "South Sudan",
@@ -11997,6 +12532,11 @@
      "from_date": "2026-05-13",
      "from_rate": 21.13234986,
      "pct": -1.03
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 20.98076941,
+     "pct": -1.74
     }
    },
    "country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
@@ -12108,6 +12648,11 @@
      "from_date": "2026-05-13",
      "from_rate": 16.49390344,
      "pct": 1.89
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 16.52612523,
+     "pct": 2.08
     }
    },
    "country": "Eswatini",
@@ -12219,6 +12764,11 @@
      "from_date": "2026-05-13",
      "from_rate": 32.32647893,
      "pct": -2.02
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 31.49963809,
+     "pct": -4.52
     }
    },
    "country": "Thailand",
@@ -12336,6 +12886,11 @@
      "from_date": "2026-05-13",
      "from_rate": 9.34087236,
      "pct": 1.05
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 9.2362219,
+     "pct": -0.08
     }
    },
    "country": "Tajikistan",
@@ -12447,6 +13002,11 @@
      "from_date": "2026-05-13",
      "from_rate": 3.49940313,
      "pct": -0.21
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 3.4959828,
+     "pct": -0.3
     }
    },
    "country": "Turkmenistan",
@@ -12558,6 +13118,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.88859632,
      "pct": -1.27
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2.89207345,
+     "pct": -1.15
     }
    },
    "country": "Tunisia",
@@ -12669,6 +13234,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.40832499,
      "pct": 0.96
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2.40590765,
+     "pct": 0.86
     }
    },
    "country": "Tonga",
@@ -12780,6 +13350,11 @@
      "from_date": "2026-05-13",
      "from_rate": 45.42250108,
      "pct": -4.84
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 42.96706134,
+     "pct": -9.99
     }
    },
    "country": "T\u00fcrkiye",
@@ -12891,6 +13466,11 @@
      "from_date": "2026-05-13",
      "from_rate": 6.78535347,
      "pct": 0.08
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 6.79667038,
+     "pct": 0.25
     }
    },
    "country": "Trinidad and Tobago",
@@ -13002,6 +13582,11 @@
      "from_date": "2026-05-13",
      "from_rate": 31.53406643,
      "pct": -2.09
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 31.32806723,
+     "pct": -2.73
     }
    },
    "country": "Taiwan",
@@ -13113,6 +13698,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2599.69329486,
      "pct": -1.84
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2469.64711498,
+     "pct": -6.75
     }
    },
    "country": "Tanzania",
@@ -13224,6 +13814,11 @@
      "from_date": "2026-05-13",
      "from_rate": 43.94684439,
      "pct": -2.02
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 42.24353717,
+     "pct": -5.82
     }
    },
    "country": "Ukraine",
@@ -13343,6 +13938,11 @@
      "from_date": "2026-05-13",
      "from_rate": 3756.70115463,
      "pct": 0.75
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 3620.28923037,
+     "pct": -2.91
     }
    },
    "country": "Uganda",
@@ -13454,6 +14054,11 @@
      "from_date": "2026-05-13",
      "from_rate": 39.77147773,
      "pct": -1.35
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 39.08421883,
+     "pct": -3.05
     }
    },
    "country": "Uruguay",
@@ -13565,6 +14170,11 @@
      "from_date": "2026-05-13",
      "from_rate": 12164.83164609,
      "pct": 2.0
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 12016.12263346,
+     "pct": 0.75
     }
    },
    "country": "Uzbekistan",
@@ -13676,6 +14286,11 @@
      "from_date": "2026-05-13",
      "from_rate": 505.35624717,
      "pct": -33.15
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 299.48295243,
+     "pct": -60.39
     }
    },
    "country": "Venezuela",
@@ -13787,6 +14402,11 @@
      "from_date": "2026-05-13",
      "from_rate": 26339.13565087,
      "pct": 0.76
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 26418.82435321,
+     "pct": 1.06
     }
    },
    "country": "Vietnam",
@@ -13904,6 +14524,11 @@
      "from_date": "2026-05-13",
      "from_rate": 118.06921999,
      "pct": -0.7
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 120.53866817,
+     "pct": 1.38
     }
    },
    "country": "Vanuatu",
@@ -14015,6 +14640,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.69319795,
      "pct": -0.4
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2.77550298,
+     "pct": 2.64
     }
    },
    "country": "Samoa",
@@ -14132,6 +14762,11 @@
      "from_date": "2026-05-13",
      "from_rate": 558.92675579,
      "pct": -1.62
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 558.46154974,
+     "pct": -1.7
     }
    },
    "country": null,
@@ -14243,6 +14878,11 @@
      "from_date": "2026-05-13",
      "from_rate": 2.70616961,
      "pct": -0.03
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 2.70715393,
+     "pct": 0.01
     }
    },
    "country": null,
@@ -14354,6 +14994,11 @@
      "from_date": "2026-05-13",
      "from_rate": 558.92675579,
      "pct": -1.62
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 558.46154974,
+     "pct": -1.7
     }
    },
    "country": null,
@@ -14465,6 +15110,11 @@
      "from_date": "2026-05-13",
      "from_rate": 238.61456702,
      "pct": 0.57
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 238.40369528,
+     "pct": 0.48
     }
    },
    "country": "Yemen",
@@ -14576,6 +15226,11 @@
      "from_date": "2026-05-13",
      "from_rate": 16.49390344,
      "pct": 1.89
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 16.52612523,
+     "pct": 2.08
     }
    },
    "country": "South Africa",
@@ -14687,6 +15342,11 @@
      "from_date": "2026-05-13",
      "from_rate": 18.99934826,
      "pct": 1.26
+    },
+    "ytd": {
+     "from_date": "2026-01-01",
+     "from_rate": 22.25132398,
+     "pct": 18.59
     }
    },
    "country": "Zambia",
@@ -14767,6 +15427,6 @@
    "window_change_pct": 27.82
   }
  },
- "generated": "2026-08-12T17:32:59+00:00",
+ "generated": "2026-08-12T18:00:45+00:00",
  "source": "history/daily.jsonl"
 }

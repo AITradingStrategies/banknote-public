@@ -173,6 +173,8 @@ def pick(entries, index, state, now_ts, now):
 
 def phrase_context(entry):
     ch = entry.get("changes") or {}
+    ytd = (ch.get("ytd") or {}).get("pct")
+    year = (ch.get("365d") or {}).get("pct")
     out = []
     week = (ch.get("7d") or {}).get("pct")
     if week is not None:
@@ -181,8 +183,12 @@ def phrase_context(entry):
     month = (ch.get("30d") or {}).get("pct")
     if month is not None and abs(month) >= 0.5:
         out.append(f"{'up' if month > 0 else 'down'} {abs(month):.1f}% over 30 days")
+    for pct, phrase in ((ytd, "this year"), (year, "over the past year")):
+        if pct is not None and abs(pct) >= 0.5:
+            out.append(f"{'stronger' if pct > 0 else 'weaker'} by {abs(pct):.1f}% {phrase}")
+            return out
     win = entry.get("window_change_pct")
-    if win is not None:
+    if win is not None and abs(win) >= 0.5:
         out.append(f"{'stronger' if win > 0 else 'weaker'} by {abs(win):.1f}% "
                    f"since {entry['window']['first']}")
     return out
@@ -225,9 +231,8 @@ def build_facts(entry, cid, name, fixing, news):
         "moved": bool(entry.get("signals")),
         "context": {
             "30d_pct": (ch.get("30d") or {}).get("pct"),
+            "ytd_pct": (ch.get("ytd") or {}).get("pct"),
             "365d_pct": (ch.get("365d") or {}).get("pct"),
-            "since_window_pct": entry.get("window_change_pct"),
-            "window_start": entry["window"]["first"],
         },
         "news": news,
     }
@@ -274,7 +279,7 @@ def allowed_numbers(facts):
             add(n)
     for v in facts["context"].values():
         add(v)
-    for part in re.findall(r"\d+", facts["context"]["window_start"] or ""):
+    for part in re.findall(r"\d+", facts["context"].get("window_start") or ""):
         add(part)
     for part in re.findall(r"\d+", facts.get("rate_day") or ""):
         add(part)
