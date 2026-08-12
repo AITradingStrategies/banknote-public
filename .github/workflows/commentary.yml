@@ -31,10 +31,13 @@ permissions:
 jobs:
   commentary:
     runs-on: ubuntu-latest
-    # Two rounds with a 28-minute sleep between them, plus setup. Anything
-    # past this is wedged, not slow - fail rather than hold a runner for the
-    # 6-hour default.
-    timeout-minutes: 45
+    # Worst case: round one waits out the 25-minute spacing floor (a delivery
+    # that arrives soon after the last post now waits rather than skipping),
+    # then the 28-minute sleep, then round two - about 55 minutes with setup.
+    # Round two never waits, because round one just posted. Anything past this
+    # is wedged, not slow - fail rather than hold a runner for the 6-hour
+    # default.
+    timeout-minutes: 70
     environment: x-posting
     env:
       BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json

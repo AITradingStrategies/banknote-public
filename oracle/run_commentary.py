@@ -4,6 +4,7 @@ import os
 import random
 import re
 import sys
+import time
 import unicodedata
 from datetime import datetime, timezone
 
@@ -668,10 +669,17 @@ def main():
 
     if args.post and not args.ccy:
         since = now_ts - int(state.get("last_post") or 0)
-        if since < MIN_POST_GAP_MIN * 60:
-            log(f"last post was {since // 60}m ago, under the {MIN_POST_GAP_MIN}m "
-                f"minimum - skipping this slot")
-            return 0
+        wait = min(MIN_POST_GAP_MIN * 60 - since, MIN_POST_GAP_MIN * 60)
+        if wait > 0:
+            log(f"last post was {max(since, 0) // 60}m ago, under the "
+                f"{MIN_POST_GAP_MIN}m minimum - waiting {wait // 60}m{wait % 60:02d}s")
+            time.sleep(wait)
+            now = datetime.now(timezone.utc)
+            now_ts = int(now.timestamp())
+            if now.strftime("%Y-%m-%d") != state.get("date"):
+                state = {"date": now.strftime("%Y-%m-%d"), "anchors_today": [],
+                         "recent": state.get("recent", {}),
+                         "last_post": state.get("last_post", 0)}
 
     index = country_index()
     if args.ccy:
