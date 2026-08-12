@@ -239,6 +239,43 @@ def phrase_signals(entry):
     return out
 
 
+def phrase_angles(entry):
+    ch = entry.get("changes") or {}
+    vol = entry.get("volatility") or {}
+    act = entry.get("activity") or {}
+    ext = entry.get("extremes") or {}
+    wins = entry.get("extreme_windows") or {}
+    out = []
+
+    q = (ch.get("90d") or {}).get("pct")
+    if q is not None and abs(q) >= 1.0:
+        out.append(f"{'stronger' if q > 0 else 'weaker'} by {abs(q):.1f}% over 90 days")
+
+    for label, key in (("30 days", "30d"), ("the past year", "365d")):
+        w = wins.get(key) or {}
+        rng = w.get("range_pct")
+        if rng is not None and rng >= 1.0:
+            out.append(f"has traded in a {rng:.1f}% band over {label}")
+        if w.get("weakest"):
+            out.append(f"at its weakest point of {label}")
+        elif w.get("strongest"):
+            out.append(f"at its strongest point of {label}")
+
+    sig = vol.get("sigma_pct")
+    if sig:
+        out.append(f"moves {sig:.2f}% on a typical day")
+
+    frac = act.get("active_frac")
+    if frac is not None and act.get("is_active"):
+        out.append(f"the rate changes on {frac * 100:.0f}% of days")
+
+    for phrase, key in (("weaker", "days_since_weaker"), ("stronger", "days_since_stronger")):
+        n = ext.get(key)
+        if isinstance(n, int) and n >= 20:
+            out.append(f"has not been {phrase} in {n} days")
+    return out
+
+
 def build_facts(entry, cid, name, fixing, news):
     ch = entry.get("changes") or {}
     return {
@@ -250,6 +287,7 @@ def build_facts(entry, cid, name, fixing, news):
         "rate": fmt_rate(fixing["rate"]) if fixing else None,
         "rate_day": fixing["day"] if fixing else None,
         "claims": phrase_signals(entry) or phrase_context(entry),
+        "angles": phrase_angles(entry),
         "moved": bool(entry.get("signals")),
         "context": {
             "30d_pct": (ch.get("30d") or {}).get("pct"),
@@ -296,7 +334,7 @@ def allowed_numbers(facts):
 
     if facts.get("rate"):
         add(facts["rate"].replace(",", ""))
-    for c in facts["claims"]:
+    for c in list(facts["claims"]) + list(facts.get("angles") or []):
         for n in numbers_in(c):
             add(n)
     for v in facts["context"].values():
@@ -375,19 +413,33 @@ for countries no financial press reports on.
 Voice: a news anchor reading a bulletin. Third person. Declarative. Lead with \
 what happened, then the context that makes it mean something, then stop.
 
-USE THE HEADLINES. You are given up to six recent stories from the country. \
-Where one bears on the economy, politics, trade, public finances or prices, \
-work it into the post - what is going on in the country, beside what the rate \
-is doing. Skip the ones that do not: crime, sport, accidents, human interest. \
-A currency report is not a news roundup, and a rate sitting next to an \
-unrelated tragedy reads badly. Name the headline you used in cited_headline. \
-If none of them is relevant, write the rate on its own; that is a normal day.
+YOU ARE GIVEN MORE MATERIAL THAN FITS. `claims` is what stands out today;
+`angles` is everything else true about this currency - the band it has held,
+how much it moves on a typical day, how long since it was last this weak, how
+often it moves at all. Pick the two or three that make the most interesting
+sentence about THIS currency today and leave the rest. Do not recite the list.
 
-Do not file the same post every time. A reader who follows this account sees \
-several a day, and a run of interchangeable sentences is the failure mode to \
-avoid. Vary where you start: some days the level, some days the move, some \
-days what the country is dealing with. Rates and figures are the material, \
-not the structure.
+DO NOT FILE THE SAME POST TWICE. A reader sees several of these a day, and a
+run of interchangeable sentences is the one failure that matters here - it is
+the whole reason a writer does this rather than a form letter. Vary what you
+open on and how you build the sentence. Some days the level is the story, some
+days the streak, some days how quiet it has been.
+
+HEADLINES, IF ANY EARN IT. You may be given recent stories from the country.
+Use one only where it bears on the currency itself - the economy, prices,
+trade, public finances, monetary or fiscal policy. Everything else is out:
+crime, sport, accidents, human interest. Most days none of them will qualify
+and the rate stands on its own; that is normal and preferable to a forced
+connection. Name the one you used in cited_headline.
+
+These show the range wanted. Do not copy their facts - they are not about any
+currency you will be given:
+  "The kwacha held at 27.4 to the dollar, a fifth straight session inside a
+   band it has kept all month."
+  "Three months of steady decline have left the som 4.1% weaker, though the
+   past week has been its quietest since March."
+  "At 611 to the dollar the ariary is where it started the year, having moved
+   on only a third of trading days since."
 
 Absolute rules:
 - Every number you write must appear in the facts you are given. You may round \
