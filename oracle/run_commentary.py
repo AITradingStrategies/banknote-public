@@ -239,6 +239,73 @@ def phrase_signals(entry):
     return out
 
 
+def ordinal(n):
+    if 10 <= n % 100 <= 20:
+        return f"{n}th"
+    return f"{n}{ {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th') }".replace(" ", "")
+
+
+def phrase_cross(entry):
+    cross = entry.get("cross") or {}
+    ch = entry.get("changes") or {}
+    out = []
+    for key, window, label in (("change_30d", "30d", "this month"),
+                               ("change_ytd", "ytd", "this year"),
+                               ("change_365d", "365d", "over the past year")):
+        c = cross.get(key)
+        if not c:
+            continue
+        r, n = c["rank"], c["of"]
+        if r <= 5:
+            out.append(f"the {ordinal(r)} strongest of {n} currencies {label}")
+        elif r > n - 5:
+            out.append(f"the {ordinal(n - r + 1)} weakest of {n} currencies {label}")
+        g = cross.get(f"gainers_{window}")
+        pct = (ch.get(window) or {}).get("pct")
+        if g and pct and pct > 0 and g["gained"] <= 20:
+            out.append(f"one of only {g['gained']} of {g['of']} currencies to "
+                       f"strengthen against the dollar {label}")
+
+    st = cross.get("steadiness")
+    if st and st["rank"] <= 8:
+        out.append(f"the {ordinal(st['rank'])} steadiest of {st['of']} currencies tracked")
+    elif st and st["rank"] > st["of"] - 8:
+        out.append(f"the {ordinal(st['of'] - st['rank'] + 1)} most volatile of "
+                   f"{st['of']} currencies tracked")
+    return out
+
+
+def phrase_history(entry):
+    out = []
+    dist = entry.get("distance") or {}
+    off = dist.get("off_weakest_pct")
+    if off is not None and off >= 2.0:
+        out.append(f"{off:.1f}% above its weakest point of the past year")
+    elif off is not None and off <= 0.5:
+        out.append("sitting at its weakest point of the past year")
+    above = dist.get("above_strongest_pct")
+    if above is not None and above >= 5.0:
+        out.append(f"{above:.1f}% below its strongest point of the past year")
+
+    reg = entry.get("regime") or {}
+    ratio = reg.get("ratio")
+    if ratio is not None and ratio >= 1.5:
+        out.append(f"moving {ratio:.1f} times as much per day as it has over the past year")
+    elif ratio is not None and ratio <= 0.6:
+        out.append("moving less each day than it has over the past year")
+
+    q = entry.get("quiet_run") or {}
+    if q.get("days"):
+        out.append(f"{q['days']} days running without a move of {q['band_pct']}%")
+
+    ec = entry.get("echo") or {}
+    for key, label in (("year_ago", "a year ago"), ("jan1", "at the start of the year")):
+        v = ec.get(key)
+        if v:
+            out.append(f"{fmt_rate(v['rate'])}/USD {label}")
+    return out
+
+
 def phrase_angles(entry):
     ch = entry.get("changes") or {}
     vol = entry.get("volatility") or {}
@@ -273,7 +340,7 @@ def phrase_angles(entry):
         n = ext.get(key)
         if isinstance(n, int) and n >= 20:
             out.append(f"has not been {phrase} in {n} days")
-    return out
+    return out + phrase_cross(entry) + phrase_history(entry)
 
 
 def build_facts(entry, cid, name, fixing, news):
