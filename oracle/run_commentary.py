@@ -4,6 +4,7 @@ import os
 import random
 import re
 import sys
+import unicodedata
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -35,7 +36,34 @@ MAJORS = {
     "SGD", "SEK", "NOK", "DKK", "KRW", "TWD", "ILS", "PLN", "CZK", "HUF",
 }
 
-LANGUAGES = {"ARS": "Spanish", "TRY": "Turkish"}
+_BY_LANGUAGE = {
+    "Arabic": ["AED", "BHD", "DZD", "EGP", "IQD", "JOD", "KWD", "LBP", "LYD",
+               "MAD", "MRU", "OMR", "QAR", "SAR", "SDG", "TND", "YER"],
+    "Spanish": ["ARS", "BOB", "CLP", "COP", "CRC", "DOP", "GTQ", "HNL", "MXN",
+                "NIO", "PAB", "PEN", "PYG", "UYU", "VES"],
+    "French": ["BIF", "CDF", "DJF", "GNF", "HTG", "KMF", "MUR", "XAF", "XOF"],
+    "Portuguese": ["AOA", "BRL", "CVE", "MZN", "STN"],
+    "English": ["BBD", "BSD", "BWP", "BZD", "FJD", "GHS", "GMD", "GYD", "JMD",
+                "LRD", "LSL", "MWK", "NAD", "NGN", "PGK", "SBD", "SCR", "SLL",
+                "SSP", "SZL", "TTD", "UGX", "VUV", "XCD", "ZAR", "ZMW"],
+    "Swahili": ["KES", "TZS"],
+    "Malay": ["BND", "MYR"],
+    "Romanian": ["MDL", "RON"],
+    "Russian": ["BYN", "RUB"],
+    "Albanian": ["ALL"], "Amharic": ["ETB"], "Armenian": ["AMD"],
+    "Azerbaijani": ["AZN"], "Bengali": ["BDT"], "Bosnian": ["BAM"],
+    "Burmese": ["MMK"], "Dari": ["AFN"], "Dhivehi": ["MVR"], "Dutch": ["SRD"],
+    "Filipino": ["PHP"], "Georgian": ["GEL"], "Hindi": ["INR"],
+    "Icelandic": ["ISK"], "Indonesian": ["IDR"], "Kazakh": ["KZT"],
+    "Khmer": ["KHR"], "Kinyarwanda": ["RWF"], "Kyrgyz": ["KGS"],
+    "Lao": ["LAK"], "Macedonian": ["MKD"], "Malagasy": ["MGA"],
+    "Mongolian": ["MNT"], "Nepali": ["NPR"], "Samoan": ["WST"],
+    "Serbian": ["RSD"], "Sinhala": ["LKR"], "Somali": ["SOS"],
+    "Tajik": ["TJS"], "Thai": ["THB"], "Tigrinya": ["ERN"], "Tongan": ["TOP"],
+    "Turkish": ["TRY"], "Turkmen": ["TMT"], "Ukrainian": ["UAH"],
+    "Urdu": ["PKR"], "Uzbek": ["UZS"], "Vietnamese": ["VND"],
+}
+LANGUAGES = {c: lang for lang, ccys in _BY_LANGUAGE.items() for c in ccys}
 
 SIGNAL_WEIGHT = {"level": 3, "divergence": 2, "move": 2, "streak": 1}
 SCOPE_BONUS = {"window": 2, "365d": 1}
@@ -365,12 +393,28 @@ def build_facts(entry, cid, name, fixing, news):
     }
 
 
-NUM = re.compile(r"\d+(?:[.,]\d+)*")
+NUM = re.compile(r"[0-9]+(?:[.,][0-9]+)*")
+
+SEPARATORS = {0x066B: ".", 0x066C: ",", 0x2019: "", 0x00A0: "", 0x202F: "",
+              0x2009: "", 0x2007: ""}
+
+
+def _ascii_digits(text):
+    out = []
+    for ch in text.translate(SEPARATORS):
+        if not ch.isascii() and ch.isdigit():
+            try:
+                out.append(str(unicodedata.digit(ch)))
+                continue
+            except (TypeError, ValueError):
+                pass
+        out.append(ch)
+    return "".join(out)
 
 
 def numbers_in(text):
     out = []
-    for tok in NUM.findall(text):
+    for tok in NUM.findall(_ascii_digits(text)):
         t = tok
         if "," in t and "." in t:
             t = t.replace(".", "").replace(",", ".") if t.rfind(",") > t.rfind(".") \
@@ -524,7 +568,13 @@ changed needs no explanation and no remark about the absence of one.
 - No forecasts. No advice. No opinion about whether this is good or bad.
 - No first person, no emoji, no questions, no addressing the reader, no \
 hashtags or cashtags beyond the single pair supplied to you.
-- Write in the requested language, for a reader in that country.
+- Write in the requested language, for a reader in that country - not a \
+translation of an English post, but the sentence a wire desk in that country \
+would file. There is no English version; this is the post.
+- Write every numeral with the digits 0-9, whatever the script of the \
+language. Group and punctuate them however that language does.
+- The country hashtag and the cashtag are supplied in Latin script. Leave \
+both exactly as given.
 
 Under 260 characters. Put the supplied hashtag and the cashtag at the end."""
 
@@ -637,6 +687,9 @@ def main():
             return 0
 
     ccy = entry["ccy"]
+    if ccy not in index:
+        log(f"{ccy} is shared by several countries - no single country to write about")
+        return 1
     cid, name = index[ccy]
     news = recent_news(cid, now_ts)
     facts = build_facts(entry, cid, name, latest_fixing(ccy), news)
