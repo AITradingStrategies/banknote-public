@@ -252,14 +252,14 @@ def phrase_signals(entry):
             when = ("the largest daily move in the tracked window"
                     if s["largest_in_window"]
                     else f"its largest daily move in {s['days_since_larger']} days")
-            out.append(f"{d} {s['pct']:.2f}% at the latest fixing, {when}")
+            out.append(f"{d} {s['pct']:.2f}% day on day, {when}")
         elif s["type"] == "level":
             scope = s.get("scope")
             when = (f"since tracking began in {s['since']}" if scope == "window"
                     else f"in {scope.replace('d', ' days')}")
             out.append(f"its {s['extreme']} level {when}")
         elif s["type"] == "streak":
-            out.append(f"{s['days']} consecutive fixings {s['direction']}")
+            out.append(f"{s['days']} consecutive days {s['direction']}")
         elif s["type"] == "divergence":
             out.append(
                 f"the {s['sources']} independent sources behind the fixing disagree by "
