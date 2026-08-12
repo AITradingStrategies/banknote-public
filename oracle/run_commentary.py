@@ -222,6 +222,7 @@ def build_facts(entry, cid, name, fixing, news):
         "rate": fmt_rate(fixing["rate"]) if fixing else None,
         "rate_day": fixing["day"] if fixing else None,
         "claims": phrase_signals(entry) or phrase_context(entry),
+        "moved": bool(entry.get("signals")),
         "context": {
             "30d_pct": (ch.get("30d") or {}).get("pct"),
             "365d_pct": (ch.get("365d") or {}).get("pct"),
@@ -293,6 +294,13 @@ def traceable(value, allowed):
     return False
 
 
+NO_REPORTING = re.compile(
+    r"\b(no|nothing|without any|there is no)\b[^.]{0,40}\b"
+    r"(public )?(report|reporting|reports|news|coverage|explanation|"
+    r"informe|noticia|cobertura)\w*"
+    r"|\b(haber|rapor|a[cç][ıi]klama)\w*[^.]{0,40}\b"
+    r"(yok|bulunmuyor|bulunmamaktad[ıi]r)", re.I)
+
 CAUSAL = re.compile(r"\b(because|due to|owing to|after|amid|following|driven by|"
                     r"on the back of|prompted by|debido a|tras|por|nedeniyle|sonras)\b")
 
@@ -321,6 +329,9 @@ def validate(drafted, facts):
             problems.append(f"banned phrase: {word.strip()!r}")
 
     supplied = {h["headline"] for h in facts["news"]}
+    if facts["news"] and ((drafted or {}).get("claims_no_reporting")
+                          or NO_REPORTING.search(low)):
+        problems.append("claims no reporting exists while headlines were supplied")
     if CAUSAL.search(low):
         if not cited:
             problems.append("asserts a cause without citing a supplied headline")
@@ -341,8 +352,12 @@ Absolute rules:
 - Every number you write must appear in the facts you are given. You may round \
 (0.404 -> 0.4). You may never compute, estimate, or recall a figure.
 - You may state WHY a rate moved only by attributing it to a supplied headline. \
-With no headlines, say plainly that no public reporting explains the move. \
-Never supply a cause from your own knowledge of the country.
+If the headlines you were given do not explain it, say nothing about the cause \
+at all. Do NOT write that no reporting exists whenever any headline was \
+supplied - that is a claim about the world, and it is false. Never supply a \
+cause from your own knowledge of the country.
+- Only discuss a cause when there is a move to explain. A rate that is little \
+changed needs no explanation and no remark about the absence of one.
 - No forecasts. No advice. No opinion about whether this is good or bad.
 - No first person, no emoji, no questions, no addressing the reader, no \
 hashtags or cashtags beyond the single pair supplied to you.
@@ -371,8 +386,16 @@ def compose_with_model(facts):
                 "type": ["string", "null"],
                 "description": "the supplied headline attributed, or null if none",
             },
+            "claims_no_reporting": {
+                "type": "boolean",
+                "description": "true if the post says, in any words or any "
+                               "language, that no reporting/news explains the "
+                               "move. Answer for what the post means, not for "
+                               "which words it uses.",
+            },
         },
-        "required": ["post", "back_translation", "cited_headline"],
+        "required": ["post", "back_translation", "cited_headline",
+                     "claims_no_reporting"],
         "additionalProperties": False,
     }
     try:
@@ -400,6 +423,10 @@ def compose_with_model(facts):
         return None
 
 
+def entry_moved(facts):
+    return bool(facts.get("moved"))
+
+
 def compose_from_template(facts):
     claims = facts["claims"]
     lead = claims[0] if claims else "moved at the latest fixing"
@@ -408,7 +435,7 @@ def compose_from_template(facts):
         parts.append(f"{facts['rate']}/USD.")
     if len(claims) > 1:
         parts.append(claims[1].capitalize() + ".")
-    if not facts["news"]:
+    if not facts["news"] and entry_moved(facts):
         parts.append("No public reporting explains the move.")
     body = " ".join(parts)
     tail = f"\n\n{facts['hashtag']} ${facts['ccy']}" if facts.get("hashtag") \
