@@ -1,0 +1,103 @@
+# Daily currency digest posted to @banknotelolai.
+#
+# Generated file - the Python it runs is published from elsewhere and this
+# workflow is the only part maintained here.
+#
+# Credentials come from the `x-posting` environment. Without them the job
+# fails rather than posting.
+name: banknote-ai-broadcast
+
+on:
+  schedule:
+    # 16:20 UTC daily, just after the 16:05 fixing slot.
+    - cron: "20 16 * * *"
+    - cron: "50 16 * * *"
+    - cron: "20 18 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Compose and print the post WITHOUT publishing it"
+        type: boolean
+        default: true
+      force:
+        description: "Post even if a mover trips the 10% review gate, or if today already posted"
+        type: boolean
+        default: false
+      say:
+        description: "Post this text verbatim instead of a digest. Use \\n for a line break. (Empty = normal digest)"
+        type: string
+        default: ""
+
+concurrency:
+  group: banknote-ai-broadcast
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  broadcast:
+    runs-on: ubuntu-latest
+    environment: x-posting
+    env:
+      BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Daily currency digest
+        working-directory: oracle
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          FORCE: ${{ inputs.force }}
+          SAY: ${{ inputs.say }}
+        run: |
+          POST="--post"
+          if [ "${DRY_RUN}" = "true" ]; then POST=""; fi
+          EXTRA=""
+          if [ "${FORCE}" = "true" ]; then EXTRA="--force"; fi
+          set +e
+          if [ -n "${SAY}" ]; then
+            echo "running: python run_broadcast.py --say <text> $POST"
+            python run_broadcast.py --say "${SAY}" $POST
+          else
+            echo "running: python run_broadcast.py $POST $EXTRA"
+            python run_broadcast.py $POST $EXTRA
+          fi
+          code=$?
+          set -e
+          if [ $code -eq 2 ]; then
+            echo "::error::review gate tripped — a mover looks implausible. Check the numbers, then re-run with force=true if they are real."
+            exit 1
+          fi
+          exit $code
+
+      - name: Commit the rate snapshot
+        if: always()
+        run: |
+          git config user.name  "banknote-poster"
+          git config user.email "poster@banknote.lol"
+          git add oracle/state/broadcast_state.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no snapshot change this run"
+            exit 0
+          fi
+          git commit -m "broadcast: rate snapshot ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — rebasing on latest origin/main…"
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; echo "rebase conflict — aborting"; exit 1; }
+          done
+          echo "could not push after 5 attempts"
+          exit 1

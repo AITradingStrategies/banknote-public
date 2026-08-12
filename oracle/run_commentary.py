@@ -1,0 +1,516 @@
+import argparse
+import json
+import os
+import random
+import re
+import sys
+from datetime import datetime, timezone
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _util import write_json_atomic
+from run_broadcast import (
+    COUNTRIES, TWEET_LIMIT, fmt_rate, hashtag, load_json, log, post_to_x,
+)
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.normpath(os.path.join(HERE, ".."))
+ANALYSIS = os.path.join(HERE, "state", "analysis.json")
+ARCHIVE = os.path.join(HERE, "archive")
+NEWS_DIR = (os.environ.get("BANKNOTE_NEWS_DIR")
+            or os.path.join(REPO, "web", "public", "news"))
+STATE_FILE = os.path.join(HERE, "state", "commentary_state.json")
+
+MODEL = "claude-sonnet-5"
+SLOT_MINUTES = 30
+MIN_POST_GAP_MIN = 25
+REPEAT_COOLDOWN_DAYS = 2
+NEWS_MAX_AGE_H = 72
+NEWS_FRESH_H = 24
+NEWS_MAX_ITEMS = 6
+
+ANCHORS = {"NGN": 6, "ARS": 10, "TRY": 13, "PHP": 17, "PKR": 20}
+
+MAJORS = {
+    "USD", "EUR", "GBP", "JPY", "CHF", "CAD", "AUD", "NZD", "CNY", "HKD",
+    "SGD", "SEK", "NOK", "DKK", "KRW", "TWD", "ILS", "PLN", "CZK", "HUF",
+}
+
+LANGUAGES = {"ARS": "Spanish", "TRY": "Turkish"}
+
+SIGNAL_WEIGHT = {"level": 3, "divergence": 2, "move": 2, "streak": 1}
+SCOPE_BONUS = {"window": 2, "365d": 1}
+
+BANNED = [
+    "testnet",
+    "buy ", "sell ", "invest", "should ", "we expect", "forecast", "prediction",
+    "guarantee", "will rise", "will fall", "opportunity",
+]
+
+
+def country_index():
+    d = load_json(COUNTRIES, {})
+    ccys, display = d.get("ccys") or [], d.get("display") or []
+    owners = {}
+    for i, (ccy, name) in enumerate(zip(ccys, display)):
+        owners.setdefault(ccy, []).append((i, name))
+    return {c: v[0] for c, v in owners.items() if len(v) == 1}
+
+
+def latest_fixing(ccy):
+    if not os.path.isdir(ARCHIVE):
+        return None
+    for day in sorted(os.listdir(ARCHIVE), reverse=True):
+        path = os.path.join(ARCHIVE, day, "fixings.json")
+        if not os.path.exists(path):
+            continue
+        fx = load_json(path, {})
+        rates = fx.get("rates")
+        if isinstance(rates, list):
+            rates = dict(zip(fx.get("ccys") or [], rates))
+        if not isinstance(rates, dict) or ccy not in rates:
+            continue
+        try:
+            return {"rate": float(rates[ccy]) / 1e18, "day": fx.get("day") or day}
+        except (TypeError, ValueError):
+            continue
+    return None
+
+
+def recent_news(country_id, now_ts):
+    path = os.path.join(NEWS_DIR, f"{country_id}.json")
+    d = load_json(path, {})
+    out = []
+    for item in (d.get("items") or []):
+        ts = item.get("ts")
+        if ts and (now_ts - ts) > NEWS_MAX_AGE_H * 3600:
+            continue
+        title = (item.get("t") or "").strip()
+        if title:
+            out.append({"headline": title, "source": item.get("d") or item.get("dom") or ""})
+        if len(out) >= NEWS_MAX_ITEMS:
+            break
+    return out
+
+
+def score(entry):
+    total = 0
+    for s in entry.get("signals") or []:
+        total += SIGNAL_WEIGHT.get(s["type"], 1)
+        if s["type"] == "level":
+            total += SCOPE_BONUS.get(s.get("scope"), 0)
+    if entry["ccy"] in ANCHORS:
+        total += 1
+    return total
+
+
+def fresh_news_ccys(index, now_ts):
+    out = set()
+    for ccy, (cid, _) in index.items():
+        d = load_json(os.path.join(NEWS_DIR, f"{cid}.json"), {})
+        for item in (d.get("items") or [])[:NEWS_MAX_ITEMS]:
+            ts = item.get("ts")
+            if ts and (now_ts - ts) <= NEWS_FRESH_H * 3600:
+                out.add(ccy)
+                break
+    return out
+
+
+def in_scope(entry, index):
+    ccy = entry.get("ccy")
+    if not ccy or ccy not in index or entry.get("error"):
+        return False
+    return not entry.get("stateless") and ccy not in MAJORS
+
+
+def eligible(entry, index, state, now_ts):
+    if not in_scope(entry, index):
+        return False
+    last = (state.get("recent") or {}).get(entry["ccy"], 0)
+    return (now_ts - last) > REPEAT_COOLDOWN_DAYS * 86400
+
+
+def movement_rank(entry):
+    vol = (entry.get("volatility") or {}).get("sigma_pct") or 0.1
+    ch = entry.get("changes") or {}
+    best = 0.0
+    for key, scale in (("7d", 2.6), ("30d", 5.5)):
+        pct = (ch.get(key) or {}).get("pct")
+        if pct:
+            best = max(best, abs(pct) / (vol * scale))
+    return best
+
+
+def pick(entries, index, state, now_ts, now):
+    posted_today = set(state.get("anchors_today") or [])
+    live = {c: e for c, e in entries.items() if eligible(e, index, state, now_ts)}
+
+    due = [c for c, hour in ANCHORS.items()
+           if c not in posted_today and now.hour >= hour and c in entries
+           and c in index and not entries[c].get("error")]
+    if due:
+        due.sort(key=lambda c: ANCHORS[c])
+        return "anchor", entries[due[0]]
+
+    movers = sorted(live.values(), key=movement_rank, reverse=True)
+    if movers and movement_rank(movers[0]) >= 1.0:
+        return "movement", movers[0]
+
+    fresh = sorted(fresh_news_ccys(index, now_ts) & set(live))
+    if fresh:
+        return "news", live[fresh[0]]
+
+    if live:
+        seed = f"{now:%Y-%m-%d}-{now.hour}-{now.minute // SLOT_MINUTES}"
+        return "random", live[random.Random(seed).choice(sorted(live))]
+
+    seen = state.get("recent") or {}
+    stale = sorted((c for c, e in entries.items() if in_scope(e, index)),
+                   key=lambda c: seen.get(c, 0))
+    if not stale:
+        return None, None
+    return "repeat", entries[stale[0]]
+
+
+def phrase_context(entry):
+    ch = entry.get("changes") or {}
+    out = []
+    week = (ch.get("7d") or {}).get("pct")
+    if week is not None:
+        out.append("little changed over the past week" if abs(week) < 0.5
+                   else f"{'stronger' if week > 0 else 'weaker'} by {abs(week):.1f}% over the past week")
+    month = (ch.get("30d") or {}).get("pct")
+    if month is not None and abs(month) >= 0.5:
+        out.append(f"{'up' if month > 0 else 'down'} {abs(month):.1f}% over 30 days")
+    win = entry.get("window_change_pct")
+    if win is not None:
+        out.append(f"{'stronger' if win > 0 else 'weaker'} by {abs(win):.1f}% "
+                   f"since {entry['window']['first']}")
+    return out
+
+
+def phrase_signals(entry):
+    out = []
+    for s in entry.get("signals") or []:
+        if s["type"] == "move":
+            d = s.get("direction") or "moved"
+            when = ("the largest daily move in the tracked window"
+                    if s["largest_in_window"]
+                    else f"its largest daily move in {s['days_since_larger']} days")
+            out.append(f"{d} {s['pct']:.2f}% at the latest fixing, {when}")
+        elif s["type"] == "level":
+            scope = s.get("scope")
+            when = (f"since tracking began in {s['since']}" if scope == "window"
+                    else f"in {scope.replace('d', ' days')}")
+            out.append(f"its {s['extreme']} level {when}")
+        elif s["type"] == "streak":
+            out.append(f"{s['days']} consecutive fixings {s['direction']}")
+        elif s["type"] == "divergence":
+            out.append(
+                f"the {s['sources']} independent sources behind the fixing disagree by "
+                f"{s['spread_pct']:.2f}%, against a typical {s['typical_pct']:.2f}% "
+                f"for this currency")
+    return out
+
+
+def build_facts(entry, cid, name, fixing, news):
+    ch = entry.get("changes") or {}
+    return {
+        "ccy": entry["ccy"],
+        "country": name,
+        "hashtag": hashtag(name),
+        "language": LANGUAGES.get(entry["ccy"], "English"),
+        "rate": fmt_rate(fixing["rate"]) if fixing else None,
+        "rate_day": fixing["day"] if fixing else None,
+        "claims": phrase_signals(entry) or phrase_context(entry),
+        "context": {
+            "30d_pct": (ch.get("30d") or {}).get("pct"),
+            "365d_pct": (ch.get("365d") or {}).get("pct"),
+            "since_window_pct": entry.get("window_change_pct"),
+            "window_start": entry["window"]["first"],
+        },
+        "news": news,
+    }
+
+
+NUM = re.compile(r"\d+(?:[.,]\d+)*")
+
+
+def numbers_in(text):
+    out = []
+    for tok in NUM.findall(text):
+        t = tok
+        if "," in t and "." in t:
+            t = t.replace(".", "").replace(",", ".") if t.rfind(",") > t.rfind(".") \
+                else t.replace(",", "")
+        elif "," in t:
+            t = t.replace(",", ".") if len(t.split(",")[-1]) != 3 else t.replace(",", "")
+        else:
+            parts = t.split(".")
+            if len(parts) > 2 or (len(parts) == 2 and len(parts[-1]) == 3 and len(parts[0]) <= 3
+                                  and parts[0] != "0"):
+                t = t.replace(".", "")
+        try:
+            out.append(float(t))
+        except ValueError:
+            continue
+    return out
+
+
+def allowed_numbers(facts):
+    vals = set()
+
+    def add(v):
+        try:
+            f = float(v)
+        except (TypeError, ValueError):
+            return
+        vals.add(abs(f))
+
+    if facts.get("rate"):
+        add(facts["rate"].replace(",", ""))
+    for c in facts["claims"]:
+        for n in numbers_in(c):
+            add(n)
+    for v in facts["context"].values():
+        add(v)
+    for part in re.findall(r"\d+", facts["context"]["window_start"] or ""):
+        add(part)
+    for part in re.findall(r"\d+", facts.get("rate_day") or ""):
+        add(part)
+    return vals
+
+
+def traceable(value, allowed):
+    v = abs(value)
+    for a in allowed:
+        if a == v:
+            return True
+        for d in range(0, 5):
+            if round(a, d) == v:
+                return True
+        if a > 0 and abs(v - a) / a < 0.005:
+            return True
+    return False
+
+
+CAUSAL = re.compile(r"\b(because|due to|owing to|after|amid|following|driven by|"
+                    r"on the back of|prompted by|debido a|tras|por|nedeniyle|sonras)\b")
+
+
+def validate(drafted, facts):
+    text = (drafted or {}).get("post") or ""
+    cited = (drafted or {}).get("cited_headline")
+    problems = []
+    if not text or not text.strip():
+        return ["empty"]
+    if len(text) > TWEET_LIMIT:
+        problems.append(f"{len(text)} chars over the {TWEET_LIMIT} limit")
+    if text.count("$") > 1:
+        problems.append("more than one cashtag (X rejects it)")
+    if text.count("#") > 1:
+        problems.append("more than one hashtag")
+
+    allowed = allowed_numbers(facts)
+    for n in numbers_in(text):
+        if not traceable(n, allowed):
+            problems.append(f"number {n} is not traceable to the supplied facts")
+
+    low = text.lower()
+    for word in BANNED:
+        if word in low:
+            problems.append(f"banned phrase: {word.strip()!r}")
+
+    supplied = {h["headline"] for h in facts["news"]}
+    if CAUSAL.search(low):
+        if not cited:
+            problems.append("asserts a cause without citing a supplied headline")
+        elif cited not in supplied:
+            problems.append(f"cites a headline we did not supply: {cited[:60]!r}")
+    elif cited and cited not in supplied:
+        problems.append(f"cites a headline we did not supply: {cited[:60]!r}")
+    return problems
+
+
+SYSTEM = """You write for a wire service that covers exchange rates, including \
+for countries no financial press reports on.
+
+Voice: a news anchor reading a bulletin. Third person. Declarative. Lead with \
+what happened, then the context that makes it mean something, then stop.
+
+Absolute rules:
+- Every number you write must appear in the facts you are given. You may round \
+(0.404 -> 0.4). You may never compute, estimate, or recall a figure.
+- You may state WHY a rate moved only by attributing it to a supplied headline. \
+With no headlines, say plainly that no public reporting explains the move. \
+Never supply a cause from your own knowledge of the country.
+- No forecasts. No advice. No opinion about whether this is good or bad.
+- No first person, no emoji, no questions, no addressing the reader, no \
+hashtags or cashtags beyond the single pair supplied to you.
+- Write in the requested language, for a reader in that country.
+
+Under 260 characters. Put the supplied hashtag and the cashtag at the end."""
+
+
+def compose_with_model(facts):
+    try:
+        import anthropic
+    except ImportError:
+        log("anthropic SDK not installed - falling back to the template")
+        return None
+
+    schema = {
+        "type": "object",
+        "properties": {
+            "post": {"type": "string", "description": "the post, in the requested language"},
+            "back_translation": {
+                "type": "string",
+                "description": "literal English translation of the post, for the log. "
+                               "If the post is already English, repeat it.",
+            },
+            "cited_headline": {
+                "type": ["string", "null"],
+                "description": "the supplied headline attributed, or null if none",
+            },
+        },
+        "required": ["post", "back_translation", "cited_headline"],
+        "additionalProperties": False,
+    }
+    try:
+        client = anthropic.Anthropic()
+        resp = client.messages.create(
+            model=MODEL,
+            max_tokens=2000,
+            system=SYSTEM,
+            output_config={"effort": "low",
+                           "format": {"type": "json_schema", "schema": schema}},
+            messages=[{"role": "user", "content": json.dumps(facts, ensure_ascii=False)}],
+        )
+    except Exception as e:
+        log(f"model call failed ({type(e).__name__}: {e}) - falling back to the template")
+        return None
+
+    if resp.stop_reason == "refusal":
+        log("model declined this request - falling back to the template")
+        return None
+    text = next((b.text for b in resp.content if b.type == "text"), "")
+    try:
+        return json.loads(text)
+    except ValueError:
+        log("model output was not the requested JSON - falling back to the template")
+        return None
+
+
+def compose_from_template(facts):
+    claims = facts["claims"]
+    lead = claims[0] if claims else "moved at the latest fixing"
+    parts = [f"{facts['country']}'s currency: {lead}."]
+    if facts.get("rate"):
+        parts.append(f"{facts['rate']}/USD.")
+    if len(claims) > 1:
+        parts.append(claims[1].capitalize() + ".")
+    if not facts["news"]:
+        parts.append("No public reporting explains the move.")
+    body = " ".join(parts)
+    tail = f"\n\n{facts['hashtag']} ${facts['ccy']}" if facts.get("hashtag") \
+        else f"\n\n${facts['ccy']}"
+    while len(body) + len(tail) > TWEET_LIMIT and len(parts) > 1:
+        parts.pop()
+        body = " ".join(parts)
+    return {"post": body + tail, "back_translation": body + tail, "cited_headline": None}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--post", action="store_true", help="publish to X")
+    ap.add_argument("--commit", action="store_true", help="save state without posting")
+    ap.add_argument("--ccy", help="force a currency instead of picking one")
+    ap.add_argument("--template", action="store_true", help="skip the model entirely")
+    args = ap.parse_args()
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    now = datetime.now(timezone.utc)
+    now_ts = int(now.timestamp())
+
+    payload = load_json(ANALYSIS, {})
+    entries = (payload.get("currencies") or {})
+    if not entries:
+        log("no analysis - run run_analysis.py --all first")
+        return 1
+
+    state = load_json(STATE_FILE, {})
+    if state.get("date") != today:
+        state = {"date": today, "anchors_today": [], "recent": state.get("recent", {}),
+                 "last_post": state.get("last_post", 0)}
+
+    if args.post and not args.ccy:
+        since = now_ts - int(state.get("last_post") or 0)
+        if since < MIN_POST_GAP_MIN * 60:
+            log(f"last post was {since // 60}m ago, under the {MIN_POST_GAP_MIN}m "
+                f"minimum - skipping this slot")
+            return 0
+
+    index = country_index()
+    if args.ccy:
+        entry = entries.get(args.ccy.upper())
+        kind = "forced"
+        if not entry:
+            log(f"{args.ccy} is not in the analysis")
+            return 1
+    else:
+        kind, entry = pick(entries, index, state, now_ts, now)
+        if not entry:
+            log("nothing eligible this slot")
+            return 0
+
+    ccy = entry["ccy"]
+    cid, name = index[ccy]
+    news = recent_news(cid, now_ts)
+    facts = build_facts(entry, cid, name, latest_fixing(ccy), news)
+
+    log(f"slot: {kind} | {ccy} ({name}) score={score(entry)} "
+        f"signals={[s['type'] for s in entry['signals']]} news={len(news)}")
+    for c in facts["claims"]:
+        log(f"  claim: {c}")
+
+    drafted = None if args.template else compose_with_model(facts)
+    source = "model"
+    if drafted:
+        problems = validate(drafted, facts)
+        if problems:
+            for p in problems:
+                log(f"  REJECTED: {p}")
+            drafted = None
+    if not drafted:
+        drafted = compose_from_template(facts)
+        source = "template"
+        problems = validate(drafted, facts)
+        if problems:
+            for p in problems:
+                log(f"  FATAL: template failed validation: {p}")
+            return 1
+
+    log(f"--- post ({source}, {len(drafted['post'])} chars, {facts['language']}) ---")
+    for line in drafted["post"].split("\n"):
+        log("  | " + line)
+    if facts["language"] != "English":
+        log("  --- back-translation (what actually went out) ---")
+        for line in (drafted.get("back_translation") or "").split("\n"):
+            log("  | " + line)
+
+    if args.post:
+        post_to_x(drafted["post"])
+        if kind == "anchor":
+            state.setdefault("anchors_today", []).append(ccy)
+        state.setdefault("recent", {})[ccy] = now_ts
+        state["last_post"] = now_ts
+        log(f"posted: {ccy}")
+    if args.post or args.commit:
+        write_json_atomic(STATE_FILE, state, indent=1, sort_keys=True)
+        log(f"state saved -> {STATE_FILE}")
+    else:
+        log("dry run - nothing posted, state unchanged")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

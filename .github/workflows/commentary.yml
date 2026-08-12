@@ -1,0 +1,92 @@
+# Scheduled currency commentary posted to @banknotelolai.
+#
+# Generated file - the Python it runs is published from elsewhere and this
+# workflow is the only part maintained here.
+#
+# Credentials come from the `x-posting` environment. Without them the job
+# fails rather than posting.
+name: banknote-ai-commentary
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Pick and compose, publish nothing"
+        type: boolean
+        default: true
+      ccy:
+        description: "Force a currency (e.g. GHS) instead of picking one"
+        type: string
+        default: ""
+      template:
+        description: "Skip the model — compose from the deterministic template"
+        type: boolean
+        default: false
+
+concurrency:
+  group: banknote-ai-commentary
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  commentary:
+    runs-on: ubuntu-latest
+    environment: x-posting
+    env:
+      BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
+      BANKNOTE_NEWS_DIR: ${{ github.workspace }}/news
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the Anthropic SDK
+        run: pip install "anthropic==0.121.0"
+
+      - name: Compose and post
+        working-directory: oracle
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          CCY: ${{ inputs.ccy }}
+          TEMPLATE: ${{ inputs.template }}
+        run: |
+          ARGS="--post"
+          if [ "${DRY_RUN}" = "true" ]; then ARGS=""; fi
+          if [ -n "${CCY}" ]; then ARGS="$ARGS --ccy ${CCY}"; fi
+          if [ "${TEMPLATE}" = "true" ]; then ARGS="$ARGS --template"; fi
+          echo "running: python run_commentary.py $ARGS"
+          python run_commentary.py $ARGS
+
+      - name: Commit the picker state
+        if: always()
+        run: |
+          git config user.name  "banknote-poster"
+          git config user.email "poster@banknote.lol"
+          git add oracle/state/commentary_state.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no state change this slot"
+            exit 0
+          fi
+          git commit -m "commentary: picker state ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — rebasing on latest origin/main…"
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; echo "rebase conflict — aborting"; exit 1; }
+          done
+          echo "could not push after 5 attempts"
+          exit 1

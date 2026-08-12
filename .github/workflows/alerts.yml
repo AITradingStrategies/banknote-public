@@ -1,0 +1,89 @@
+# Hourly intraday move check, posted to @banknotelolai.
+#
+# Generated file - the Python it runs is published from elsewhere and this
+# workflow is the only part maintained here.
+#
+# Credentials come from the `x-posting` environment. Without them the job
+# fails rather than posting.
+name: banknote-ai-alerts
+
+on:
+  schedule:
+    - cron: "10 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Check and print, publish nothing"
+        type: boolean
+        default: true
+      force:
+        description: "Post past the 10% review gate or the daily cap"
+        type: boolean
+        default: false
+
+concurrency:
+  group: banknote-ai-alerts
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  alerts:
+    runs-on: ubuntu-latest
+    environment: x-posting
+    env:
+      BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Intraday alert check
+        working-directory: oracle
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          ARGS="--post"
+          if [ "${DRY_RUN}" = "true" ]; then ARGS="--commit"; fi
+          if [ "${FORCE}" = "true" ]; then ARGS="$ARGS --force"; fi
+          echo "running: python run_alerts.py $ARGS"
+          set +e
+          python run_alerts.py $ARGS
+          code=$?
+          set -e
+          if [ $code -eq 2 ]; then
+            echo "::error::review gate tripped — a single-source move above 10%. Verify it is real, then re-run with force=true."
+            exit 1
+          fi
+          exit $code
+
+      - name: Commit the poll state
+        if: always()
+        run: |
+          git config user.name  "banknote-poster"
+          git config user.email "poster@banknote.lol"
+          git add oracle/state/alerts_state.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no state change this poll"
+            exit 0
+          fi
+          git commit -m "alerts: poll state ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — rebasing on latest origin/main…"
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; echo "rebase conflict — aborting"; exit 1; }
+          done
+          echo "could not push after 5 attempts"
+          exit 1
