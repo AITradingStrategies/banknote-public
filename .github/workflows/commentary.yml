@@ -73,10 +73,34 @@ jobs:
           # an hour whatever the cron says. A manual run does one round.
           ROUNDS=2
           if [ "${DRY_RUN}" = "true" ] || [ -n "${CCY}" ]; then ROUNDS=1; fi
+          # Round two runs half an hour after checkout, so without this it
+          # uses code and data from before the sleep. That is how a flag fix
+          # pushed at 19:36 and a language map pushed at 19:50 both missed a
+          # post that went out at 19:59: the run had checked out at 19:31.
+          #
+          # analysis.json lives in oracle/state alongside the picker state, so
+          # the refresh picks up a newer fixing too - but the picker state is
+          # round one's own work and must survive. Save it, move HEAD, put it
+          # back.
+          #
+          # This moves HEAD rather than checking paths out of origin/main. The
+          # path version leaves the tree dirty against an old HEAD, and the
+          # commit step below rebases - which refuses to run with unstaged
+          # changes, aborts, and takes the job red. Resetting leaves the tree
+          # clean apart from the state file we are deliberately carrying, so
+          # the commit lands on origin/main and usually fast-forwards.
+          refresh() {
+            git fetch -q origin main || { echo "fetch failed - staying on the checkout"; return 0; }
+            cp oracle/state/commentary_state.json "$RUNNER_TEMP/state.json" 2>/dev/null || true
+            git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/state.json" oracle/state/commentary_state.json 2>/dev/null || true
+            echo "refreshed to $(git rev-parse --short HEAD)"
+          }
           for i in $(seq 1 $ROUNDS); do
             if [ "$i" -gt 1 ]; then
               echo "--- sleeping ${GAP_SECONDS}s before round $i of $ROUNDS ---"
               sleep "${GAP_SECONDS}"
+              ( cd "${GITHUB_WORKSPACE}" && refresh )
             fi
             echo "running (round $i/$ROUNDS): python run_commentary.py $ARGS"
             python run_commentary.py $ARGS
