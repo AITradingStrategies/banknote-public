@@ -2,13 +2,5 @@
  "alerted": [],
  "count": 0,
  "date": "2026-08-13",
- "pending": {
-  "GHS": {
-   "bar": 2.0,
-   "outlier": 3.38,
-   "pct": 3.668818208679281,
-   "rate": 10.9027016262,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
