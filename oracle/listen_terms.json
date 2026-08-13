@@ -1,0 +1,779 @@
+{
+ "_note": [
+  "Local-language search terms for the currency listening sweep.",
+  "",
+  "WHY THIS FILE EXISTS. 89 of 133 currencies have an audience that does not",
+  "read English. An English-only query undercounts them SILENTLY - a wrong or",
+  "missing term returns zero, which reads exactly like 'nobody is talking",
+  "about it'. So a zero here is never evidence of quiet; it is evidence of",
+  "nothing until the term has been checked by someone who reads the language.",
+  "",
+  "TERMS ARE QUERY-READY PHRASES, not bare words. Several currency names are",
+  "ordinary words in their own language and are worse than useless alone:",
+  "  peso    = weight (Spanish)        sol  = sun (Spanish)",
+  "  real    = royal/real (Portuguese)  leu  = lion (Romanian)",
+  "  dong    = common word (Vietnamese) manat/som = shared across states",
+  "Where that happens the term is qualified ('peso argentino') and",
+  "`bare_unsafe` records why, so nobody 'simplifies' it later.",
+  "",
+  "CONFIDENCE is the author's, and it is honest rather than flattering:",
+  "  high   - common term, common script, would bet on it",
+  "  medium - correct to the best of my knowledge, worth a second pair of eyes",
+  "  low    - plausible; DO NOT trust a zero result from these until checked",
+  "Everything here was written from memory. Review before the sweep is read",
+  "as evidence, and treat every low-confidence zero as unmeasured.",
+  "",
+  "Fields: terms[] query-ready phrases | confidence | bare_unsafe (optional)",
+  "",
+  "X NORMALISES, VERIFIED 2026-08-13 by searching both forms and comparing",
+  "results. Accents fold (dolar finds dólar and vice versa) and plurals stem",
+  "(pesos finds peso). So write ONE form - the accented singular - and do",
+  "not add variants. Five redundant plurals were removed after this test.",
+  "Irregular plurals that are not a simple -s (meticais, guaraníes) are kept",
+  "because stemming was not verified for those, and a bare form that differs",
+  "from a phrase already listed (colones against 'colón costarricense') is",
+  "kept because a phrase never matches a bare word."
+ ],
+ "ARS": {
+  "language": "Spanish",
+  "confidence": "high",
+  "bare_unsafe": "peso = weight",
+  "terms": [
+   "\"peso argentino\"",
+   "\"dólar blue\"",
+   "\"dolar blue\"",
+   "\"dólar hoy\""
+  ]
+ },
+ "BOB": {
+  "language": "Spanish",
+  "confidence": "high",
+  "terms": [
+   "\"boliviano\"",
+   "\"peso boliviano\""
+  ]
+ },
+ "CLP": {
+  "language": "Spanish",
+  "confidence": "high",
+  "bare_unsafe": "peso = weight",
+  "terms": [
+   "\"peso chileno\"",
+   "\"dólar chile\""
+  ]
+ },
+ "COP": {
+  "language": "Spanish",
+  "confidence": "high",
+  "bare_unsafe": "peso = weight",
+  "terms": [
+   "\"peso colombiano\"",
+   "\"dólar colombia\""
+  ]
+ },
+ "CRC": {
+  "language": "Spanish",
+  "confidence": "high",
+  "terms": [
+   "\"colón costarricense\"",
+   "\"colones\""
+  ]
+ },
+ "DOP": {
+  "language": "Spanish",
+  "confidence": "high",
+  "terms": [
+   "\"peso dominicano\""
+  ]
+ },
+ "GTQ": {
+  "language": "Spanish",
+  "confidence": "high",
+  "terms": [
+   "\"quetzal\""
+  ]
+ },
+ "HNL": {
+  "language": "Spanish",
+  "confidence": "high",
+  "terms": [
+   "\"lempira\""
+  ]
+ },
+ "MXN": {
+  "language": "Spanish",
+  "confidence": "high",
+  "bare_unsafe": "peso = weight",
+  "terms": [
+   "\"peso mexicano\"",
+   "\"dólar hoy\"",
+   "\"precio del dólar\""
+  ]
+ },
+ "NIO": {
+  "language": "Spanish",
+  "confidence": "medium",
+  "terms": [
+   "\"córdoba nicaragüense\"",
+   "\"córdobas\""
+  ]
+ },
+ "PAB": {
+  "language": "Spanish",
+  "confidence": "medium",
+  "terms": [
+   "\"balboa panameño\""
+  ]
+ },
+ "PEN": {
+  "language": "Spanish",
+  "confidence": "high",
+  "bare_unsafe": "sol = sun",
+  "terms": [
+   "\"sol peruano\"",
+   "\"soles\"",
+   "\"dólar perú\""
+  ]
+ },
+ "PYG": {
+  "language": "Spanish",
+  "confidence": "medium",
+  "terms": [
+   "\"guaraní paraguayo\"",
+   "\"guaraníes\""
+  ]
+ },
+ "UYU": {
+  "language": "Spanish",
+  "confidence": "high",
+  "bare_unsafe": "peso = weight",
+  "terms": [
+   "\"peso uruguayo\""
+  ]
+ },
+ "VES": {
+  "language": "Spanish",
+  "confidence": "high",
+  "terms": [
+   "\"bolívar\"",
+   "\"dólar venezuela\""
+  ]
+ },
+ "AOA": {
+  "language": "Portuguese",
+  "confidence": "high",
+  "terms": [
+   "\"kwanza angolano\"",
+   "\"kwanzas\""
+  ]
+ },
+ "BRL": {
+  "language": "Portuguese",
+  "confidence": "high",
+  "bare_unsafe": "real = royal/real",
+  "terms": [
+   "\"real brasileiro\"",
+   "\"dólar hoje\"",
+   "\"cotação do dólar\""
+  ]
+ },
+ "CVE": {
+  "language": "Portuguese",
+  "confidence": "medium",
+  "terms": [
+   "\"escudo cabo-verdiano\""
+  ]
+ },
+ "MZN": {
+  "language": "Portuguese",
+  "confidence": "medium",
+  "terms": [
+   "\"metical\"",
+   "\"meticais\""
+  ]
+ },
+ "STN": {
+  "language": "Portuguese",
+  "confidence": "low",
+  "terms": [
+   "\"dobra\""
+  ]
+ },
+ "XOF": {
+  "language": "French",
+  "confidence": "high",
+  "bare_unsafe": "franc shared by 9",
+  "terms": [
+   "\"franc CFA\"",
+   "\"francs CFA\"",
+   "\"CFA franc\""
+  ]
+ },
+ "XAF": {
+  "language": "French",
+  "confidence": "high",
+  "bare_unsafe": "franc shared by 9",
+  "terms": [
+   "\"franc CFA\"",
+   "\"francs CFA\"",
+   "\"CFA franc\""
+  ]
+ },
+ "CDF": {
+  "language": "French",
+  "confidence": "medium",
+  "terms": [
+   "\"franc congolais\""
+  ]
+ },
+ "GNF": {
+  "language": "French",
+  "confidence": "medium",
+  "terms": [
+   "\"franc guinéen\""
+  ]
+ },
+ "BIF": {
+  "language": "French",
+  "confidence": "medium",
+  "terms": [
+   "\"franc burundais\""
+  ]
+ },
+ "DJF": {
+  "language": "French",
+  "confidence": "medium",
+  "terms": [
+   "\"franc djiboutien\""
+  ]
+ },
+ "KMF": {
+  "language": "French",
+  "confidence": "low",
+  "terms": [
+   "\"franc comorien\""
+  ]
+ },
+ "MUR": {
+  "language": "French",
+  "confidence": "medium",
+  "terms": [
+   "\"roupie mauricienne\""
+  ]
+ },
+ "HTG": {
+  "language": "French",
+  "confidence": "medium",
+  "terms": [
+   "\"gourde\""
+  ]
+ },
+ "AED": {
+  "language": "Arabic",
+  "confidence": "high",
+  "terms": [
+   "\"الدرهم الإماراتي\"",
+   "\"درهم إماراتي\""
+  ]
+ },
+ "BHD": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الدينار البحريني\""
+  ]
+ },
+ "DZD": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الدينار الجزائري\"",
+   "\"دينار جزائري\""
+  ]
+ },
+ "EGP": {
+  "language": "Arabic",
+  "confidence": "high",
+  "terms": [
+   "\"الجنيه المصري\"",
+   "\"سعر الدولار\"",
+   "\"جنيه مصري\""
+  ]
+ },
+ "IQD": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الدينار العراقي\""
+  ]
+ },
+ "JOD": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الدينار الأردني\""
+  ]
+ },
+ "KWD": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الدينار الكويتي\""
+  ]
+ },
+ "LBP": {
+  "language": "Arabic",
+  "confidence": "high",
+  "terms": [
+   "\"الليرة اللبنانية\"",
+   "\"دولار لبنان\""
+  ]
+ },
+ "LYD": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الدينار الليبي\""
+  ]
+ },
+ "MAD": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الدرهم المغربي\"",
+   "\"درهم مغربي\""
+  ]
+ },
+ "MRU": {
+  "language": "Arabic",
+  "confidence": "low",
+  "terms": [
+   "\"الأوقية الموريتانية\""
+  ]
+ },
+ "OMR": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الريال العماني\""
+  ]
+ },
+ "QAR": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الريال القطري\""
+  ]
+ },
+ "SAR": {
+  "language": "Arabic",
+  "confidence": "high",
+  "terms": [
+   "\"الريال السعودي\"",
+   "\"ريال سعودي\""
+  ]
+ },
+ "SDG": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الجنيه السوداني\""
+  ]
+ },
+ "TND": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الدينار التونسي\""
+  ]
+ },
+ "YER": {
+  "language": "Arabic",
+  "confidence": "medium",
+  "terms": [
+   "\"الريال اليمني\""
+  ]
+ },
+ "TRY": {
+  "language": "Turkish",
+  "confidence": "high",
+  "terms": [
+   "\"Türk lirası\"",
+   "\"dolar kuru\"",
+   "\"dolar ne kadar\""
+  ]
+ },
+ "PKR": {
+  "language": "Urdu",
+  "confidence": "high",
+  "terms": [
+   "\"ڈالر ریٹ\"",
+   "\"پاکستانی روپیہ\"",
+   "\"روپے\""
+  ]
+ },
+ "BDT": {
+  "language": "Bengali",
+  "confidence": "high",
+  "terms": [
+   "\"টাকা\"",
+   "\"ডলারের দাম\""
+  ]
+ },
+ "INR": {
+  "language": "Hindi",
+  "confidence": "high",
+  "bare_unsafe": "rupee shared by 6",
+  "terms": [
+   "\"रुपया\"",
+   "\"डॉलर के मुकाबले\""
+  ]
+ },
+ "LKR": {
+  "language": "Sinhala",
+  "confidence": "medium",
+  "terms": [
+   "\"රුපියල්\"",
+   "\"ඩොලරය\""
+  ]
+ },
+ "NPR": {
+  "language": "Nepali",
+  "confidence": "medium",
+  "terms": [
+   "\"नेपाली रुपैयाँ\"",
+   "\"डलर\""
+  ]
+ },
+ "MVR": {
+  "language": "Dhivehi",
+  "confidence": "low",
+  "terms": [
+   "\"ރުފިޔާ\""
+  ]
+ },
+ "THB": {
+  "language": "Thai",
+  "confidence": "high",
+  "terms": [
+   "\"ค่าเงินบาท\"",
+   "\"เงินบาท\"",
+   "\"บาทต่อดอลลาร์\""
+  ]
+ },
+ "VND": {
+  "language": "Vietnamese",
+  "confidence": "high",
+  "bare_unsafe": "đồng is a common word",
+  "terms": [
+   "\"tỷ giá\"",
+   "\"tỷ giá USD\"",
+   "\"đồng Việt Nam\""
+  ]
+ },
+ "IDR": {
+  "language": "Indonesian",
+  "confidence": "high",
+  "terms": [
+   "\"rupiah\"",
+   "\"kurs dolar\"",
+   "\"nilai tukar rupiah\""
+  ]
+ },
+ "MYR": {
+  "language": "Malay",
+  "confidence": "high",
+  "terms": [
+   "\"ringgit\"",
+   "\"kadar tukaran\""
+  ]
+ },
+ "BND": {
+  "language": "Malay",
+  "confidence": "medium",
+  "terms": [
+   "\"dolar Brunei\""
+  ]
+ },
+ "KHR": {
+  "language": "Khmer",
+  "confidence": "medium",
+  "terms": [
+   "\"រៀល\"",
+   "\"ប្រាក់រៀល\""
+  ]
+ },
+ "LAK": {
+  "language": "Lao",
+  "confidence": "low",
+  "terms": [
+   "\"ກີບ\"",
+   "\"ເງິນກີບ\""
+  ]
+ },
+ "MMK": {
+  "language": "Burmese",
+  "confidence": "medium",
+  "terms": [
+   "\"ကျပ်\"",
+   "\"ဒေါ်လာ\""
+  ]
+ },
+ "PHP": {
+  "language": "Filipino",
+  "confidence": "high",
+  "bare_unsafe": "peso shared by 7",
+  "terms": [
+   "\"piso\"",
+   "\"dolyar\"",
+   "\"palitan ng dolyar\""
+  ]
+ },
+ "RUB": {
+  "language": "Russian",
+  "confidence": "high",
+  "terms": [
+   "\"рубль\"",
+   "\"курс доллара\""
+  ]
+ },
+ "BYN": {
+  "language": "Russian",
+  "confidence": "medium",
+  "terms": [
+   "\"белорусский рубль\"",
+   "\"курс доллара\""
+  ]
+ },
+ "UAH": {
+  "language": "Ukrainian",
+  "confidence": "high",
+  "terms": [
+   "\"гривня\"",
+   "\"курс долара\""
+  ]
+ },
+ "KZT": {
+  "language": "Kazakh",
+  "confidence": "medium",
+  "terms": [
+   "\"теңге\"",
+   "\"тенге\"",
+   "\"курс доллара\""
+  ]
+ },
+ "UZS": {
+  "language": "Uzbek",
+  "confidence": "medium",
+  "bare_unsafe": "so'm/som shared with KGS",
+  "terms": [
+   "\"o'zbek so'm\"",
+   "\"сўм\""
+  ]
+ },
+ "KGS": {
+  "language": "Kyrgyz",
+  "confidence": "low",
+  "bare_unsafe": "som shared with UZS",
+  "terms": [
+   "\"кыргыз сом\"",
+   "\"сом курс\""
+  ]
+ },
+ "TJS": {
+  "language": "Tajik",
+  "confidence": "low",
+  "terms": [
+   "\"сомонӣ\"",
+   "\"сомони\""
+  ]
+ },
+ "TMT": {
+  "language": "Turkmen",
+  "confidence": "low",
+  "bare_unsafe": "manat shared with AZN",
+  "terms": [
+   "\"türkmen manat\""
+  ]
+ },
+ "AZN": {
+  "language": "Azerbaijani",
+  "confidence": "medium",
+  "bare_unsafe": "manat shared with TMT",
+  "terms": [
+   "\"Azərbaycan manatı\"",
+   "\"manat dollar\""
+  ]
+ },
+ "GEL": {
+  "language": "Georgian",
+  "confidence": "medium",
+  "terms": [
+   "\"ლარი\"",
+   "\"დოლარის კურსი\""
+  ]
+ },
+ "AMD": {
+  "language": "Armenian",
+  "confidence": "medium",
+  "bare_unsafe": "dram is an English word",
+  "terms": [
+   "\"դրամ\"",
+   "\"դոլարի փոխարժեք\""
+  ]
+ },
+ "MNT": {
+  "language": "Mongolian",
+  "confidence": "medium",
+  "terms": [
+   "\"төгрөг\"",
+   "\"долларын ханш\""
+  ]
+ },
+ "AFN": {
+  "language": "Dari",
+  "confidence": "low",
+  "terms": [
+   "\"افغانی\"",
+   "\"نرخ دالر\""
+  ]
+ },
+ "ETB": {
+  "language": "Amharic",
+  "confidence": "medium",
+  "terms": [
+   "\"ብር\"",
+   "\"የዶላር ምንዛሬ\""
+  ]
+ },
+ "ERN": {
+  "language": "Tigrinya",
+  "confidence": "low",
+  "terms": [
+   "\"ናቕፋ\""
+  ]
+ },
+ "KES": {
+  "language": "Swahili",
+  "confidence": "high",
+  "bare_unsafe": "shilling shared by 4",
+  "terms": [
+   "\"shilingi\"",
+   "\"dola\"",
+   "\"Kenyan shilling\""
+  ]
+ },
+ "TZS": {
+  "language": "Swahili",
+  "confidence": "medium",
+  "bare_unsafe": "shilling shared by 4",
+  "terms": [
+   "\"shilingi ya Tanzania\"",
+   "\"shilingi\""
+  ]
+ },
+ "SOS": {
+  "language": "Somali",
+  "confidence": "medium",
+  "terms": [
+   "\"shilin Soomaali\"",
+   "\"doollar\""
+  ]
+ },
+ "RWF": {
+  "language": "Kinyarwanda",
+  "confidence": "low",
+  "terms": [
+   "\"amafaranga y'u Rwanda\""
+  ]
+ },
+ "MGA": {
+  "language": "Malagasy",
+  "confidence": "low",
+  "terms": [
+   "\"ariary\""
+  ]
+ },
+ "ALL": {
+  "language": "Albanian",
+  "confidence": "medium",
+  "bare_unsafe": "lek is an English word",
+  "terms": [
+   "\"leku shqiptar\"",
+   "\"kursi i dollarit\""
+  ]
+ },
+ "BAM": {
+  "language": "Bosnian",
+  "confidence": "medium",
+  "terms": [
+   "\"konvertibilna marka\"",
+   "\"kurs dolara\""
+  ]
+ },
+ "MKD": {
+  "language": "Macedonian",
+  "confidence": "medium",
+  "terms": [
+   "\"денар\"",
+   "\"курс на доларот\""
+  ]
+ },
+ "RSD": {
+  "language": "Serbian",
+  "confidence": "medium",
+  "terms": [
+   "\"динар\"",
+   "\"kurs dolara\""
+  ]
+ },
+ "RON": {
+  "language": "Romanian",
+  "confidence": "high",
+  "bare_unsafe": "leu = lion",
+  "terms": [
+   "\"leu românesc\"",
+   "\"curs valutar\"",
+   "\"curs dolar\""
+  ]
+ },
+ "MDL": {
+  "language": "Romanian",
+  "confidence": "medium",
+  "bare_unsafe": "leu = lion",
+  "terms": [
+   "\"leu moldovenesc\"",
+   "\"curs valutar\""
+  ]
+ },
+ "ISK": {
+  "language": "Icelandic",
+  "confidence": "medium",
+  "bare_unsafe": "króna shared",
+  "terms": [
+   "\"íslenska krónan\"",
+   "\"gengi dollars\""
+  ]
+ },
+ "SRD": {
+  "language": "Dutch",
+  "confidence": "low",
+  "terms": [
+   "\"Surinaamse dollar\""
+  ]
+ },
+ "WST": {
+  "language": "Samoan",
+  "confidence": "low",
+  "terms": [
+   "\"tālā\""
+  ]
+ },
+ "TOP": {
+  "language": "Tongan",
+  "confidence": "low",
+  "terms": [
+   "\"paʻanga\""
+  ]
+ }
+}

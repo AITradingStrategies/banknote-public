@@ -1,0 +1,370 @@
+{
+ "_note": [
+  "Generic money phrases, per language, for the country-plus-topic query.",
+  "",
+  "WHY THIS EXISTS. The per-currency query in listen_queries.py only matches",
+  "the currency's NAME or CODE, so it misses everyone who talks about a",
+  "country's money without naming it - 'Nigeria's currency is collapsing',",
+  "'Egypt devaluation incoming'. Those are the same conversation and they",
+  "carry no currency name at all.",
+  "",
+  "HOW IT IS USED. Country AND one-of-these, not OR'd into the currency",
+  "query:",
+  "    Nigeria (\"exchange rate\" OR forex OR devaluation OR currency)",
+  "Words sitting next to each other AND in X search, so the tweet must",
+  "mention the country AND at least one money phrase. 'currency' alone would",
+  "be hopeless noise; anchored to a country it is precise.",
+  "",
+  "NO TRANSLATION HAPPENS. X matches literal text - searching 'currency'",
+  "never matches 'monnaie'. Every language needs its phrases written out.",
+  "English is always included alongside the local set, because plenty of",
+  "people in Lagos, Karachi and Manila discuss their own currency in",
+  "English.",
+  "",
+  "",
+  "CONFIDENCE is the author's and is honest: high / medium / low. A wrong",
+  "phrase returns zero, which reads exactly like a quiet market. Treat a",
+  "zero from a low-confidence language as unmeasured, not as evidence.",
+  "",
+  "X NORMALISES, VERIFIED 2026-08-13 by searching both forms and comparing",
+  "results. Accents fold (dolar finds dólar and vice versa) and plurals stem",
+  "(pesos finds peso). So write ONE form - the accented singular - and do",
+  "not add variants. Five redundant plurals were removed after this test.",
+  "Irregular plurals that are not a simple -s (meticais, guaraníes) are kept",
+  "because stemming was not verified for those, and a bare form that differs",
+  "from a phrase already listed (colones against 'colón costarricense') is",
+  "kept because a phrase never matches a bare word."
+ ],
+ "English": {
+  "confidence": "high",
+  "terms": [
+   "\"exchange rate\"",
+   "forex",
+   "\"black market rate\"",
+   "\"parallel market\"",
+   "devaluation",
+   "currency",
+   "\"currency crisis\""
+  ]
+ },
+ "Spanish": {
+  "confidence": "high",
+  "terms": [
+   "\"tipo de cambio\"",
+   "\"cotización del dólar\"",
+   "\"dólar hoy\"",
+   "devaluación",
+   "\"mercado paralelo\""
+  ]
+ },
+ "Portuguese": {
+  "confidence": "high",
+  "terms": [
+   "\"taxa de câmbio\"",
+   "\"cotação do dólar\"",
+   "câmbio",
+   "desvalorização"
+  ]
+ },
+ "French": {
+  "confidence": "high",
+  "terms": [
+   "\"taux de change\"",
+   "dévaluation",
+   "\"marché parallèle\"",
+   "\"cours du dollar\""
+  ]
+ },
+ "Arabic": {
+  "confidence": "high",
+  "terms": [
+   "\"سعر الصرف\"",
+   "\"سعر الدولار\"",
+   "\"السوق السوداء\""
+  ]
+ },
+ "Turkish": {
+  "confidence": "high",
+  "terms": [
+   "\"döviz kuru\"",
+   "\"dolar kuru\"",
+   "devalüasyon",
+   "\"serbest piyasa\""
+  ]
+ },
+ "Russian": {
+  "confidence": "high",
+  "terms": [
+   "\"курс доллара\"",
+   "\"обменный курс\"",
+   "девальвация"
+  ]
+ },
+ "Ukrainian": {
+  "confidence": "high",
+  "terms": [
+   "\"курс долара\"",
+   "\"обмінний курс\"",
+   "девальвація"
+  ]
+ },
+ "Thai": {
+  "confidence": "high",
+  "terms": [
+   "\"อัตราแลกเปลี่ยน\"",
+   "\"ค่าเงิน\""
+  ]
+ },
+ "Vietnamese": {
+  "confidence": "high",
+  "terms": [
+   "\"tỷ giá\"",
+   "\"tỷ giá hối đoái\"",
+   "\"chợ đen\""
+  ]
+ },
+ "Indonesian": {
+  "confidence": "high",
+  "terms": [
+   "\"nilai tukar\"",
+   "\"kurs dolar\"",
+   "kurs"
+  ]
+ },
+ "Malay": {
+  "confidence": "medium",
+  "terms": [
+   "\"kadar tukaran\"",
+   "\"nilai tukaran\""
+  ]
+ },
+ "Urdu": {
+  "confidence": "high",
+  "terms": [
+   "\"ڈالر ریٹ\"",
+   "\"شرح مبادلہ\"",
+   "\"ڈالر کی قیمت\""
+  ]
+ },
+ "Hindi": {
+  "confidence": "medium",
+  "terms": [
+   "\"विनिमय दर\"",
+   "\"डॉलर के मुकाबले\""
+  ]
+ },
+ "Bengali": {
+  "confidence": "medium",
+  "terms": [
+   "\"বিনিময় হার\"",
+   "\"ডলারের দাম\""
+  ]
+ },
+ "Filipino": {
+  "confidence": "medium",
+  "terms": [
+   "\"palitan ng dolyar\"",
+   "\"halaga ng piso\""
+  ]
+ },
+ "Swahili": {
+  "confidence": "medium",
+  "terms": [
+   "\"thamani ya dola\"",
+   "\"kiwango cha ubadilishaji\""
+  ]
+ },
+ "Amharic": {
+  "confidence": "medium",
+  "terms": [
+   "\"የዶላር ምንዛሬ\"",
+   "\"የምንዛሬ ተመን\""
+  ]
+ },
+ "Somali": {
+  "confidence": "medium",
+  "terms": [
+   "\"sarrifka doollarka\""
+  ]
+ },
+ "Persian": {
+  "confidence": "medium",
+  "terms": [
+   "\"نرخ ارز\"",
+   "\"نرخ دلار\""
+  ]
+ },
+ "Dari": {
+  "confidence": "low",
+  "terms": [
+   "\"نرخ دالر\"",
+   "\"نرخ ارز\""
+  ]
+ },
+ "Romanian": {
+  "confidence": "high",
+  "terms": [
+   "\"curs valutar\"",
+   "\"curs dolar\"",
+   "devalorizare"
+  ]
+ },
+ "Serbian": {
+  "confidence": "medium",
+  "terms": [
+   "\"kurs dolara\"",
+   "\"девизни курс\""
+  ]
+ },
+ "Bosnian": {
+  "confidence": "medium",
+  "terms": [
+   "\"kurs dolara\"",
+   "\"tečaj dolara\""
+  ]
+ },
+ "Macedonian": {
+  "confidence": "medium",
+  "terms": [
+   "\"курс на доларот\""
+  ]
+ },
+ "Albanian": {
+  "confidence": "medium",
+  "terms": [
+   "\"kursi i këmbimit\"",
+   "\"kursi i dollarit\""
+  ]
+ },
+ "Georgian": {
+  "confidence": "medium",
+  "terms": [
+   "\"დოლარის კურსი\"",
+   "\"გაცვლითი კურსი\""
+  ]
+ },
+ "Armenian": {
+  "confidence": "medium",
+  "terms": [
+   "\"դոլարի փոխարժեք\""
+  ]
+ },
+ "Azerbaijani": {
+  "confidence": "medium",
+  "terms": [
+   "\"dollar məzənnəsi\"",
+   "məzənnə"
+  ]
+ },
+ "Kazakh": {
+  "confidence": "medium",
+  "terms": [
+   "\"доллар бағамы\"",
+   "\"валюта бағамы\""
+  ]
+ },
+ "Uzbek": {
+  "confidence": "low",
+  "terms": [
+   "\"dollar kursi\"",
+   "\"валюта курси\""
+  ]
+ },
+ "Kyrgyz": {
+  "confidence": "low",
+  "terms": [
+   "\"доллар курсу\""
+  ]
+ },
+ "Tajik": {
+  "confidence": "low",
+  "terms": [
+   "\"қурби доллар\""
+  ]
+ },
+ "Turkmen": {
+  "confidence": "low",
+  "terms": [
+   "\"dollar kursy\""
+  ]
+ },
+ "Mongolian": {
+  "confidence": "medium",
+  "terms": [
+   "\"долларын ханш\"",
+   "\"валютын ханш\""
+  ]
+ },
+ "Khmer": {
+  "confidence": "medium",
+  "terms": [
+   "\"អត្រាប្តូរប្រាក់\""
+  ]
+ },
+ "Lao": {
+  "confidence": "low",
+  "terms": [
+   "\"ອັດຕາແລກປ່ຽນ\""
+  ]
+ },
+ "Burmese": {
+  "confidence": "medium",
+  "terms": [
+   "\"ငွေလဲနှုန်း\""
+  ]
+ },
+ "Sinhala": {
+  "confidence": "medium",
+  "terms": [
+   "\"විනිමය අනුපාතය\""
+  ]
+ },
+ "Nepali": {
+  "confidence": "medium",
+  "terms": [
+   "\"विनिमय दर\""
+  ]
+ },
+ "Dhivehi": {
+  "confidence": "low",
+  "terms": []
+ },
+ "Icelandic": {
+  "confidence": "medium",
+  "terms": [
+   "\"gengi dollars\"",
+   "gengi"
+  ]
+ },
+ "Dutch": {
+  "confidence": "medium",
+  "terms": [
+   "wisselkoers",
+   "\"koers dollar\""
+  ]
+ },
+ "Malagasy": {
+  "confidence": "low",
+  "terms": []
+ },
+ "Kinyarwanda": {
+  "confidence": "low",
+  "terms": []
+ },
+ "Tigrinya": {
+  "confidence": "low",
+  "terms": []
+ },
+ "Samoan": {
+  "confidence": "low",
+  "terms": []
+ },
+ "Tongan": {
+  "confidence": "low",
+  "terms": []
+ },
+ "Sinhalese": {
+  "confidence": "low",
+  "terms": []
+ }
+}

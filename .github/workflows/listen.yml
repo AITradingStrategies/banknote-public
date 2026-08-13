@@ -1,0 +1,104 @@
+# Currency conversation volume map. READS ONLY - posts nothing, replies to
+# nobody, and stores no post content.
+#
+# Generated file - the Python it runs is published from elsewhere and this
+# workflow is the only part maintained here.
+#
+# MANUAL ONLY, ON PURPOSE. There is no schedule: a sweep costs real money and
+# `Counts: Recent` already covers the last 7 days in one call, so this wants
+# running deliberately once a week, not on a cron nobody is watching.
+#
+# RUN IT WITH limit=1 FIRST. The cost model assumes a counts call bills once,
+# not once per hourly bucket. One request settles that for half a cent; the
+# full sweep is ~310.
+name: banknote-ai-listen
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the queries, call nothing, bill nothing"
+        type: boolean
+        default: true
+      limit:
+        description: "Stop after N requests (use 1 the first time)"
+        type: string
+        default: "1"
+      ccy:
+        description: "Comma-separated currencies only (blank = all)"
+        type: string
+        default: ""
+      kinds:
+        description: "Query variants: tight,country,loose"
+        type: string
+        default: "tight,country,loose"
+
+concurrency:
+  group: banknote-ai-listen
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  listen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment: x-posting
+    env:
+      BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sweep
+        working-directory: oracle
+        env:
+          # Counts generally wants an app-only Bearer token. The OAuth 1.0a
+          # values are passed too so the job works on whichever the account
+          # actually has, rather than failing on a guess.
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          LIMIT: ${{ inputs.limit }}
+          CCY: ${{ inputs.ccy }}
+          KINDS: ${{ inputs.kinds }}
+        run: |
+          ARGS=""
+          if [ "${DRY_RUN}" = "true" ]; then ARGS="--dry-run"; fi
+          if [ -n "${LIMIT}" ] && [ "${LIMIT}" != "0" ]; then ARGS="$ARGS --limit ${LIMIT}"; fi
+          if [ -n "${CCY}" ]; then ARGS="$ARGS --ccy ${CCY}"; fi
+          if [ -n "${KINDS}" ]; then ARGS="$ARGS --kinds ${KINDS}"; fi
+          echo "running: python run_listen.py $ARGS"
+          python run_listen.py $ARGS
+
+      - name: Commit the counts
+        if: always()
+        run: |
+          git config user.name  "banknote-poster"
+          git config user.email "poster@banknote.lol"
+          # oracle/listen/ holds aggregate counts only - our own derived
+          # numbers. No post text, no handles, no IDs: this repo is public and
+          # X's terms do not allow republishing content.
+          git add oracle/listen 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no counts this run (dry run, or the sweep failed)"
+            exit 0
+          fi
+          git commit -m "listen: currency conversation counts ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; echo "rebase conflict"; exit 1; }
+          done
+          echo "could not push after 5 attempts"
+          exit 1
