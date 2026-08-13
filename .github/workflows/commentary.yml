@@ -31,13 +31,11 @@ permissions:
 jobs:
   commentary:
     runs-on: ubuntu-latest
-    # Worst case: round one waits out the 25-minute spacing floor (a delivery
-    # that arrives soon after the last post now waits rather than skipping),
-    # then the 28-minute sleep, then round two - about 55 minutes with setup.
-    # Round two never waits, because round one just posted. Anything past this
-    # is wedged, not slow - fail rather than hold a runner for the 6-hour
-    # default.
-    timeout-minutes: 70
+    # One post per run. Worst case is a delivery arriving just after the last
+    # post and waiting out the 50-minute spacing floor before filing - rare,
+    # since deliveries land 55-80 minutes apart. Anything past this is wedged,
+    # not slow: fail rather than hold a runner for the 6-hour default.
+    timeout-minutes: 60
     environment: x-posting
     env:
       BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
@@ -62,49 +60,18 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DRY_RUN: ${{ inputs.dry_run }}
           CCY: ${{ inputs.ccy }}
-          GAP_SECONDS: "1680"  # 28 min, clear of MIN_POST_GAP_MIN
         run: |
           ARGS="--post"
           if [ "${DRY_RUN}" = "true" ]; then ARGS=""; fi
           if [ -n "${CCY}" ]; then ARGS="$ARGS --ccy ${CCY}"; fi
-          # One delivered run posts twice, half an hour apart, instead of
-          # relying on a second run that does not arrive. Asking for slots
-          # more often does not work: this workflow is delivered about once
-          # an hour whatever the cron says. A manual run does one round.
-          ROUNDS=2
-          if [ "${DRY_RUN}" = "true" ] || [ -n "${CCY}" ]; then ROUNDS=1; fi
-          # Round two runs half an hour after checkout, so without this it
-          # uses code and data from before the sleep. That is how a flag fix
-          # pushed at 19:36 and a language map pushed at 19:50 both missed a
-          # post that went out at 19:59: the run had checked out at 19:31.
-          #
-          # analysis.json lives in oracle/state alongside the picker state, so
-          # the refresh picks up a newer fixing too - but the picker state is
-          # round one's own work and must survive. Save it, move HEAD, put it
-          # back.
-          #
-          # This moves HEAD rather than checking paths out of origin/main. The
-          # path version leaves the tree dirty against an old HEAD, and the
-          # commit step below rebases - which refuses to run with unstaged
-          # changes, aborts, and takes the job red. Resetting leaves the tree
-          # clean apart from the state file we are deliberately carrying, so
-          # the commit lands on origin/main and usually fast-forwards.
-          refresh() {
-            git fetch -q origin main || { echo "fetch failed - staying on the checkout"; return 0; }
-            cp oracle/state/commentary_state.json "$RUNNER_TEMP/state.json" 2>/dev/null || true
-            git reset -q --hard origin/main
-            cp "$RUNNER_TEMP/state.json" oracle/state/commentary_state.json 2>/dev/null || true
-            echo "refreshed to $(git rev-parse --short HEAD)"
-          }
-          for i in $(seq 1 $ROUNDS); do
-            if [ "$i" -gt 1 ]; then
-              echo "--- sleeping ${GAP_SECONDS}s before round $i of $ROUNDS ---"
-              sleep "${GAP_SECONDS}"
-              ( cd "${GITHUB_WORKSPACE}" && refresh )
-            fi
-            echo "running (round $i/$ROUNDS): python run_commentary.py $ARGS"
-            python run_commentary.py $ARGS
-          done
+          # One post per delivered run. This used to file two, sleeping ~28
+          # minutes between them, because the scheduler delivers about once an
+          # hour whatever the cron says and the account wanted a post every
+          # half hour. With the alerts and the digest also posting, hourly is
+          # enough - so the delivery rate is now simply the cadence, and the
+          # sleep, the round-two refresh and their failure modes go with it.
+          echo "running: python run_commentary.py $ARGS"
+          python run_commentary.py $ARGS
 
       - name: Commit the picker state
         if: always()

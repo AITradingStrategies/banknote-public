@@ -23,8 +23,8 @@ NEWS_DIR = (os.environ.get("BANKNOTE_NEWS_DIR")
 STATE_FILE = os.path.join(HERE, "state", "commentary_state.json")
 
 MODEL = "claude-sonnet-5"
-SLOT_MINUTES = 30
-MIN_POST_GAP_MIN = 25
+SLOT_MINUTES = 60
+MIN_POST_GAP_MIN = 50
 REPEAT_COOLDOWN_DAYS = 2
 NEWS_MAX_AGE_H = 72
 NEWS_FRESH_H = 24
