@@ -182,13 +182,15 @@ def movement_rank(entry):
     return best
 
 
-def pick(entries, index, state, now_ts, now):
+def pick(entries, index, state, now_ts, now, skip=()):
     posted_today = set(state.get("anchors_today") or [])
-    live = {c: e for c, e in entries.items() if eligible(e, index, state, now_ts)}
+    skip = set(skip)
+    live = {c: e for c, e in entries.items()
+            if c not in skip and eligible(e, index, state, now_ts)}
 
     due = [c for c, hour in ANCHORS.items()
-           if c not in posted_today and now.hour >= hour and c in entries
-           and c in index and not entries[c].get("error")]
+           if c not in posted_today and c not in skip and now.hour >= hour
+           and c in entries and c in index and not entries[c].get("error")]
     if due:
         due.sort(key=lambda c: ANCHORS[c])
         return "anchor", entries[due[0]]
@@ -414,24 +416,42 @@ def _ascii_digits(text):
     return "".join(out)
 
 
-def numbers_in(text):
+def _float(s):
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def readings(tok):
+    out = set()
+    if "," in tok and "." in tok:
+        if tok.rfind(",") > tok.rfind("."):
+            out.add(_float(tok.replace(".", "").replace(",", ".")))
+        else:
+            out.add(_float(tok.replace(",", "")))
+    else:
+        for sep in (",", "."):
+            if sep in tok:
+                out.add(_float(tok.replace(sep, "")))
+                if tok.count(sep) == 1:
+                    out.add(_float(tok.replace(sep, ".")))
+                break
+        else:
+            out.add(_float(tok))
+    return {v for v in out if v is not None}
+
+
+def number_tokens(text):
+    return [readings(tok) for tok in NUM.findall(_ascii_digits(text))]
+
+
+def english_numbers(text):
     out = []
     for tok in NUM.findall(_ascii_digits(text)):
-        t = tok
-        if "," in t and "." in t:
-            t = t.replace(".", "").replace(",", ".") if t.rfind(",") > t.rfind(".") \
-                else t.replace(",", "")
-        elif "," in t:
-            t = t.replace(",", ".") if len(t.split(",")[-1]) != 3 else t.replace(",", "")
-        else:
-            parts = t.split(".")
-            if len(parts) > 2 or (len(parts) == 2 and len(parts[-1]) == 3 and len(parts[0]) <= 3
-                                  and parts[0] != "0"):
-                t = t.replace(".", "")
-        try:
-            out.append(float(t))
-        except ValueError:
-            continue
+        v = _float(tok.replace(",", ""))
+        if v is not None:
+            out.append(v)
     return out
 
 
@@ -448,7 +468,7 @@ def allowed_numbers(facts):
     if facts.get("rate"):
         add(facts["rate"].replace(",", ""))
     for c in list(facts["claims"]) + list(facts.get("angles") or []):
-        for n in numbers_in(c):
+        for n in english_numbers(c):
             add(n)
     for v in facts["context"].values():
         add(v)
@@ -501,9 +521,10 @@ def validate(drafted, facts):
             problems.append(f"{kind} is not the supplied {want!r}")
 
     allowed = allowed_numbers(facts)
-    for n in numbers_in(text):
-        if not traceable(n, allowed):
-            problems.append(f"number {n} is not traceable to the supplied facts")
+    for cands in number_tokens(text):
+        if cands and not any(traceable(n, allowed) for n in cands):
+            shown = min(cands, key=lambda v: abs(v))
+            problems.append(f"number {shown} is not traceable to the supplied facts")
 
     low = text.lower()
     for word in BANNED:
@@ -699,6 +720,29 @@ def main():
             log("nothing eligible this slot")
             return 0
 
+    tried = set()
+    while True:
+        rc = attempt_slot(entry, kind, index, state, now_ts, now, args)
+        if rc is not RETRY:
+            return rc
+        tried.add(entry["ccy"])
+        if args.ccy:
+            log("forced currency - not substituting another")
+            return 0
+        if len(tried) >= 3:
+            log(f"{len(tried)} currencies rejected this slot - giving up")
+            return 0
+        kind, entry = pick(entries, index, state, now_ts, now, skip=tried)
+        if not entry:
+            log("nothing else eligible this slot")
+            return 0
+        log(f"trying another currency ({', '.join(sorted(tried))} rejected)")
+
+
+RETRY = object()
+
+
+def attempt_slot(entry, kind, index, state, now_ts, now, args):
     ccy = entry["ccy"]
     if ccy not in index:
         log(f"{ccy} is shared by several countries - no single country to write about")
@@ -725,8 +769,8 @@ def main():
             log(f"  REJECTED (attempt {attempt}): {p}")
         drafted = None
     if not drafted:
-        log(f"no acceptable post for {ccy} this slot - skipping")
-        return 0
+        log(f"no acceptable post for {ccy} - handing the slot to another currency")
+        return RETRY
     source = "model"
     log(f"--- post ({source}, {len(drafted['post'])} chars, {facts['language']}) ---")
     for line in drafted["post"].split("\n"):
