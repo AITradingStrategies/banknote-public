@@ -499,6 +499,9 @@ NO_REPORTING = re.compile(
     r"|\b(haber|rapor|a[cç][ıi]klama)\w*[^.]{0,40}\b"
     r"(yok|bulunmuyor|bulunmamaktad[ıi]r)", re.I)
 
+URL = re.compile(r"https?://|www\.|\b[a-z0-9-]+\.(?:com|org|net|io|lol|co|ly|app)\b",
+                 re.I)
+
 CAUSAL = re.compile(r"\b(because|due to|owing to|after|amid|following|driven by|"
                     r"on the back of|prompted by|debido a|tras|por|nedeniyle|sonras)\b")
 
@@ -511,6 +514,8 @@ def validate(drafted, facts):
         return ["empty"]
     if len(text) > TWEET_LIMIT:
         problems.append(f"{len(text)} chars over the {TWEET_LIMIT} limit")
+    if URL.search(text):
+        problems.append("contains a URL (13x the posting cost, and suppressed)")
     if text.count("$") > 1:
         problems.append("more than one cashtag (X rejects it)")
     if text.count("#") > 1:
