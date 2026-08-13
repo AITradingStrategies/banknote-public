@@ -13,18 +13,6 @@
    "symbol": null
   },
   {
-   "address": "0xe6f39752438d607390b339cdb609144acea6d6db",
-   "boostPct": 10.0,
-   "claimed": 0,
-   "kind": "nft",
-   "label": "Broker Punks",
-   "link": "https://robinhoodchain.blockscout.com/token/0xE6f39752438d607390B339CdB609144AcEA6D6dB",
-   "maxWallets": 100,
-   "minBalance": 1,
-   "qualified": 0,
-   "symbol": null
-  },
-  {
    "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
    "boostPct": 10.0,
    "claimed": 0,
@@ -44,7 +32,7 @@
   "184": 1,
   "98": 1
  },
- "generated": "2026-08-12T17:33:36+00:00",
+ "generated": "2026-08-13T03:06:22+00:00",
  "network": "testnet",
  "rates": {
   "citizenBonus": 0.1,
@@ -460,12 +448,12 @@
    "citizenship": 1000,
    "country": 1,
    "handle": "solanalostboy",
-   "holding": 1069.1,
+   "holding": 1160.5,
    "quest": 2000,
    "questVerdict": null,
    "seatBank": 15000,
    "seats": 3,
-   "total": 21199,
+   "total": 21290,
    "trade": 2130
   },
   "0xae65583fa86a32f513ebee265ea91515ca2aa84b": {
@@ -502,12 +490,12 @@
    "citizenship": 0,
    "country": null,
    "handle": null,
-   "holding": 20.36,
+   "holding": 22.01,
    "quest": 0,
    "questVerdict": null,
    "seatBank": 0,
    "seats": 0,
-   "total": 60,
+   "total": 62,
    "trade": 40
   }
  }
