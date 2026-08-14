@@ -1,0 +1,105 @@
+# One reply an hour, under somebody else's post, with the fixing.
+#
+# Generated file - the Python it runs is published from the private repo and
+# this workflow is the only part maintained here.
+#
+# TWO LOCKS. `post: true` on the run AND the repository variable
+# BANKNOTE_REPLY_ENABLED set to "1". Either one missing and the job picks a
+# target, composes the reply, validates it and prints it without posting.
+# This is the first job that speaks to a stranger rather than into the void,
+# and the cost of a stray run is not a bad tweet - it is a bad tweet under
+# somebody else's post.
+#
+# TO TURN IT ON: set the variable. To turn it off in a hurry: unset it. No
+# code change, no redeploy, and it takes effect on the next run.
+#
+# The scheduled runs are dry by design: they prove the targeting and the
+# composition every hour, in the log, for as long as you want to read them
+# before anything goes out.
+name: banknote-ai-reply
+
+on:
+  schedule:
+    # :30, so it never lands in the same minute as the hourly commentary and
+    # the two are not competing for the same delivery slot.
+    - cron: "30 * * * *"
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Actually reply (still needs BANKNOTE_REPLY_ENABLED=1)"
+        type: boolean
+        default: false
+      ccy:
+        description: "Only consider these currencies (blank = the rotation)"
+        type: string
+        default: ""
+
+concurrency:
+  group: banknote-ai-reply
+  cancel-in-progress: false
+
+permissions:
+  contents: write # reply_state.json: who we have already replied to
+
+jobs:
+  reply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: x-posting
+    env:
+      BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
+      BANKNOTE_NEWS_DIR: ${{ github.workspace }}/news
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install "anthropic==0.121.0"
+
+      - name: Reply
+        working-directory: oracle
+        env:
+          # Search needs the app-only bearer; posting needs OAuth 1.0a.
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # The second lock. Absent or not "1", nothing is posted.
+          BANKNOTE_REPLY_ENABLED: ${{ vars.BANKNOTE_REPLY_ENABLED }}
+          POST: ${{ inputs.post }}
+          CCY: ${{ inputs.ccy }}
+        run: |
+          ARGS=""
+          if [ "${POST}" = "true" ]; then ARGS="--post"; fi
+          if [ -n "${CCY}" ]; then ARGS="$ARGS --ccy ${CCY}"; fi
+          # BANKNOTE_LOG_POSTS is deliberately NOT set: this log is public, and
+          # the post we reply to is not ours to reprint. The reply itself is.
+          python run_reply.py $ARGS
+
+      - name: Commit who we replied to
+        if: always()
+        run: |
+          git config user.name  "banknote-poster"
+          git config user.email "poster@banknote.lol"
+          # Post IDs and daily counters only - our own record of what we did,
+          # not anybody's content.
+          git add oracle/state/reply_state.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "nothing posted this run"
+            exit 0
+          fi
+          git commit -m "reply: state ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; echo "rebase conflict"; exit 1; }
+          done
+          echo "could not push after 5 attempts"
+          exit 1
