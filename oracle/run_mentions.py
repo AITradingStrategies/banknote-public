@@ -9,7 +9,8 @@ from reply_filter import DROP, codes_in, hashtag_wall, no_content
 from run_broadcast import log, post_to_x
 from run_commentary import (ANALYSIS, MODEL, TWEET_LIMIT, URL,
                             load_json, number_tokens, traceable)
-from run_reply import age_minutes, facts_for, fixing_for, now_utc
+from run_reply import (X_LANGS, age_minutes, facts_for, fixing_for,
+                       now_utc)
 from x_search import Fatal, mentions, posts_by_ids, user_by_username
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -106,7 +107,7 @@ def compose(their_text, our_text, lang, facts):
     ask = {
         "their_message": their_text,
         "our_post_they_are_replying_to": our_text,
-        "language_hint": lang,
+        "language_hint": X_LANGS.get((lang or "").lower()) or lang,
         "facts": [{k: f[k] for k in ("pair", "rate", "fixing_age",
                                      "pair_move_pct", "currency_direction",
                                      "cross") if f.get(k) is not None}
