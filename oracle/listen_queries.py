@@ -31,6 +31,9 @@ COUNTRY_ALIASES = {
     "Netherlands": ["Holland"],
 }
 
+NO_SPACE_SCRIPTS = {"Thai", "Khmer", "Lao", "Burmese"}
+PHRASE_CHARS = 6
+
 SPECIAL = {
     "USD": "quote currency - pair forms are nonsense; needs dollar-index terms",
     "XOF": "shared by 8 countries - wants 'CFA franc' / 'franc CFA'",
@@ -70,6 +73,26 @@ def topic_terms():
     return d
 
 
+def loose_query(unit, ambiguous, local_bare, name):
+    seen, words = set(), []
+
+    def add(term):
+        key = term.strip('"').lower()
+        if key and key not in seen:
+            seen.add(key)
+            words.append(term)
+
+    if not ambiguous:
+        add(unit)
+    if " " not in name:
+        add(f'"{name}"')
+    for t in local_bare:
+        add(t)
+    if not words:
+        return None
+    return "(" + " OR ".join(words) + ") -is:retweet"
+
+
 def country_query(ccy, owners, lang, topics):
     places = owners.get(ccy) or []
     if not places or len(places) > 3:
@@ -101,15 +124,26 @@ def build(info, fix, owners, languages=None, local=None, topics=None):
         name, unit = info[ccy]["name"], unit_of[ccy]
         ambiguous = shared[unit] > 1 or unit in ENGLISH_WORDS
 
-        terms = [f'"{name}"']
+        terms = []
+        if " " in name:
+            terms.append(f'"{name}"')
         for country in owners.get(ccy, [])[:2]:
             terms.append(f'"{country.title()} {unit}"')
-        terms += [f"${ccy}", f"USD{ccy}", f'"{ccy}/USD"']
+        terms += [f"USD{ccy}", f'"{ccy}/USD"']
         if not ambiguous:
             terms.append(f'"{unit} rate"')
 
         entry = (local or {}).get(ccy) or {}
-        terms += entry.get("terms") or []
+        local_all = entry.get("terms") or []
+        spaceless = (languages or {}).get(ccy) in NO_SPACE_SCRIPTS
+
+        def is_phrase(term):
+            t = term.strip('"')
+            return " " in t or (spaceless and len(t) >= PHRASE_CHARS)
+
+        local_phrases = [t for t in local_all if is_phrase(t)]
+        local_bare = [t for t in local_all if not is_phrase(t)]
+        terms += local_phrases
 
         seen, ordered = set(), []
         for t in terms:
@@ -142,7 +176,10 @@ def build(info, fix, owners, languages=None, local=None, topics=None):
             "name": name,
             "language": lang,
             "tight": "(" + " OR ".join(ordered) + ") -is:retweet",
-            "loose": None if ambiguous else f"{unit} -is:retweet",
+            "loose": loose_query(unit, ambiguous, local_bare, name),
+            "loose_terms": ([] if ambiguous else [unit])
+                           + ([f'"{name}"'] if " " not in name else [])
+                           + local_bare,
             "country": cq,
             "local_terms": entry.get("terms") or [],
             "local_confidence": entry.get("confidence"),

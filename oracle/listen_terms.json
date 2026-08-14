@@ -32,7 +32,20 @@
   "Irregular plurals that are not a simple -s (meticais, guaraníes) are kept",
   "because stemming was not verified for those, and a bare form that differs",
   "from a phrase already listed (colones against 'colón costarricense') is",
-  "kept because a phrase never matches a bare word."
+  "kept because a phrase never matches a bare word.",
+  "",
+  "SWEEP 1 CORRECTION (2026-08-14). The first sweep ranked Georgia above the",
+  "Philippines and Sao Tome at 19,000 posts a week, because bare one-word",
+  "terms here matched ordinary words: dobra is Portuguese for 'folds', soles",
+  "is 'suns', bolivar is Simon Bolivar, piso is 'floor'. The terms were not",
+  "deleted - listen_queries.py now routes every single-word term to the",
+  "`loose` query, which is untrusted by construction, so the next sweep can",
+  "measure how noisy each one is instead of guessing. Phrases still go to",
+  "`tight`.",
+  "",
+  "Also removed: terms that merely mean 'dollar' in the local language. The",
+  "dollar is what these are priced AGAINST, so such a term identifies no",
+  "currency at all and matches every FX post in that language."
  ],
  "ARS": {
   "language": "Spanish",
@@ -433,16 +446,14 @@
   "language": "Sinhala",
   "confidence": "medium",
   "terms": [
-   "\"රුපියල්\"",
-   "\"ඩොලරය\""
+   "\"රුපියල්\""
   ]
  },
  "NPR": {
   "language": "Nepali",
   "confidence": "medium",
   "terms": [
-   "\"नेपाली रुपैयाँ\"",
-   "\"डलर\""
+   "\"नेपाली रुपैयाँ\""
   ]
  },
  "MVR": {
@@ -515,8 +526,7 @@
   "language": "Burmese",
   "confidence": "medium",
   "terms": [
-   "\"ကျပ်\"",
-   "\"ဒေါ်လာ\""
+   "\"ကျပ်\""
   ]
  },
  "PHP": {
@@ -525,7 +535,6 @@
   "bare_unsafe": "peso shared by 7",
   "terms": [
    "\"piso\"",
-   "\"dolyar\"",
    "\"palitan ng dolyar\""
   ]
  },
@@ -659,7 +668,6 @@
   "bare_unsafe": "shilling shared by 4",
   "terms": [
    "\"shilingi\"",
-   "\"dola\"",
    "\"Kenyan shilling\""
   ]
  },
@@ -676,8 +684,7 @@
   "language": "Somali",
   "confidence": "medium",
   "terms": [
-   "\"shilin Soomaali\"",
-   "\"doollar\""
+   "\"shilin Soomaali\""
   ]
  },
  "RWF": {
