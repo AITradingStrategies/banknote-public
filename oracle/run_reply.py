@@ -6,7 +6,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from listen_queries import build, load, local_terms, topic_terms
-from reply_filter import screen
+from reply_filter import codes_in, screen
 from run_broadcast import log, post_to_x
 from run_commentary import (ANALYSIS, LANGUAGES, MODEL, TWEET_LIMIT,
                             URL, latest_fixing, load_json, number_tokens,
@@ -48,10 +48,15 @@ Rules, all of them hard:
 - Write it in the LANGUAGE GIVEN, naturally, as a person from that country \
 would write it.
 - Use ONLY the numbers supplied. Never round them differently, never add one.
-- State the rate. The RATE is from today's fixing. If a move is given, state \
+- State the rate. The RATE is from the daily fixing, and `fixing_age` says \
+whether that fixing is from today or yesterday: say the one given, never the \
+other. If a move is given, state \
 it too; the MOVE is day on day - never say it happened "at the fixing",
 because it did not. **If the move is null there was no move worth reporting: \
 give the rate alone and say nothing about direction.**
+- If `cross` is supplied ("one" X "equals" N "of" Y), the post compared those \
+two currencies and the cross comes from the same fixings: state it, e.g. \
+"1 KWD is 4,400 NGN at the latest fixing", with or without the USD rate.
 - `pair_move_pct` is the move of the PAIR (local currency per dollar), signed. \
 `currency_direction` is the same fact said about the currency. They are \
 opposites and both are given to you already correct: never work one out from \
@@ -138,7 +143,20 @@ def fmt(v):
     return f"{v:.4f}".rstrip("0").rstrip(".")
 
 
-def facts_for(ccy, fx, entries):
+def cross_facts(ccy, fx, post_text):
+    others = codes_in(post_text) - {ccy, "USD"}
+    if len(others) != 1:
+        return None
+    other = next(iter(others))
+    ofx = fixing_for(other)
+    if not ofx or ofx["day"] != fx["day"] or not ofx.get("rate"):
+        return None
+    if fx["rate"] >= ofx["rate"]:
+        return {"one": other, "equals": fmt(fx["rate"] / ofx["rate"]), "of": ccy}
+    return {"one": ccy, "equals": fmt(ofx["rate"] / fx["rate"]), "of": other}
+
+
+def facts_for(ccy, fx, entries, post_text=""):
     entry = entries.get(ccy) or {}
     move = ((entry.get("changes") or {}).get("1d") or {}).get("pct")
     if move is not None and abs(move) < 0.1:
@@ -152,6 +170,9 @@ def facts_for(ccy, fx, entries):
             "weaker" if move > 0 else "stronger"),
         "language": LANGUAGES.get(ccy, "English"),
         "country": entry.get("country") or ccy,
+        "fixing_age": ("today" if fx["day"] == now_utc().date().isoformat()
+                       else "yesterday"),
+        "cross": cross_facts(ccy, fx, post_text),
     }
 
 
@@ -161,10 +182,13 @@ def compose(facts, post_lang):
     ask = {
         "language": lang,
         "pair": facts["pair"],
-        "rate_at_todays_fixing": facts["rate"],
+        "rate_at_fixing": facts["rate"],
+        "fixing_age": facts["fixing_age"],
         "pair_move_pct_day_on_day": facts["pair_move_pct"],
         "currency_direction": facts["currency_direction"],
     }
+    if facts.get("cross"):
+        ask["cross"] = facts["cross"]
     resp = anthropic.Anthropic().messages.create(
         model=MODEL,
         max_tokens=400,
@@ -196,14 +220,18 @@ def validate(text, facts):
             problems.append(f"contains {word!r} - argues or advertises")
 
     allowed = set()
-    for key in ("rate", "pair_move_pct"):
-        raw = (facts.get(key) or "").replace(",", "").lstrip("+")
+    cross = facts.get("cross") or {}
+    for raw in (facts.get("rate"), facts.get("pair_move_pct"),
+                cross.get("equals")):
+        raw = (raw or "").replace(",", "").lstrip("+")
         try:
             v = float(raw)
         except ValueError:
             continue
         allowed.add(v)
         allowed.add(abs(v))
+    if cross:
+        allowed.add(1.0)
     for cands in number_tokens(text):
         if cands and not any(traceable(n, allowed) for n in cands):
             problems.append(f"number {min(cands, key=abs)} is not in the facts")
@@ -258,7 +286,9 @@ def candidates(want, entries, state):
             break
     if searched:
         log(f"  {searched} search(es), ~${searched * POSTS_PER_SEARCH * USD_PER_POST:.2f}")
-    out.sort(key=lambda t: t[1])
+    def asked(p):
+        return "?" in p["text"] or "؟" in p["text"]
+    out.sort(key=lambda t: (not asked(t[2]), t[1]))
     return out
 
 
@@ -274,6 +304,11 @@ def main():
     cap = daily_cap(state, today)
     if day["n"] >= cap:
         log(f"{day['n']}/{cap} replies already today - done until tomorrow")
+        return 0
+    unlocked = min(cap, -(-cap * (now_utc().hour + 1) // 24))
+    if day["n"] >= unlocked:
+        log(f"{day['n']}/{cap} today, {unlocked} slot(s) unlocked - paced "
+            "until later")
         return 0
 
     want = ([c.strip().upper() for c in args.ccy.split(",")] if args.ccy
@@ -293,7 +328,7 @@ def main():
     if os.environ.get("BANKNOTE_LOG_POSTS") == "1":
         log(f"  under: {' '.join(post['text'].split())[:140]}")
 
-    facts = facts_for(ccy, fixing_for(ccy), entries)
+    facts = facts_for(ccy, fixing_for(ccy), entries, post.get("text") or "")
     try:
         text = compose(facts, post.get("lang"))
     except Exception as e:
@@ -317,10 +352,14 @@ def main():
         log(f"not posting ({'; '.join(why)})")
         return 0
 
-    post_to_x(text, reply_to=post["id"])
-    log(f"replied to {post['id']}")
+    resp = post_to_x(text, reply_to=post["id"])
+    rid = ((resp or {}).get("data") or {}).get("id")
+    log(f"replied to {post['id']} (our post {rid})")
     state["first_day"] = state.get("first_day") or today
     state["replied"].append(post["id"])
+    state.setdefault("posts", []).append(
+        {"id": rid, "to": post["id"], "ccy": ccy, "day": today})
+    state["posts"] = state["posts"][-200:]
     state.setdefault("accounts", {})[str(post.get("author_id"))] = today
     day["n"] += 1
     day["by_ccy"][ccy] = day["by_ccy"].get(ccy, 0) + 1
