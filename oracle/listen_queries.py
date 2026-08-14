@@ -34,16 +34,17 @@ COUNTRY_ALIASES = {
 NO_SPACE_SCRIPTS = {"Thai", "Khmer", "Lao", "Burmese"}
 PHRASE_CHARS = 6
 
-SPECIAL = {
-    "USD": "quote currency - pair forms are nonsense; needs dollar-index terms",
-    "XOF": "shared by 8 countries - wants 'CFA franc' / 'franc CFA'",
-    "XAF": "shared by 6 countries - wants 'CFA franc' / 'franc CFA'",
-    "XCD": "shared by 6 countries - wants 'East Caribbean dollar'",
+HAND = {
+    "USD": {"terms": ['"US dollar"', '"dollar index"', "DXY"], "pairs": []},
+    "EUR": {"terms": [], "pairs": ["EURUSD", '"EUR/USD"']},
+    "XOF": {"terms": ['"CFA franc"', '"franc CFA"']},
+    "XAF": {"terms": ['"CFA franc"', '"franc CFA"']},
+    "XCD": {"terms": ['"East Caribbean dollar"', '"EC dollar"']},
 }
 
 
 def load():
-    with open(COUNTRIES) as fh:
+    with open(COUNTRIES, encoding="utf-8") as fh:
         d = json.load(fh)
     info, fix = d.get("ccyInfo") or {}, d.get("fixCcys") or []
     owners = collections.defaultdict(list)
@@ -124,12 +125,19 @@ def build(info, fix, owners, languages=None, local=None, topics=None):
         name, unit = info[ccy]["name"], unit_of[ccy]
         ambiguous = shared[unit] > 1 or unit in ENGLISH_WORDS
 
+        hand = HAND.get(ccy)
         terms = []
         if " " in name:
             terms.append(f'"{name}"')
-        for country in owners.get(ccy, [])[:2]:
-            terms.append(f'"{country.title()} {unit}"')
-        terms += [f"USD{ccy}", f'"{ccy}/USD"']
+        if hand is not None:
+            terms += hand["terms"]
+        else:
+            for country in owners.get(ccy, [])[:2]:
+                terms.append(f'"{country.title()} {unit}"')
+        if hand is not None and "pairs" in hand:
+            terms += hand["pairs"]
+        else:
+            terms += [f"USD{ccy}", f'"{ccy}/USD"']
         if not ambiguous:
             terms.append(f'"{unit} rate"')
 
@@ -152,8 +160,6 @@ def build(info, fix, owners, languages=None, local=None, topics=None):
                 ordered.append(t)
 
         reasons = []
-        if ccy in SPECIAL:
-            reasons.append(SPECIAL[ccy])
         if ambiguous:
             reasons.append(f"bare name '{unit}' is shared or an English word")
         lang = (languages or {}).get(ccy, "English")
