@@ -1,0 +1,63 @@
+# Did anyone see it? Weekly readout of what the replies did.
+#
+# Generated file - the Python it runs is published from the private repo and
+# this workflow is the only part maintained here.
+#
+# No locks: it posts nothing, ever. It reads OUR OWN replies' public metrics
+# and the account's follower count, prints the table in the log, and appends
+# one snapshot line to oracle/state/measure.jsonl so the trend accumulates.
+name: banknote-ai-measure
+
+on:
+  schedule:
+    # Mondays 17:50 UTC - the week's numbers before the week's decisions.
+    - cron: "50 17 * * 1"
+  workflow_dispatch: {}
+
+concurrency:
+  group: banknote-ai-measure
+  cancel-in-progress: false
+
+permissions:
+  contents: write # state/measure.jsonl: the weekly snapshot
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: x-posting
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Measure
+        working-directory: oracle
+        env:
+          # Reading public metrics needs only the app-only bearer.
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: python run_measure.py
+
+      - name: Commit the snapshot
+        if: always()
+        run: |
+          git config user.name  "banknote-poster"
+          git config user.email "poster@banknote.lol"
+          git add oracle/state/measure.jsonl 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "nothing measured this run"
+            exit 0
+          fi
+          git commit -m "measure: weekly snapshot ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; echo "rebase conflict"; exit 1; }
+          done
+          echo "could not push after 5 attempts"
+          exit 1
