@@ -112,6 +112,18 @@ def currencies_named(text):
     return len(codes) + len(extra)
 
 
+def codes_in(text):
+    text = text or ""
+    codes = set(m.group(0).upper() for m in CODES.finditer(text))
+    for m in PAIRS.finditer(text):
+        codes |= {m.group(1).upper(), m.group(2).upper()}
+    for m in WORDS.finditer(text):
+        meanings = WORD_CODES.get(m.group(0).lower(), set())
+        if len(meanings) == 1:
+            codes |= meanings
+    return codes
+
+
 def has_figure(text):
     return bool(FIGURE.search(text or ""))
 
