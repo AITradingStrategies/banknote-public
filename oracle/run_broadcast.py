@@ -36,10 +36,15 @@ CASHTAG_PRIORITY = [
 ]
 
 
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except (AttributeError, ValueError, OSError):
+    pass
+
+
 def log(msg):
     stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    safe = str(msg).encode("ascii", "replace").decode()
-    print(f"[{stamp}] {safe}", flush=True)
+    print(f"[{stamp}] {msg}", flush=True)
 
 
 def load_json(path, default):
