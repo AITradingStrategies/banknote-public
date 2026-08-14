@@ -161,7 +161,7 @@ def _sign(method, url, params, consumer_secret, token_secret):
         hmac.new(key.encode(), base.encode(), hashlib.sha1).digest()).decode()
 
 
-def post_to_x(text):
+def post_to_x(text, reply_to=None):
     need = ["X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET"]
     missing = [k for k in need if not os.environ.get(k)]
     if missing:
@@ -180,8 +180,11 @@ def post_to_x(text):
     oauth["oauth_signature"] = urllib.parse.quote(
         _sign("POST", url, oauth, cs, ts_), safe="")
     header = "OAuth " + ", ".join(f'{k}="{v}"' for k, v in sorted(oauth.items()))
+    body = {"text": text}
+    if reply_to:
+        body["reply"] = {"in_reply_to_tweet_id": str(reply_to)}
     req = urllib.request.Request(
-        url, data=json.dumps({"text": text}).encode(),
+        url, data=json.dumps(body).encode(),
         headers={"Authorization": header, "Content-Type": "application/json",
                  "User-Agent": "banknote-broadcast/1.0"})
     try:

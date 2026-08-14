@@ -54,8 +54,7 @@
   "terms": [
    "\"peso argentino\"",
    "\"dólar blue\"",
-   "\"dolar blue\"",
-   "\"dólar hoy\""
+   "\"dolar blue\""
   ]
  },
  "BOB": {
@@ -118,9 +117,7 @@
   "confidence": "high",
   "bare_unsafe": "peso = weight",
   "terms": [
-   "\"peso mexicano\"",
-   "\"dólar hoy\"",
-   "\"precio del dólar\""
+   "\"peso mexicano\""
   ]
  },
  "NIO": {

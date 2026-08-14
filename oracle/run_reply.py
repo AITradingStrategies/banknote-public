@@ -1,0 +1,333 @@
+import argparse
+import datetime as dt
+import json
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from listen_queries import build, load, local_terms, topic_terms
+from reply_filter import screen
+from run_broadcast import log, post_to_x
+from run_commentary import (ANALYSIS, LANGUAGES, MODEL, TWEET_LIMIT,
+                            URL, latest_fixing, load_json, number_tokens,
+                            traceable)
+from x_search import Fatal, search
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+STATE_FILE = os.path.join(HERE, "state", "reply_state.json")
+
+RAMP = [(0, 4), (7, 8), (14, 12)]
+
+MAX_PER_CCY_PER_DAY = 2
+
+MAX_POST_AGE_MIN = 180
+
+MAX_FIXING_AGE_H = 30
+
+CCYS_PER_RUN = 3
+POSTS_PER_SEARCH = 10
+USD_PER_POST = 0.005
+
+TIERS = {
+    "frontier": ["NGN", "GHS", "KES", "EGP", "PKR", "BDT", "VND", "IDR",
+                 "PHP", "INR", "ZAR", "ARS", "TRY", "MXN", "COP"],
+    "major": ["JPY", "EUR", "GBP", "CAD", "CHF", "CNY"],
+}
+
+BANNED = [
+    "actually", "incorrect", "wrong", "fyi", "correction", "no,", "nope",
+    "banknote", "check out", "follow", "our platform", "trade ", "buy ",
+    "click", "join", "sign up", "dm ",
+]
+
+SYSTEM = """You write one line of fact under somebody else's post, as a \
+currency data account.
+
+Rules, all of them hard:
+- ONE sentence. Under 120 characters. No greeting, no sign-off, no emoji.
+- Write it in the LANGUAGE GIVEN, naturally, as a person from that country \
+would write it.
+- Use ONLY the numbers supplied. Never round them differently, never add one.
+- State the rate. The RATE is from today's fixing. If a move is given, state \
+it too; the MOVE is day on day - never say it happened "at the fixing",
+because it did not. **If the move is null there was no move worth reporting: \
+give the rate alone and say nothing about direction.**
+- `pair_move_pct` is the move of the PAIR (local currency per dollar), signed. \
+`currency_direction` is the same fact said about the currency. They are \
+opposites and both are given to you already correct: never work one out from \
+the other, and never flip a sign.
+- Do NOT correct, contradict, congratulate, agree, or address the person. Do \
+not use "actually", "in fact", "no". You are adding a number to a \
+conversation, not answering back.
+- No hashtags, no links, no mention of who you are.
+
+Good, in English: "USD/NGN is 1,610 at today's fixing, down 0.4% on the day."
+Bad: "Actually the naira is at 1,610 - you're out of date."
+"""
+
+SCHEMA = {
+    "type": "object",
+    "properties": {"reply": {"type": "string"}},
+    "required": ["reply"],
+    "additionalProperties": False,
+}
+
+
+def now_utc():
+    return dt.datetime.now(dt.timezone.utc)
+
+
+def load_state():
+    try:
+        with open(STATE_FILE) as fh:
+            return json.load(fh)
+    except (OSError, ValueError):
+        return {"first_day": None, "replied": [], "accounts": {}, "days": {}}
+
+
+def save_state(state):
+    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
+    state["replied"] = state["replied"][-500:]
+    tmp = STATE_FILE + ".tmp"
+    with open(tmp, "w") as fh:
+        json.dump(state, fh, indent=1, sort_keys=True)
+    os.replace(tmp, STATE_FILE)
+
+
+def daily_cap(state, today):
+    first = state.get("first_day")
+    if not first:
+        return RAMP[0][1]
+    age = (dt.date.fromisoformat(today) - dt.date.fromisoformat(first)).days
+    cap = RAMP[0][1]
+    for after, n in RAMP:
+        if age >= after:
+            cap = n
+    return cap
+
+
+def age_minutes(created_at):
+    if not created_at:
+        return None
+    try:
+        when = dt.datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return (now_utc() - when).total_seconds() / 60
+
+
+def fixing_for(ccy):
+    fx = latest_fixing(ccy)
+    if not fx:
+        return None
+    try:
+        day = dt.date.fromisoformat(fx["day"])
+    except (KeyError, TypeError, ValueError):
+        return None
+    hours = (now_utc().date() - day).days * 24
+    if hours > MAX_FIXING_AGE_H:
+        return None
+    return fx
+
+
+def fmt(v):
+    if v >= 1000:
+        return f"{v:,.0f}"
+    if v >= 10:
+        return f"{v:,.2f}"
+    return f"{v:.4f}".rstrip("0").rstrip(".")
+
+
+def facts_for(ccy, fx, entries):
+    entry = entries.get(ccy) or {}
+    move = ((entry.get("changes") or {}).get("1d") or {}).get("pct")
+    if move is not None and abs(move) < 0.1:
+        move = None
+    return {
+        "pair": f"USD/{ccy}",
+        "rate": fmt(fx["rate"]),
+        "day": fx["day"],
+        "pair_move_pct": None if move is None else f"{move:+.2f}",
+        "currency_direction": None if move is None else (
+            "weaker" if move > 0 else "stronger"),
+        "language": LANGUAGES.get(ccy, "English"),
+        "country": entry.get("country") or ccy,
+    }
+
+
+def compose(facts, post_lang):
+    import anthropic
+    lang = facts["language"]
+    ask = {
+        "language": lang,
+        "pair": facts["pair"],
+        "rate_at_todays_fixing": facts["rate"],
+        "pair_move_pct_day_on_day": facts["pair_move_pct"],
+        "currency_direction": facts["currency_direction"],
+    }
+    resp = anthropic.Anthropic().messages.create(
+        model=MODEL,
+        max_tokens=400,
+        system=SYSTEM,
+        output_config={"effort": "low",
+                       "format": {"type": "json_schema", "schema": SCHEMA}},
+        messages=[{"role": "user", "content":
+                   f"Language: {lang}\nFacts: {json.dumps(ask, ensure_ascii=False)}"}],
+    )
+    for block in resp.content:
+        if getattr(block, "type", None) == "text":
+            return json.loads(block.text)["reply"].strip()
+    return ""
+
+
+def validate(text, facts):
+    problems = []
+    if not text.strip():
+        return ["empty"]
+    if len(text) > min(TWEET_LIMIT, 200):
+        problems.append(f"{len(text)} chars - a reply should be one line")
+    if URL.search(text):
+        problems.append("contains a URL")
+    if "#" in text or "$" in text:
+        problems.append("carries a tag; replies do not")
+    low = text.lower()
+    for word in BANNED:
+        if word in low:
+            problems.append(f"contains {word!r} - argues or advertises")
+
+    allowed = set()
+    for key in ("rate", "pair_move_pct"):
+        raw = (facts.get(key) or "").replace(",", "").lstrip("+")
+        try:
+            v = float(raw)
+        except ValueError:
+            continue
+        allowed.add(v)
+        allowed.add(abs(v))
+    for cands in number_tokens(text):
+        if cands and not any(traceable(n, allowed) for n in cands):
+            problems.append(f"number {min(cands, key=abs)} is not in the facts")
+    return problems
+
+
+def rotation(want, hour):
+    if len(want) <= CCYS_PER_RUN:
+        return want
+    start = (hour * CCYS_PER_RUN) % len(want)
+    doubled = want + want
+    return doubled[start:start + CCYS_PER_RUN]
+
+
+def candidates(want, entries, state):
+    info, fix, owners = load()
+    rows = {r["ccy"]: r for r in
+            build(info, fix, owners, LANGUAGES, local_terms(), topic_terms())}
+    today = now_utc().date().isoformat()
+    per_ccy = (state.get("days", {}).get(today, {}).get("by_ccy") or {})
+    out, searched = [], 0
+    for ccy in want:
+        if ccy not in rows:
+            continue
+        if per_ccy.get(ccy, 0) >= MAX_PER_CCY_PER_DAY:
+            log(f"  {ccy}: at its daily cap")
+            continue
+        if not fixing_for(ccy):
+            log(f"  {ccy}: no fixing fresh enough to quote")
+            continue
+        try:
+            posts = search(rows[ccy]["tight"], POSTS_PER_SEARCH)
+            searched += 1
+        except Fatal as e:
+            log(f"  {e}")
+            break
+        except Exception as e:
+            log(f"  {ccy}: search failed ({e})")
+            continue
+        for p in posts:
+            if p["id"] in set(state.get("replied") or []):
+                continue
+            if state.get("accounts", {}).get(str(p.get("author_id"))) == today:
+                continue
+            age = age_minutes(p.get("created_at"))
+            if age is None or age > MAX_POST_AGE_MIN:
+                continue
+            if not screen(p).ok:
+                continue
+            out.append((ccy, age, p))
+        if out:
+            break
+    if searched:
+        log(f"  {searched} search(es), ~${searched * POSTS_PER_SEARCH * USD_PER_POST:.2f}")
+    out.sort(key=lambda t: t[1])
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--ccy", help="comma-separated; default is the rotation")
+    ap.add_argument("--post", action="store_true", help="actually reply")
+    args = ap.parse_args()
+
+    state = load_state()
+    today = now_utc().date().isoformat()
+    day = state.setdefault("days", {}).setdefault(today, {"n": 0, "by_ccy": {}})
+    cap = daily_cap(state, today)
+    if day["n"] >= cap:
+        log(f"{day['n']}/{cap} replies already today - done until tomorrow")
+        return 0
+
+    want = ([c.strip().upper() for c in args.ccy.split(",")] if args.ccy
+            else rotation(TIERS["frontier"] + TIERS["major"], now_utc().hour))
+    log(f"this hour: {', '.join(want)}")
+    entries = (load_json(ANALYSIS, {}).get("currencies") or {})
+    if not entries:
+        log("no analysis - nothing to quote")
+        return 1
+
+    found = candidates(want, entries, state)
+    if not found:
+        log("nothing worth replying to this hour")
+        return 0
+    ccy, age, post = found[0]
+    log(f"target: {ccy}, post {post['id']}, {age:.0f} min old")
+    if os.environ.get("BANKNOTE_LOG_POSTS") == "1":
+        log(f"  under: {' '.join(post['text'].split())[:140]}")
+
+    facts = facts_for(ccy, fixing_for(ccy), entries)
+    try:
+        text = compose(facts, post.get("lang"))
+    except Exception as e:
+        log(f"compose failed ({type(e).__name__}: {e})")
+        return 1
+
+    problems = validate(text, facts)
+    log(f"  reply ({facts['language']}): {text}")
+    if problems:
+        for p in problems:
+            log(f"  REJECTED: {p}")
+        return 1
+
+    enabled = os.environ.get("BANKNOTE_REPLY_ENABLED") == "1"
+    if not (args.post and enabled):
+        why = []
+        if not args.post:
+            why.append("--post not given")
+        if not enabled:
+            why.append("BANKNOTE_REPLY_ENABLED is not 1")
+        log(f"not posting ({'; '.join(why)})")
+        return 0
+
+    post_to_x(text, reply_to=post["id"])
+    log(f"replied to {post['id']}")
+    state["first_day"] = state.get("first_day") or today
+    state["replied"].append(post["id"])
+    state.setdefault("accounts", {})[str(post.get("author_id"))] = today
+    day["n"] += 1
+    day["by_ccy"][ccy] = day["by_ccy"].get(ccy, 0) + 1
+    state["days"] = {d: v for d, v in state["days"].items() if d >= today}
+    save_state(state)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
