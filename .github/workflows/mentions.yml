@@ -1,0 +1,94 @@
+# Answer people who talk to the account - the conversation half of the beat.
+#
+# Generated file - the Python it runs is published from the private repo and
+# this workflow is the only part maintained here.
+#
+# TWO LOCKS, separate from the reply beat's so either can be stopped without
+# touching the other: `post: true` on the run AND the repository variable
+# BANKNOTE_MENTIONS_ENABLED set to "1". Either one missing and the job reads
+# the mentions, composes the answer, validates it and prints it - nothing is
+# posted.
+#
+# TO TURN IT ON: set the variable. To stop it in a hurry: unset it. No code
+# change, no redeploy, effective on the next run.
+name: banknote-ai-mentions
+
+on:
+  schedule:
+    # :45 - clear of the commentary (:00/:10 pattern) and the reply beat (:30).
+    - cron: "45 * * * *"
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Actually answer (still needs BANKNOTE_MENTIONS_ENABLED=1)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: banknote-ai-mentions
+  cancel-in-progress: false
+
+permissions:
+  contents: write # mentions_state.json: who we have answered, and since when
+
+jobs:
+  mentions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: x-posting
+    env:
+      BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
+      BANKNOTE_NEWS_DIR: ${{ github.workspace }}/news
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install "anthropic==0.121.0"
+
+      - name: Answer
+        working-directory: oracle
+        env:
+          # Reads (mentions, the post of ours they answered) use the app-only
+          # bearer; posting the answer needs OAuth 1.0a.
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # The second lock. Absent or not "1", nothing is posted.
+          BANKNOTE_MENTIONS_ENABLED: ${{ vars.BANKNOTE_MENTIONS_ENABLED }}
+          POST: ${{ inputs.post }}
+        run: |
+          ARGS=""
+          if [ "${POST}" = "true" ]; then ARGS="--post"; fi
+          # This log is public. The mention we answer is somebody else's post
+          # and its text is never printed here; the answer is ours and is.
+          python run_mentions.py $ARGS
+
+      - name: Commit who we answered
+        if: always()
+        run: |
+          git config user.name  "banknote-poster"
+          git config user.email "poster@banknote.lol"
+          # Post ids, caps and a cursor only - our own record of what we did,
+          # not anybody's content.
+          git add oracle/state/mentions_state.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "nothing to record this run"
+            exit 0
+          fi
+          git commit -m "mentions: state ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "pushed (attempt $attempt)"
+              exit 0
+            fi
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; echo "rebase conflict"; exit 1; }
+          done
+          echo "could not push after 5 attempts"
+          exit 1
