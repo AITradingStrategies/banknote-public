@@ -77,6 +77,24 @@ SCHEMA = {
     "additionalProperties": False,
 }
 
+X_LANGS = {
+    "en": "English", "es": "Spanish", "pt": "Portuguese", "fr": "French",
+    "de": "German", "it": "Italian", "nl": "Dutch", "tr": "Turkish",
+    "ar": "Arabic", "fa": "Persian", "ur": "Urdu", "hi": "Hindi",
+    "bn": "Bengali", "ta": "Tamil", "ne": "Nepali", "si": "Sinhala",
+    "th": "Thai", "vi": "Vietnamese", "id": "Indonesian", "in": "Indonesian",
+    "ms": "Malay", "tl": "Filipino", "ja": "Japanese", "ko": "Korean",
+    "zh": "Chinese", "ru": "Russian", "uk": "Ukrainian", "pl": "Polish",
+    "cs": "Czech", "hu": "Hungarian", "ro": "Romanian", "sw": "Swahili",
+    "am": "Amharic", "my": "Burmese", "km": "Khmer", "lo": "Lao",
+    "el": "Greek", "he": "Hebrew", "iw": "Hebrew", "da": "Danish",
+    "sv": "Swedish", "no": "Norwegian",
+}
+
+
+def reply_language(facts, post_lang):
+    return X_LANGS.get((post_lang or "").lower()) or facts["language"]
+
 
 def now_utc():
     return dt.datetime.now(dt.timezone.utc)
@@ -176,9 +194,8 @@ def facts_for(ccy, fx, entries, post_text=""):
     }
 
 
-def compose(facts, post_lang):
+def compose(facts, lang):
     import anthropic
-    lang = facts["language"]
     ask = {
         "language": lang,
         "pair": facts["pair"],
@@ -329,14 +346,15 @@ def main():
         log(f"  under: {' '.join(post['text'].split())[:140]}")
 
     facts = facts_for(ccy, fixing_for(ccy), entries, post.get("text") or "")
+    lang = reply_language(facts, post.get("lang"))
     try:
-        text = compose(facts, post.get("lang"))
+        text = compose(facts, lang)
     except Exception as e:
         log(f"compose failed ({type(e).__name__}: {e})")
         return 1
 
     problems = validate(text, facts)
-    log(f"  reply ({facts['language']}): {text}")
+    log(f"  reply ({lang}): {text}")
     if problems:
         for p in problems:
             log(f"  REJECTED: {p}")
