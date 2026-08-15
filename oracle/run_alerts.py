@@ -20,6 +20,7 @@ REVIEW_PCT = 10.0
 OUTLIER_PCT = 2.0
 CONFIRM_POLLS = 2
 MAX_PER_DAY = 6
+COMMENTARY_DEFER_H = 3
 MAX_BASELINE_AGE_H = 36
 
 ANALYSIS_FILE = os.path.join(HERE, "state", "analysis.json")
@@ -135,9 +136,13 @@ def main():
 
     state = load_json(STATE_FILE, {})
     if state.get("date") != today:
-        state = {"date": today, "alerted": [], "pending": {}, "count": 0}
+        state = {"date": today, "alerted": [], "alerted_at": {},
+                 "pending": {}, "count": 0}
     alerted = set(state.get("alerted") or [])
     pending = dict(state.get("pending") or {})
+    commentary = load_json(os.path.join(HERE, "state", "commentary_state.json"), {})
+    commentary_recent = commentary.get("recent") or {}
+    now_ts = int(datetime.now(timezone.utc).timestamp())
 
     covered = covered_ccys()
     bars = thresholds()
@@ -184,6 +189,11 @@ def main():
     names = currency_names()
     posted_any = False
     for ccy, m in ready[:1]:
+        covered_ago = now_ts - int(commentary_recent.get(ccy) or 0)
+        if covered_ago < COMMENTARY_DEFER_H * 3600 and not args.force:
+            log(f"HELD: {ccy} had a commentary write-up "
+                f"{covered_ago // 60}m ago - deferring, still pending")
+            continue
         text = compose(ccy, names.get(ccy), m["rate"], m["pct"], since_label(taken))
         log(f"--- alert ({len(text)} chars) ---")
         for line in text.split("\n"):
@@ -206,6 +216,7 @@ def main():
         if args.post:
             post_to_x(text)
             alerted.add(ccy)
+            state.setdefault("alerted_at", {})[ccy] = now_ts
             state["count"] = int(state.get("count", 0)) + 1
             state["pending"].pop(ccy, None)
             posted_any = True
