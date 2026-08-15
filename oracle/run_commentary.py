@@ -25,7 +25,8 @@ STATE_FILE = os.path.join(HERE, "state", "commentary_state.json")
 MODEL = "claude-sonnet-5"
 SLOT_MINUTES = 60
 MIN_POST_GAP_MIN = 50
-REPEAT_COOLDOWN_DAYS = 2
+REPEAT_COOLDOWN_DAYS = 4
+ALERT_DEFER_H = 3
 NEWS_MAX_AGE_H = 72
 NEWS_FRESH_H = 24
 NEWS_MAX_ITEMS = 6
@@ -164,8 +165,10 @@ def in_scope(entry, index):
     return not entry.get("stateless") and ccy not in MAJORS
 
 
-def eligible(entry, index, state, now_ts):
+def eligible(entry, index, state, now_ts, alerted=frozenset()):
     if not in_scope(entry, index):
+        return False
+    if entry["ccy"] in alerted:
         return False
     last = (state.get("recent") or {}).get(entry["ccy"], 0)
     return (now_ts - last) > REPEAT_COOLDOWN_DAYS * 86400
@@ -182,15 +185,18 @@ def movement_rank(entry):
     return best
 
 
-def pick(entries, index, state, now_ts, now, skip=()):
+def pick(entries, index, state, now_ts, now, skip=(),
+         alerted=frozenset(), alerted_at=None):
     posted_today = set(state.get("anchors_today") or [])
     skip = set(skip)
     live = {c: e for c, e in entries.items()
-            if c not in skip and eligible(e, index, state, now_ts)}
+            if c not in skip and eligible(e, index, state, now_ts, alerted)}
+    seed = f"{now:%Y-%m-%d}-{now.hour}-{now.minute // SLOT_MINUTES}"
 
     due = [c for c, hour in ANCHORS.items()
            if c not in posted_today and c not in skip and now.hour >= hour
-           and c in entries and c in index and not entries[c].get("error")]
+           and c in entries and c in index and not entries[c].get("error")
+           and now_ts - (alerted_at or {}).get(c, 0) > ALERT_DEFER_H * 3600]
     if due:
         due.sort(key=lambda c: ANCHORS[c])
         return "anchor", entries[due[0]]
@@ -201,15 +207,15 @@ def pick(entries, index, state, now_ts, now, skip=()):
 
     fresh = sorted(fresh_news_ccys(index, now_ts) & set(live))
     if fresh:
-        return "news", live[fresh[0]]
+        return "news", live[random.Random(seed).choice(fresh)]
 
     if live:
-        seed = f"{now:%Y-%m-%d}-{now.hour}-{now.minute // SLOT_MINUTES}"
         return "random", live[random.Random(seed).choice(sorted(live))]
 
     seen = state.get("recent") or {}
     stale = sorted((c for c, e in entries.items() if in_scope(e, index)),
-                   key=lambda c: seen.get(c, 0))
+                   key=lambda c: (seen.get(c, 0),
+                                  random.Random(seed + c).random()))
     if not stale:
         return None, None
     return "repeat", entries[stale[0]]
@@ -567,6 +573,10 @@ run of interchangeable sentences is the one failure that matters here - it is
 the whole reason a writer does this rather than a form letter. Vary what you
 open on and how you build the sentence. Some days the level is the story, some
 days the streak, some days how quiet it has been.
+`recent_posts_do_not_imitate`, when present, is what the account just
+published, in English translation. Do not open the way any of them opens and
+do not reuse their sentence shapes. Their numbers belong to other currencies
+and must not appear in yours.
 
 HEADLINES, IF ANY EARN IT. You may be given recent stories from the country.
 Use one only where it bears on the currency itself - the economy, prices,
@@ -696,7 +706,8 @@ def main():
     state = load_json(STATE_FILE, {})
     if state.get("date") != today:
         state = {"date": today, "anchors_today": [], "recent": state.get("recent", {}),
-                 "last_post": state.get("last_post", 0)}
+                 "last_post": state.get("last_post", 0),
+                 "recent_posts": state.get("recent_posts", [])}
 
     if args.post and not args.ccy:
         since = now_ts - int(state.get("last_post") or 0)
@@ -710,9 +721,14 @@ def main():
             if now.strftime("%Y-%m-%d") != state.get("date"):
                 state = {"date": now.strftime("%Y-%m-%d"), "anchors_today": [],
                          "recent": state.get("recent", {}),
-                         "last_post": state.get("last_post", 0)}
+                         "last_post": state.get("last_post", 0),
+                         "recent_posts": state.get("recent_posts", [])}
 
     index = country_index()
+    alerts = load_json(os.path.join(HERE, "state", "alerts_state.json"), {})
+    alerted = (set(alerts.get("alerted") or [])
+               if alerts.get("date") == now.strftime("%Y-%m-%d") else set())
+    alerted_at = alerts.get("alerted_at") or {}
     if args.ccy:
         entry = entries.get(args.ccy.upper())
         kind = "forced"
@@ -720,7 +736,8 @@ def main():
             log(f"{args.ccy} is not in the analysis")
             return 1
     else:
-        kind, entry = pick(entries, index, state, now_ts, now)
+        kind, entry = pick(entries, index, state, now_ts, now,
+                           alerted=alerted, alerted_at=alerted_at)
         if not entry:
             log("nothing eligible this slot")
             return 0
@@ -737,7 +754,8 @@ def main():
         if len(tried) >= 3:
             log(f"{len(tried)} currencies rejected this slot - giving up")
             return 0
-        kind, entry = pick(entries, index, state, now_ts, now, skip=tried)
+        kind, entry = pick(entries, index, state, now_ts, now, skip=tried,
+                           alerted=alerted, alerted_at=alerted_at)
         if not entry:
             log("nothing else eligible this slot")
             return 0
@@ -755,6 +773,8 @@ def attempt_slot(entry, kind, index, state, now_ts, now, args):
     cid, name = index[ccy]
     news = recent_news(cid, now_ts)
     facts = build_facts(entry, cid, name, latest_fixing(ccy), news)
+    if state.get("recent_posts"):
+        facts["recent_posts_do_not_imitate"] = state["recent_posts"][-4:]
 
     log(f"slot: {kind} | {ccy} ({name}) score={score(entry)} "
         f"signals={[s['type'] for s in entry['signals']]} news={len(news)}")
@@ -791,6 +811,9 @@ def attempt_slot(entry, kind, index, state, now_ts, now, args):
             state.setdefault("anchors_today", []).append(ccy)
         state.setdefault("recent", {})[ccy] = now_ts
         state["last_post"] = now_ts
+        state.setdefault("recent_posts", []).append(
+            (drafted.get("back_translation") or drafted["post"]).strip())
+        state["recent_posts"] = state["recent_posts"][-4:]
         log(f"posted: {ccy}")
     if args.post or args.commit:
         write_json_atomic(STATE_FILE, state, indent=1, sort_keys=True)
