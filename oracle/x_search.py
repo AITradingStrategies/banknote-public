@@ -49,6 +49,8 @@ def _shape(body, n):
             "parent": next((r.get("id") for r in refs
                             if r.get("type") == "replied_to"), None),
             "is_retweet": any(r.get("type") == "retweeted" for r in refs),
+            "urls": [u.get("unwound_url") or u.get("expanded_url") or u.get("url")
+                     for u in (t.get("entities") or {}).get("urls") or []],
         })
     return out
 
@@ -57,7 +59,7 @@ def search(query, n):
     body = _get("/tweets/search/recent", {
         "query": query,
         "max_results": str(max(10, min(n, 100))),
-        "tweet.fields": "lang,created_at,public_metrics",
+        "tweet.fields": "lang,created_at,public_metrics,entities",
         "expansions": "author_id",
         "user.fields": "public_metrics",
     })
@@ -68,7 +70,7 @@ def mentions(user_id, since_id=None, n=100):
     params = {
         "max_results": str(max(5, min(n, 100))),
         "tweet.fields": ("lang,created_at,public_metrics,conversation_id,"
-                         "referenced_tweets,author_id"),
+                         "referenced_tweets,author_id,entities"),
         "expansions": "author_id",
         "user.fields": "public_metrics",
     }
