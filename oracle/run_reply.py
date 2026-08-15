@@ -2,6 +2,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import random
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -64,6 +65,10 @@ the other, and never flip a sign.
 - Do NOT correct, contradict, congratulate, agree, or address the person. Do \
 not use "actually", "in fact", "no". You are adding a number to a \
 conversation, not answering back.
+- `recent_replies`, when present, are this account's latest replies. The \
+facts may be identical - the fixing is daily - but the sentence must not be: \
+never produce a reply matching one of them, and build the sentence \
+differently. Same numbers, different sentence.
 - No hashtags, no links, no mention of who you are.
 
 Good, in English: "USD/NGN is 1,610 at today's fixing, down 0.4% on the day."
@@ -194,7 +199,7 @@ def facts_for(ccy, fx, entries, post_text=""):
     }
 
 
-def compose(facts, lang):
+def compose(facts, lang, recent=()):
     import anthropic
     ask = {
         "language": lang,
@@ -206,6 +211,8 @@ def compose(facts, lang):
     }
     if facts.get("cross"):
         ask["cross"] = facts["cross"]
+    if recent:
+        ask["recent_replies"] = list(recent)[-4:]
     resp = anthropic.Anthropic().messages.create(
         model=MODEL,
         max_tokens=400,
@@ -221,10 +228,13 @@ def compose(facts, lang):
     return ""
 
 
-def validate(text, facts):
+def validate(text, facts, recent=()):
     problems = []
     if not text.strip():
         return ["empty"]
+    fold = " ".join(text.split()).lower()
+    if any(fold == " ".join(r.split()).lower() for r in recent):
+        problems.append("identical to a recent reply - a bot tell")
     if len(text) > min(TWEET_LIMIT, 200):
         problems.append(f"{len(text)} chars - a reply should be one line")
     if URL.search(text):
@@ -255,11 +265,13 @@ def validate(text, facts):
     return problems
 
 
-def rotation(want, hour):
+def rotation(want, now):
     if len(want) <= CCYS_PER_RUN:
         return want
-    start = (hour * CCYS_PER_RUN) % len(want)
-    doubled = want + want
+    order = list(want)
+    random.Random(f"{now:%Y-%m-%d}").shuffle(order)
+    start = (now.hour * CCYS_PER_RUN) % len(order)
+    doubled = order + order
     return doubled[start:start + CCYS_PER_RUN]
 
 
@@ -329,7 +341,7 @@ def main():
         return 0
 
     want = ([c.strip().upper() for c in args.ccy.split(",")] if args.ccy
-            else rotation(TIERS["frontier"] + TIERS["major"], now_utc().hour))
+            else rotation(TIERS["frontier"] + TIERS["major"], now_utc()))
     log(f"this hour: {', '.join(want)}")
     entries = (load_json(ANALYSIS, {}).get("currencies") or {})
     if not entries:
@@ -347,13 +359,14 @@ def main():
 
     facts = facts_for(ccy, fixing_for(ccy), entries, post.get("text") or "")
     lang = reply_language(facts, post.get("lang"))
+    recent = state.get("texts") or []
     try:
-        text = compose(facts, lang)
+        text = compose(facts, lang, recent)
     except Exception as e:
         log(f"compose failed ({type(e).__name__}: {e})")
         return 1
 
-    problems = validate(text, facts)
+    problems = validate(text, facts, recent)
     log(f"  reply ({lang}): {text}")
     if problems:
         for p in problems:
@@ -378,6 +391,7 @@ def main():
     state.setdefault("posts", []).append(
         {"id": rid, "to": post["id"], "ccy": ccy, "day": today})
     state["posts"] = state["posts"][-200:]
+    state["texts"] = (recent + [text])[-6:]
     state.setdefault("accounts", {})[str(post.get("author_id"))] = today
     day["n"] += 1
     day["by_ccy"][ccy] = day["by_ccy"].get(ccy, 0) + 1
