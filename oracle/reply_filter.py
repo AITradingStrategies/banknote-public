@@ -1,6 +1,7 @@
 import hashlib
 import re
 import unicodedata
+import urllib.parse
 from collections import Counter
 
 MAX_EXISTING_REPLIES = 25
@@ -74,6 +75,23 @@ DROP = [
 _ACCENTS = str.maketrans("", "", "̧̀́̂̃̈̊")
 
 
+PROMO_HOSTS = {"chat.whatsapp.com", "wa.me", "t.me", "telegram.me",
+               "discord.gg", "linktr.ee", "beacons.ai"}
+
+
+def promo_link(urls):
+    for url in urls or []:
+        host = urllib.parse.urlparse(url or "").netloc.lower()
+        if any(host == d or host.endswith("." + d) for d in PROMO_HOSTS):
+            return host
+    return None
+
+
+def visible(text):
+    return "".join(ch for ch in (text or "")
+                   if unicodedata.category(ch) != "Cf")
+
+
 class Verdict:
     __slots__ = ("ok", "reason", "detail")
 
@@ -113,7 +131,7 @@ def currencies_named(text):
 
 
 def codes_in(text):
-    text = text or ""
+    text = visible(text or "")
     codes = set(m.group(0).upper() for m in CODES.finditer(text))
     for m in PAIRS.finditer(text):
         codes |= {m.group(1).upper(), m.group(2).upper()}
@@ -142,7 +160,7 @@ def no_content(text):
 
 
 def screen(post, seen=None, account_replies=None):
-    text = post.get("text") or ""
+    text = visible(post.get("text") or "")
 
     if no_content(text):
         return Verdict(False, "no-content")
@@ -155,6 +173,10 @@ def screen(post, seen=None, account_replies=None):
         m = pattern.search(text)
         if m:
             return Verdict(False, name, m.group(0))
+
+    host = promo_link(post.get("urls"))
+    if host:
+        return Verdict(False, "promo-link", host)
 
     n = currencies_named(text)
     if n > MAX_CURRENCIES_NAMED:
