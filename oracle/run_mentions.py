@@ -5,7 +5,8 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from reply_filter import DROP, codes_in, hashtag_wall, no_content
+from reply_filter import (DROP, codes_in, hashtag_wall, no_content,
+                          promo_link, visible)
 from run_broadcast import log, post_to_x
 from run_commentary import (ANALYSIS, MODEL, TWEET_LIMIT, URL,
                             load_json, number_tokens, traceable)
@@ -79,6 +80,7 @@ def save_state(state):
 
 
 def junk(text):
+    text = visible(text)
     if hashtag_wall(text):
         return "hashtag-wall"
     for name, pattern in DROP:
@@ -180,6 +182,8 @@ def pick(batch, state, our_id, today):
             why = "author at their daily cap"
         else:
             why = junk(m["text"])
+            if not why and promo_link(m.get("urls")):
+                why = "promo-link"
         if why:
             log(f"  {m['id']}: skipped ({why})")
             continue
