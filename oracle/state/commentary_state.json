@@ -1,12 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-08-15",
- "last_post": 1786836736,
+ "anchors_today": [],
+ "date": "2026-08-16",
+ "last_post": 1786839736,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -37,6 +32,7 @@
   "KMF": 1786662448,
   "LKR": 1786760914,
   "MKD": 1786646469,
+  "MRU": 1786839736,
   "MUR": 1786635842,
   "MXN": 1786632439,
   "NGN": 1786775991,
@@ -57,9 +53,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The Tajik somoni stood at 9.243 to the dollar, showing no serious change over the past week. Over the past year it has strengthened 1.0%, and stands 3.9% above its weakest point of that period. #Tajikistan $TJS",
   "Same as post, already in English.",
   "Same as post, already in English.",
-  "The Iraqi dinar recorded 1,310 to the dollar, nearly stable for about a week and within a range that did not exceed 1.2% over the past year. A recent report notes that Iraq needs new Gulf oil export routes to ease mounting financial pressure. #Iraq $IQD"
+  "The Iraqi dinar recorded 1,310 to the dollar, nearly stable for about a week and within a range that did not exceed 1.2% over the past year. A recent report notes that Iraq needs new Gulf oil export routes to ease mounting financial pressure. #Iraq $IQD",
+  "The Mauritanian ouguiya recorded 40.1 to the dollar, its weakest level over the past year, after declining 0.9% since the start of the year within a trading range that did not exceed 1.6% during that period. #Mauritania $MRU"
  ]
 }
