@@ -5,6 +5,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _util import claim_slot
 from reply_filter import (DROP, codes_in, hashtag_wall, no_content,
                           promo_link, visible)
 from run_broadcast import log, post_to_x
@@ -259,8 +260,6 @@ def main():
         log(f"not posting ({'; '.join(why)})")
         return 0
 
-    post_to_x(text, reply_to=m["id"])
-    log(f"answered {m['id']}")
     state["answered"].append(m["id"])
     state["since_id"] = m["id"]
     day["n"] += 1
@@ -269,6 +268,11 @@ def main():
     day["authors"][author] = day["authors"].get(author, 0) + 1
     state["days"] = {d: v for d, v in state["days"].items() if d >= today}
     save_state(state)
+    if not claim_slot([STATE_FILE], f"mentions: slot claim ({today})"):
+        log("slot already claimed by a concurrent run - NOT posting")
+        return 0
+    post_to_x(text, reply_to=m["id"])
+    log(f"answered {m['id']}")
     return 0
 
 
