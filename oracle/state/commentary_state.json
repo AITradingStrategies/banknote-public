@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-08-16",
- "last_post": 1786857304,
+ "last_post": 1786860304,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -38,7 +40,7 @@
   "MUR": 1786635842,
   "MVR": 1786851304,
   "MXN": 1786632439,
-  "NGN": 1786775991,
+  "NGN": 1786860304,
   "OMR": 1786818736,
   "PHP": 1786813435,
   "PKR": 1786824736,
@@ -58,9 +60,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The Somali shilling strengthened today to 571.2 per dollar, up 3.11% day on day, its largest move in 287 days, reaching its strongest level in the past 30 days. #Somalia $SOS",
   "The Maldivian rufiyaa recorded 15.5 to the dollar, unchanged over the past week. This is the weakest point of the past year, yet 77 days have passed without a move exceeding 0.25%. #Maldives $MVR",
   "The manat equaled 3.5 to the dollar \u2014 the weakest level of the past year, yet this range has not exceeded 2.5% over the past 30 days and even over the past year.",
-  "The gourde trades at 130.7 per dollar, nearly stable over the past week, down 0.5% over 30 days but up 0.5% over the past year. #Haiti $HTG"
+  "The gourde trades at 130.7 per dollar, nearly stable over the past week, down 0.5% over 30 days but up 0.5% over the past year. #Haiti $HTG",
+  "The naira held at 1,360 per dollar, little changed over the past week. It remains stronger than a year ago, when it traded near 1,532, a gain of 12.7% over twelve months. #Nigeria $NGN"
  ]
 }
