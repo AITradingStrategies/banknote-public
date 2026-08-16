@@ -24,7 +24,7 @@ MAX_PER_CCY_PER_DAY = 2
 
 MAX_POST_AGE_MIN = 180
 
-MAX_FIXING_AGE_H = 30
+MAX_FIXING_AGE_D = 4
 
 CCYS_PER_RUN = 3
 POSTS_PER_SEARCH = 10
@@ -51,8 +51,10 @@ Rules, all of them hard:
 would write it.
 - Use ONLY the numbers supplied. Never round them differently, never add one.
 - State the rate. The RATE is from the daily fixing, and `fixing_age` says \
-whether that fixing is from today or yesterday: say the one given, never the \
-other. If a move is given, state \
+when that fixing is from - "today", "yesterday", or a weekday name (fixings \
+pause at weekends, so on a Sunday the newest is Friday's). Say the one \
+given, translated naturally ("at Friday's fixing"), and never claim the \
+number is more current than that. If a move is given, state \
 it too; the MOVE is day on day - never say it happened "at the fixing",
 because it did not. **If the move is null there was no move worth reporting: \
 give the rate alone and say nothing about direction.**
@@ -153,10 +155,22 @@ def fixing_for(ccy):
         day = dt.date.fromisoformat(fx["day"])
     except (KeyError, TypeError, ValueError):
         return None
-    hours = (now_utc().date() - day).days * 24
-    if hours > MAX_FIXING_AGE_H:
+    if (now_utc().date() - day).days > MAX_FIXING_AGE_D:
         return None
     return fx
+
+
+def fixing_age_label(day_iso):
+    try:
+        day = dt.date.fromisoformat(day_iso)
+    except (TypeError, ValueError):
+        return "today"
+    gap = (now_utc().date() - day).days
+    if gap <= 0:
+        return "today"
+    if gap == 1:
+        return "yesterday"
+    return day.strftime("%A")
 
 
 def fmt(v):
@@ -194,8 +208,7 @@ def facts_for(ccy, fx, entries, post_text=""):
             "weaker" if move > 0 else "stronger"),
         "language": LANGUAGES.get(ccy, "English"),
         "country": entry.get("country") or ccy,
-        "fixing_age": ("today" if fx["day"] == now_utc().date().isoformat()
-                       else "yesterday"),
+        "fixing_age": fixing_age_label(fx["day"]),
         "cross": cross_facts(ccy, fx, post_text),
     }
 
