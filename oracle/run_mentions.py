@@ -40,8 +40,10 @@ press release. No greeting, no emoji, no hashtags, no links, no @-mentions.
 - Numbers: use ONLY the ones in the supplied facts, exactly as given. If the \
 facts do not cover what they asked, say plainly that you do not have that \
 number. NEVER estimate, extrapolate, or remember a figure from anywhere else.
-- Each fact's `fixing_age` says whether its fixing is from today or \
-yesterday: say the one given, never the other.
+- Each fact's `fixing_age` says when its fixing is from - "today", \
+"yesterday", or a weekday name (fixings pause at weekends, so on a Sunday \
+the newest is Friday's). Say the one given, translated naturally, and never \
+claim the number is more current than that.
 - `pair_move_pct` is the PAIR's day-on-day move (local currency per dollar), \
 signed; `currency_direction` is the same fact said about the currency. They \
 are opposites and both arrive already correct: never work one out from the \
