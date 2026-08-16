@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-08-16",
- "last_post": 1786900852,
+ "last_post": 1786903852,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -50,7 +51,7 @@
   "NGN": 1786860304,
   "OMR": 1786818736,
   "PEN": 1786894130,
-  "PHP": 1786813435,
+  "PHP": 1786903852,
   "PKR": 1786824736,
   "PYG": 1786616225,
   "RSD": 1786650448,
@@ -70,9 +71,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The Tunisian dinar stands at 2.921 to the dollar, after fluctuating within a 1.7% band over the past month. Notably, the five independent sources used in setting the fix disagreed by 1.26%, well above the usual 0.29%. #Tunisia $TND",
   "The Peruvian sol trades at 3.373 per dollar, its strongest level in 124 days. The currency is up 1.9% over the past 90 days, while the country's economy showed a slowdown in June due to a drop in fishing and agriculture.",
   "The Jordanian dinar stands steady at 0.709 to the dollar, the same level as a year ago and at the start of the year. The currency has not moved by 0.25% for 891 consecutive days, remaining among the most stable globally. #Jordan $JOD",
-  "The Egyptian pound stands at 50.3 to the dollar, after a slight decline of 0.5% over the past week. Despite this, it remains up 1.2% over the past month, while recording a 4.5% decline since the start of the year. #Egypt $EGP"
+  "The Egyptian pound stands at 50.3 to the dollar, after a slight decline of 0.5% over the past week. Despite this, it remains up 1.2% over the past month, while recording a 4.5% decline since the start of the year. #Egypt $EGP",
+  "The peso is at 61.4 per dollar, weaker by 4.2% since the start of the year and 7.0% from a year ago. Even so, it typically only moves 0.25% in a day. #Philippines $PHP"
  ]
 }
