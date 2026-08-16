@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-08-16",
- "last_post": 1786873066,
+ "last_post": 1786876330,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
   "ALL": 1786756877,
   "AMD": 1786681367,
   "AOA": 1786697438,
-  "ARS": 1786747877,
+  "ARS": 1786876330,
   "AZN": 1786687013,
   "BAM": 1786659448,
   "BBD": 1786701879,
@@ -63,9 +64,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The naira held at 1,360 per dollar, little changed over the past week. It remains stronger than a year ago, when it traded near 1,532, a gain of 12.7% over twelve months. #Nigeria $NGN",
   "The tenge reached 464.7 against the dollar, rising to its strongest level in 95 days. It has strengthened 9.37% since the start of the year, having traded at 538.6 a year ago. #Kazakhstan $KZT",
   "The Moroccan dirham reached 9.301 to the dollar, its strongest level in 58 days, within a trading range that has not exceeded 1.1% over the past month. The five independent sources used in setting the rate disagreed by 0.39%, against a typical disagreement of 0.12%. #Morocco $MAD",
-  "The tugrik held near 3,598 to the dollar, little changed over the past week. It is down 1.0% since the start of the year and is now at its weakest point of the past year. #Mongolia $MNT"
+  "The tugrik held near 3,598 to the dollar, little changed over the past week. It is down 1.0% since the start of the year and is now at its weakest point of the past year. #Mongolia $MNT",
+  "The Argentine peso rose 0.92% against the dollar, its largest daily gain in 74 days, to reach 1,492. Even so, it has fallen 5.6% over the past 90 days and 12.6% from its high for the year. #Argentina $ARS"
  ]
 }
