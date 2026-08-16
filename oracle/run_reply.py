@@ -6,6 +6,7 @@ import random
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from _util import claim_slot
 from listen_queries import build, load, local_terms, topic_terms
 from reply_filter import codes_in, screen
 from run_broadcast import log, post_to_x
@@ -383,19 +384,23 @@ def main():
         log(f"not posting ({'; '.join(why)})")
         return 0
 
-    resp = post_to_x(text, reply_to=post["id"])
-    rid = ((resp or {}).get("data") or {}).get("id")
-    log(f"replied to {post['id']} (our post {rid})")
     state["first_day"] = state.get("first_day") or today
     state["replied"].append(post["id"])
-    state.setdefault("posts", []).append(
-        {"id": rid, "to": post["id"], "ccy": ccy, "day": today})
-    state["posts"] = state["posts"][-200:]
-    state["texts"] = (recent + [text])[-6:]
     state.setdefault("accounts", {})[str(post.get("author_id"))] = today
     day["n"] += 1
     day["by_ccy"][ccy] = day["by_ccy"].get(ccy, 0) + 1
     state["days"] = {d: v for d, v in state["days"].items() if d >= today}
+    state["texts"] = (recent + [text])[-6:]
+    save_state(state)
+    if not claim_slot([STATE_FILE], f"reply: slot claim ({today})"):
+        log("slot already claimed by a concurrent run - NOT posting")
+        return 0
+    resp = post_to_x(text, reply_to=post["id"])
+    rid = ((resp or {}).get("data") or {}).get("id")
+    log(f"replied to {post['id']} (our post {rid})")
+    state.setdefault("posts", []).append(
+        {"id": rid, "to": post["id"], "ccy": ccy, "day": today})
+    state["posts"] = state["posts"][-200:]
     save_state(state)
     return 0
 
