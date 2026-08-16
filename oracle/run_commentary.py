@@ -9,7 +9,7 @@ import unicodedata
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from _util import write_json_atomic
+from _util import claim_slot, write_json_atomic
 from run_broadcast import (
     COUNTRIES, TWEET_LIMIT, fmt_rate, hashtag, load_json, log, post_to_x,
 )
@@ -25,6 +25,7 @@ STATE_FILE = os.path.join(HERE, "state", "commentary_state.json")
 MODEL = "claude-sonnet-5"
 SLOT_MINUTES = 60
 MIN_POST_GAP_MIN = 50
+MAX_WAIT_MIN = 20
 REPEAT_COOLDOWN_DAYS = 4
 ALERT_DEFER_H = 3
 NEWS_MAX_AGE_H = 72
@@ -712,6 +713,10 @@ def main():
     if args.post and not args.ccy:
         since = now_ts - int(state.get("last_post") or 0)
         wait = min(MIN_POST_GAP_MIN * 60 - since, MIN_POST_GAP_MIN * 60)
+        if wait > MAX_WAIT_MIN * 60:
+            log(f"last post was {max(since, 0) // 60}m ago; next slot is "
+                f"{wait // 60}m away - leaving it to a later delivery")
+            return 0
         if wait > 0:
             log(f"last post was {max(since, 0) // 60}m ago, under the "
                 f"{MIN_POST_GAP_MIN}m minimum - waiting {wait // 60}m{wait % 60:02d}s")
@@ -806,7 +811,6 @@ def attempt_slot(entry, kind, index, state, now_ts, now, args):
             log("  | " + line)
 
     if args.post:
-        post_to_x(drafted["post"])
         if kind == "anchor":
             state.setdefault("anchors_today", []).append(ccy)
         state.setdefault("recent", {})[ccy] = now_ts
@@ -814,8 +818,14 @@ def attempt_slot(entry, kind, index, state, now_ts, now, args):
         state.setdefault("recent_posts", []).append(
             (drafted.get("back_translation") or drafted["post"]).strip())
         state["recent_posts"] = state["recent_posts"][-4:]
+        write_json_atomic(STATE_FILE, state, indent=1, sort_keys=True)
+        if not claim_slot([STATE_FILE],
+                          f"commentary: slot claim ({now:%Y-%m-%dT%H:%M}Z)"):
+            log("slot already claimed by a concurrent run - NOT posting")
+            return 0
+        post_to_x(drafted["post"])
         log(f"posted: {ccy}")
-    if args.post or args.commit:
+    elif args.commit:
         write_json_atomic(STATE_FILE, state, indent=1, sort_keys=True)
         log(f"state saved -> {STATE_FILE}")
     else:
