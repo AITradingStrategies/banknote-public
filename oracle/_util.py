@@ -1,6 +1,33 @@
 import json
 import os
 import shutil
+import subprocess
+
+
+def claim_slot(paths, message):
+    if os.environ.get("GITHUB_ACTIONS") != "true":
+        return True
+    cwd = os.environ.get("GITHUB_WORKSPACE") or "."
+
+    def git(*args):
+        return subprocess.run(["git", *args], cwd=cwd,
+                              capture_output=True, text=True)
+
+    git("config", "user.name", "banknote-poster")
+    git("config", "user.email", "poster@banknote.lol")
+    git("add", *paths)
+    if git("diff", "--cached", "--quiet").returncode == 0:
+        return True
+    if git("commit", "-m", message).returncode != 0:
+        return False
+    for _ in range(5):
+        if git("push", "origin", "HEAD:main").returncode == 0:
+            return True
+        git("fetch", "origin", "main")
+        if git("rebase", "origin/main").returncode != 0:
+            git("rebase", "--abort")
+            return False
+    return False
 
 
 def foundry_bin(name):
