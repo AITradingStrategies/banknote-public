@@ -133,7 +133,7 @@ def compose(their_text, our_text, lang, facts):
     return ""
 
 
-def validate(text, facts):
+def validate(text, facts, our_text=None):
     problems = []
     if not text.strip():
         return ["empty"]
@@ -149,6 +149,8 @@ def validate(text, facts):
             problems.append(f"contains {word!r} - argues or advertises")
 
     allowed = {1.0, 3.0}
+    for cands in number_tokens(our_text or ""):
+        allowed |= {abs(v) for v in cands}
     for f in facts:
         cross = f.get("cross") or {}
         for raw in (f.get("rate"), f.get("pair_move_pct"), cross.get("equals")):
@@ -228,13 +230,14 @@ def main():
         f"({age_minutes(m.get('created_at')) or 0:.0f} min old)")
 
     our_text = None
-    if m.get("parent"):
+    ref = m.get("parent") or m.get("quoted")
+    if ref:
         try:
-            parents = posts_by_ids([m["parent"]])
+            parents = posts_by_ids([ref])
             if parents and parents[0].get("author_id") == state["our_id"]:
                 our_text = parents[0].get("text")
         except (Fatal, RuntimeError) as e:
-            log(f"  parent lookup failed ({e}); answering without it")
+            log(f"  context lookup failed ({e}); answering without it")
 
     facts = gather_facts(m["text"], our_text)
     log(f"  {len(facts)} fact set(s): "
@@ -245,7 +248,7 @@ def main():
         log(f"compose failed ({type(e).__name__}: {e})")
         return 1
 
-    problems = validate(text, facts)
+    problems = validate(text, facts, our_text)
     log(f"  answer: {text}")
     if problems:
         for p in problems:
