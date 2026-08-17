@@ -71,10 +71,14 @@ jobs:
           # The second lock. Absent or not "1", nothing is posted.
           BANKNOTE_REPLY_ENABLED: ${{ vars.BANKNOTE_REPLY_ENABLED }}
           POST: ${{ inputs.post }}
+          EVENT: ${{ github.event_name }}
           CCY: ${{ inputs.ccy }}
         run: |
           ARGS=""
-          if [ "${POST}" = "true" ]; then ARGS="--post"; fi
+          # Scheduled runs carry --post; the repository variable is the
+          # real switch, and unsetting it stops posting on the next run.
+          # Manual dispatches stay dry unless post=true is chosen.
+          if [ "${POST}" = "true" ] || [ "${EVENT}" = "schedule" ]; then ARGS="--post"; fi
           if [ -n "${CCY}" ]; then ARGS="$ARGS --ccy ${CCY}"; fi
           # BANKNOTE_LOG_POSTS is deliberately NOT set: this log is public, and
           # the post we reply to is not ours to reprint. The reply itself is.
