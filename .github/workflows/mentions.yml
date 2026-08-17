@@ -34,7 +34,11 @@ permissions:
 jobs:
   mentions:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # A polling loop, not a single pass: the run holds the hour and checks
+    # every five minutes, so an answer lands within ~5 minutes of the
+    # mention instead of within the hour. An empty mentions read returns
+    # nothing and bills nothing; the runner is free on a public repo.
+    timeout-minutes: 58
     environment: x-posting
     env:
       BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
@@ -71,7 +75,10 @@ jobs:
           if [ "${POST}" = "true" ] || [ "${EVENT}" = "schedule" ]; then ARGS="--post"; fi
           # This log is public. The mention we answer is somebody else's post
           # and its text is never printed here; the answer is ours and is.
-          python run_mentions.py $ARGS
+          for i in $(seq 1 10); do
+            python run_mentions.py $ARGS || true
+            [ "$i" -lt 10 ] && sleep 300
+          done
 
       - name: Commit who we answered
         if: always()
