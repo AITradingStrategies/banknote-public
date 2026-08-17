@@ -21,8 +21,8 @@ STATE_FILE = os.path.join(HERE, "state", "mentions_state.json")
 HANDLE = os.environ.get("BANKNOTE_X_HANDLE", "banknotelolai")
 
 MAX_PER_DAY = 10
-MAX_PER_THREAD_PER_DAY = 2
-MAX_PER_AUTHOR_PER_DAY = 2
+MAX_PER_THREAD_PER_DAY = 1
+MAX_PER_AUTHOR_PER_DAY = 1
 MAX_AGE_MIN = 24 * 60
 
 BANNED = ["check out", "sign up", "join ", "dm ", "link in bio", "follow me",
