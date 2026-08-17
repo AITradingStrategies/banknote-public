@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-08-16",
- "last_post": 1786923879,
+ "anchors_today": [],
+ "date": "2026-08-17",
+ "last_post": 1786937735,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -30,6 +24,7 @@
   "CRC": 1786763991,
   "DJF": 1786906852,
   "EGP": 1786900852,
+  "ETB": 1786937735,
   "GEL": 1786821736,
   "GHS": 1786741876,
   "GYD": 1786833736,
@@ -76,9 +71,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The kyat stands at 2,100 to the dollar, its weakest point in a year. It has gone 752 days without a move exceeding 0.25%. #Myanmar $MMK",
   "The kina has slipped to 4.46 per dollar, its weakest level since tracking began in early 2024. It's down 8.05% from a year ago, and the five sources fixing the rate today disagree by 3.63%, well above its usual 1.29% spread. #PapuaNewGuinea $PGK",
   "The Qatari riyal stands at 3.64 to the dollar, with no notable change for 88 days. The same level as a year ago and at the start of the year, making it the 7th steadiest among 132 currencies tracked. #Qatar $QAR",
-  "The baht stands at 33.2 to the dollar, barely moved over the past week, but has strengthened 1.5% over the past 30 days, though it remains down 4.8% since the start of the year. #Thailand $THB"
+  "The baht stands at 33.2 to the dollar, barely moved over the past week, but has strengthened 1.5% over the past 30 days, though it remains down 4.8% since the start of the year. #Thailand $THB",
+  "The birr's dollar exchange rate has reached 161.4, marking its weakest level since tracking began in 2024. It has weakened 3.4% over 90 days, and is down 12.84% from a year ago. #Ethiopia $ETB"
  ]
 }
