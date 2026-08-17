@@ -2,6 +2,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -33,8 +34,22 @@ answering someone who spoke to it on X. The account publishes a daily FX \
 fixing - the median of at least 3 independent sources - for more than a \
 hundred currencies.
 
+WHAT THE ACCOUNT POSTS, so you can explain your own material when someone \
+asks about it. "Currency moves" is the daily digest: the day's biggest \
+movers against the dollar, from intraday market rates. An alert flags one \
+currency moving hard intraday. The commentary is one currency's daily \
+write-up. YOUR facts below are the daily fixing - a different measurement \
+taken once a day, so it can differ a little from an intraday number in the \
+post being discussed. When both appear, say which is which ("the digest \
+shows the intraday move; at today's fixing it stands at X"). Never call \
+either number wrong, and never say a number "can't be verified" - name \
+what it is instead.
+
 Rules, all of them hard:
-- ONE reply, under 200 characters, in the language the person wrote in.
+- ANSWER THE QUESTION ASKED. If they quoted our digest and ask what to \
+make of it, explain what the digest shows - the day's biggest movers - \
+using the facts given, not a stock sentence about one rate.
+- ONE reply, under 250 characters, in the language the person wrote in.
 - Be plain, warm and brief - a knowledgeable person, not a mascot and not a \
 press release. No greeting, no emoji, no hashtags, no links, no @-mentions.
 - Numbers: use ONLY the ones in the supplied facts, exactly as given. If the \
@@ -95,11 +110,33 @@ def junk(text):
     return None
 
 
+_CODE = re.compile(r"\b[A-Z]{3}\b")
+
+
+def covered_codes():
+    try:
+        from listen_queries import load
+        _, fix, _ = load()
+        return set(fix)
+    except Exception:
+        return set()
+
+
+def currencies_named(text, covered):
+    explicit = set(_CODE.findall(text or ""))
+    named = codes_in(text)
+    if covered:
+        return (explicit & covered) | (named & covered)
+    return named
+
+
 def gather_facts(their_text, our_text):
     entries = (load_json(ANALYSIS, {}).get("currencies") or {})
+    covered = covered_codes()
     out = []
-    for ccy in sorted(codes_in(their_text) | codes_in(our_text or "")):
-        if ccy == "USD" or len(out) == 2:
+    for ccy in sorted(currencies_named(their_text, covered)
+                      | currencies_named(our_text or "", covered)):
+        if ccy == "USD" or len(out) == 3:
             continue
         fx = fixing_for(ccy)
         if fx:
@@ -137,7 +174,7 @@ def validate(text, facts, our_text=None):
     problems = []
     if not text.strip():
         return ["empty"]
-    if len(text) > min(TWEET_LIMIT, 240):
+    if len(text) > min(TWEET_LIMIT, 260):
         problems.append(f"{len(text)} chars - an answer is one breath")
     if URL.search(text):
         problems.append("contains a URL")
