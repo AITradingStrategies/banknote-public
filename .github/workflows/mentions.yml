@@ -62,9 +62,13 @@ jobs:
           # The second lock. Absent or not "1", nothing is posted.
           BANKNOTE_MENTIONS_ENABLED: ${{ vars.BANKNOTE_MENTIONS_ENABLED }}
           POST: ${{ inputs.post }}
+          EVENT: ${{ github.event_name }}
         run: |
           ARGS=""
-          if [ "${POST}" = "true" ]; then ARGS="--post"; fi
+          # Scheduled runs carry --post; the repository variable is the
+          # real switch, and unsetting it stops posting on the next run.
+          # Manual dispatches stay dry unless post=true is chosen.
+          if [ "${POST}" = "true" ] || [ "${EVENT}" = "schedule" ]; then ARGS="--post"; fi
           # This log is public. The mention we answer is somebody else's post
           # and its text is never printed here; the answer is ours and is.
           python run_mentions.py $ARGS
