@@ -48,6 +48,8 @@ def _shape(body, n):
             "conversation_id": t.get("conversation_id"),
             "parent": next((r.get("id") for r in refs
                             if r.get("type") == "replied_to"), None),
+            "quoted": next((r.get("id") for r in refs
+                            if r.get("type") == "quoted"), None),
             "is_retweet": any(r.get("type") == "retweeted" for r in refs),
             "urls": [u.get("unwound_url") or u.get("expanded_url") or u.get("url")
                      for u in (t.get("entities") or {}).get("urls") or []],
