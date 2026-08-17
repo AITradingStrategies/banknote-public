@@ -15,13 +15,13 @@
   {
    "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
    "boostPct": 10.0,
-   "claimed": 1,
+   "claimed": 0,
    "kind": "token",
    "label": "Cash Cat",
    "link": "https://robinhoodchain.blockscout.com/token/0x020bfC650A365f8BB26819deAAbF3E21291018b4",
    "maxWallets": 100,
    "minBalance": 40,
-   "qualified": 1,
+   "qualified": 0,
    "symbol": "CASHCAT"
   }
  ],
@@ -29,7 +29,7 @@
   "184": 1,
   "35": 2
  },
- "generated": "2026-08-16T20:41:08+00:00",
+ "generated": "2026-08-17T01:57:56+00:00",
  "network": "mainnet",
  "rates": {
   "citizenBonus": 0.1,
@@ -468,17 +468,17 @@
    "trade": 633
   },
   "0x752562db55674e09533f74689600749ff2bb4b02": {
-   "boostLabel": "Cash Cat",
-   "boostPct": 10.0,
+   "boostLabel": null,
+   "boostPct": 0,
    "citizenship": 1000,
    "country": 184,
    "handle": null,
-   "holding": 136.56,
+   "holding": 137.82,
    "quest": 2000,
    "questVerdict": "gone",
    "seatBank": 10000,
    "seats": 2,
-   "total": 18072,
+   "total": 18073,
    "trade": 4935
   },
   "0xd77f7e9d120aab3eea67a5206202487cda841b4f": {
