@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-08-17",
- "last_post": 1786946341,
+ "last_post": 1786952104,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -46,7 +48,7 @@
   "MUR": 1786635842,
   "MVR": 1786851304,
   "MXN": 1786632439,
-  "NGN": 1786860304,
+  "NGN": 1786952104,
   "OMR": 1786818736,
   "PEN": 1786894130,
   "PGK": 1786917879,
@@ -73,9 +75,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The baht stands at 33.2 to the dollar, barely moved over the past week, but has strengthened 1.5% over the past 30 days, though it remains down 4.8% since the start of the year. #Thailand $THB",
   "The birr's dollar exchange rate has reached 161.4, marking its weakest level since tracking began in 2024. It has weakened 3.4% over 90 days, and is down 12.84% from a year ago. #Ethiopia $ETB",
   "The Rwandan franc stands at 1,470 to the dollar, with no major change over the past week. This year it has weakened 0.9%, and over the past 13 days it has not moved by more than 0.25%.",
-  "The Solomon Islands dollar sits at 8.041 to the greenback, barely budging this week but up 1.2% since January. It remains 5.4% above its weakest point of the past year, within the 6.4% band it has held over that span. #SolomonIslands $SBD"
+  "The Solomon Islands dollar sits at 8.041 to the greenback, barely budging this week but up 1.2% since January. It remains 5.4% above its weakest point of the past year, within the 6.4% band it has held over that span. #SolomonIslands $SBD",
+  "The naira sits at 1,360/USD, up 12.6% from a year ago when it traded near 1,530. Six sessions have passed without a move beyond 0.25%, even as it holds 6.4% stronger on the year. #Nigeria $NGN"
  ]
 }
