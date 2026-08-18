@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-08-18",
- "last_post": 1787029878,
+ "last_post": 1787032878,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -46,7 +48,7 @@
   "MUR": 1786635842,
   "MVR": 1786851304,
   "MXN": 1787023878,
-  "NGN": 1786952104,
+  "NGN": 1787032878,
   "OMR": 1786818736,
   "PEN": 1786894130,
   "PGK": 1786917879,
@@ -74,9 +76,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The bol\u00edvar trades at 771.3 per dollar, its weakest level of the past year. It has fallen 61.1% so far in 2026 and is the currency that has depreciated the most among 132 currencies monitored this year. #Venezuela $VES",
   "The Mexican peso trades at 17.0 per dollar, its strongest level in 804 days. It has gained 5.88% so far this year and is the fourth best-performing currency this month among 132 currencies monitored. #Mexico $MXN",
   "The guaran\u00ed trades at 6,021 per dollar. It has gained 12.7% so far this year and 25.5% over twelve months, ranking as the third strongest currency in the world among 132 currencies tracked in both periods. #Paraguay $PYG",
-  "The dinar is trading at 101.3 to the dollar, its strongest in 61 days. It has moved within a 1.9% range over the past 30 days, and changes on 79% of trading days. #Serbia $RSD"
+  "The dinar is trading at 101.3 to the dollar, its strongest in 61 days. It has moved within a 1.9% range over the past 30 days, and changes on 79% of trading days. #Serbia $RSD",
+  "The naira is trading at 1,358 per dollar, its strongest in 61 days. It has held inside a 1.6% band over the past month but is up 6.41% since the start of the year. #Nigeria $NGN"
  ]
 }
