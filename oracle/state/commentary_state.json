@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-08-18",
- "last_post": 1787052888,
+ "last_post": 1787058100,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -69,7 +70,7 @@
   "TJS": 1786827736,
   "TMT": 1786854304,
   "TND": 1786890736,
-  "TRY": 1786974458,
+  "TRY": 1787058100,
   "TTD": 1786830736,
   "UGX": 1786879568,
   "VES": 1787020877,
@@ -78,9 +79,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The Comorian franc is trading at 424.8 per dollar, its highest level in 61 days. It remains down 1.42% since the start of the year. #Comoros $KMF",
   "The denar stands at 53.1 per dollar, eight days without a move larger than 0.25%. Since the start of the year it is weaker by 1.3%, while over the past 30 days it strengthened 1.4%.",
   "The Argentine peso trades at 1,488 per dollar, 12.4% below its strongest point of the past year and has not shown its strongest level in 28 days. The five sources behind the fixing differ today by 0.93%, well above the usual 0.12%. #Argentina $ARS",
-  "The taka traded at 122.6 per dollar, 0.52% stronger than the previous day, its largest daily change in 111 days. This is the taka's strongest level in the past 30 days. #Bangladesh $BDT"
+  "The taka traded at 122.6 per dollar, 0.52% stronger than the previous day, its largest daily change in 111 days. This is the taka's strongest level in the past 30 days. #Bangladesh $BDT",
+  "USD/TL is at 47.9, nearly motionless over the past week. The lira was at 40.8 this time last year; it has lost 10.3% since the start of the year and is at its weakest point of the year."
  ]
 }
