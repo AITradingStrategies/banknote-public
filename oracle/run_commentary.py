@@ -577,7 +577,11 @@ days the streak, some days how quiet it has been.
 `recent_posts_do_not_imitate`, when present, is what the account just
 published, in English translation. Do not open the way any of them opens and
 do not reuse their sentence shapes. Their numbers belong to other currencies
-and must not appear in yours.
+and must not appear in yours. Vary by leading with a DIFFERENT FACT, a
+different rhythm, a different length - never by reaching for narrative
+connectives ("after", "amid", "following", "driven by"): those assert
+causation, which needs a cited headline. The plain declarative is always
+safe and always available.
 
 HEADLINES, IF ANY EARN IT. You may be given recent stories from the country.
 Use one only where it bears on the currency itself - the economy, prices,
@@ -788,6 +792,8 @@ def attempt_slot(entry, kind, index, state, now_ts, now, args):
 
     drafted = None
     for attempt in (1, 2):
+        if attempt == 2:
+            facts.pop("recent_posts_do_not_imitate", None)
         drafted = compose_with_model(facts)
         if not drafted:
             continue
@@ -797,6 +803,7 @@ def attempt_slot(entry, kind, index, state, now_ts, now, args):
             break
         for p in problems:
             log(f"  REJECTED (attempt {attempt}): {p}")
+        log(f"  draft was: {' '.join((drafted.get('back_translation') or drafted['post']).split())[:140]}")
         drafted = None
     if not drafted:
         log(f"no acceptable post for {ccy} - handing the slot to another currency")
