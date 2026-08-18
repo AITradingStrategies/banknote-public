@@ -77,7 +77,9 @@ jobs:
           # and its text is never printed here; the answer is ours and is.
           for i in $(seq 1 10); do
             python run_mentions.py $ARGS || true
-            [ "$i" -lt 10 ] && sleep 300
+            # (if/then, not &&: a false test as the loop's last command
+            # exits 1 under bash -e and marks a healthy run failed)
+            if [ "$i" -lt 10 ]; then sleep 300; fi
           done
 
       - name: Commit who we answered
