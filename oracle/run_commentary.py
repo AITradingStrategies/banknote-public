@@ -510,7 +510,9 @@ URL = re.compile(r"https?://|www\.|\b[a-z0-9-]+\.(?:com|org|net|io|lol|co|ly|app
                  re.I)
 
 CAUSAL = re.compile(r"\b(because|due to|owing to|after|amid|following|driven by|"
-                    r"on the back of|prompted by|debido a|tras|por|nedeniyle|sonras)\b")
+                    r"on the back of|prompted by|debido a|tras|"
+                    r"porque|a causa de|a ra[ií]z de|por culpa de|"
+                    r"nedeniyle|sonras)\b")
 
 
 def validate(drafted, facts):
