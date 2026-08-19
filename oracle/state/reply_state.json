@@ -1,23 +1,26 @@
 {
  "accounts": {
   "1806354760754208768": "2026-08-17",
+  "2423985653": "2026-08-19",
   "3226235886": "2026-08-17"
  },
  "days": {
-  "2026-08-17": {
+  "2026-08-19": {
    "by_ccy": {
-    "INR": 2
+    "EGP": 1
    },
-   "n": 2
+   "n": 1
   }
  },
  "first_day": "2026-08-17",
  "replied": [
   "2089372028138897475",
-  "2089392196349034973"
+  "2089392196349034973",
+  "2090161773085134936"
  ],
  "texts": [
   "USD/INR is at 95.61 as of today's fixing.",
-  "Today's fixing puts USD/INR at 95.61."
+  "Today's fixing puts USD/INR at 95.61.",
+  "USD/EGP sits at 50.60 at today's fixing, with the pound stronger on the day; 1 GBP equals 68.58 EGP."
  ]
 }
