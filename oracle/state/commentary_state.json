@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-08-18",
- "last_post": 1787095419,
+ "anchors_today": [],
+ "date": "2026-08-19",
+ "last_post": 1787099004,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -73,6 +67,7 @@
   "SCR": 1786955104,
   "SOS": 1786848220,
   "SSP": 1786753877,
+  "SZL": 1787099004,
   "THB": 1786923879,
   "TJS": 1786827736,
   "TMT": 1786854304,
@@ -86,9 +81,9 @@
   "ZMW": 1786792913
  },
  "recent_posts": [
-  "The rupee against the dollar is steady at 277.6, no significant change over the past week. It has not moved more than 0.25% in the past 13 days, and the rupee is up 1.1% since the start of the year. #Pakistan $PKR",
   "The cedi trades at 11.0 per dollar, its strongest level in 145 days. It has gained 4.8% over the past 90 days and now ranks as the best-performing currency of 132 tracked this month. #Ghana $GHS",
   "The ruble is trading at 84.9 per dollar, having weakened 6.9% over the month and 2.7% over the week. This is the second-fastest weakening rate among 132 currencies this month, and the ruble is only 2.6% from its yearly low. #Russia $RUB",
-  "The Algerian dinar holds at 133.0 to the dollar, with no significant move (less than 0.25%) for 17 days. But the five independent sources making up the fixing diverged by 0.62%, double the usual 0.26%. #Algeria $DZD"
+  "The Algerian dinar holds at 133.0 to the dollar, with no significant move (less than 0.25%) for 17 days. But the five independent sources making up the fixing diverged by 0.62%, double the usual 0.26%. #Algeria $DZD",
+  "The lilangeni sits at 16.2 per dollar, little changed this week but 8.8% stronger than a year ago, when it traded near 17.6. It is now 8.8% above its weakest point of the past year. #Eswatini $SZL"
  ]
 }
