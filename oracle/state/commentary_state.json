@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-08-20",
- "last_post": 1787243824,
+ "last_post": 1787247769,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -71,7 +72,7 @@
   "PAB": 1787078836,
   "PEN": 1787240377,
   "PGK": 1786917879,
-  "PHP": 1787161512,
+  "PHP": 1787247769,
   "PKR": 1787171830,
   "PYG": 1787026878,
   "QAR": 1786920879,
@@ -98,9 +99,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The Guyana dollar sits at 209.2 per US dollar, barely moved from 209.3 at the start of the year. It has held inside a 2.6% band for twelve months, changing on two of every three trading days. #Guyana $GYD",
   "The Liberian dollar sits at 181.6 per US dollar, five straight days without a move of even a quarter percent. Still, it's 10.4% firmer than a year ago, when it traded near 200.4. #Liberia $LRD",
   "The sol trades at 3.373 per dollar. The 5 sources feeding the fixing disagree among themselves by 0.66%, more than double the usual 0.26% discrepancy for this currency, though the rate remains within the 1.1% band it has held over 30 days. #Peru $PEN",
-  "The Moroccan dirham stands at 9.292 to the dollar, little changed over the past week. Since the start of the year the currency has fallen 1.9%, and over the past year the decline reached 3.1%. #Morocco $MAD"
+  "The Moroccan dirham stands at 9.292 to the dollar, little changed over the past week. Since the start of the year the currency has fallen 1.9%, and over the past year the decline reached 3.1%. #Morocco $MAD",
+  "The peso is at 61.7 per dollar, its weakest in the past year. It has fallen 4.4% since January and 7.4% since last year, after standing at 57.1 last August."
  ]
 }
