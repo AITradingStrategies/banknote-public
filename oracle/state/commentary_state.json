@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-08-19",
- "last_post": 1787182234,
+ "anchors_today": [],
+ "date": "2026-08-20",
+ "last_post": 1787189691,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -89,14 +83,14 @@
   "TTD": 1787178820,
   "UGX": 1786879568,
   "VES": 1787020877,
-  "VND": 1786750877,
+  "VND": 1787189691,
   "YER": 1786600745,
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The Pakistani rupee stands at 277.6 per dollar, with no move of more than 0.25% in the past 14 days. Since the start of the year it has strengthened 0.9%. #Pakistan $PKR",
   "The Libyan dinar stands at 6.366 to the dollar, little changed for a week. But it has lost 14.8% of its value since the start of the year, making it the 3rd weakest of 132 currencies this year. #Libya $LYD",
   "The Trinidad and Tobago dollar sits at 6.754 per USD, its weakest point in the past year, though little changed over the last week. It has held inside a 1.1% band for 30 days.",
-  "The Bahamian dollar holds at 1 to the USD, unchanged for 94 straight days without a move of even 0.25%. It ranks as the 4th steadiest of 132 currencies tracked. #Bahamas $BSD"
+  "The Bahamian dollar holds at 1 to the USD, unchanged for 94 straight days without a move of even 0.25%. It ranks as the 4th steadiest of 132 currencies tracked. #Bahamas $BSD",
+  "The Vietnamese dong is trading at 26,179 VND/USD, nearly unchanged over the past week. Since the start of the year, the dong has strengthened 0.8%, having been at 26,419 at the start of the year. #Vietnam $VND"
  ]
 }
