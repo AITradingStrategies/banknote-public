@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-08-21",
- "last_post": 1787330609,
+ "last_post": 1787334106,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -76,7 +77,7 @@
   "PAB": 1787078836,
   "PEN": 1787240377,
   "PGK": 1786917879,
-  "PHP": 1787247769,
+  "PHP": 1787334106,
   "PKR": 1787256769,
   "PYG": 1787026878,
   "QAR": 1786920879,
@@ -107,9 +108,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The kyat stands at 2,100 per dollar, its weakest point of the year. It has gone 756 straight days without moving more than 0.25%, and the past week has also seen no change. #Myanmar $MMK",
   "The Barbados dollar sits at 2 per USD, exactly where it stood a year ago and at the start of this year. It has gone 47 days without a move of even 0.25%, the 2nd steadiest currency of 132 tracked. #Barbados $BBD",
   "The Somali shilling stands at 571.2 to the dollar, having strengthened 0.8% over the past month. The currency moves 0.91% on a typical day, making it the 6th most volatile of 132 currencies tracked. #Somalia $SOS",
-  "Samoa's tala stands at 2.697 to the US dollar, its highest in 97 days. It has risen 3.06% since the start of the year, and typically changes on 75% of days. #Samoa $WST"
+  "Samoa's tala stands at 2.697 to the US dollar, its highest in 97 days. It has risen 3.06% since the start of the year, and typically changes on 75% of days. #Samoa $WST",
+  "The peso stands at 61.7 per dollar, its weakest in the past year. It has fallen 4.4% since the start of the year and 6.9% from a year ago, having started at 57.4 per dollar. #Philippines $PHP"
  ]
 }
