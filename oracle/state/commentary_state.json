@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-08-20",
- "last_post": 1787269003,
+ "anchors_today": [],
+ "date": "2026-08-21",
+ "last_post": 1787277045,
  "recent": {
   "AED": 1786665448,
   "AFN": 1786674263,
@@ -89,7 +83,7 @@
   "SSP": 1787108943,
   "STN": 1787250769,
   "SZL": 1787099004,
-  "THB": 1786923879,
+  "THB": 1787277045,
   "TJS": 1786827736,
   "TMT": 1786854304,
   "TND": 1786890736,
@@ -104,9 +98,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The Fijian dollar jumped 0.75% to 2.2 per USD, its biggest one-day move in 77 days and its strongest level in 30 days. It remains within the 1.9% band it has held over that stretch. #Fiji $FJD",
   "The lempira stands at 26.8 per dollar, its weakest level of the past year, versus 26.2 twelve months ago. The 5 sources behind the reference rate disagreed today by 0.46%, well above the usual 0.14%. #Honduras $HNL",
   "The Mauritian rupee trades at 46.9 per dollar, nearly stable over the week. It is down 1.5% since the start of the year, versus 46.2 in January, while remaining 2.6% from its lowest point of the past twelve months. #Mauritius $MUR",
-  "The hryvnia holds at 44.7 per dollar, little changed over the week. Since the start of the year it has lost 5.7%, and compared with last year's 41.3 it has weakened more noticeably. #Ukraine $UAH"
+  "The hryvnia holds at 44.7 per dollar, little changed over the week. Since the start of the year it has lost 5.7%, and compared with last year's 41.3 it has weakened more noticeably. #Ukraine $UAH",
+  "The baht stands at 32.9 per dollar, steady over the past week, but up 1.7% over 30 days. Since the start of the year it has weakened 4.7% from 31.5 per dollar in January. #Thailand $THB"
  ]
 }
