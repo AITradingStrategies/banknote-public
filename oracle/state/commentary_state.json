@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-08-22",
- "last_post": 1787391051,
+ "last_post": 1787394051,
  "recent": {
   "AED": 1787352106,
   "AFN": 1786674263,
   "ALL": 1787111943,
   "AMD": 1787284667,
   "AOA": 1787067879,
-  "ARS": 1787308356,
+  "ARS": 1787394051,
   "AZN": 1787193719,
   "BAM": 1787384815,
   "BBD": 1787323685,
@@ -107,9 +108,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The naira trades at 1,348/USD, up 7.1% since January and 13.8% stronger than a year ago when it stood near 1,537. It has changed on 82% of trading days this year. #Nigeria $NGN",
   "The convertible mark stands at 1.674 per dollar, its strongest value in the past 97 days. A year ago it was 1.679, and the range of movement over the past month was 2.8%.",
   "The Cape Verdean escudo traded at 94.4 per dollar, its strongest value in 98 days. A year ago it was worth 94.7 and at the start of the year it stood at 93.9. #CapeVerde $CVE",
-  "The Comorian franc trades at 421.1 to the dollar, its strongest level in 98 days. It stood at 422.3/USD a year ago and at 418.8/USD at the start of the year. #Comoros $KMF"
+  "The Comorian franc trades at 421.1 to the dollar, its strongest level in 98 days. It stood at 422.3/USD a year ago and at 418.8/USD at the start of the year. #Comoros $KMF",
+  "The peso trades at 1,497 per dollar, little changed over the past week but at its weakest point of the past year. It is down 13.1% over twelve months and 3.1% since January. #Argentina $ARS"
  ]
 }
