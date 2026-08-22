@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-08-22",
- "last_post": 1787415051,
+ "last_post": 1787418051,
  "recent": {
   "AED": 1787352106,
   "AFN": 1786674263,
@@ -77,7 +78,7 @@
   "PAB": 1787078836,
   "PEN": 1787240377,
   "PGK": 1787355106,
-  "PHP": 1787334106,
+  "PHP": 1787418051,
   "PKR": 1787343106,
   "PYG": 1787373917,
   "QAR": 1786920879,
@@ -109,9 +110,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "Dollar/TL is at 48.1, its weakest level since 2024-03-06. The rate has lost 4.9% over the past 90 days and 14.9% over the past year. #Turkiye $TRY",
   "The dalasi trades at 74.6 to the dollar, barely moved from a week ago. Over the past year it has slipped 2.2%, from 72.6 to its current level. #Gambia $GMD",
   "The leu is trading at 4.493/dollar, up 2.2% over the past 30 days, but remains 3.4% weaker than at the start of the year. The currency has moved within a 2.4% band during this period. #Romania $RON",
-  "The Djiboutian franc trades at 177.7 to the dollar, almost the same level as a year ago (178.0). The five sources composing today's fixing diverge by 0.32%, nearly double the usual gap of 0.19%. #Djibouti $DJF"
+  "The Djiboutian franc trades at 177.7 to the dollar, almost the same level as a year ago (178.0). The five sources composing today's fixing diverge by 0.32%, nearly double the usual gap of 0.19%. #Djibouti $DJF",
+  "The peso is at 61.7 per dollar, its weakest in a year. There has been barely any movement in the past eight days, but it has fallen 4.5% since the start of the year and 7.7% compared to a year ago."
  ]
 }
