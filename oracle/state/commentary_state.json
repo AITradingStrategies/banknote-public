@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-08-23",
- "last_post": 1787462246,
+ "last_post": 1787465773,
  "recent": {
   "AED": 1787352106,
   "AFN": 1786674263,
@@ -67,7 +69,7 @@
   "MYR": 1787453203,
   "MZN": 1787165830,
   "NAD": 1787212434,
-  "NGN": 1787381815,
+  "NGN": 1787465773,
   "NIO": 1787196804,
   "OMR": 1786818736,
   "PAB": 1787078836,
@@ -108,9 +110,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The Malaysian ringgit stands at 4.04 per US dollar, its strongest level in 75 days. It has strengthened 1.19% over the past 30 days, but is still 4.76% weaker than a year ago. #Malaysia $MYR",
   "The South Sudanese pound trades at 5,617 to the dollar, up 1.1% over the past week even as it remains down 18.9% for the year. It is now the second weakest currency of 132 tracked over the past year, having stood at 1,634/USD twelve months ago. #SouthSudan $SSP",
   "The lek trades today at 79.3 to the dollar, the strongest level since tracking began in March 2024. It has strengthened 3.8% over 90 days, from 83.7/USD a year ago. #Albania $ALL",
-  "The Sri Lankan rupee trades today at 329.7 to the dollar. It has strengthened 1.1% over the past week, and while it is up 2.1% over 30 days, it remains 5.9% weaker this year. #SriLanka $LKR"
+  "The Sri Lankan rupee trades today at 329.7 to the dollar. It has strengthened 1.1% over the past week, and while it is up 2.1% over 30 days, it remains 5.9% weaker this year. #SriLanka $LKR",
+  "The naira trades at 1,348/USD, up 7.1% this year and 13.9% stronger than a year ago, when it stood at 1,538/USD. #Nigeria $NGN"
  ]
 }
