@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-08-23",
- "last_post": 1787505744,
+ "last_post": 1787508744,
  "recent": {
   "AED": 1787352106,
   "AFN": 1786674263,
@@ -77,7 +78,7 @@
   "PAB": 1787078836,
   "PEN": 1787240377,
   "PGK": 1787355106,
-  "PHP": 1787418051,
+  "PHP": 1787508744,
   "PKR": 1787430993,
   "PYG": 1787373917,
   "QAR": 1787499351,
@@ -112,9 +113,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The Moldovan leu is trading at 17.2 per dollar, 0.7% stronger than a week ago and up 2.1% over the past 30 days. Since the start of the year, the currency remains 2.3% weaker.",
   "The Qatari riyal is steady at 3.64 against the dollar, the same rate as at the start of the year and a year ago. 94 straight days without a move exceeding 0.25%, making it among the 7 steadiest of 132 tracked currencies. #Qatar $QAR",
   "The Bahraini dinar is steady at 0.376 against the dollar, the same level as at the start of the year and a year ago. 49 days have passed without a move exceeding 0.25%, making it the 3rd steadiest currency among 132 tracked. #Bahrain $BHD",
-  "The Costa Rican col\u00f3n trades at 454.5 per dollar, practically unchanged over the past month. So far this year it has strengthened 9.5%, compared with 497.5 colones at the start of 2026. #CostaRica $CRC"
+  "The Costa Rican col\u00f3n trades at 454.5 per dollar, practically unchanged over the past month. So far this year it has strengthened 9.5%, compared with 497.5 colones at the start of 2026. #CostaRica $CRC",
+  "The peso is at 61.7 per dollar, little changed over the past week. This is the weakest it has been in the past 26 days, and 7.6% weaker compared to a year ago. #Philippines $PHP"
  ]
 }
