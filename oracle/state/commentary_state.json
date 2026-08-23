@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-08-23",
- "last_post": 1787478171,
+ "last_post": 1787481171,
  "recent": {
   "AED": 1787352106,
   "AFN": 1786674263,
   "ALL": 1787459246,
   "AMD": 1787284667,
   "AOA": 1787067879,
-  "ARS": 1787394051,
+  "ARS": 1787481171,
   "AZN": 1787193719,
   "BAM": 1787384815,
   "BBD": 1787323685,
@@ -110,9 +111,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The Omani rial trades today at 0.385 to the dollar, the same level it was at a year ago and at the start of this year. The exchange rate has stayed within a 1.6% band over the past year, with five straight days without a move exceeding 0.25%.",
   "The krona stands at 121.2 against the dollar, its strongest level in 204 days. It has strengthened 2.1% over the past 90 days and is 5.3% above the year's lowest point. #Iceland $ISK",
   "The real trades at 5.174 per dollar, up 1.6% on the week. Year to date, the currency gains 7.3%, even after falling 1.4% over the past 30 days. #Brazil $BRL",
-  "The Brunei dollar stands at 1.269 to the US dollar, its strongest level in 102 days. It has moved within a 1.8% range over the past 30 days, compared with 1.289 a year ago. #Brunei $BND"
+  "The Brunei dollar stands at 1.269 to the US dollar, its strongest level in 102 days. It has moved within a 1.8% range over the past 30 days, compared with 1.289 a year ago. #Brunei $BND",
+  "The Argentine peso trades today at 1,497 per dollar, its weakest point of the past year and 13.3% below its best level in that period. Over the past twelve months it has accumulated a decline of 12.3%. #Argentina $ARS"
  ]
 }
