@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-08-24",
- "last_post": 1787549009,
+ "last_post": 1787552009,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -67,7 +69,7 @@
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787212434,
-  "NGN": 1787465773,
+  "NGN": 1787552009,
   "NIO": 1787196804,
   "NPR": 1787534616,
   "OMR": 1787468799,
@@ -109,9 +111,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "Same as post, already in English.",
   "Today the exchange rate is 122.2 per dollar, 0.5% stronger than a week ago. Over the past year the taka has weakened only 0.8%, and during this period the rate has moved within a narrow 2.3% band. #Bangladesh $BDT",
   "Same as post, already in English.",
-  "The metical stands today at 63.8 per dollar, its weakest level in 30 days. Even so, it remains almost where it was a year ago, when it traded at 63.9. #Mozambique $MZN"
+  "The metical stands today at 63.8 per dollar, its weakest level in 30 days. Even so, it remains almost where it was a year ago, when it traded at 63.9. #Mozambique $MZN",
+  "Same as post, already in English."
  ]
 }
