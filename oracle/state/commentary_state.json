@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-08-24",
- "last_post": 1787562238,
+ "last_post": 1787565628,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
   "ALL": 1787459246,
   "AMD": 1787284667,
   "AOA": 1787067879,
-  "ARS": 1787481171,
+  "ARS": 1787565628,
   "AZN": 1787193719,
   "BAM": 1787384815,
   "BBD": 1787323685,
@@ -111,9 +112,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "Same as post, already in English.",
   "The Lao kip traded at 22,439 to the US dollar, little changed over the past week, but weaker by 3.9% since the start of the year, though up 0.6% over the past 30 days. #Laos $LAK",
   "Same as post, already in English.",
-  "The kwacha sits at 1,736 to the dollar, barely moved from 1,735 a year ago and 1,735 at the start of 2026. It still changes on two of every three trading days. #Malawi $MWK"
+  "The kwacha sits at 1,736 to the dollar, barely moved from 1,735 a year ago and 1,735 at the start of 2026. It still changes on two of every three trading days. #Malawi $MWK",
+  "The Argentine peso trades at 1,497 per dollar, its weakest level of the past year. It is down 12.1% over twelve months and has already fallen 3.2% so far in 2026. #Argentina $ARS"
  ]
 }
