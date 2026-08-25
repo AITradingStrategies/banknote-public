@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-08-25",
- "last_post": 1787634725,
+ "last_post": 1787637725,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787558904,
-  "NGN": 1787552009,
+  "NGN": 1787637725,
   "NIO": 1787196804,
   "NPR": 1787534616,
   "OMR": 1787468799,
@@ -110,9 +112,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The baht stands at 32.7 to the dollar, its strongest in 66 days, trading in a 3.4% band over the past 30 days, though still 3.5% weaker since the start of the year from 31.5.",
   "The Tunisian dinar reaches 2.891 per dollar, its strongest level in 83 days, after moving within a 2.6% band over the past month. It remains close to the level at the start of the year at 2.892. #Tunisia $TND",
   "The lari stands at 2.603 to the dollar, its strongest level since tracking began in March 2024. The daily change was 0.53% \u2014 the largest in 125 days \u2014 while the five independent sources behind the fixing disagree by 0.59%, against a typical 0.24%.",
-  "The Colombian peso trades at 3,060 per dollar, 23.6% stronger so far this year and the best-performing currency among 132 tracked in 2026. #Colombia $COP"
+  "The Colombian peso trades at 3,060 per dollar, 23.6% stronger so far this year and the best-performing currency among 132 tracked in 2026. #Colombia $COP",
+  "The naira trades at 1,346 to the dollar, up 7.1% since the start of the year from 1,446 and 13.7% stronger than a year ago, when it stood at 1,535."
  ]
 }
