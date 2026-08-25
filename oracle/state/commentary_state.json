@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-08-25",
- "last_post": 1787651206,
+ "last_post": 1787655280,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
   "ALL": 1787459246,
   "AMD": 1787284667,
   "AOA": 1787568628,
-  "ARS": 1787565628,
+  "ARS": 1787655280,
   "AZN": 1787571628,
   "BAM": 1787384815,
   "BBD": 1787323685,
@@ -113,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Surinamese dollar stands at 37.8 per US dollar, 0.8% stronger than at the start of the year and virtually unchanged over the past five days. #Suriname $SRD",
   "The Ethiopian birr traded at 161.2 to the dollar, little changed from last week. It has weakened 4.1% since the start of the year, and fallen 12.5% over the past 12 months. #Ethiopia $ETB",
   "The Guyana dollar sits at 209.2 to the US dollar, barely moved from 209.1 a year ago and 209.3 at the start of the year. It has stayed within a 2.6% band for the past twelve months. #Guyana $GYD",
-  "The kwacha fixed at 19.0 to the dollar, with the five banks setting it disagreeing by 1.96%, three times the usual spread for this currency. It remains the second-strongest performer of 132 currencies this year, up from 22.3 in January. #Zambia $ZMW"
+  "The kwacha fixed at 19.0 to the dollar, with the five banks setting it disagreeing by 1.96%, three times the usual spread for this currency. It remains the second-strongest performer of 132 currencies this year, up from 22.3 in January. #Zambia $ZMW",
+  "The Argentine peso trades at 1,500 per dollar, its weakest level since this tracking began in March 2024. It has fallen 6.6% over the past 90 days and 12.2% from its strongest point of the year. #Argentina $ARS"
  ]
 }
