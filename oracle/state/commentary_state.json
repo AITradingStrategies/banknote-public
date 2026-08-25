@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-08-24",
- "last_post": 1787614717,
+ "anchors_today": [],
+ "date": "2026-08-25",
+ "last_post": 1787620854,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -48,7 +42,7 @@
   "IQD": 1787199804,
   "ISK": 1787471799,
   "JMD": 1787526744,
-  "JOD": 1786897627,
+  "JOD": 1787620854,
   "KES": 1787614717,
   "KGS": 1787358578,
   "KHR": 1787298244,
@@ -116,9 +110,9 @@
   "ZMW": 1787139866
  },
  "recent_posts": [
-  "The Fiji dollar sits at 2.212 per US dollar. The five sources setting today's fixing disagreed by 1.78%, nearly double the 0.94% typical spread, though the currency itself remains within the 2.6% band it has held over 30 days. #Fiji $FJD",
   "The Ugandan shilling sits at 3,723 to the dollar, little changed this week. It's down 2.8% for the year and 4.3% below where it stood a year ago, though it remains within the 1.8% band it has held over the past 30 days. #Uganda $UGX",
   "The Mauritian rupee trades at 46.7 to the dollar, up 1.2% over the week and 1.2% over thirty days. It remains down 0.8% since the start of the year. #Mauritius $MUR",
-  "The Kenyan shilling stands at 129.4 per dollar, having changed only slightly this week. Now 11 days without a move of more than 0.25%, remaining close to the 129.0 it started the year at. #Kenya $KES"
+  "The Kenyan shilling stands at 129.4 per dollar, having changed only slightly this week. Now 11 days without a move of more than 0.25%, remaining close to the 129.0 it started the year at. #Kenya $KES",
+  "The Jordanian dinar stands at 0.709 to the dollar, essentially unchanged for 898 consecutive days without a move exceeding 0.25%, the same level it held a year ago and at the start of the year. #Jordan $JOD"
  ]
 }
