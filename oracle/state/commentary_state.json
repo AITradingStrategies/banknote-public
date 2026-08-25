@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-08-25",
- "last_post": 1787658280,
+ "last_post": 1787662976,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -99,7 +100,7 @@
   "TMT": 1787443423,
   "TND": 1787628725,
   "TOP": 1787448357,
-  "TRY": 1787576808,
+  "TRY": 1787662976,
   "TTD": 1787178820,
   "TZS": 1787434190,
   "UAH": 1787269003,
@@ -114,9 +115,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Guyana dollar sits at 209.2 to the US dollar, barely moved from 209.1 a year ago and 209.3 at the start of the year. It has stayed within a 2.6% band for the past twelve months. #Guyana $GYD",
   "The kwacha fixed at 19.0 to the dollar, with the five banks setting it disagreeing by 1.96%, three times the usual spread for this currency. It remains the second-strongest performer of 132 currencies this year, up from 22.3 in January. #Zambia $ZMW",
   "The Argentine peso trades at 1,500 per dollar, its weakest level since this tracking began in March 2024. It has fallen 6.6% over the past 90 days and 12.2% from its strongest point of the year. #Argentina $ARS",
-  "The loti has not been this strong in 175 days, trading at 16.0 to the dollar. It has firmed 2.0% over three months and now ranks third-strongest of 132 currencies tracked this month. #Lesotho $LSL"
+  "The loti has not been this strong in 175 days, trading at 16.0 to the dollar. It has firmed 2.0% over three months and now ranks third-strongest of 132 currencies tracked this month. #Lesotho $LSL",
+  "The Turkish lira fell to 48.1 against the dollar, its weakest level since tracking began in March 2024. It has lost 14.8% over the past year, down 10.6% from 43.0 at the start of the year. #Turkiye $TRY"
  ]
 }
