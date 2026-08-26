@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-08-26",
- "last_post": 1787737384,
+ "last_post": 1787740384,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
   "ALL": 1787459246,
   "AMD": 1787666407,
   "AOA": 1787568628,
-  "ARS": 1787655280,
+  "ARS": 1787740384,
   "AZN": 1787571628,
   "BAM": 1787734360,
   "BBD": 1787669807,
@@ -114,9 +115,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The naira holds at 1,347/USD, barely moved this week but up 7.3% since the start of the year and 13.0% stronger than twelve months ago, when it traded near 1,522. #Nigeria $NGN",
   "The dinar stands at 100.5 per dollar, having strengthened 2.7% over the month, but still 0.7% weaker than at the start of the year. The rate has not moved by more than 0.25% over the past five days. #Serbia $RSD",
   "The convertible mark stands at 1.677 per dollar, having strengthened 2.6% over the past 30 days, but still 0.7% weaker than at the start of the year. The rate has not moved by more than 0.25% for five days running. #BosniaAndHerzegovina $BAM",
-  "The Cape Verdean escudo stands at 94.5 per dollar, not moving more than 0.25% in five consecutive sessions. Over the month it rose 2.6%, but for the year it is still down 0.7%. #CapeVerde $CVE"
+  "The Cape Verdean escudo stands at 94.5 per dollar, not moving more than 0.25% in five consecutive sessions. Over the month it rose 2.6%, but for the year it is still down 0.7%. #CapeVerde $CVE",
+  "The Argentine peso trades at 1,509 per dollar, its weakest level since tracking began in March 2024. It has fallen 6.5% over the past 90 days and is down 12.5% over the past year. #Argentina $ARS"
  ]
 }
