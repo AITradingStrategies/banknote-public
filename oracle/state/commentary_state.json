@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-08-26",
- "last_post": 1787744226,
+ "last_post": 1787750002,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -99,7 +100,7 @@
   "TMT": 1787443423,
   "TND": 1787628725,
   "TOP": 1787448357,
-  "TRY": 1787662976,
+  "TRY": 1787750002,
   "TTD": 1787178820,
   "TZS": 1787434190,
   "UAH": 1787269003,
@@ -115,9 +116,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The convertible mark stands at 1.677 per dollar, having strengthened 2.6% over the past 30 days, but still 0.7% weaker than at the start of the year. The rate has not moved by more than 0.25% for five days running. #BosniaAndHerzegovina $BAM",
   "The Cape Verdean escudo stands at 94.5 per dollar, not moving more than 0.25% in five consecutive sessions. Over the month it rose 2.6%, but for the year it is still down 0.7%. #CapeVerde $CVE",
   "The Argentine peso trades at 1,509 per dollar, its weakest level since tracking began in March 2024. It has fallen 6.5% over the past 90 days and is down 12.5% over the past year. #Argentina $ARS",
-  "The Comorian franc trades at 421.7 per dollar, up 0.8% over the week and 2.6% over thirty days, but remains 0.7% weaker than at the start of the year. It has moved within a narrow band for five days, without a move of more than 0.25%."
+  "The Comorian franc trades at 421.7 per dollar, up 0.8% over the week and 2.6% over thirty days, but remains 0.7% weaker than at the start of the year. It has moved within a narrow band for five days, without a move of more than 0.25%.",
+  "The Turkish lira stands at 48.1 to the dollar, its weakest point since tracking began in March 2024. It has lost 14.8% over the past year, and is the third worst performer among 132 currencies this year. #Turkiye $TRY"
  ]
 }
