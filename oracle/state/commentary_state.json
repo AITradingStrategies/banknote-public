@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-08-25",
- "last_post": 1787701381,
+ "anchors_today": [],
+ "date": "2026-08-26",
+ "last_post": 1787709360,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -32,7 +26,7 @@
   "CRC": 1787505744,
   "CVE": 1787388051,
   "DJF": 1787415051,
-  "DOP": 1787129517,
+  "DOP": 1787709360,
   "DZD": 1787487171,
   "EGP": 1787691831,
   "ETB": 1787645104,
@@ -118,9 +112,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Egyptian pound trades at 50.7 to the dollar, down 2.1% over the past week. Despite this it remained up 0.9% over the past 30 days, leaving the year so far showing a decline of 6.3%. #Egypt $EGP",
   "The Uruguayan peso trades at 40.2 per dollar, nearly unchanged over the past week. It has fallen 2.6% so far this year, though it remains 6.6% below its strongest point of the past twelve months. #Uruguay $UYU",
   "The pula sits at 13.4 per dollar, barely moved over 30 days. Today the five fixing sources disagreed by 5.80%, wider than the 4.64% typical for this currency. #Botswana $BWP",
-  "The gourde trades at 130.8 per dollar, nearly stable over the past week. It has gained 1.5% over the past month, but remains within the 2.2% band it has held for a year. #Haiti $HTG"
+  "The gourde trades at 130.8 per dollar, nearly stable over the past week. It has gained 1.5% over the past month, but remains within the 2.2% band it has held for a year. #Haiti $HTG",
+  "The Dominican peso trades at 58.5 per dollar, practically stable over the past week. So far this year it has gained 7.5%, compared with the 63.1 it started 2026 with. #DominicanRepublic $DOP"
  ]
 }
