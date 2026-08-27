@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-08-27",
- "last_post": 1787864060,
+ "last_post": 1787870669,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -99,7 +100,7 @@
   "TMT": 1787443423,
   "TND": 1787628725,
   "TOP": 1787448357,
-  "TRY": 1787750002,
+  "TRY": 1787870669,
   "TTD": 1787178820,
   "TZS": 1787434190,
   "UAH": 1787269003,
@@ -115,9 +116,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Pakistani rupee is stable at 277.5 per dollar, with no significant change seen over the past week. Since the start of the year, the rupee has strengthened by 1.0%. #Pakistan $PKR",
   "The rand has reached 15.9 per dollar, its strongest in 176 days. It has gained 2.1% over the past 90 days and now sits 9.8% above its weakest point of the year.",
   "The naira sits at 1,347/USD, little changed this week but 7.3% stronger than at the start of the year and up 13.9% over the past 12 months, when it traded near 1,534. #Nigeria $NGN",
-  "The Argentine peso trades at 1,512 per dollar, its weakest level since this tracking began in March 2024. It has fallen 6.6% over the last 90 days and 12.6% from its strongest point of the year. #Argentina $ARS"
+  "The Argentine peso trades at 1,512 per dollar, its weakest level since this tracking began in March 2024. It has fallen 6.6% over the last 90 days and 12.6% from its strongest point of the year. #Argentina $ARS",
+  "USD/TRY is at 48.1, its weakest level since measurement began in March 2024. The rate has lost 4.6% over the last 90 days and 14.76% over the past year. #Turkiye $TRY"
  ]
 }
