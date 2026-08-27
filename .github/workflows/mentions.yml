@@ -15,8 +15,14 @@ name: banknote-ai-mentions
 
 on:
   schedule:
-    # :45 - clear of the commentary (:00/:10 pattern) and the reply beat (:30).
-    - cron: "45 * * * *"
+    # Every five minutes, as a SHORT run. This used to be one hourly run
+    # holding the runner for 50 minutes and polling inside it, which bought
+    # the same latency for ~715 runner-minutes a day - about 87% of the
+    # repo's entire Actions load - and by 2026-08-27 GitHub had throttled
+    # scheduled delivery for the whole repo down to a handful of runs a day,
+    # starving the commentary. Many short runs cost ~60 min/day for the same
+    # answer speed. Delivery of a */5 cron is best-effort, never guaranteed.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       post:
@@ -26,6 +32,9 @@ on:
 
 concurrency:
   group: banknote-ai-mentions
+  # Skip rather than queue: at */5 a backlog would stack runs on top of
+  # each other, and a missed poll costs five minutes while a queue costs
+  # runner-hours.
   cancel-in-progress: false
 
 permissions:
@@ -34,11 +43,9 @@ permissions:
 jobs:
   mentions:
     runs-on: ubuntu-latest
-    # A polling loop, not a single pass: the run holds the hour and checks
-    # every five minutes, so an answer lands within ~5 minutes of the
-    # mention instead of within the hour. An empty mentions read returns
-    # nothing and bills nothing; the runner is free on a public repo.
-    timeout-minutes: 58
+    # One pass, in and out. The cadence is the cron's job now, not a sleep
+    # loop's: holding a runner is what got the repo throttled.
+    timeout-minutes: 10
     environment: x-posting
     env:
       BANKNOTE_COUNTRIES: ${{ github.workspace }}/data/countries.json
@@ -75,12 +82,7 @@ jobs:
           if [ "${POST}" = "true" ] || [ "${EVENT}" = "schedule" ]; then ARGS="--post"; fi
           # This log is public. The mention we answer is somebody else's post
           # and its text is never printed here; the answer is ours and is.
-          for i in $(seq 1 10); do
-            python run_mentions.py $ARGS || true
-            # (if/then, not &&: a false test as the loop's last command
-            # exits 1 under bash -e and marks a healthy run failed)
-            if [ "$i" -lt 10 ]; then sleep 300; fi
-          done
+          python run_mentions.py $ARGS
 
       - name: Commit who we answered
         if: always()
