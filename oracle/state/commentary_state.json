@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-08-27",
- "last_post": 1787828308,
+ "last_post": 1787864060,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
   "ALL": 1787459246,
   "AMD": 1787666407,
   "AOA": 1787568628,
-  "ARS": 1787740384,
+  "ARS": 1787864060,
   "AZN": 1787571628,
   "BAM": 1787734360,
   "BBD": 1787669807,
@@ -114,9 +115,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The peso stands at 61.7 per dollar, its weakest in the past year. It has barely moved in the last 12 days, yet it has fallen 8.3% since a year ago. #Philippines $PHP",
   "The Pakistani rupee is stable at 277.5 per dollar, with no significant change seen over the past week. Since the start of the year, the rupee has strengthened by 1.0%. #Pakistan $PKR",
   "The rand has reached 15.9 per dollar, its strongest in 176 days. It has gained 2.1% over the past 90 days and now sits 9.8% above its weakest point of the year.",
-  "The naira sits at 1,347/USD, little changed this week but 7.3% stronger than at the start of the year and up 13.9% over the past 12 months, when it traded near 1,534. #Nigeria $NGN"
+  "The naira sits at 1,347/USD, little changed this week but 7.3% stronger than at the start of the year and up 13.9% over the past 12 months, when it traded near 1,534. #Nigeria $NGN",
+  "The Argentine peso trades at 1,512 per dollar, its weakest level since this tracking began in March 2024. It has fallen 6.6% over the last 90 days and 12.6% from its strongest point of the year. #Argentina $ARS"
  ]
 }
