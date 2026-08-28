@@ -1,15 +1,11 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY"
- ],
- "date": "2026-08-27",
- "last_post": 1787870669,
+ "anchors_today": [],
+ "date": "2026-08-28",
+ "last_post": 1787894150,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
-  "ALL": 1787459246,
+  "ALL": 1787894150,
   "AMD": 1787666407,
   "AOA": 1787568628,
   "ARS": 1787864060,
@@ -116,9 +112,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The rand has reached 15.9 per dollar, its strongest in 176 days. It has gained 2.1% over the past 90 days and now sits 9.8% above its weakest point of the year.",
   "The naira sits at 1,347/USD, little changed this week but 7.3% stronger than at the start of the year and up 13.9% over the past 12 months, when it traded near 1,534. #Nigeria $NGN",
   "The Argentine peso trades at 1,512 per dollar, its weakest level since this tracking began in March 2024. It has fallen 6.6% over the last 90 days and 12.6% from its strongest point of the year. #Argentina $ARS",
-  "USD/TRY is at 48.1, its weakest level since measurement began in March 2024. The rate has lost 4.6% over the last 90 days and 14.76% over the past year. #Turkiye $TRY"
+  "USD/TRY is at 48.1, its weakest level since measurement began in March 2024. The rate has lost 4.6% over the last 90 days and 14.76% over the past year. #Turkiye $TRY",
+  "The lek has reached 79.2 per dollar, the strongest level recorded since measurement began in 2024. It has gained 3.6% within 90 days and stands 5.9% above the weakest point of the last year. #Albania $ALL"
  ]
 }
