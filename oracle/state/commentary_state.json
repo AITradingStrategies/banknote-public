@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-08-28",
- "last_post": 1787894150,
+ "last_post": 1787924888,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787558904,
-  "NGN": 1787828308,
+  "NGN": 1787924888,
   "NIO": 1787682831,
   "NPR": 1787534616,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The naira sits at 1,347/USD, little changed this week but 7.3% stronger than at the start of the year and up 13.9% over the past 12 months, when it traded near 1,534. #Nigeria $NGN",
   "The Argentine peso trades at 1,512 per dollar, its weakest level since this tracking began in March 2024. It has fallen 6.6% over the last 90 days and 12.6% from its strongest point of the year. #Argentina $ARS",
   "USD/TRY is at 48.1, its weakest level since measurement began in March 2024. The rate has lost 4.6% over the last 90 days and 14.76% over the past year. #Turkiye $TRY",
-  "The lek has reached 79.2 per dollar, the strongest level recorded since measurement began in 2024. It has gained 3.6% within 90 days and stands 5.9% above the weakest point of the last year. #Albania $ALL"
+  "The lek has reached 79.2 per dollar, the strongest level recorded since measurement began in 2024. It has gained 3.6% within 90 days and stands 5.9% above the weakest point of the last year. #Albania $ALL",
+  "The naira has touched 1,344/USD, its strongest point in 129 days. It has firmed 2.3% over the last 90 days and is now 12.6% above its weakest level of the past year. #Nigeria $NGN"
  ]
 }
