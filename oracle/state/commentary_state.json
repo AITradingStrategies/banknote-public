@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-08-29",
- "last_post": 1787965661,
+ "last_post": 1787989935,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787558904,
-  "NGN": 1787924888,
+  "NGN": 1787989935,
   "NIO": 1787682831,
   "NPR": 1787534616,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The lek has reached 79.2 per dollar, the strongest level recorded since measurement began in 2024. It has gained 3.6% within 90 days and stands 5.9% above the weakest point of the last year. #Albania $ALL",
   "The naira has touched 1,344/USD, its strongest point in 129 days. It has firmed 2.3% over the last 90 days and is now 12.6% above its weakest level of the past year. #Nigeria $NGN",
   "The Argentine peso trades at 1,514 per dollar, its weakest level since this tracking began in March 2024. It has fallen 10.46% over the past year and is already down 4.17% so far in 2026. #Argentina $ARS",
-  "The krona stands at 120.9 against the dollar, 3.4% stronger than 30 days ago and 3.9% stronger this year. The rate has stayed within a 3.4% band over the past month. #Iceland $ISK"
+  "The krona stands at 120.9 against the dollar, 3.4% stronger than 30 days ago and 3.9% stronger this year. The rate has stayed within a 3.4% band over the past month. #Iceland $ISK",
+  "The naira has held at 1,341/USD, its strongest level in 130 days. It is up 7.69% since the start of the year, and Moody's this week revised Nigeria's credit outlook to 'positive'. #Nigeria $NGN"
  ]
 }
