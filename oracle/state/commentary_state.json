@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-08-29",
- "last_post": 1787989935,
+ "last_post": 1788010868,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
   "ALL": 1787894150,
   "AMD": 1787666407,
   "AOA": 1787568628,
-  "ARS": 1787938142,
+  "ARS": 1788010868,
   "AZN": 1787571628,
   "BAM": 1787734360,
   "BBD": 1787669807,
@@ -114,9 +115,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The naira has touched 1,344/USD, its strongest point in 129 days. It has firmed 2.3% over the last 90 days and is now 12.6% above its weakest level of the past year. #Nigeria $NGN",
   "The Argentine peso trades at 1,514 per dollar, its weakest level since this tracking began in March 2024. It has fallen 10.46% over the past year and is already down 4.17% so far in 2026. #Argentina $ARS",
   "The krona stands at 120.9 against the dollar, 3.4% stronger than 30 days ago and 3.9% stronger this year. The rate has stayed within a 3.4% band over the past month. #Iceland $ISK",
-  "The naira has held at 1,341/USD, its strongest level in 130 days. It is up 7.69% since the start of the year, and Moody's this week revised Nigeria's credit outlook to 'positive'. #Nigeria $NGN"
+  "The naira has held at 1,341/USD, its strongest level in 130 days. It is up 7.69% since the start of the year, and Moody's this week revised Nigeria's credit outlook to 'positive'. #Nigeria $NGN",
+  "The Argentine peso trades at 1,512 per dollar, its weakest level of the past year. Over the last 90 days it has fallen 6.8%, and it moves on 78% of trading days. #Argentina $ARS"
  ]
 }
