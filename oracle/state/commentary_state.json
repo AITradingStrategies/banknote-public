@@ -3,10 +3,11 @@
   "NGN",
   "ARS",
   "TRY",
-  "PHP"
+  "PHP",
+  "PKR"
  ],
  "date": "2026-08-30",
- "last_post": 1788125604,
+ "last_post": 1788133796,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -81,7 +82,7 @@
   "PEN": 1787586411,
   "PGK": 1787355106,
   "PHP": 1788125604,
-  "PKR": 1788042495,
+  "PKR": 1788133796,
   "PYG": 1787373917,
   "QAR": 1787499351,
   "RON": 1787759537,
@@ -117,9 +118,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The naira trades at 1,341 per dollar, stronger by 7.7% this year and up 14.3% from a year ago when it stood at 1,535/USD. #Nigeria $NGN",
   "The Argentine peso trades at 1,512 per dollar, its weakest level in the past year. It is down 11.6% against the dollar over twelve months and has already lost 3.8% so far in 2026. #Argentina $ARS",
   "The dollar/lira rate fell to 48.2, the weakest level recorded since March 2024. The rate has lost 5.0% over the past 90 days and 14.7% over the past year. #Turkiye $TRY",
-  "The peso fell to 62.2 per dollar, its weakest level since tracking began in March 2024. It has dropped 8.59% over the past year, including 5.44% since the start of the year."
+  "The peso fell to 62.2 per dollar, its weakest level since tracking began in March 2024. It has dropped 8.59% over the past year, including 5.44% since the start of the year.",
+  "The rupee stands steady at 277.6 to the dollar, little changed over the past week. It is stronger by 0.9% since the start of the year, and for 8 straight days the rate has not moved by more than 0.25%."
  ]
 }
