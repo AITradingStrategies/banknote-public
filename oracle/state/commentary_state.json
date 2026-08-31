@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-08-30",
- "last_post": 1788133796,
+ "anchors_today": [],
+ "date": "2026-08-31",
+ "last_post": 1788141426,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -70,7 +64,7 @@
   "MUR": 1787611717,
   "MVR": 1787676010,
   "MWK": 1787562238,
-  "MXN": 1787716986,
+  "MXN": 1788141426,
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787558904,
@@ -118,9 +112,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Argentine peso trades at 1,512 per dollar, its weakest level in the past year. It is down 11.6% against the dollar over twelve months and has already lost 3.8% so far in 2026. #Argentina $ARS",
   "The dollar/lira rate fell to 48.2, the weakest level recorded since March 2024. The rate has lost 5.0% over the past 90 days and 14.7% over the past year. #Turkiye $TRY",
   "The peso fell to 62.2 per dollar, its weakest level since tracking began in March 2024. It has dropped 8.59% over the past year, including 5.44% since the start of the year.",
-  "The rupee stands steady at 277.6 to the dollar, little changed over the past week. It is stronger by 0.9% since the start of the year, and for 8 straight days the rate has not moved by more than 0.25%."
+  "The rupee stands steady at 277.6 to the dollar, little changed over the past week. It is stronger by 0.9% since the start of the year, and for 8 straight days the rate has not moved by more than 0.25%.",
+  "The Mexican peso trades at 17.0 per dollar, a weekly pullback of 0.7% that barely dims a year of strength: it has gained 9.6% over twelve months and 5.7% so far in 2026. #Mexico $MXN"
  ]
 }
