@@ -3,5 +3,13 @@
  "alerted_at": {},
  "count": 0,
  "date": "2026-09-01",
- "pending": {}
+ "pending": {
+  "LRD": {
+   "bar": 2.0,
+   "outlier": 2.44,
+   "pct": 2.451462478493549,
+   "rate": 175.5690248804,
+   "seen": 1
+  }
+ }
 }
