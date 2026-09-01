@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-01",
- "last_post": 1788241509,
+ "last_post": 1788258695,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787558904,
-  "NGN": 1788164995,
+  "NGN": 1788258695,
   "NIO": 1787682831,
   "NPR": 1787534616,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The peso holds at 1,509 per dollar, practically unchanged over the past week and with five straight sessions without moving more than 0.25%. It has fallen 3.7% this year, and 10.9% over twelve months. #Argentina $ARS",
   "USD/TRY stands at 48.3, having not seen even a 0.25% move in the last 21 days. Still, the lira is at its weakest point of the year and has lost 10.9% this year; it's the 4th weakest of 132 currencies year-to-date.",
   "The Ugandan shilling has slipped to 3,772 per dollar, its weakest in 34 days and the lowest point it has touched all year. It's down 3.95% since January and 5.8% over twelve months. #Uganda $UGX",
-  "The manat fell to 1.7 per dollar, weakening 0.51% day on day, its sharpest move in 103 days, reaching its lowest level in 90 days. The disagreement among the 5 sources setting the fixing usually runs 0.03% but reached 0.62% this time. #Azerbaijan $AZN"
+  "The manat fell to 1.7 per dollar, weakening 0.51% day on day, its sharpest move in 103 days, reaching its lowest level in 90 days. The disagreement among the 5 sources setting the fixing usually runs 0.03% but reached 0.62% this time. #Azerbaijan $AZN",
+  "The naira trades at 1,339/USD, little changed on the week but up 1.2% over the past month. It's now 7.4% stronger this year and 14.0% stronger than twelve months ago, when it stood at 1,535. #Nigeria $NGN"
  ]
 }
