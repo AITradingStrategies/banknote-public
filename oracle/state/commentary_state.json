@@ -3,10 +3,11 @@
   "NGN",
   "TRY",
   "ARS",
-  "PKR"
+  "PKR",
+  "PHP"
  ],
  "date": "2026-09-01",
- "last_post": 1788297602,
+ "last_post": 1788305122,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -80,7 +81,7 @@
   "PAB": 1787520744,
   "PEN": 1787586411,
   "PGK": 1787355106,
-  "PHP": 1788125604,
+  "PHP": 1788305122,
   "PKR": 1788297602,
   "PYG": 1787373917,
   "QAR": 1787499351,
@@ -117,9 +118,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The naira trades at 1,339/USD, little changed on the week but up 1.2% over the past month. It's now 7.4% stronger this year and 14.0% stronger than twelve months ago, when it stood at 1,535. #Nigeria $NGN",
   "USD/TRY at 48.3; the lira is at its weakest level since measurement began on 2024-03-06. The rate has traded in a 17.3% band over the past year, and now sits at the weak end of that band. #Turkiye $TRY",
   "The Argentine peso trades at 1,509 per dollar, its weakest level of the past year. It has gone 6 sessions without moving more than 0.25%, though it has fallen 10.8% over twelve months. #Argentina $ARS",
-  "The rupee is steady at 277.6 against the dollar, not having been weaker than this in the past 23 days. It has strengthened 0.8% so far this year, and over the past year it has moved within only a 2.7% band. #Pakistan $PKR"
+  "The rupee is steady at 277.6 against the dollar, not having been weaker than this in the past 23 days. It has strengthened 0.8% so far this year, and over the past year it has moved within only a 2.7% band. #Pakistan $PKR",
+  "The peso is at 62.4 against the dollar, the weakest since tracking began in March 2024. It has fallen 5.68% this year, and 8.53% since a year ago when it stood at 57.1. #Philippines $PHP"
  ]
 }
