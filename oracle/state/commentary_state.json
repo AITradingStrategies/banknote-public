@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-02",
- "last_post": 1788361215,
+ "last_post": 1788374318,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -99,7 +100,7 @@
   "TMT": 1787443423,
   "TND": 1787628725,
   "TOP": 1787448357,
-  "TRY": 1788275425,
+  "TRY": 1788374318,
   "TTD": 1787178820,
   "TZS": 1787434190,
   "UAH": 1787269003,
@@ -115,9 +116,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Colombian peso trades at 3,192 per dollar. It fell 4.8% over the past week, but remains the world's strongest currency so far this year, up 17.6%.",
   "The Chilean peso closed at 934.6 per dollar, its weakest level in 32 days. Year-to-date it has fallen 3.72%, within a 2.4% band it has held over the past month. #Chile $CLP",
   "The naira strengthened 0.63% to 1,334/USD, its biggest daily move in 124 days and its strongest level in 821 days. It has gained 8.04% so far this year. #Nigeria $NGN",
-  "The Argentine peso trades at 1,509 per dollar, its weakest level of the past year. It has gone seven sessions without a move of 0.25%, and has fallen 11.6% over the past twelve months. #Argentina $ARS"
+  "The Argentine peso trades at 1,509 per dollar, its weakest level of the past year. It has gone seven sessions without a move of 0.25%, and has fallen 11.6% over the past twelve months. #Argentina $ARS",
+  "USD/TRY at 48.3, the weakest level tracked since 2024. The rate has lost 14.8% over the past year and stands as the 4th weakest currency this year. #Turkiye $TRY"
  ]
 }
