@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "TRY",
-  "ARS",
-  "PKR",
-  "PHP"
- ],
- "date": "2026-09-01",
- "last_post": 1788305122,
+ "anchors_today": [],
+ "date": "2026-09-02",
+ "last_post": 1788311748,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -28,7 +22,7 @@
   "BYN": 1787493351,
   "BZD": 1787424423,
   "CLP": 1787685831,
-  "COP": 1787634725,
+  "COP": 1788311748,
   "CRC": 1787505744,
   "CVE": 1787737384,
   "DJF": 1787762954,
@@ -118,9 +112,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "USD/TRY at 48.3; the lira is at its weakest level since measurement began on 2024-03-06. The rate has traded in a 17.3% band over the past year, and now sits at the weak end of that band. #Turkiye $TRY",
   "The Argentine peso trades at 1,509 per dollar, its weakest level of the past year. It has gone 6 sessions without moving more than 0.25%, though it has fallen 10.8% over twelve months. #Argentina $ARS",
   "The rupee is steady at 277.6 against the dollar, not having been weaker than this in the past 23 days. It has strengthened 0.8% so far this year, and over the past year it has moved within only a 2.7% band. #Pakistan $PKR",
-  "The peso is at 62.4 against the dollar, the weakest since tracking began in March 2024. It has fallen 5.68% this year, and 8.53% since a year ago when it stood at 57.1. #Philippines $PHP"
+  "The peso is at 62.4 against the dollar, the weakest since tracking began in March 2024. It has fallen 5.68% this year, and 8.53% since a year ago when it stood at 57.1. #Philippines $PHP",
+  "The Colombian peso trades at 3,192 per dollar. It fell 4.8% over the past week, but remains the world's strongest currency so far this year, up 17.6%."
  ]
 }
