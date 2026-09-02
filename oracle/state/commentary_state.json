@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-02",
- "last_post": 1788328522,
+ "last_post": 1788346375,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787558904,
-  "NGN": 1788258695,
+  "NGN": 1788346375,
   "NIO": 1787682831,
   "NPR": 1787534616,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The rupee is steady at 277.6 against the dollar, not having been weaker than this in the past 23 days. It has strengthened 0.8% so far this year, and over the past year it has moved within only a 2.7% band. #Pakistan $PKR",
   "The peso is at 62.4 against the dollar, the weakest since tracking began in March 2024. It has fallen 5.68% this year, and 8.53% since a year ago when it stood at 57.1. #Philippines $PHP",
   "The Colombian peso trades at 3,192 per dollar. It fell 4.8% over the past week, but remains the world's strongest currency so far this year, up 17.6%.",
-  "The Chilean peso closed at 934.6 per dollar, its weakest level in 32 days. Year-to-date it has fallen 3.72%, within a 2.4% band it has held over the past month. #Chile $CLP"
+  "The Chilean peso closed at 934.6 per dollar, its weakest level in 32 days. Year-to-date it has fallen 3.72%, within a 2.4% band it has held over the past month. #Chile $CLP",
+  "The naira strengthened 0.63% to 1,334/USD, its biggest daily move in 124 days and its strongest level in 821 days. It has gained 8.04% so far this year. #Nigeria $NGN"
  ]
 }
