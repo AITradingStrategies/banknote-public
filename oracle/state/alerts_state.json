@@ -3,13 +3,5 @@
  "alerted_at": {},
  "count": 0,
  "date": "2026-09-03",
- "pending": {
-  "JPY": {
-   "bar": 2.0,
-   "outlier": 2.18,
-   "pct": 2.1729938409506877,
-   "rate": 155.546022888,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
