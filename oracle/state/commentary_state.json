@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-03",
- "last_post": 1788477594,
+ "anchors_today": [],
+ "date": "2026-09-04",
+ "last_post": 1788483963,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -25,7 +19,7 @@
   "BRL": 1787475171,
   "BSD": 1787545873,
   "BWP": 1788050228,
-  "BYN": 1787493351,
+  "BYN": 1788483963,
   "BZD": 1787424423,
   "CLP": 1788328522,
   "COP": 1788311748,
@@ -118,9 +112,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The peso trades at 1,512 per dollar, its weakest level of the past year and 12.0% below its high for the period. It barely moved this week, but has accumulated a 9.0% drop over twelve months. #Argentina $ARS",
   "USD/TRY is at 48.3, the weakest level since tracking began in 2024. The rate, which was 41.2 a year ago, is at its weakest point of the year and ranks 4th worst performer of the year among 132 currencies. #Turkiye $TRY",
   "The peso is at 62.5 against the dollar, the weakest since tracking began in March 2024. It has dropped 6.0% from 58.9 at the start of the year, and is the 5th weakest of 132 currencies this month.",
-  "The rupee is stable at 277.5 per dollar, having gone 12 straight days without a move greater than 0.25%. It is stronger by 1.0% so far this year. Pakistan recently sold $3 billion in junk bonds after credit upgrades."
+  "The rupee is stable at 277.5 per dollar, having gone 12 straight days without a move greater than 0.25%. It is stronger by 1.0% so far this year. Pakistan recently sold $3 billion in junk bonds after credit upgrades.",
+  "The Belarusian ruble trades at 3.087 per dollar \u2014 the weakest level in 90 days. Over the past 30 days the rate has lost 6.7%, moving almost twice as fast as usual. #Belarus $BYN"
  ]
 }
