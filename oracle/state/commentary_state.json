@@ -1,9 +1,10 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "TRY"
  ],
  "date": "2026-09-04",
- "last_post": 1788519029,
+ "last_post": 1788533477,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -98,7 +99,7 @@
   "TMT": 1787443423,
   "TND": 1787628725,
   "TOP": 1787448357,
-  "TRY": 1788460023,
+  "TRY": 1788533477,
   "TTD": 1787178820,
   "TZS": 1787434190,
   "UAH": 1787269003,
@@ -114,9 +115,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The rupee is stable at 277.5 per dollar, having gone 12 straight days without a move greater than 0.25%. It is stronger by 1.0% so far this year. Pakistan recently sold $3 billion in junk bonds after credit upgrades.",
   "The Belarusian ruble trades at 3.087 per dollar \u2014 the weakest level in 90 days. Over the past 30 days the rate has lost 6.7%, moving almost twice as fast as usual. #Belarus $BYN",
   "The Liberian dollar jumped 1.65% in a day, its biggest daily move in 211 days, to reach 177.0 per dollar \u2014 its strongest level in 90 days. It stood at 201.2 a year ago. #Liberia $LRD",
-  "The naira has strengthened to 1,327 per dollar, its best level in 855 days. It has firmed 8.88% since the start of the year, from 1,446, and is up from 1,534 a year ago. #Nigeria $NGN"
+  "The naira has strengthened to 1,327 per dollar, its best level in 855 days. It has firmed 8.88% since the start of the year, from 1,446, and is up from 1,534 a year ago. #Nigeria $NGN",
+  "The lira fell to 48.3 against the dollar, its weakest level since 2024-03-06. It has lost 14.8% over the past year, though the past 30 days have held to a narrow 1.6% band. #Turkiye $TRY"
  ]
 }
