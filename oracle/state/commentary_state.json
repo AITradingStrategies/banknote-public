@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-05",
- "last_post": 1788583811,
+ "last_post": 1788597690,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787558904,
-  "NGN": 1788519029,
+  "NGN": 1788597690,
   "NIO": 1787682831,
   "NPR": 1787534616,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The peso is at 62.6 to the dollar, its weakest in the past year. It has fallen 2.4% over the past 30 days and 5.8% since the start of the year. #Philippines $PHP",
   "The Pakistani rupee is steady at 277.4 against the dollar, little changed over the past week. It has strengthened 1.1% so far this year, and has gone 13 straight days without a move of more than 0.25%. #Pakistan $PKR",
   "The tenge strengthened to 455.6 against the dollar, reaching its highest level in the past 805 days. It has risen 11.49% since the start of the year, and shown a 6.7% gain over the past 90 days. #Kazakhstan $KZT",
-  "The Mexican peso trades at 16.9 per dollar, its strongest level in 826 days. It has gained 6.56% so far this year and 3.4% over the past 90 days. #Mexico $MXN"
+  "The Mexican peso trades at 16.9 per dollar, its strongest level in 826 days. It has gained 6.56% so far this year and 3.4% over the past 90 days. #Mexico $MXN",
+  "The naira has strengthened to 1,322 to the dollar, its best level in 856 days. It has gained 9.23% this year, from 1,446 in January, and is now the 3rd best performer of 132 currencies tracked this month. #Nigeria $NGN"
  ]
 }
