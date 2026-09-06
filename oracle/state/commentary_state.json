@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-06",
- "last_post": 1788711608,
+ "last_post": 1788719158,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -99,7 +100,7 @@
   "TMT": 1787443423,
   "TND": 1787628725,
   "TOP": 1787448357,
-  "TRY": 1788621102,
+  "TRY": 1788719158,
   "TTD": 1787178820,
   "TZS": 1787434190,
   "UAH": 1787269003,
@@ -115,9 +116,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Egyptian pound trades at 51.0 against the dollar, down 2.2% over 30 days and 6.3% since the start of the year. Despite this, it remains 1.7% stronger compared to its level 90 days ago. #Egypt $EGP",
   "The Brunei dollar stands at 1.267 against the US dollar, little changed this week. However it has strengthened 1.3% since the start of the year and is now 3.0% above its weakest point of the past year. #Brunei $BND",
   "The naira reached 1,322 per dollar, its strongest level in 857 days, extending a five-day run of gains. It has now recovered 13.7% from its weakest point of the past year. #Nigeria $NGN",
-  "The Argentine peso trades at 1,508 per dollar, at its weakest point of the past year. The currency barely moved this week, but it has fallen 9.6% over twelve months. #Argentina $ARS"
+  "The Argentine peso trades at 1,508 per dollar, at its weakest point of the past year. The currency barely moved this week, but it has fallen 9.6% over twelve months. #Argentina $ARS",
+  "The lira fell to 48.4 against the dollar; its weakest level since tracking began in March 2024. The loss since the start of the year has reached 11.3%. #Turkiye $TRY"
  ]
 }
