@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-06",
- "last_post": 1788687714,
+ "last_post": 1788700310,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1787453203,
   "MZN": 1787549009,
   "NAD": 1787558904,
-  "NGN": 1788597690,
+  "NGN": 1788700310,
   "NIO": 1787682831,
   "NPR": 1788649729,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Nepali rupee stands at 151.2 against the dollar, having strengthened 1.0% over the past week. But since the start of the year it has lost 4.9%, and it has traded within a 10.4% band over the past year. #Nepal $NPR",
   "The Sri Lankan rupee traded at 328.2 to the dollar, its strongest level in the past 97 days. However, it has weakened 5.48% since the start of the year, and has held within a 14.7% band over the past year.",
   "The Egyptian pound trades at 51.0 against the dollar, down 2.2% over 30 days and 6.3% since the start of the year. Despite this, it remains 1.7% stronger compared to its level 90 days ago. #Egypt $EGP",
-  "The Brunei dollar stands at 1.267 against the US dollar, little changed this week. However it has strengthened 1.3% since the start of the year and is now 3.0% above its weakest point of the past year. #Brunei $BND"
+  "The Brunei dollar stands at 1.267 against the US dollar, little changed this week. However it has strengthened 1.3% since the start of the year and is now 3.0% above its weakest point of the past year. #Brunei $BND",
+  "The naira reached 1,322 per dollar, its strongest level in 857 days, extending a five-day run of gains. It has now recovered 13.7% from its weakest point of the past year. #Nigeria $NGN"
  ]
 }
