@@ -1,17 +1,11 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-06",
- "last_post": 1788733560,
+ "anchors_today": [],
+ "date": "2026-09-07",
+ "last_post": 1788740021,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
-  "ALL": 1787894150,
+  "ALL": 1788740021,
   "AMD": 1787666407,
   "AOA": 1787568628,
   "ARS": 1788711608,
@@ -118,9 +112,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Argentine peso trades at 1,508 per dollar, at its weakest point of the past year. The currency barely moved this week, but it has fallen 9.6% over twelve months. #Argentina $ARS",
   "The lira fell to 48.4 against the dollar; its weakest level since tracking began in March 2024. The loss since the start of the year has reached 11.3%. #Turkiye $TRY",
   "The peso reached 62.6 per dollar, the weakest since tracking began in March 2024. It has fallen 6.08% since the start of the year, and 9.19% from its strongest level in the past year. #Philippines $PHP",
-  "The Pakistani rupee held steady at 277.4 against the dollar, with no notable change over the past week. It has strengthened 0.9% this year, and has gone 15 straight days without a move greater than 0.25%."
+  "The Pakistani rupee held steady at 277.4 against the dollar, with no notable change over the past week. It has strengthened 0.9% this year, and has gone 15 straight days without a move greater than 0.25%.",
+  "The lek stands at 79.3 to the dollar, almost unchanged over the past week. Since the start of the year it has strengthened 3.8%, while 82.4 was the level in January. #Albania $ALL"
  ]
 }
