@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-07",
- "last_post": 1788775168,
+ "last_post": 1788795896,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
   "ALL": 1788740021,
   "AMD": 1787666407,
   "AOA": 1787568628,
-  "ARS": 1788711608,
+  "ARS": 1788795896,
   "AZN": 1788241509,
   "BAM": 1787734360,
   "BBD": 1787669807,
@@ -114,9 +115,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Pakistani rupee held steady at 277.4 against the dollar, with no notable change over the past week. It has strengthened 0.9% this year, and has gone 15 straight days without a move greater than 0.25%.",
   "The lek stands at 79.3 to the dollar, almost unchanged over the past week. Since the start of the year it has strengthened 3.8%, while 82.4 was the level in January. #Albania $ALL",
   "The South Sudanese pound held near 5,647 to the dollar this week, but the calm masks a collapse: it's down 71.1% over the past year and 19.4% since January, the second-weakest currency of 132 tracked in 2026.",
-  "The naira climbed to 1,322/USD, its strongest in 858 days. It has gained 9.4% since January and 15.7% over the past year, when a dollar bought 1,529 naira. #Nigeria $NGN"
+  "The naira climbed to 1,322/USD, its strongest in 858 days. It has gained 9.4% since January and 15.7% over the past year, when a dollar bought 1,529 naira. #Nigeria $NGN",
+  "The Argentine peso holds at 1,508 per dollar, almost unchanged over the week. This year it has accumulated a decline of 3.8%, and compared to 1,364 a year ago, it is down 9.6%. #Argentina $ARS"
  ]
 }
