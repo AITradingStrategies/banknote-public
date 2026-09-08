@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-08",
- "last_post": 1788858109,
+ "last_post": 1788861706,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
   "ALL": 1788740021,
   "AMD": 1787666407,
   "AOA": 1787568628,
-  "ARS": 1788795896,
+  "ARS": 1788861706,
   "AZN": 1788843689,
   "BAM": 1787734360,
   "BBD": 1787669807,
@@ -114,9 +115,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The naira trades at 1,322/dollar, its 2nd best monthly performance among 132 currencies tracked. It has firmed 9.4% this year and sits 13.6% above its weakest point of the past year. #Nigeria $NGN",
   "The Liberian dollar jumped 2.32% in a single day to 175.0/USD, its biggest daily move in 306 days and its strongest level since tracking began in March 2024.",
   "The ruble trades at 86.1 per dollar, weakening 5.4% over the past 30 days and 8.8% since the start of the year. This is the third weakest performance this month among 132 tracked currencies. #Russia $RUB",
-  "The Tunisian dinar trades at 2.906 to the dollar, down 0.8% since the start of the year. The dinar has gone 5 straight days without any move exceeding 0.25%, within a 1.9% band over the past month. #Tunisia $TND"
+  "The Tunisian dinar trades at 2.906 to the dollar, down 0.8% since the start of the year. The dinar has gone 5 straight days without any move exceeding 0.25%, within a 1.9% band over the past month. #Tunisia $TND",
+  "The peso trades at 1,509 per dollar, with no significant change this week. It has fallen 3.8% this year and 9.6% over the past twelve months, at its weakest point of the period. #Argentina $ARS"
  ]
 }
