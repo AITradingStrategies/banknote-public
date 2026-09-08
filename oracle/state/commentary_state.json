@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-08",
- "last_post": 1788843689,
+ "last_post": 1788847305,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1788840081,
   "MZN": 1787549009,
   "NAD": 1787558904,
-  "NGN": 1788775168,
+  "NGN": 1788847305,
   "NIO": 1787682831,
   "NPR": 1788649729,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Ugandan shilling sits at 3,778 per dollar, its weakest point of the past year and 6.9% below where it stood twelve months ago. It has held inside a narrow 2.1% band over the past month, moving only slightly in that time. #Uganda $UGX",
   "The Belarusian ruble is trading at 3.078 per dollar \u2014 3.7% weaker than a month ago, and 4.7% weaker since the start of the year. At the same time, over the year it has strengthened 9.7%, up from 3.38 per dollar. #Belarus $BYN",
   "The Malaysian ringgit stands at 4.046 per US dollar, almost unchanged from last week. The central bank held interest rates this week. A year ago the level was 4.225, making the ringgit 4.5% stronger since then. #Malaysia $MYR",
-  "The manat has settled at 1.7 against the dollar \u2014 no different from the start of the year. Over the past 6 days no move greater than 0.25% has been recorded, and the annual change has stayed within a 4.4% band."
+  "The manat has settled at 1.7 against the dollar \u2014 no different from the start of the year. Over the past 6 days no move greater than 0.25% has been recorded, and the annual change has stayed within a 4.4% band.",
+  "The naira trades at 1,322/dollar, its 2nd best monthly performance among 132 currencies tracked. It has firmed 9.4% this year and sits 13.6% above its weakest point of the past year. #Nigeria $NGN"
  ]
 }
