@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-09",
- "last_post": 1788957054,
+ "last_post": 1788960658,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -99,7 +100,7 @@
   "TMT": 1787443423,
   "TND": 1788858109,
   "TOP": 1787448357,
-  "TRY": 1788872515,
+  "TRY": 1788960658,
   "TTD": 1788946268,
   "TZS": 1787434190,
   "UAH": 1787269003,
@@ -115,9 +116,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The Trinidad and Tobago dollar sits at 6.766 per USD, little changed this week and barely moved from the 6.797 it started the year at. It has kept inside a 1.3% band for the past 30 days. #TrinidadAndTobago $TTD",
   "The peso trades at 1,511 per dollar, its weakest level of the past year and 11.9% below the strongest point of that period. Over the week it showed no significant changes. #Argentina $ARS",
   "The Peruvian sol stands at 3.355 per dollar, practically unchanged over the week. It is up 4.8% over the year, and has gone seven sessions without a move greater than 0.25%.",
-  "The Algerian dinar stands at 133.2 to the dollar, its weakest level of the past year. It has fallen 2.7% since the start of the year, with 38 days passing without a move exceeding 0.25%."
+  "The Algerian dinar stands at 133.2 to the dollar, its weakest level of the past year. It has fallen 2.7% since the start of the year, with 38 days passing without a move exceeding 0.25%.",
+  "USD/TRY is at 48.5, its weakest level since tracking began in 2024. The lira has lost 11.3% since the start of the year at 43.0, but has spent the last 30 days within a narrow 1.6% band."
  ]
 }
