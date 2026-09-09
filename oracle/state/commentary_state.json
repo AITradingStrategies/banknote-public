@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-09",
- "last_post": 1788946268,
+ "last_post": 1788949837,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
   "ALL": 1788740021,
   "AMD": 1788904889,
   "AOA": 1787568628,
-  "ARS": 1788861706,
+  "ARS": 1788949837,
   "AZN": 1788843689,
   "BAM": 1787734360,
   "BBD": 1787669807,
@@ -114,9 +115,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The naira stands at 1,322/USD, up 9.4% this year and 15.2% stronger than a year ago, when it traded near 1,522. #Nigeria $NGN",
   "The rupiah stands at 17,617 per US dollar, its strongest level in 113 days. Over the past 30 days the currency has moved within a 1.6% band, much narrower than the 11.0% band over the past year. #Indonesia $IDR",
   "The balboa remains at 1 per dollar, exactly where it was a year ago and where it started 2026. It has gone 118 days without a move of 0.25%. #Panama $PAB",
-  "The Trinidad and Tobago dollar sits at 6.766 per USD, little changed this week and barely moved from the 6.797 it started the year at. It has kept inside a 1.3% band for the past 30 days. #TrinidadAndTobago $TTD"
+  "The Trinidad and Tobago dollar sits at 6.766 per USD, little changed this week and barely moved from the 6.797 it started the year at. It has kept inside a 1.3% band for the past 30 days. #TrinidadAndTobago $TTD",
+  "The peso trades at 1,511 per dollar, its weakest level of the past year and 11.9% below the strongest point of that period. Over the week it showed no significant changes. #Argentina $ARS"
  ]
 }
