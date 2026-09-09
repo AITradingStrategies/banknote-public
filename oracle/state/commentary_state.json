@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-09",
- "last_post": 1788931842,
+ "last_post": 1788935475,
  "recent": {
   "AED": 1787352106,
   "AFN": 1787523744,
@@ -68,7 +70,7 @@
   "MYR": 1788840081,
   "MZN": 1787549009,
   "NAD": 1788879697,
-  "NGN": 1788847305,
+  "NGN": 1788935475,
   "NIO": 1787682831,
   "NPR": 1788649729,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1787651206
  },
  "recent_posts": [
-  "The cedi trades at 11.4 to the dollar, up 3.3% over the past 30 days even as it remains 7.7% weaker for the year. It's the 3rd strongest currency of 132 tracked this month. #Ghana $GHS",
   "The som stands at 87.5, same as a year ago, same as at the start of the year. For 18 days it hasn't moved more than 0.25% \u2014 this is the weakest point of the period.",
   "The Yemeni rial stands at 237.0 to the dollar, essentially unchanged for 30 days. The currency is stronger by 0.6% since the start of the year, within a band that hasn't exceeded 1.5% over the past year.",
-  "The baht stands at 32.9 to the dollar, steady for 5 straight days without moving more than 0.25%, even though it has weakened 4.2% since the start of the year. #Thailand $THB"
+  "The baht stands at 32.9 to the dollar, steady for 5 straight days without moving more than 0.25%, even though it has weakened 4.2% since the start of the year. #Thailand $THB",
+  "The naira stands at 1,322/USD, up 9.4% this year and 15.2% stronger than a year ago, when it traded near 1,522. #Nigeria $NGN"
  ]
 }
