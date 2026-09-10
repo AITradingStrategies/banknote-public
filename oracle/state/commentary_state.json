@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-10",
- "last_post": 1789009259,
+ "last_post": 1789020264,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -68,7 +70,7 @@
   "MYR": 1788840081,
   "MZN": 1787549009,
   "NAD": 1788879697,
-  "NGN": 1788935475,
+  "NGN": 1789020264,
   "NIO": 1788994869,
   "NPR": 1788649729,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1788969665
  },
  "recent_posts": [
-  "The dobra remains at 21.2 per dollar, practically stable this week. This year it has accumulated a decline of 1.2%, within a band of 6.2% over the past twelve months.",
   "The rupee remains unchanged at 328.4 to the dollar over the past week. Though it strengthened 2.2% over the past 30 days, it has weakened 5.5% since the start of the year. \ud83c\uddf1\ud83c\uddf0 #SriLanka $LKR",
   "The taka per dollar stands at 122.9, nearly unchanged over the past week. Though it strengthened 0.8% over the past 30 days, it has weakened 1.1% over the year, and it typically moves 0.33% on a given day.",
-  "The afghani has reached 64.8 against the dollar, strengthening 0.8% over the past week and 4.5% stronger compared to 68.4 a year ago. #Afghanistan $AFN"
+  "The afghani has reached 64.8 against the dollar, strengthening 0.8% over the past week and 4.5% stronger compared to 68.4 a year ago. #Afghanistan $AFN",
+  "The naira has reached 1,322 per dollar, its strongest level in 861 days. It has gained 3.0% over the past 90 days and stands 13.2% above its weakest point of the past year, against 1,513/USD twelve months ago."
  ]
 }
