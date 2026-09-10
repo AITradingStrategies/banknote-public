@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-10",
- "last_post": 1789041682,
+ "last_post": 1789045280,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -99,7 +100,7 @@
   "TMT": 1787443423,
   "TND": 1788858109,
   "TOP": 1787448357,
-  "TRY": 1788960658,
+  "TRY": 1789045280,
   "TTD": 1788946268,
   "TZS": 1787434190,
   "UAH": 1788976896,
@@ -115,9 +116,9 @@
   "ZMW": 1788969665
  },
  "recent_posts": [
-  "The afghani has reached 64.8 against the dollar, strengthening 0.8% over the past week and 4.5% stronger compared to 68.4 a year ago. #Afghanistan $AFN",
   "The naira has reached 1,322 per dollar, its strongest level in 861 days. It has gained 3.0% over the past 90 days and stands 13.2% above its weakest point of the past year, against 1,513/USD twelve months ago.",
   "The peso trades at 1,512 per dollar, at its weakest point of the past year. It has gone seven sessions without moving even 0.25%, and has accumulated a 4.0% decline so far this year. \ud83c\udde6\ud83c\uddf7 #Argentina $ARS",
-  "The Brunei dollar closed at 1.264, its strongest level in 193 days. It has strengthened 1.8% over the past 90 days, though its typical daily move is only 0.14%. \ud83c\udde7\ud83c\uddf3 #Brunei $BND"
+  "The Brunei dollar closed at 1.264, its strongest level in 193 days. It has strengthened 1.8% over the past 90 days, though its typical daily move is only 0.14%. \ud83c\udde7\ud83c\uddf3 #Brunei $BND",
+  "The lira has fallen to 48.5 against the dollar; its weakest level since tracking began in March 2024. It reached this point without leaving a 1.6% band over the past 30 days, having lost 11.4% compared to the 43.0 level at the start of the year. \ud83c\uddf9\ud83c\uddf7 #Turkiye $TRY"
  ]
 }
