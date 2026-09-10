@@ -3,13 +3,5 @@
  "alerted_at": {},
  "count": 0,
  "date": "2026-09-10",
- "pending": {
-  "BIF": {
-   "bar": 2.0,
-   "outlier": 3.34,
-   "pct": 3.448377573575656,
-   "rate": 2894.120326743,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
