@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-11",
- "last_post": 1789106142,
+ "last_post": 1789110109,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -68,7 +70,7 @@
   "MYR": 1788840081,
   "MZN": 1787549009,
   "NAD": 1788879697,
-  "NGN": 1789020264,
+  "NGN": 1789110109,
   "NIO": 1788994869,
   "NPR": 1789102874,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1788969665
  },
  "recent_posts": [
-  "The dalasi trades at 74.0 to the dollar, up 0.6% over the past week but 2.1% weaker than the 72.5 it fetched a year ago. It has held inside a 2.1% band over the past month. #Gambia $GMD",
   "The lari stands at 2.606 against the dollar and has been practically unchanged over the past week. This year it has strengthened by 3.5%, and it has been 13 days since a move of more than 0.25% was recorded. #Georgia $GEL",
   "The Nepali rupee stands at 152.7 to the dollar, weaker by 0.9% over the past week and down 5.7% this year. It is 8.0% below its strongest point of the past twelve months. #Nepal $NPR",
-  "The VND trades at 25,908 per US dollar, its strongest level in 199 days. The rate has held within a narrow 1.1% band over 30 days, and is 1.6% stronger than 90 days ago. #Vietnam $VND"
+  "The VND trades at 25,908 per US dollar, its strongest level in 199 days. The rate has held within a narrow 1.1% band over 30 days, and is 1.6% stronger than 90 days ago. #Vietnam $VND",
+  "The naira sits at 1,324 to the dollar, little changed this week but up 9.3% since the start of the year and 14.3% stronger than a year ago, when it traded near 1,513. #Nigeria $NGN"
  ]
 }
