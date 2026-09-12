@@ -1,11 +1,7 @@
 {
- "alerted": [
-  "BIF"
- ],
- "alerted_at": {
-  "BIF": 1789143074
- },
- "count": 1,
- "date": "2026-09-11",
+ "alerted": [],
+ "alerted_at": {},
+ "count": 0,
+ "date": "2026-09-12",
  "pending": {}
 }
