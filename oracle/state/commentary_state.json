@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-12",
- "last_post": 1789214458,
+ "last_post": 1789218039,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -99,7 +100,7 @@
   "TMT": 1787443423,
   "TND": 1788858109,
   "TOP": 1789138364,
-  "TRY": 1789135296,
+  "TRY": 1789218039,
   "TTD": 1788946268,
   "TZS": 1789160487,
   "UAH": 1788976896,
@@ -115,9 +116,9 @@
   "ZMW": 1788969665
  },
  "recent_posts": [
-  "The ruble trades at 84.1 to the dollar \u2014 up 3.2% over the week, but down 5.9% since the start of the year. Over the past 90 days the ruble has weakened 13.6%. #Russia $RUB",
   "The Argentine peso trades at 1,513 per dollar, its weakest level of the past year, with no significant change over the past week. It has fallen 4.0% so far this year. #Argentina $ARS",
   "The kwanza is at 918.5 per dollar, practically stable over the past week. The currency changes value on 74% of days, but has moved only 3.1% over the past year.",
-  "The Surinamese dollar trades at 38.0 per US dollar, virtually unchanged from last week. Over the past year the currency is 3.9% stronger. #Suriname $SRD"
+  "The Surinamese dollar trades at 38.0 per US dollar, virtually unchanged from last week. Over the past year the currency is 3.9% stronger. #Suriname $SRD",
+  "USD/TL is at 48.6, the weakest level since tracking began in March 2024. The rate has lost 11.6% since the start of the year, and 15.0% compared to a year ago. #Turkiye $TRY"
  ]
 }
