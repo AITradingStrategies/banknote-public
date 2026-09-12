@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-11",
- "last_post": 1789167675,
+ "anchors_today": [],
+ "date": "2026-09-12",
+ "last_post": 1789171308,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -109,7 +103,7 @@
   "UGX": 1788832912,
   "UYU": 1789128103,
   "UZS": 1787290700,
-  "VES": 1788825692,
+  "VES": 1789171308,
   "VND": 1789106142,
   "VUV": 1787580050,
   "WST": 1788966042,
@@ -118,9 +112,9 @@
   "ZMW": 1788969665
  },
  "recent_posts": [
-  "The Pakistani rupee is stable at 277.3 per dollar, with no move exceeding 0.25% in the past 20 days. Since the start of the year it has strengthened 1.0% and is 2.4% above its weakest point of the year. #Pakistan $PKR",
   "The Tanzanian shilling stands at 2,644 per dollar, at its weakest point in the past year. It has not been stronger in 22 days, and since January it has fallen by 6.5%. #Tanzania $TZS",
   "The somoni stands at 9.247 per dollar, showing no notable change over the past week. Compared to a year ago, when it was 9.41, the somoni has strengthened 1.9%. #Tajikistan $TJS",
-  "The Kenyan shilling stands at 129.5 to the dollar, having been stable for the whole week. Among the past 10 days, not a single one saw a change of more than 0.25%. A year ago it was 129.7. #Kenya $KES"
+  "The Kenyan shilling stands at 129.5 to the dollar, having been stable for the whole week. Among the past 10 days, not a single one saw a change of more than 0.25%. A year ago it was 129.7. #Kenya $KES",
+  "The bol\u00edvar trades at 830.8 per dollar, its weakest level in 365 days and the weakest among 132 currencies so far this year. Over 90 days it has fallen 28.9%, and the four sources feeding the fixing today differ by 1.39%, more than three times the usual."
  ]
 }
