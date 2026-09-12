@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-12",
- "last_post": 1789192496,
+ "last_post": 1789196446,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -68,7 +70,7 @@
   "MYR": 1789189240,
   "MZN": 1787549009,
   "NAD": 1788879697,
-  "NGN": 1789110109,
+  "NGN": 1789196446,
   "NIO": 1788994869,
   "NPR": 1789102874,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1788969665
  },
  "recent_posts": [
-  "The Ugandan shilling has slipped to 3,856 per dollar, its weakest in 365 days. Today's fixing sources disagreed by 2.73%, well above the currency's usual 0.89% spread. #Uganda $UGX",
   "The convertible mark stands at 1.687 per dollar, practically unchanged over the past seven days. Since the start of the year it has weakened 0.9%, twelve days running without a move greater than 0.25%. #BosniaAndHerzegovina $BAM",
   "The Malaysian ringgit stands at 4.071 to the US dollar, down 0.7% from a week ago but still 3.5% stronger than a year ago. It has not been this weak in 24 days. #Malaysia $MYR",
-  "The Fiji dollar sits at 2.226 per US dollar, down 1.2% over the past week but still 2.4% stronger since the start of the year. It has not been weaker in 24 days. #Fiji $FJD"
+  "The Fiji dollar sits at 2.226 per US dollar, down 1.2% over the past week but still 2.4% stronger since the start of the year. It has not been weaker in 24 days. #Fiji $FJD",
+  "The naira trades at 1,327 per dollar, barely moved this week but up 2.6% over the past month. It is now 9.0% stronger than at the start of the year, and 13.7% firmer than a year ago. #Nigeria $NGN"
  ]
 }
