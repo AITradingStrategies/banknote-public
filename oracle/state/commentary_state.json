@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-13",
- "last_post": 1789300840,
+ "last_post": 1789304441,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -99,7 +100,7 @@
   "TMT": 1789278823,
   "TND": 1788858109,
   "TOP": 1789138364,
-  "TRY": 1789218039,
+  "TRY": 1789304441,
   "TTD": 1788946268,
   "TZS": 1789160487,
   "UAH": 1788976896,
@@ -115,9 +116,9 @@
   "ZMW": 1788969665
  },
  "recent_posts": [
-  "The rupiah stands at 17,610 per dollar, barely moved in the past week. However, over the past 30 days the currency has strengthened 1.6%, while since the start of the year it is still down 5.1%.",
   "The Argentine peso trades at 1,513 per dollar, at its weakest point of the past year. The figure barely moved this week, but it has accumulated a 3.8% decline so far in 2026. #Argentina $ARS",
   "The Liberian dollar trades at 174.6 per USD, its strongest level since tracking began in March 2024. It has firmed 4.9% over 90 days, from 191.8 a year ago. #Liberia $LRD",
-  "The Djiboutian franc trades at 177.7 per dollar, virtually unchanged for five sessions. It nonetheless moves on 65% of trading days, a pace that contrasts with this lull. #Djibouti $DJF"
+  "The Djiboutian franc trades at 177.7 per dollar, virtually unchanged for five sessions. It nonetheless moves on 65% of trading days, a pace that contrasts with this lull. #Djibouti $DJF",
+  "USD/TRY stands at 48.6, almost motionless for the past week. Since the start of the year the lira has lost 11.5% of its value and sits at its weakest point of the past year. #Turkiye $TRY"
  ]
 }
