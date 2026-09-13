@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-13",
- "last_post": 1789278823,
+ "last_post": 1789282851,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -68,7 +70,7 @@
   "MYR": 1789189240,
   "MZN": 1787549009,
   "NAD": 1789228852,
-  "NGN": 1789196446,
+  "NGN": 1789282851,
   "NIO": 1788994869,
   "NPR": 1789102874,
   "OMR": 1787468799,
@@ -112,9 +114,9 @@
   "ZMW": 1788969665
  },
  "recent_posts": [
-  "The Cape Verdean escudo is at 95.1 per dollar, practically stable over the past week. Year to date, it has fallen 1.2%. #CapeVerde $CVE",
   "The Ethiopian birr has reached 161.2 per dollar, with little change over the past week. Compared with a year ago, though, it has weakened 10.9%, and since the start of the year it has fallen 3.6%, ranking as the 5th weakest among 132 currencies tracked. #Ethiopia $ETB",
   "The Yemeni rial trades at 237.1 to the dollar, little changed over the past week. Despite ongoing clashes on the west coast and reports of thousands displaced, the exchange rate has stayed within a narrow band of no more than 1.3% over the past year. #Yemen $YER",
-  "The manat's rate against the dollar stands at 3.501, strengthening 1.8% over the past week. But this change is not surprising: the manat has traded within a 2.2% band over the past 30 days, and within just a 4.4% band over the past year. #Turkmenistan $TMT"
+  "The manat's rate against the dollar stands at 3.501, strengthening 1.8% over the past week. But this change is not surprising: the manat has traded within a 2.2% band over the past 30 days, and within just a 4.4% band over the past year. #Turkmenistan $TMT",
+  "The naira sits at 1,327/USD, barely moved this week. Zoom out and the picture shifts: up 2.7% over 30 days, 9.0% stronger year to date, and 13.6% firmer than a year ago when it traded near 1,507. #Nigeria $NGN"
  ]
 }
