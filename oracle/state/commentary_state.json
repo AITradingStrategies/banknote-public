@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-14",
- "last_post": 1789376551,
+ "last_post": 1789380076,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
   "ALL": 1789088472,
   "AMD": 1789326065,
   "AOA": 1789210861,
-  "ARS": 1789293647,
+  "ARS": 1789380076,
   "AZN": 1788843689,
   "BAM": 1789185662,
   "BBD": 1789081288,
@@ -114,9 +115,9 @@
   "ZMW": 1789315306
  },
  "recent_posts": [
-  "The naira holds at 1,327/USD, barely moved from a week ago. It has still gained 2.6% over the past month and stands 9.0% stronger than at the start of the year.",
   "The cedi holds at 11.5 to the dollar, nine straight days without a move of even 0.25%. It's still down 4.2% over the past month and 8.2% for the year, the 5th weakest currency of 132 tracked in 2026. #Ghana $GHS",
   "The Guyana dollar sits at 209.2 to the US dollar, barely changed from 209.3 at the start of the year. It has held inside a 1.1% band for 30 days straight. #Guyana $GYD",
-  "The denar stands at 53.0 per dollar, nine days without a move greater than 0.25%. This year it is weaker by 1.0%, but over the past 30 days the average daily movement is only 0.16%."
+  "The denar stands at 53.0 per dollar, nine days without a move greater than 0.25%. This year it is weaker by 1.0%, but over the past 30 days the average daily movement is only 0.16%.",
+  "The Argentine peso holds at 1,513 per dollar, practically unchanged over the past week. It is its weakest point of the past year, down 3.8% so far in 2026. #Argentina $ARS"
  ]
 }
