@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-09-14",
- "last_post": 1789404669,
+ "last_post": 1789408851,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -79,7 +80,7 @@
   "PAB": 1789340457,
   "PEN": 1788953460,
   "PGK": 1789336891,
-  "PHP": 1789318868,
+  "PHP": 1789408851,
   "PKR": 1789329645,
   "PYG": 1789092090,
   "QAR": 1789142494,
@@ -116,9 +117,9 @@
   "ZMW": 1789315306
  },
  "recent_posts": [
-  "The Brunei dollar stands at 1.267 to the US dollar, nearly unchanged this week. It has strengthened 1.1% over 30 days and 1.5% year to date. #Brunei $BND",
   "The pula trades at 13.4 to the dollar, the second weakest of 132 currencies tracked this month. It has fallen 4.2% over 30 days and 6.3% since January, though it remains 2.2% above its weakest point of the past year. #Botswana $BWP",
   "The Tunisian dinar stands at 2.907 to the US dollar, up 0.6% over the past week and 1.3% over 30 days. The currency moves on 83% of trading days, within a band that has not exceeded 1.8% this month. #Tunisia $TND",
-  "The Kuwaiti dinar stands at 0.308 to the dollar, its strongest level in 83 days. The currency has not moved more than 0.25% in 48 straight sessions, and over the past year has stayed within a band no wider than 1.8%. #Kuwait $KWD"
+  "The Kuwaiti dinar stands at 0.308 to the dollar, its strongest level in 83 days. The currency has not moved more than 0.25% in 48 straight sessions, and over the past year has stayed within a band no wider than 1.8%. #Kuwait $KWD",
+  "The peso is at 62.6 to the dollar, its weakest in the past year. It moved little in the past week, but it is down 6.0% since January and 2.0% over the past 30 days. #Philippines $PHP"
  ]
 }
