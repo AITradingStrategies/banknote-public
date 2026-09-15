@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-14",
- "last_post": 1789426835,
+ "anchors_today": [],
+ "date": "2026-09-15",
+ "last_post": 1789430457,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -77,7 +71,7 @@
   "NGN": 1789365672,
   "NIO": 1789344039,
   "NPR": 1789102874,
-  "OMR": 1787468799,
+  "OMR": 1789430457,
   "PAB": 1789340457,
   "PEN": 1788953460,
   "PGK": 1789336891,
@@ -118,9 +112,9 @@
   "ZMW": 1789315306
  },
  "recent_posts": [
-  "The rupee held steady against the dollar at 277.3, with little notable change over the past week. So far this year the rupee has strengthened 1.1%, and it has gone 23 straight days without a move of more than 0.25%. #Pakistan $PKR",
   "The taka is trading at 123.0 to the dollar, with little change over the past week. It has weakened 0.5% since the start of the year, though over the past 30 days it has moved within a narrow 1.6% band. #Bangladesh $BDT",
   "The real is at 5.149 per dollar, practically stable over the past week. This year, it has already accumulated a 7.6% appreciation, even with the currency changing value on 81% of trading days. #Brazil $BRL",
-  "The hryvnia holds at 44.6 per dollar, almost unchanged over the past week. Since the start of the year it has lost 5.3%, staying within a 9.4% band over the past year. #Ukraine $UAH"
+  "The hryvnia holds at 44.6 per dollar, almost unchanged over the past week. Since the start of the year it has lost 5.3%, staying within a 9.4% band over the past year. #Ukraine $UAH",
+  "The Omani rial stands at 0.385 against the dollar, its weakest level in the past year. Despite that, it has not recorded a move exceeding 0.25% for 13 consecutive days. #Oman $OMR"
  ]
 }
