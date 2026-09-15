@@ -3,5 +3,13 @@
  "alerted_at": {},
  "count": 0,
  "date": "2026-09-15",
- "pending": {}
+ "pending": {
+  "MUR": {
+   "bar": 2.0,
+   "outlier": 0.37,
+   "pct": 2.690618633365238,
+   "rate": 46.8295059573,
+   "seen": 1
+  }
+ }
 }
