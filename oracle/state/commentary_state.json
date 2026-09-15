@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-15",
- "last_post": 1789448459,
+ "last_post": 1789452071,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789009259,
@@ -68,7 +70,7 @@
   "MYR": 1789189240,
   "MZN": 1787549009,
   "NAD": 1789228852,
-  "NGN": 1789365672,
+  "NGN": 1789452071,
   "NIO": 1789344039,
   "NPR": 1789102874,
   "OMR": 1789430457,
@@ -112,9 +114,9 @@
   "ZMW": 1789315306
  },
  "recent_posts": [
-  "The lek stands at 79.4 to the dollar, almost unchanged over the past week. Since the start of the year it has strengthened 4.0%, leaving behind the 82.4 level with which it started 2026.",
   "Samoa's tala is at 2.729 to the US dollar, its lowest in 30 days. However, it has not seen a similar move for 44 days before that, and it is 3.3% above its lowest point of the past year. #Samoa $WST",
   "The gourde is trading at 131.2 per dollar, down 1.44% on the day, its largest move in 50 days. It has not been this weak in 30 days. #Haiti $HTG",
-  "The col\u00f3n closes at 449.4 per dollar, its strongest level since records began in March 2024. It has gained 11.03% so far this year, from the 497.5 level it started 2026 with. #CostaRica $CRC"
+  "The col\u00f3n closes at 449.4 per dollar, its strongest level since records began in March 2024. It has gained 11.03% so far this year, from the 497.5 level it started 2026 with. #CostaRica $CRC",
+  "Nigeria's naira trades at 1,327/USD, little changed over the past week. It is up 2.6% over 30 days and 9.1% stronger year-to-date, the 4th best performer of 132 currencies tracked this month. #Nigeria $NGN"
  ]
 }
