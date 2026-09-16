@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-16",
- "last_post": 1789534835,
+ "last_post": 1789538444,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789459242,
@@ -68,7 +70,7 @@
   "MYR": 1789189240,
   "MZN": 1787549009,
   "NAD": 1789228852,
-  "NGN": 1789452071,
+  "NGN": 1789538444,
   "NIO": 1789344039,
   "NPR": 1789455640,
   "OMR": 1789430457,
@@ -112,9 +114,9 @@
   "ZMW": 1789315306
  },
  "recent_posts": [
-  "The krona stands at 121.2 to the dollar, virtually unchanged over the week but 3.9% stronger so far this year. It has held within a 2.3% band over the past 30 days. #Iceland $ISK",
   "The Comorian franc trades at 426.4 to the dollar, its weakest level in 30 days. The currency nonetheless remains confined to a narrow band of 1.1% over that period, and only 5.5% over a year. #Comoros $KMF",
   "The Ugandan shilling trades at 3,907 to the dollar, its weakest point of the past year and 6.4% down since January. It has slid 4.1% over the past 30 days, the third-weakest showing among 132 currencies tracked this month. #Uganda $UGX",
-  "The leu is trading at 4.56 per dollar, its weakest level in the past 30 days. The currency has lost 4.8% since the start of the year, within a range of just 1.5% over the past month. #Romania $RON"
+  "The leu is trading at 4.56 per dollar, its weakest level in the past 30 days. The currency has lost 4.8% since the start of the year, within a range of just 1.5% over the past month. #Romania $RON",
+  "The naira sits at 1,326 to the dollar, barely moved on the week. It's still up 9.2% this year and 2.7% over the past month, well above its weakest point of the past 12 months. #Nigeria $NGN"
  ]
 }
