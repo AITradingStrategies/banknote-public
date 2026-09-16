@@ -1,15 +1,11 @@
 {
- "alerted": [],
- "alerted_at": {},
- "count": 0,
+ "alerted": [
+  "MUR"
+ ],
+ "alerted_at": {
+  "MUR": 1789517561
+ },
+ "count": 1,
  "date": "2026-09-16",
- "pending": {
-  "MUR": {
-   "bar": 2.0,
-   "outlier": 0.16,
-   "pct": 2.4768159945095736,
-   "rate": 46.9272087582,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
