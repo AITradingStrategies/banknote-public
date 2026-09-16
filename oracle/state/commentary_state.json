@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-15",
- "last_post": 1789513116,
+ "anchors_today": [],
+ "date": "2026-09-16",
+ "last_post": 1789516860,
  "recent": {
   "AED": 1787352106,
   "AFN": 1789459242,
@@ -108,7 +102,7 @@
   "UAH": 1789426835,
   "UGX": 1789182064,
   "UYU": 1789128103,
-  "UZS": 1787290700,
+  "UZS": 1789516860,
   "VES": 1789171308,
   "VND": 1789506073,
   "VUV": 1789246863,
@@ -118,9 +112,9 @@
   "ZMW": 1789315306
  },
  "recent_posts": [
-  "The rupee is steady at 277.4 per dollar, with little change over the past week. It was 280.2 per dollar at the start of the year, meaning it has strengthened 1.0% this year. #Pakistan $PKR",
   "The dong rose to 25,974 VND per USD, nearly unchanged from last week. Since the start of the year, the dong has strengthened 1.8%, compared to the 26,419 VND recorded in January.",
   "The Bahamian dollar sits at 1 to the US dollar, unchanged from a year ago and from the start of 2026. It has gone 120 straight days without moving even a quarter of a percent. #Bahamas $BSD",
-  "The Belize dollar sits at 2 to the US dollar, little changed over the past week and barely moved from the 2.015 it started the year at. It still changes on 69% of trading days, just never by much. #Belize $BZD"
+  "The Belize dollar sits at 2 to the US dollar, little changed over the past week and barely moved from the 2.015 it started the year at. It still changes on 69% of trading days, just never by much. #Belize $BZD",
+  "The som stands at 11,769 to the dollar, its strongest level since tracking began on March 6, 2024. It has strengthened 2.35% since the start of the year, and for the past 5 days there has been no move greater than 0.25%. #Uzbekistan $UZS"
  ]
 }
