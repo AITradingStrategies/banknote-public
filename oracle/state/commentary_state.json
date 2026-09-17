@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-17",
- "last_post": 1789635744,
+ "last_post": 1789639318,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789459242,
   "ALL": 1789437038,
   "AMD": 1789326065,
   "AOA": 1789210861,
-  "ARS": 1789552841,
+  "ARS": 1789639318,
   "AZN": 1789610472,
   "BAM": 1789545635,
   "BBD": 1789081288,
@@ -114,9 +115,9 @@
   "ZMW": 1789315306
  },
  "recent_posts": [
-  "Nigeria's naira trades at 1,329/dollar, up 8.9% since January and the fifth-strongest performer of 132 currencies tracked this month. It has slipped 0.5% over the past week, still 11.7% above its weakest point of the past year. #Nigeria $NGN",
   "The Maldivian rufiyaa sold at 15.4 against the dollar, its strongest level in the past 101 days. Still, over the past year the rate has moved within a narrow band of 1.1%. #Maldives $MVR",
   "The rupiah traded at 17,698 per dollar, weakening 0.9% over the week and 5.7% since the start of the year. This level is still 2.6% above its weakest point of the past year. #Indonesia $IDR",
-  "The quetzal traded at 7.631 per dollar, practically unchanged over the past week. It has gone 15 days without a move greater than 0.25%, within the 1.1% band it has held over the past year. #Guatemala $GTQ"
+  "The quetzal traded at 7.631 per dollar, practically unchanged over the past week. It has gone 15 days without a move greater than 0.25%, within the 1.1% band it has held over the past year. #Guatemala $GTQ",
+  "The Argentine peso trades at 1,507 per dollar, nearly unchanged over the past week. Over the year it has fallen 3.7%, within the 13.7% band it has held over the past twelve months. #Argentina $ARS"
  ]
 }
