@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-17",
- "last_post": 1789646475,
+ "last_post": 1789650079,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789459242,
@@ -99,7 +100,7 @@
   "TMT": 1789278823,
   "TND": 1789401669,
   "TOP": 1789138364,
-  "TRY": 1789563641,
+  "TRY": 1789650079,
   "TTD": 1789308068,
   "TZS": 1789160487,
   "UAH": 1789426835,
@@ -115,9 +116,9 @@
   "ZMW": 1789315306
  },
  "recent_posts": [
-  "The quetzal traded at 7.631 per dollar, practically unchanged over the past week. It has gone 15 days without a move greater than 0.25%, within the 1.1% band it has held over the past year. #Guatemala $GTQ",
   "The Argentine peso trades at 1,507 per dollar, nearly unchanged over the past week. Over the year it has fallen 3.7%, within the 13.7% band it has held over the past twelve months. #Argentina $ARS",
   "The Liberian dollar stands at 174.5/USD, up 3.9% over 30 days and the strongest performer this month among 132 currencies tracked. It has gone six straight days without moving as much as 0.25%. #Liberia $LRD",
-  "The vatu stands at 118.3/USD, barely moved this week. It is 1.9% stronger than at the start of the year, having traded within a tight 1.2% range over the past month. #Vanuatu $VUV"
+  "The vatu stands at 118.3/USD, barely moved this week. It is 1.9% stronger than at the start of the year, having traded within a tight 1.2% range over the past month. #Vanuatu $VUV",
+  "The lira fell to 48.7 against the dollar, its weakest level since tracking began in 2024. It has lost 11.68% since the start of the year, and has gone 38 days without a move of 0.25%."
  ]
 }
