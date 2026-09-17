@@ -1,11 +1,7 @@
 {
- "alerted": [
-  "MUR"
- ],
- "alerted_at": {
-  "MUR": 1789517561
- },
- "count": 1,
- "date": "2026-09-16",
+ "alerted": [],
+ "alerted_at": {},
+ "count": 0,
+ "date": "2026-09-17",
  "pending": {}
 }
