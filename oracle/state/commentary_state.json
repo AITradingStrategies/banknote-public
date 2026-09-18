@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-09-18",
- "last_post": 1789747327,
+ "last_post": 1789750878,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789459242,
@@ -80,7 +81,7 @@
   "PAB": 1789704066,
   "PEN": 1789743691,
   "PGK": 1789696868,
-  "PHP": 1789664480,
+  "PHP": 1789750878,
   "PKR": 1789675277,
   "PYG": 1789498844,
   "QAR": 1789671352,
@@ -117,9 +118,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The lira has fallen to 48.7 against the dollar, its weakest level since tracking began in 2024. The rate, which was 43.0 at the start of the year, has lost 4.6% over the past 90 days. #Turkiye $TRY",
   "The Brunei dollar stands at 1.276 as of September 17, down 1.0% from last week but up 0.7% since the start of the year. It has not been this weak in 29 days. #Brunei $BND",
   "The Peruvian sol falls to 3.373 per dollar, its weakest level in 30 days. The daily drop of 0.66% is the biggest move in 82 days for a currency that typically moves only 0.23% per day. #Peru $PEN",
-  "The Djiboutian franc trades at 177.7 to the dollar, its weakest level in a year. The currency has lost only 0.5% since January, in a market where it moves almost every day."
+  "The Djiboutian franc trades at 177.7 to the dollar, its weakest level in a year. The currency has lost only 0.5% since January, in a market where it moves almost every day.",
+  "The peso stands at 62.7 against the dollar, its weakest in the past year. It has fallen 6.1% since January and 9.4% from a year ago, even though it barely moved this past week."
  ]
 }
