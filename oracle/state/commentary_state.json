@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-18",
- "last_post": 1789722077,
+ "last_post": 1789725678,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789459242,
   "ALL": 1789437038,
   "AMD": 1789326065,
   "AOA": 1789210861,
-  "ARS": 1789639318,
+  "ARS": 1789725678,
   "AZN": 1789610472,
   "BAM": 1789545635,
   "BBD": 1789081288,
@@ -115,9 +116,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The naira holds near 1,330 per dollar, little changed this week. It has still gained 8.7% since January, making it the 5th strongest performer of 132 currencies tracked this month.",
   "The cedi trades at 11.5 per dollar, its weakest in 30 days. It has slipped 8.67% since the start of the year and 4.33% over the past 30 days, now the 3rd weakest of 132 currencies tracked this month. #Ghana $GHS",
   "The Mauritian rupee falls 0.78% in one day, its strongest daily move in 41 days, to 47.5 per dollar, its weakest level in 30 days. The 5 fixing sources diverge by 1.09%, against a usual 0.27%. #Mauritius $MUR",
-  "The Libyan dinar fell 0.81% in one day, its biggest daily move in 123 days, reaching 6.354 to the dollar, its weakest level in 30 days. The 5 fixing sources diverge by 0.66%, against a usual 0.24%. #Libya $LYD"
+  "The Libyan dinar fell 0.81% in one day, its biggest daily move in 123 days, reaching 6.354 to the dollar, its weakest level in 30 days. The 5 fixing sources diverge by 0.66%, against a usual 0.24%. #Libya $LYD",
+  "The Argentine peso trades at 1,510 per dollar, its weakest level of the past year and 12.0% below its high for the period. It barely moved this week, though it has fallen 4.0% so far in 2026. #Argentina $ARS"
  ]
 }
