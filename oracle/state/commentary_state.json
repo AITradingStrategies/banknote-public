@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-18",
- "last_post": 1789775957,
+ "anchors_today": [],
+ "date": "2026-09-19",
+ "last_post": 1789779691,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789459242,
@@ -50,7 +44,7 @@
   "JMD": 1789387257,
   "JOD": 1789686068,
   "KES": 1789559442,
-  "KGS": 1789434038,
+  "KGS": 1789779691,
   "KHR": 1789574444,
   "KMF": 1789527648,
   "KWD": 1789404669,
@@ -119,9 +113,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The Moldovan leu reached 17.5 per dollar, its weakest level in the past 30 days. The currency has depreciated 4.11% since the start of the year, from 16.8/USD in January. #Moldova $MDL",
   "The Colombian peso trades at 3,169 per dollar, up 20.1% so far in 2026 \u2014 the largest gain among 132 tracked currencies this year. A year ago it traded at 3,873. #Colombia $COP",
   "The Guyana dollar slipped to 209.2 per US dollar, its weakest in 90 days. It has still not been weaker in 181 days, and moves just 0.28% on a typical day. #Guyana $GYD",
-  "The lempira holds at 26.9 per dollar, practically unchanged over the past week. So far this year it has fallen 1.6% and stands at its weakest level in the past twelve months. #Honduras $HNL"
+  "The lempira holds at 26.9 per dollar, practically unchanged over the past week. So far this year it has fallen 1.6% and stands at its weakest level in the past twelve months. #Honduras $HNL",
+  "The Kyrgyz som's dollar rate stands at 87.5, same as a year ago. Since the start of the year the rate has barely changed, and for 28 days running no move past 0.25% has been observed. #Kyrgyzstan $KGS"
  ]
 }
