@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-19",
- "last_post": 1789808169,
+ "last_post": 1789812092,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789459242,
   "ALL": 1789437038,
   "AMD": 1789326065,
   "AOA": 1789210861,
-  "ARS": 1789725678,
+  "ARS": 1789812092,
   "AZN": 1789610472,
   "BAM": 1789545635,
   "BBD": 1789794090,
@@ -115,9 +116,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The naira sits at 1,331/USD, barely moved this week. It's up 8.5% since January and 12.2% stronger than a year ago, when it traded near 1,494. #Nigeria $NGN",
   "The Bahraini dinar fell 0.24% in a single day to reach 0.376 to the dollar, its largest daily move in 76 days, marking its weakest point in 30 days. The currency typically moves only 0.04% on a normal day. #Bahrain $BHD",
   "The dobra closes at 21.4/USD, the fifth straight day of losing value and its weakest level in 30 days. Still, it remains within the 6.2% band it has held over the past year. #SaoTomeAndPrincipe $STN",
-  "The Kuwaiti dinar reaches 0.308 against the dollar, its strongest level in 90 days, after rising 0.35% in a single day, its largest daily move in 75 days. The currency typically moves only 0.09% daily. #Kuwait $KWD"
+  "The Kuwaiti dinar reaches 0.308 against the dollar, its strongest level in 90 days, after rising 0.35% in a single day, its largest daily move in 75 days. The currency typically moves only 0.09% daily. #Kuwait $KWD",
+  "The Argentine peso trades at 1,510 per dollar, its weakest point of the past year. The currency has fallen 3.9% so far in 2026 and was nearly unchanged over the past week. #Argentina $ARS"
  ]
 }
