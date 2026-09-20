@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-09-20",
- "last_post": 1789920094,
+ "last_post": 1789923702,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -80,7 +81,7 @@
   "PAB": 1789704066,
   "PEN": 1789743691,
   "PGK": 1789696868,
-  "PHP": 1789837301,
+  "PHP": 1789923702,
   "PKR": 1789848078,
   "PYG": 1789498844,
   "QAR": 1789671352,
@@ -117,9 +118,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The dollar is at 48.8 lira, the weakest level since tracking began in 2024. The lira has lost 11.9% since the start-of-year level of 43.0, making it the 4th most depreciated currency this year. #Turkiye $TRY",
   "The dong has gained 1.6% since the start of the year but lost 0.6% just this past week, trading at 25,999 VND per dollar. The rate has moved within a narrow 1.2% band over the past 30 days. #Vietnam $VND",
   "The Somali shilling trades at 571.6 per dollar, down 0.8% over the past month but little changed for the year, having started at 571.5. #Somalia $SOS",
-  "The afghani reached 64.6 against the dollar, its strongest level in the past 69 days. The currency has strengthened 2.8% over the last thirty days and is now the third strongest currency this month among 132 tracked currencies. #Afghanistan $AFN"
+  "The afghani reached 64.6 against the dollar, its strongest level in the past 69 days. The currency has strengthened 2.8% over the last thirty days and is now the third strongest currency this month among 132 tracked currencies. #Afghanistan $AFN",
+  "The peso reached 62.8 against the dollar, the weakest since tracking began in March 2024. It has fallen 6.39% from 58.9 at the start of the year. #Philippines $PHP"
  ]
 }
