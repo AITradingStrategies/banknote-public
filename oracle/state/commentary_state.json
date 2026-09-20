@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-20",
- "last_post": 1789905668,
+ "last_post": 1789909285,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789459242,
@@ -100,7 +101,7 @@
   "TMT": 1789278823,
   "TND": 1789844471,
   "TOP": 1789862470,
-  "TRY": 1789826477,
+  "TRY": 1789909285,
   "TTD": 1789865887,
   "TZS": 1789160487,
   "UAH": 1789783282,
@@ -116,9 +117,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The dinar today at 102.3 per dollar, its weakest level in the past 30 days. The rate has traded in a 1.9% band during that period, and has weakened 2.37% from 99.9 at the start of the year. #Serbia $RSD",
   "The Argentine peso trades at 1,510 per dollar, its weakest level since this tracking began in March 2024. The currency is down 4.31% so far this year and moves on average just 0.21% per session. #Argentina $ARS",
   "The Mexican peso trades today at 17.2 per dollar, 1.5% weaker than last week. Despite that recent drop, the currency has gained 4.5% so far this year. #Mexico $MXN",
-  "The Burundian franc trades at 3,000 per dollar, down 1.7% over the week. It has moved within a 2.0% band over 30 days and remains nearly stable since the start of the year, at -1.2%."
+  "The Burundian franc trades at 3,000 per dollar, down 1.7% over the week. It has moved within a 2.0% band over 30 days and remains nearly stable since the start of the year, at -1.2%.",
+  "The dollar is at 48.8 lira, the weakest level since tracking began in 2024. The lira has lost 11.9% since the start-of-year level of 43.0, making it the 4th most depreciated currency this year. #Turkiye $TRY"
  ]
 }
