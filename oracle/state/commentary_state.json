@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-20",
- "last_post": 1789880474,
+ "last_post": 1789884057,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789459242,
@@ -69,7 +71,7 @@
   "MYR": 1789758080,
   "MZN": 1789660876,
   "NAD": 1789581638,
-  "NGN": 1789797709,
+  "NGN": 1789884057,
   "NIO": 1789689693,
   "NPR": 1789833696,
   "OMR": 1789430457,
@@ -113,9 +115,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The bol\u00edvar trades at 847.3 per dollar, its weakest level of the past year and the worst-performing currency among 132 currencies so far in 2026. It has lost 64.6% of its value this year and 8.7% in just the last 30 days. #Venezuela $VES",
   "The Comorian franc trades at 428.3 per dollar, down 0.7% over 30 days and 2.1% since the start of the year. The currency has nonetheless moved within a 2.0% band over that same period. #Comoros $KMF",
   "The Ugandan shilling has fallen to 3,932 per dollar, its weakest level since tracking began in March 2024. It is down 7.3% over 90 days, and the five sources fixing the rate now disagree by 4.25%, well above its usual 0.96%. #Uganda $UGX",
-  "The leu trades at 4.583 per dollar, down 5.2% since the start of the year. Fitch warns Romania risks a downgrade to 'junk' status amid the political crisis, while the currency has moved within a band of just 2.2% over the past 30 days. #Romania $RON"
+  "The leu trades at 4.583 per dollar, down 5.2% since the start of the year. Fitch warns Romania risks a downgrade to 'junk' status amid the political crisis, while the currency has moved within a band of just 2.2% over the past 30 days. #Romania $RON",
+  "The naira sits at 1,331/USD, barely moved this week. It's still up 8.6% since January, from 1,446/USD at the start of the year, and has firmed 1.1% over the past 30 days. #Nigeria $NGN"
  ]
 }
