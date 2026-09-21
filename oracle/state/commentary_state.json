@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-21",
- "last_post": 1789966281,
+ "last_post": 1789970467,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -69,7 +71,7 @@
   "MYR": 1789758080,
   "MZN": 1789660876,
   "NAD": 1789581638,
-  "NGN": 1789884057,
+  "NGN": 1789970467,
   "NIO": 1789689693,
   "NPR": 1789833696,
   "OMR": 1789430457,
@@ -113,9 +115,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The baht stands at 33.3 per dollar, weaker by 5.5% since the start of the year, and down 1.5% over the past 30 days. It is 7.1% away from its strongest point of the past year. #Thailand $THB",
   "The manat against the dollar remains at 1.7, the same as at the start of the year and a year ago. In the fixing, which is usually stable, the divergence among sources reached 1.07% today, whereas the typical figure for this rate is 0.03%.",
   "The Cape Verdean escudo is at 96.1 per dollar, a drop of 2.2% since the start of the year. Over the past 30 days it has moved within a narrow band of just 2.0%. #CapeVerde $CVE",
-  "The tenge stands at 446.3 to the dollar, up 13.4% since the start of the year and 20.9% compared to last year. This makes the tenge the 2nd strongest of 132 currencies this month. #Kazakhstan $KZT"
+  "The tenge stands at 446.3 to the dollar, up 13.4% since the start of the year and 20.9% compared to last year. This makes the tenge the 2nd strongest of 132 currencies this month. #Kazakhstan $KZT",
+  "The naira holds at 1,331/USD, little changed this week but 8.6% stronger than at the start of the year. It has now clawed back 11.1% from its weakest point of the past year. #Nigeria $NGN"
  ]
 }
