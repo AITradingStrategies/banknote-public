@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-20",
- "last_post": 1789945261,
+ "anchors_today": [],
+ "date": "2026-09-21",
+ "last_post": 1789948884,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -27,7 +21,7 @@
   "BWP": 1789927280,
   "BYN": 1789257681,
   "BZD": 1789513116,
-  "CLP": 1789599692,
+  "CLP": 1789948884,
   "COP": 1789768549,
   "CRC": 1789822762,
   "CVE": 1789614089,
@@ -119,9 +113,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The gourde trades at 130.7 to the dollar, nearly stable over the week and down 0.5% over thirty days. It has traded in a 1.9% band over the past month, against 130.8 a year ago. #Haiti $HTG",
   "The rupee is stable at 277.3 per dollar, little changed over the past week. It has strengthened 1.1% since the start of the year and has stayed within a 2.7% band over the past year.",
   "The loti sits at 16.3 to the dollar, little changed on the week and down 0.9% over thirty days. It remains 6.8% stronger than a year ago, when it traded near 17.4. #Lesotho $LSL",
-  "The lilangeni holds at 16.3 per dollar, essentially flat against last week's level. It has firmed 1.7% since January and stands 6.8% stronger than a year ago, when it traded near 17.4. #Eswatini $SZL"
+  "The lilangeni holds at 16.3 per dollar, essentially flat against last week's level. It has firmed 1.7% since January and stands 6.8% stronger than a year ago, when it traded near 17.4. #Eswatini $SZL",
+  "The Chilean peso trades at 960.0 per dollar, 3.9% weaker than thirty days ago and 6.2% below where it started the year. Over twelve months it has barely changed, only 0.4%. #Chile $CLP"
  ]
 }
