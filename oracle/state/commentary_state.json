@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-09-21",
- "last_post": 1790006486,
+ "last_post": 1790010074,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -80,7 +81,7 @@
   "PAB": 1789704066,
   "PEN": 1789743691,
   "PGK": 1789696868,
-  "PHP": 1789923702,
+  "PHP": 1790010074,
   "PKR": 1789938070,
   "PYG": 1789498844,
   "QAR": 1789671352,
@@ -117,9 +118,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "Dollar/lira at 48.8, has not seen a move exceeding 0.25% for 42 days. Having lost 11.9% since the start of the year, the lira is at its weakest point of the period.",
   "The vatu sits at 118.3 per dollar, unchanged in six straight sessions. It has not been weaker in 28 days and is 1.7% stronger than at the start of the year. #Vanuatu $VUV",
   "The South Sudanese pound trades at 5,688 to the dollar, its weakest since tracking began in March 2024. It has fallen 17.5% over 90 days and stands as the world's second-weakest currency this year, down from 1,634 a year ago. #SouthSudan $SSP",
-  "The dollar stands at 11,825 som. Though it weakened 0.6% over the past week, it has strengthened 1.5% since the start of the year and is 4.0% stronger than a year ago. #Uzbekistan $UZS"
+  "The dollar stands at 11,825 som. Though it weakened 0.6% over the past week, it has strengthened 1.5% since the start of the year and is 4.0% stronger than a year ago. #Uzbekistan $UZS",
+  "The peso remains at 62.8 per dollar, barely changed over the past week. This is its weakest level in the past year, from 57.0 a year ago, for a 6.3% decline since January. #Philippines $PHP"
  ]
 }
