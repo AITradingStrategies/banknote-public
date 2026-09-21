@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-21",
- "last_post": 1789992075,
+ "last_post": 1789995730,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -100,7 +101,7 @@
   "TMT": 1789278823,
   "TND": 1789844471,
   "TOP": 1789862470,
-  "TRY": 1789909285,
+  "TRY": 1789995730,
   "TTD": 1789865887,
   "TZS": 1789160487,
   "UAH": 1789783282,
@@ -116,9 +117,9 @@
   "ZMW": 1789668135
  },
  "recent_posts": [
-  "The rupiah stands at 17,787 per dollar, weaker by 5.9% since the start of the year. Over the past year its range has reached 9.9%, with the current level 2.4% above its weakest point. #Indonesia $IDR",
   "The Argentine peso trades at 1,510 per dollar, virtually unchanged on the week. It sits at its weakest point of the past year and has fallen 4.2% so far in 2026. #Argentina $ARS",
   "The Maldivian rufiyaa holds at 15.4, its weakest point of the past year. It has gone 112 days without a move exceeding 0.25%, and is 0.7% weaker over the past year. #Maldives $MVR",
-  "The Lao kip stands at 22,375 per dollar, little changed over the past week. Since the start of the year the kip is weaker by 3.4%, even as over the last 30 days it strengthened 0.8%."
+  "The Lao kip stands at 22,375 per dollar, little changed over the past week. Since the start of the year the kip is weaker by 3.4%, even as over the last 30 days it strengthened 0.8%.",
+  "Dollar/lira at 48.8, has not seen a move exceeding 0.25% for 42 days. Having lost 11.9% since the start of the year, the lira is at its weakest point of the period."
  ]
 }
