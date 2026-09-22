@@ -3,13 +3,5 @@
  "alerted_at": {},
  "count": 0,
  "date": "2026-09-22",
- "pending": {
-  "UGX": {
-   "bar": 2.0,
-   "outlier": 6.44,
-   "pct": 9.31717615040364,
-   "rate": 3599.8006820969,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
