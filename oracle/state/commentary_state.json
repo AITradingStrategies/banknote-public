@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-22",
- "last_post": 1790081493,
+ "last_post": 1790085679,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -100,7 +101,7 @@
   "TMT": 1790024462,
   "TND": 1789844471,
   "TOP": 1789862470,
-  "TRY": 1789995730,
+  "TRY": 1790085679,
   "TTD": 1789865887,
   "TZS": 1789160487,
   "UAH": 1789783282,
@@ -116,9 +117,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "The peso stands at 1,514 per dollar, its weakest level of the past year. The decline held nearly unchanged over the week, though it has accumulated a 3.8% drop so far in 2026. #Argentina $ARS",
   "The Liberian dollar trades at 173.4 to the greenback, its strongest level since tracking began in March 2024. It has gained 5.4% over the past 90 days and now ranks as the best performer of 132 currencies tracked this month. #Liberia $LRD",
   "The denar trades at 53.6 to the dollar, weaker by 1.5% over the past 30 days and 2.1% since the start of the year. Trading has still stayed within a narrow 1.9% band over the same period. #NorthMacedonia $MKD",
-  "The Algerian dinar records 133.8 to the dollar, its weakest level of the past year. The dinar barely moved over the past week, but it has declined 3.1% since the start of the year. #Algeria $DZD"
+  "The Algerian dinar records 133.8 to the dollar, its weakest level of the past year. The dinar barely moved over the past week, but it has declined 3.1% since the start of the year. #Algeria $DZD",
+  "The dollar/lira rose to 48.8, the weakest level since tracking began in March 2024. The rate has lost 11.95% against the 43.0 level at the start of the year, and is 15.18% behind last year's 41.4 level. #Turkiye $TRY"
  ]
 }
