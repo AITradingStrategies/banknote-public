@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-21",
- "last_post": 1790031680,
+ "anchors_today": [],
+ "date": "2026-09-22",
+ "last_post": 1790035273,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -78,7 +72,7 @@
   "NGN": 1789970467,
   "NIO": 1789689693,
   "NPR": 1789833696,
-  "OMR": 1789430457,
+  "OMR": 1790035273,
   "PAB": 1789704066,
   "PEN": 1789743691,
   "PGK": 1789696868,
@@ -119,9 +113,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "The Pakistani rupee stands steady at 277.3 against the dollar, nearly unmoved over the past week. Since the start of the year it has strengthened 1.0%, and over the past year it has stayed within a band of just 2.7%.",
   "Turkmenistan's manat stands at 3.507/USD, almost unchanged over the past week. It has held within a total 4.4% band for a year and has only moved here from 3.496 since the start of the year. #Turkmenistan $TMT",
   "The real is at 5.129 per dollar, nearly stable over the past week. This year, the currency has already gained 7.2%, even though it moves on nearly every trading day.",
-  "The ruble trades near 84.2 per dollar, little changed over the week. Since the start of the year it has weakened by 6.1%, and over 90 days it has lost 13.0%. #Russia $RUB"
+  "The ruble trades near 84.2 per dollar, little changed over the week. Since the start of the year it has weakened by 6.1%, and over 90 days it has lost 13.0%. #Russia $RUB",
+  "The Omani rial stands at 0.385 against the dollar, the same level it started the year at and the same it was at a year ago. Twenty consecutive days without a move exceeding 0.25%. #Oman $OMR"
  ]
 }
