@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-22",
- "last_post": 1790053269,
+ "last_post": 1790056888,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -69,7 +71,7 @@
   "MYR": 1789758080,
   "MZN": 1789660876,
   "NAD": 1789581638,
-  "NGN": 1789970467,
+  "NGN": 1790056888,
   "NIO": 1789689693,
   "NPR": 1789833696,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "The Jordanian dinar stands at 0.709 against the dollar, the same level as the start of the year and a year ago. 926 days have passed without moving more than 0.25%. #Jordan $JOD",
   "The kyat stands at 2,100 to the dollar, its lowest level this year. However, the 5 sources used for fixing the rate disagree by 0.43%, against a typical 0.06%.",
   "The lari stands at 2.604 against the dollar and has remained nearly unchanged over the past week. This year, however, it has strengthened by 3.5%, with its yearly fluctuation range not exceeding 5.4%.",
-  "The Rwandan franc traded at 1,472 to the dollar, holding steady over the past week. Since the start of the year it has weakened by 1.1%, while a year ago it stood at 1,451. #Rwanda $RWF"
+  "The Rwandan franc traded at 1,472 to the dollar, holding steady over the past week. Since the start of the year it has weakened by 1.1%, while a year ago it stood at 1,451. #Rwanda $RWF",
+  "The naira held at 1,331 to the dollar, little changed over the past week. It has strengthened 8.7% this year, from 1,446 at the start of January and 1,497 a year ago. #Nigeria $NGN"
  ]
 }
