@@ -1,15 +1,11 @@
 {
- "alerted": [],
- "alerted_at": {},
- "count": 0,
+ "alerted": [
+  "UGX"
+ ],
+ "alerted_at": {
+  "UGX": 1790111465
+ },
+ "count": 1,
  "date": "2026-09-22",
- "pending": {
-  "UGX": {
-   "bar": 2.0,
-   "outlier": 0.0,
-   "pct": -7.692702975853683,
-   "rate": 3899.8004408497,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
