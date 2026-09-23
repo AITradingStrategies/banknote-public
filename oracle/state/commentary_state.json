@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-23",
- "last_post": 1790139682,
+ "last_post": 1790143292,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -69,7 +71,7 @@
   "MYR": 1789758080,
   "MZN": 1789660876,
   "NAD": 1789581638,
-  "NGN": 1790056888,
+  "NGN": 1790143292,
   "NIO": 1789689693,
   "NPR": 1789833696,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "The som stands at 87.5 to the dollar, the same level as a year ago. Without moving more than 0.25% for 32 days running, moving only 0.03% on a typical day, it remains the 6th steadiest of 132 currencies tracked. #Kyrgyzstan $KGS",
   "Kenya's shilling remains at 129.4 to the dollar, little changed for the whole week. It is 21 straight days without a move exceeding 0.25%, continuing to trade within the 1.5% band that has held for the whole year. #Kenya $KES",
   "The Djiboutian franc trades at 177.7 per dollar, nearly stable over the week. It was at 178.4 a year ago and 177.9 at the start of the year, despite daily variations on 65% of sessions. #Djibouti $DJF",
-  "The Fijian dollar sits at 2.237 per USD, down 1.4% over the past 30 days but still 1.5% stronger than where it started the year. It has moved on 80% of trading days over that stretch. #Fiji $FJD"
+  "The Fijian dollar sits at 2.237 per USD, down 1.4% over the past 30 days but still 1.5% stronger than where it started the year. It has moved on 80% of trading days over that stretch. #Fiji $FJD",
+  "Nigeria's naira sits at 1,330 to the dollar, little changed over the past week. It has strengthened 9.0% since the start of the year and is the 4th strongest of 132 currencies tracked this month. #Nigeria $NGN"
  ]
 }
