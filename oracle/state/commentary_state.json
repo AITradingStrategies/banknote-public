@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-22",
- "last_post": 1790118073,
+ "anchors_today": [],
+ "date": "2026-09-23",
+ "last_post": 1790121672,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -41,7 +35,7 @@
   "GHS": 1790064099,
   "GMD": 1789476647,
   "GTQ": 1790038864,
-  "GYD": 1789772505,
+  "GYD": 1790121672,
   "HNL": 1789775957,
   "HTG": 1789933871,
   "IDR": 1789981289,
@@ -119,9 +113,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "The rupee is stable at 277.3 against the dollar, with little change over the past week. Since the start of the year, the rupee has strengthened by 1.1%, and it is also in a better position compared to 282.9 a year ago. #Pakistan $PKR",
   "At 162.5 birr per dollar, the birr has not been weaker than this level in the past 21 days. However, compared to a year ago, it has weakened by 11.9%, falling from 143.9 to its current level. #Ethiopia $ETB",
   "The Colombian peso trades at 3,198 per dollar, down 4.3% over the past month. Even so, it remains the strongest currency in the world year-to-date, up 18.6%.",
-  "The Peruvian sol holds at 3.375 per dollar, nearly unchanged over the past week. It falls 0.6% over 30 days, but has gained 3.4% versus a year ago, when it traded at 3.49. #Peru $PEN"
+  "The Peruvian sol holds at 3.375 per dollar, nearly unchanged over the past week. It falls 0.6% over 30 days, but has gained 3.4% versus a year ago, when it traded at 3.49. #Peru $PEN",
+  "The Guyana dollar sits at 209.2 to the US dollar, barely moved from a week ago. It has held within a 2.6% band for the past year, even as the rate itself shifts on two of every three trading days. #Guyana $GYD"
  ]
 }
