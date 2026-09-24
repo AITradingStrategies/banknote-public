@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-23",
- "last_post": 1790204496,
+ "anchors_today": [],
+ "date": "2026-09-24",
+ "last_post": 1790208067,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -45,7 +39,7 @@
   "HNL": 1790175673,
   "HTG": 1789933871,
   "IDR": 1789981289,
-  "IQD": 1789858713,
+  "IQD": 1790208067,
   "ISK": 1789930871,
   "JMD": 1789840904,
   "JOD": 1790041896,
@@ -119,9 +113,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "The rupee is steady at 277.2 per dollar, nearly unchanged over the past week. At the start of this year it was at 280.2, meaning it has strengthened 1.0% so far.",
   "The Nepali rupee is now at 153.2 per dollar, nearly unchanged over the past week. But looking from the start of this year, it has weakened 6.1%, and for 11 straight days there has been no move greater than 0.25%. \ud83c\uddf3\ud83c\uddf5 #Nepal $NPR",
   "The Tunisian dinar stands at 2.95 per dollar, little changed this week. Since the start of the year the currency has fallen 1.8%, within a trading band that has not exceeded 2.2% over the past 30 days.",
-  "The Dominican peso holds at 59.4 per dollar, nearly unchanged this week. So far this year it has appreciated 6.8%, compared with 63.1 in January. \ud83c\udde9\ud83c\uddf4 #DominicanRepublic $DOP"
+  "The Dominican peso holds at 59.4 per dollar, nearly unchanged this week. So far this year it has appreciated 6.8%, compared with 63.1 in January. \ud83c\udde9\ud83c\uddf4 #DominicanRepublic $DOP",
+  "The Iraqi dinar is at 1,311 per dollar, nearly the same as the start of the year. Its fluctuations do not exceed 0.20% per day, and it has stayed within a 1.2% band over the past year. \ud83c\uddee\ud83c\uddf6 #Iraq $IQD"
  ]
 }
