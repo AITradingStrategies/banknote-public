@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-24",
- "last_post": 1790226068,
+ "last_post": 1790229692,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
@@ -69,7 +71,7 @@
   "MYR": 1789758080,
   "MZN": 1790190092,
   "NAD": 1789581638,
-  "NGN": 1790143292,
+  "NGN": 1790229692,
   "NIO": 1789689693,
   "NPR": 1790197271,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "The bolivar falls to 852.2 per dollar, its weakest level in 492 days and the worst performance among 132 currencies so far this year. It has fallen 64.79% since January, when it traded at 299.5. \ud83c\uddfb\ud83c\uddea #Venezuela $VES",
   "The Comorian franc trades at 431.1 per dollar, down 1.8% over 30 days and 2.3% since January, having traded at 418.8 at the start of the year. \ud83c\uddf0\ud83c\uddf2 #Comoros $KMF",
   "The Tongan pa\u02bbanga is at 2.382 to the US dollar, having fallen 1.1% over the past 30 days, yet it remains up 0.7% since the start of the year. The movement stays within a 2.4% band over the past month. \ud83c\uddf9\ud83c\uddf4 #Tonga $TOP",
-  "The Ugandan shilling trades at 3,904 per dollar, its weakest point in a year and the second-weakest performer of 132 currencies this month. It has slid 5.2% over 30 days and 7.8% since January, when it stood at 3,620. Uganda flag #Uganda $UGX"
+  "The Ugandan shilling trades at 3,904 per dollar, its weakest point in a year and the second-weakest performer of 132 currencies this month. It has slid 5.2% over 30 days and 7.8% since January, when it stood at 3,620. Uganda flag #Uganda $UGX",
+  "Nigeria's naira trades at 1,326 per dollar, little changed over the past week but up 9.1% since January, when it stood near 1,446. It ranks as the 4th strongest of 132 currencies this month."
  ]
 }
