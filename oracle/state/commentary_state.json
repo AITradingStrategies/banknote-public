@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-24",
- "last_post": 1790240469,
+ "last_post": 1790244100,
  "recent": {
   "AED": 1789603283,
   "AFN": 1789920094,
   "ALL": 1789819281,
   "AMD": 1790092899,
   "AOA": 1789974064,
-  "ARS": 1790157675,
+  "ARS": 1790244100,
   "AZN": 1789959666,
   "BAM": 1790240469,
   "BBD": 1789794090,
@@ -115,9 +116,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "Nigeria's naira trades at 1,326 per dollar, little changed over the past week but up 9.1% since January, when it stood near 1,446. It ranks as the 4th strongest of 132 currencies this month.",
   "The Moroccan dirham stands at 9.588 to the dollar, its weakest level in 537 days. The currency has fallen 1.8% over 90 days and remains 5.8% below its strongest point of the past year. \ud83c\uddf2\ud83c\udde6 #Morocco $MAD",
   "The leu trades at 4.626 per dollar, its weakest level in the past 365 days. The sources making up the daily fixing differ among themselves by 0.87%, three times more than the usual 0.23% deviation. \ud83c\uddf7\ud83c\uddf4 #Romania $RON",
-  "The convertible mark is today at 1.714 per dollar, its weakest level in the past 30 days. A year ago the rate was 1.655, and at the start of the year 1.665. #BosniaAndHerzegovina $BAM"
+  "The convertible mark is today at 1.714 per dollar, its weakest level in the past 30 days. A year ago the rate was 1.655, and at the start of the year 1.665. #BosniaAndHerzegovina $BAM",
+  "The Argentine peso trades at 1,514 per dollar, its weakest level of the past year. It has fallen 4.2% so far in 2026 and shows a 6.9% decline over twelve months. \ud83c\udde6\ud83c\uddf7 #Argentina $ARS"
  ]
 }
