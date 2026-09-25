@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-25",
- "last_post": 1790326885,
+ "last_post": 1790330471,
  "recent": {
   "AED": 1789603283,
   "AFN": 1790301660,
   "ALL": 1790258470,
   "AMD": 1790092899,
   "AOA": 1789974064,
-  "ARS": 1790244100,
+  "ARS": 1790330471,
   "AZN": 1789959666,
   "BAM": 1790240469,
   "BBD": 1789794090,
@@ -115,9 +116,9 @@
   "ZMW": 1790017276
  },
  "recent_posts": [
-  "The naira holds at 1,326/USD, little changed this week but up 9.0% since January, from 1,446 at the start of the year. It now stands as the 4th strongest currency of 132 tracked this month. #Nigeria $NGN",
   "The Chilean peso fell 1.69% in a day, its largest daily move in 109 sessions, to 962.9 per dollar, its weakest level in a year. It has fallen 6.58% so far in 2026. #Chile $CLP",
   "The tenge stands at 443.8 to the dollar, much stronger than 507.3 at the start of the year. The 5 independent sources behind this fixing diverge from each other by 1.31%, whereas typically this gap is only 0.32%. With this the tenge is the strongest of 132 currencies over the past year. #Kazakhstan $KZT",
-  "The baht stands at 33.5 per US dollar, its weakest in 30 days, having moved within a narrow band of about 2.2% over the past month, and down 5.77% since the start of the year. #Thailand $THB"
+  "The baht stands at 33.5 per US dollar, its weakest in 30 days, having moved within a narrow band of about 2.2% over the past month, and down 5.77% since the start of the year. #Thailand $THB",
+  "The Argentine peso trades at 1,516 per dollar, practically unchanged over the past week, at its weakest point of the past year. It has fallen 4.2% in 2026 and 9.8% over twelve months. #Argentina $ARS"
  ]
 }
