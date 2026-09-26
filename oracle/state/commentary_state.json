@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-25",
- "last_post": 1790377268,
+ "anchors_today": [],
+ "date": "2026-09-26",
+ "last_post": 1790380871,
  "recent": {
   "AED": 1789603283,
   "AFN": 1790301660,
@@ -60,7 +54,7 @@
   "LKR": 1790060466,
   "LRD": 1790074870,
   "LSL": 1790305265,
-  "LYD": 1789722077,
+  "LYD": 1790380871,
   "MAD": 1790233272,
   "MDL": 1790125280,
   "MGA": 1789678882,
@@ -119,9 +113,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "The rupee fell to 277.1 against the dollar, its weakest level in the past 63 days. It stood at 280.2 at the start of the year, and typically moves only about 0.11% a day. #Pakistan $PKR",
   "The Bahraini dinar stands at 0.376 against the dollar, the same level for 82 days without any move exceeding 0.25%. It has not seen this level of strength in 540 days. #Bahrain $BHD",
   "The Saudi riyal stands at 3.75 against the dollar, without any notable change for 5 days. The same level was recorded a year ago and at the start of this year. #SaudiArabia $SAR",
-  "The Uruguayan peso trades at 40.1 per dollar, with six straight sessions without a move greater than 0.25%. It has fallen 2.8% this year, though in the past week it strengthened 0.5%."
+  "The Uruguayan peso trades at 40.1 per dollar, with six straight sessions without a move greater than 0.25%. It has fallen 2.8% this year, though in the past week it strengthened 0.5%.",
+  "The Libyan dinar records 6.39 against the dollar, its weakest level in 62 days, and the third weakest currency among 132 over the past year, down 16.1% from its strongest point over the year. #Libya $LYD"
  ]
 }
