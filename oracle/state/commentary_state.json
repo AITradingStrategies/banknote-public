@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-26",
- "last_post": 1790424092,
+ "last_post": 1790427694,
  "recent": {
   "AED": 1789603283,
   "AFN": 1790301660,
@@ -100,7 +101,7 @@
   "TMT": 1790024462,
   "TND": 1790200865,
   "TOP": 1790222463,
-  "TRY": 1790341288,
+  "TRY": 1790427694,
   "TTD": 1789865887,
   "TZS": 1790150501,
   "UAH": 1789783282,
@@ -116,9 +117,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "The cedi traded at 11.6 per dollar, its weakest in 30 days and its softest showing in 43 days, having moved from 10.5 at the start of the year. #Ghana $GHS",
   "The Argentine peso trades at 1,520 per dollar, its weakest level since tracking began in March 2024. It is down 12.01% over the past year and 4.5% so far in 2026. #Argentina $ARS",
   "The manat remains at 1.7 against the dollar \u2014 unchanged from both the start of the year and a year ago. It hasn't moved more than 0.25% in the last 6 days, and over the past 30 days it has stayed within a 1.7% band. #Azerbaijan $AZN",
-  "The South Sudanese pound has fallen to 5,713 per dollar, its weakest level since tracking began in March 2024. It has lost 71.39% of its value over the past year, from 1,634, ranking as the second-weakest currency of 132 tracked. #SouthSudan $SSP"
+  "The South Sudanese pound has fallen to 5,713 per dollar, its weakest level since tracking began in March 2024. It has lost 71.39% of its value over the past year, from 1,634, ranking as the second-weakest currency of 132 tracked. #SouthSudan $SSP",
+  "The lira fell to 48.9 against the dollar, its weakest level since data tracking began in March 2024. It has lost 12.2% since the start of the year and 15.22% over the past year. #Turkiye $TRY"
  ]
 }
