@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-26",
- "last_post": 1790398891,
+ "last_post": 1790402498,
  "recent": {
   "AED": 1789603283,
   "AFN": 1790301660,
@@ -69,7 +71,7 @@
   "MYR": 1790283694,
   "MZN": 1790190092,
   "NAD": 1790308871,
-  "NGN": 1790316087,
+  "NGN": 1790402498,
   "NIO": 1790387953,
   "NPR": 1790197271,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "The Nicaraguan c\u00f3rdoba trades at 36.8 per dollar, its weakest level in 128 days. The currency moves just 0.19% on a typical day, but changes on 71% of days. #Nicaragua $NIO",
   "The Seychelles rupee trades at 14.5 per dollar, up 6.5% this year and now the most volatile currency among 132 tracked, moving on 97% of trading days. #Seychelles $SCR",
   "The lari stands at 2.609 to the dollar, nearly unchanged over the past week, though it is up 3.1% this year and has not been weaker in 20 days. #Georgia $GEL",
-  "The col\u00f3n trades at 453.4 per dollar, down 0.7% over the past week. Even so, it has gained 9.9% this year, the fifth-largest gain among 132 currencies tracked. #CostaRica $CRC"
+  "The col\u00f3n trades at 453.4 per dollar, down 0.7% over the past week. Even so, it has gained 9.9% this year, the fifth-largest gain among 132 currencies tracked. #CostaRica $CRC",
+  "The naira sits at 1,327 per dollar, barely moved from a week ago. It is still up 9.0% for the year, making it the 5th strongest of 132 currencies tracked this month. #Nigeria $NGN"
  ]
 }
