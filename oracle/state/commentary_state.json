@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-09-26",
- "last_post": 1790438494,
+ "last_post": 1790442097,
  "recent": {
   "AED": 1789603283,
   "AFN": 1790301660,
@@ -80,7 +81,7 @@
   "PAB": 1790265711,
   "PEN": 1790118073,
   "PGK": 1790384459,
-  "PHP": 1790359267,
+  "PHP": 1790442097,
   "PKR": 1790366478,
   "PYG": 1790164875,
   "QAR": 1790348484,
@@ -117,9 +118,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "The lira fell to 48.9 against the dollar, its weakest level since data tracking began in March 2024. It has lost 12.2% since the start of the year and 15.22% over the past year. #Turkiye $TRY",
   "The denar fell to 54.0 per dollar, its weakest level in the past 30 days. Since the start of the year it has lost 2.9%, though it typically moves only 0.18% per day. #NorthMacedonia $MKD",
   "The Liberian dollar reached 172.1 to the US dollar, its strongest level since tracking began in March 2024. It has gained 5.9% over the past 90 days and now sits atop this month's rankings among 132 currencies tracked. #Liberia $LRD",
-  "The hryvnia is trading at 44.9 per dollar \u2014 the weakest level in the last 90 days. The annual range is 9.4%, and from the year's strongest point the rate has retreated 8.4%. #Ukraine $UAH"
+  "The hryvnia is trading at 44.9 per dollar \u2014 the weakest level in the last 90 days. The annual range is 9.4%, and from the year's strongest point the rate has retreated 8.4%. #Ukraine $UAH",
+  "The peso is at 62.5 per dollar, 8.2% from its strongest level in the past year. Among the 6 sources behind the fixing, they disagreed by 0.71%, compared to a typical 0.21% only. #Philippines $PHP"
  ]
 }
