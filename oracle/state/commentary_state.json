@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-27",
- "last_post": 1790485288,
+ "last_post": 1790488878,
  "recent": {
   "AED": 1789603283,
   "AFN": 1790301660,
@@ -69,7 +71,7 @@
   "MYR": 1790283694,
   "MZN": 1790190092,
   "NAD": 1790308871,
-  "NGN": 1790402498,
+  "NGN": 1790488878,
   "NIO": 1790387953,
   "NPR": 1790197271,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "The Moldovan leu remains stable at 17.7 to the dollar, nearly unchanged over the past week, though it is 1.9% weaker than 30 days ago and 4.4% below the level at the start of the year. #Moldova $MDL",
   "The vatu held at 118.4 to the dollar, little changed over the past week and holding inside the same tight 1.0% band it has kept for 30 days. It stands 1.7% stronger than where it began the year. #Vanuatu $VUV",
   "The dollar rate of the manat stands around 3.5, barely different from the 3.496 at the start of the year. But today the five sources behind the fixing show a 2.21% discrepancy \u2014 a figure that is usually 0.23%.",
-  "The Fijian dollar has slipped to 2.247 per US dollar, its weakest in 30 days. It last traded softer than this 61 days ago, and it has moved roughly one and a half times its usual daily pace over that stretch. #Fiji $FJD"
+  "The Fijian dollar has slipped to 2.247 per US dollar, its weakest in 30 days. It last traded softer than this 61 days ago, and it has moved roughly one and a half times its usual daily pace over that stretch. #Fiji $FJD",
+  "The naira stands at 1,327 to the dollar, little changed over the past week but up 8.8% since the start of the year, when it traded near 1,446. #Nigeria $NGN"
  ]
 }
