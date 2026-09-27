@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-27",
- "last_post": 1790499691,
+ "last_post": 1790503292,
  "recent": {
   "AED": 1789603283,
   "AFN": 1790301660,
   "ALL": 1790258470,
   "AMD": 1790092899,
   "AOA": 1789974064,
-  "ARS": 1790416896,
+  "ARS": 1790503292,
   "AZN": 1790420497,
   "BAM": 1790240469,
   "BBD": 1790409693,
@@ -115,9 +116,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "The naira stands at 1,327 to the dollar, little changed over the past week but up 8.8% since the start of the year, when it traded near 1,446. #Nigeria $NGN",
   "Rwanda's rate stands at 1,476 to the dollar, also reaching its weakest point of the past year, having weakened by 1.2% since the start of the year. Over the past 30 days, it stayed within a 1.3% band. #Rwanda $RWF",
   "The krona stands at 120.3 against the US dollar, 5.2% stronger than 90 days ago. But the 6 independent sources behind the reference rate disagree by 1.30%, far above the typical 0.36%.",
-  "The ariary is worth 4,400 per 1 dollar at this time, down 1.6% over the past week, but still stronger by 4.2% since the start of the year. #Madagascar $MGA"
+  "The ariary is worth 4,400 per 1 dollar at this time, down 1.6% over the past week, but still stronger by 4.2% since the start of the year. #Madagascar $MGA",
+  "The Argentine peso trades at 1,520 per dollar, its weakest level since tracking began in March 2024. It has fallen 12.2% over the past year and 4.86% so far in 2026. #Argentina $ARS"
  ]
 }
