@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-29",
- "last_post": 1790658084,
+ "last_post": 1790661697,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790301660,
@@ -69,7 +71,7 @@
   "MYR": 1790647285,
   "MZN": 1790190092,
   "NAD": 1790308871,
-  "NGN": 1790575286,
+  "NGN": 1790661697,
   "NIO": 1790387953,
   "NPR": 1790636485,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "The Malaysian ringgit stands at 4.082 to the US dollar, little changed this week. However it has fallen 1.3% over the past 30 days, though still 3.4% stronger compared to a year ago. #Malaysia $MYR",
   "The som strengthened 0.62% against the dollar to 11,825/USD \u2014 the largest daily move in the past 38 days. A year ago the rate was 12,190. #Uzbekistan $UZS",
   "The Kenyan shilling continues to hold at 129.7 to the dollar, at its weakest point in a year, having gone 28 straight days without a move of more than 0.25%. #Kenya $KES",
-  "The Cape Verdean escudo stands at 96.9 per dollar, the weakest level of the past year. It has fallen 1.7% over 30 days and is down 3.0% since the start of the year. #CapeVerde $CVE"
+  "The Cape Verdean escudo stands at 96.9 per dollar, the weakest level of the past year. It has fallen 1.7% over 30 days and is down 3.0% since the start of the year. #CapeVerde $CVE",
+  "The naira sits at 1,327/USD, six straight days without a move of even 0.25%. It is up 8.8% since January, from 1,446 at the start of the year. #Nigeria $NGN"
  ]
 }
