@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-09-29",
- "last_post": 1790672492,
+ "last_post": 1790676091,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790301660,
   "ALL": 1790604087,
   "AMD": 1790092899,
   "AOA": 1789974064,
-  "ARS": 1790589686,
+  "ARS": 1790676091,
   "AZN": 1790420497,
   "BAM": 1790586093,
   "BBD": 1790409693,
@@ -115,9 +116,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "The naira sits at 1,327/USD, six straight days without a move of even 0.25%. It is up 8.8% since January, from 1,446 at the start of the year. #Nigeria $NGN",
   "The Namibian dollar trades at 16.4 to the dollar, down 1.2% over the past month yet still up 6.1% from a year ago, when it stood at 17.4/USD. #Namibia $NAD",
   "The tenge stands at 442.1 against the dollar, the strongest of 132 currencies this year \u2014 up 14.5% since the start of the year and 22.9% over the past year. #Kazakhstan $KZT",
-  "Tanzania's shilling is trading at 2,645 per dollar, the weakest level in a year. The 5 sources setting today's fixing disagree by 1.67 percent, more than its usual 0.54 percent. #Tanzania $TZS"
+  "Tanzania's shilling is trading at 2,645 per dollar, the weakest level in a year. The 5 sources setting today's fixing disagree by 1.67 percent, more than its usual 0.54 percent. #Tanzania $TZS",
+  "The Argentine peso trades at 1,524 per dollar, its weakest level of the past year. It fell 12.4% in twelve months and stayed within a band of just 1.2% over the past 30 days. #Argentina $ARS"
  ]
 }
