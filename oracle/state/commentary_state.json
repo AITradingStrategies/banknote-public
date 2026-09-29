@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-09-29",
- "last_post": 1790697700,
+ "last_post": 1790701296,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790301660,
@@ -80,7 +81,7 @@
   "PAB": 1790265711,
   "PEN": 1790607698,
   "PGK": 1790384459,
-  "PHP": 1790614908,
+  "PHP": 1790701296,
   "PKR": 1790625698,
   "PYG": 1790524901,
   "QAR": 1790348484,
@@ -117,9 +118,9 @@
   "ZMW": 1790362914
  },
  "recent_posts": [
-  "Dollar/lira rose to 49.0, the weakest level since tracking began in March 2024. Having lost 4.8% over the past 90 days, the lira ranks 4th weakest among 132 currencies on an annual basis. #Turkiye $TRY",
   "The Chilean peso stands at 963.2 per dollar, practically unchanged over the week, though at the weakest point of the past year. It is down 6.4% so far in 2026. #Chile $CLP",
   "The Trinidad and Tobago dollar sits at 6.785 per US dollar, its weakest point in the past year. It has held inside a 1.0% band for 30 days, changing on most trading sessions but rarely by much. #TrinidadAndTobago $TTD",
-  "The Solomon Islands dollar slipped to 8.03 per US dollar, its weakest in 30 days. It has held inside a 6.6% band over the past year and still sits 5.3% above that year's low. #SolomonIslands $SBD"
+  "The Solomon Islands dollar slipped to 8.03 per US dollar, its weakest in 30 days. It has held inside a 6.6% band over the past year and still sits 5.3% above that year's low. #SolomonIslands $SBD",
+  "The peso is at 62.5 per dollar, stronger by 0.6% over the past week. Still, it is 5.7% weaker compared to the start of the year, and 58.1 per dollar a year ago. #Philippines $PHP"
  ]
 }
