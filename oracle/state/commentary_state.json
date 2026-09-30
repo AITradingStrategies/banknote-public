@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-09-30",
- "last_post": 1790744483,
+ "last_post": 1790748118,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -69,7 +71,7 @@
   "MYR": 1790647285,
   "MZN": 1790704906,
   "NAD": 1790665293,
-  "NGN": 1790661697,
+  "NGN": 1790748118,
   "NIO": 1790744483,
   "NPR": 1790636485,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The som is 87.5 to the dollar, exactly where it was a year ago and at the start of this year too. It hasn't moved more than 0.25% in 39 days, ranking 5th steadiest among 132 currencies tracked. #Kyrgyzstan $KGS",
   "The baht stands at 33.6 per dollar, its weakest in 61 days, down 6.17% since the start of the year, though over the past 30 days it has traded within a narrow 2.1% band. #Thailand $THB",
   "The Mauritanian ouguiya is trading at 40.1 to the dollar, its weakest level in the past year, despite remaining nearly stable over the past week within a trading band that has not exceeded 1.7% over a full year. #Mauritania $MRU",
-  "The c\u00f3rdoba stands at 36.8 per dollar, its weakest point of the past year, though practically unchanged over the past week. A year ago it traded at 36.7. #Nicaragua $NIO"
+  "The c\u00f3rdoba stands at 36.8 per dollar, its weakest point of the past year, though practically unchanged over the past week. A year ago it traded at 36.7. #Nicaragua $NIO",
+  "The naira held near 1,326/USD, little changed on the week. It remains 9.0% stronger this year, having traded in a tight 1.9% band over the past 30 days. #Nigeria $NGN"
  ]
 }
