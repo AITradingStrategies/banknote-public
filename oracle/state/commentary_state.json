@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-09-29",
- "last_post": 1790722884,
+ "anchors_today": [],
+ "date": "2026-09-30",
+ "last_post": 1790726504,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -60,7 +54,7 @@
   "LKR": 1790719289,
   "LRD": 1790434896,
   "LSL": 1790305265,
-  "LYD": 1790380871,
+  "LYD": 1790726504,
   "MAD": 1790578894,
   "MDL": 1790474489,
   "MGA": 1790499691,
@@ -119,9 +113,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The Pakistani rupee stood at 277.1 to the dollar, little changed over the past week. It has strengthened 1.1% this year and is now in a better position compared to last year's 282.2. #Pakistan $PKR",
   "The kwacha stands at 19.6 to the dollar, up 1.0% on the week and now the second-strongest currency in the world over the past year, having gained 21.6% against the dollar since this time last year. #Zambia $ZMW",
   "The rupee stands at 330.9 to the dollar, having remained nearly unchanged all week. But this year the rupee has weakened by 6.2%, having been 302.4 a year ago. #SriLanka $LKR",
-  "The Somali shilling stands at 571.6 to the dollar, unchanged this week. A year ago it was 571.6, but it changes on 69% of days, ranking among the 6th most volatile of 132 currencies tracked. #Somalia $SOS"
+  "The Somali shilling stands at 571.6 to the dollar, unchanged this week. A year ago it was 571.6, but it changes on 69% of days, ranking among the 6th most volatile of 132 currencies tracked. #Somalia $SOS",
+  "The Libyan dinar stands at 6.398 to the dollar, down 15.3% since the start of the year. It remains the third weakest currency among 132 tracked this year, despite staying within a relatively narrow band over the past month."
  ]
 }
