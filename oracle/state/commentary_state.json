@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-09-30",
- "last_post": 1790769706,
+ "last_post": 1790773300,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -100,7 +101,7 @@
   "TMT": 1790481675,
   "TND": 1790200865,
   "TOP": 1790632890,
-  "TRY": 1790686904,
+  "TRY": 1790773300,
   "TTD": 1790694096,
   "TZS": 1790672492,
   "UAH": 1790438494,
@@ -116,9 +117,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The gourde trades at 130.9 per dollar, virtually stable over the week. It stood at 131.1 at the start of the year and 130.3 a year ago. #Haiti $HTG",
   "The peso trades at 1,525 per dollar, its weakest level of the past year. It has fallen 12.7% in twelve months and 4.8% so far in 2026. #Argentina $ARS",
   "The cedi trades at 11.6 per dollar, its weakest in 30 days and down 9.83% since the start of the year. It last traded weaker 47 days ago. #Ghana $GHS",
-  "The Jamaican dollar sits at 158.2 per USD, barely moved from a week ago. It has actually firmed 0.7% over the past year, from 159.3, in a currency that changes on 70% of trading days. #Jamaica $JMD"
+  "The Jamaican dollar sits at 158.2 per USD, barely moved from a week ago. It has actually firmed 0.7% over the past year, from 159.3, in a currency that changes on 70% of trading days. #Jamaica $JMD",
+  "The Turkish lira stands at 49.0 against the dollar, at its weakest point since tracking began in March 2024. It has lost 15.14% over the past year, continuing its decline from 43.0 at the start of the year. #Turkiye $TRY"
  ]
 }
