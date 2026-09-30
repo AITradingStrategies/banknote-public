@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-09-30",
- "last_post": 1790784117,
+ "last_post": 1790787702,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -80,7 +81,7 @@
   "PAB": 1790730092,
   "PEN": 1790607698,
   "PGK": 1790384459,
-  "PHP": 1790701296,
+  "PHP": 1790787702,
   "PKR": 1790712093,
   "PYG": 1790524901,
   "QAR": 1790348484,
@@ -117,9 +118,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The Turkish lira stands at 49.0 against the dollar, at its weakest point since tracking began in March 2024. It has lost 15.14% over the past year, continuing its decline from 43.0 at the start of the year. #Turkiye $TRY",
   "The denar trades at 54.2 per dollar, its weakest in the last 88 days and at its weakest point of the past year. It has lost 2.98% over twelve months, moving within a narrow 5.6% band. #NorthMacedonia $MKD",
   "The Liberian dollar trades at 171.6 per USD, up 5.0% over the past month and the second-strongest performer of 132 currencies tracked this month. It has gained 3.9% since the start of the year, from 178.8. #Liberia $LRD",
-  "The dalasi trades at 74.3 per dollar, down just 0.5% since the start of the year from 73.9. It has held inside a 1.5% band for the past 30 days despite moving on 72% of trading days. #Gambia $GMD"
+  "The dalasi trades at 74.3 per dollar, down just 0.5% since the start of the year from 73.9. It has held inside a 1.5% band for the past 30 days despite moving on 72% of trading days. #Gambia $GMD",
+  "The peso is exchanging at 62.5 per dollar, having barely moved over the past week. For the whole year, it has weakened by 5.8%, from 58.9 in January. #Philippines $PHP"
  ]
 }
