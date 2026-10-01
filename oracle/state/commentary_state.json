@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-10-01",
- "last_post": 1790870533,
+ "last_post": 1790874099,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -80,7 +81,7 @@
   "PAB": 1790730092,
   "PEN": 1790607698,
   "PGK": 1790384459,
-  "PHP": 1790787702,
+  "PHP": 1790874099,
   "PKR": 1790798512,
   "PYG": 1790524901,
   "QAR": 1790348484,
@@ -117,9 +118,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The lira stands at 49.0 against the dollar, at its weakest point since tracking began in 2024. It is also at the bottom of the past year's 17.9% band; a year ago it was at 41.6.",
   "The rupee held at 14.7 to the dollar, little changed over the past week and still up 3.8% for the year despite a 1.5% slip over the past month.",
   "The birr is trading at 162.7 to the dollar, up 0.9% over the past 30 days, but weaker by 4.5% since the start of the year and 11.4% over the past year. #Ethiopia $ETB",
-  "The manat stands steady at 3.5 to the dollar, barely changed over the past week. Yet despite this appearance, it remains the 8th most volatile among 132 currencies tracked, moving on average 0.81% a day. #Turkmenistan $TMT"
+  "The manat stands steady at 3.5 to the dollar, barely changed over the past week. Yet despite this appearance, it remains the 8th most volatile among 132 currencies tracked, moving on average 0.81% a day. #Turkmenistan $TMT",
+  "The peso remains at 62.7 per dollar, nearly unchanged over the past week even though it is down 5.9% this year from 58.9 in January. #Philippines $PHP"
  ]
 }
