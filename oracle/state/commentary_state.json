@@ -3,7 +3,7 @@
   "NGN"
  ],
  "date": "2026-10-01",
- "last_post": 1790841682,
+ "last_post": 1790844682,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -29,7 +29,7 @@
   "CVE": 1790658084,
   "DJF": 1790546487,
   "DOP": 1790553691,
-  "DZD": 1790463690,
+  "DZD": 1790844682,
   "EGP": 1790618501,
   "ETB": 1790467293,
   "FJD": 1790485288,
@@ -115,9 +115,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The Burundian franc traded at 2,998 per dollar on September 30, nearly stable over the week. It remains down slightly by 1.2% since the start of the year. #Burundi $BIF",
   "The naira held near 1,327 to the dollar, little changed this week. It remains stronger by 9.0% since the start of the year and 10.7% above its weakest point of the past 12 months. #Nigeria $NGN",
   "The Samoan currency rate is 2.752 to the US dollar on September 30. It has weakened by 1.9% over the past 30 days, yet remains stronger by 0.6% since the start of the year. #Samoa $WST",
-  "same as post"
+  "same as post",
+  "The Algerian dinar stands at 133.8 per dollar, roughly stable over the past week, its weakest level of the year. Since the start of 2026 it has lost 3.2% of its value, coming from 129.6 dinars. #Algeria $DZD"
  ]
 }
