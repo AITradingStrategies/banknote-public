@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-01",
- "last_post": 1790844682,
+ "last_post": 1790848890,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
   "ALL": 1790604087,
   "AMD": 1790092899,
   "AOA": 1789974064,
-  "ARS": 1790762498,
+  "ARS": 1790848890,
   "AZN": 1790420497,
   "BAM": 1790586093,
   "BBD": 1790409693,
@@ -115,9 +116,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The naira held near 1,327 to the dollar, little changed this week. It remains stronger by 9.0% since the start of the year and 10.7% above its weakest point of the past 12 months. #Nigeria $NGN",
   "The Samoan currency rate is 2.752 to the US dollar on September 30. It has weakened by 1.9% over the past 30 days, yet remains stronger by 0.6% since the start of the year. #Samoa $WST",
   "same as post",
-  "The Algerian dinar stands at 133.8 per dollar, roughly stable over the past week, its weakest level of the year. Since the start of 2026 it has lost 3.2% of its value, coming from 129.6 dinars. #Algeria $DZD"
+  "The Algerian dinar stands at 133.8 per dollar, roughly stable over the past week, its weakest level of the year. Since the start of 2026 it has lost 3.2% of its value, coming from 129.6 dinars. #Algeria $DZD",
+  "The peso trades at 1,525 per dollar, its weakest level of the past year. So far in 2026 it has accumulated a 4.8% decline, and compared to a year ago it is down 10.9%. #Argentina $ARS"
  ]
 }
