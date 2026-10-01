@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-01",
- "last_post": 1790830883,
+ "last_post": 1790834497,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -69,7 +71,7 @@
   "MYR": 1790647285,
   "MZN": 1790704906,
   "NAD": 1790665293,
-  "NGN": 1790748118,
+  "NGN": 1790834497,
   "NIO": 1790744483,
   "NPR": 1790636485,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The Saudi riyal continues its stability at 3.75 against the dollar, the same level it was at a year ago and at the start of the year, having gone 10 consecutive days without a move exceeding 0.25%. #SaudiArabia $SAR",
   "The Moldovan leu is trading at 17.7 to the dollar, its weakest level in the past year, 5.1% below where it started the year. A year ago the rate was 16.7. #Moldova $MDL",
   "The Belize dollar is little changed this week at 2.001 to the US dollar, barely moved from 2.009 a year ago, despite shifting on 69% of trading days. #Belize $BZD",
-  "The Burundian franc traded at 2,998 per dollar on September 30, nearly stable over the week. It remains down slightly by 1.2% since the start of the year. #Burundi $BIF"
+  "The Burundian franc traded at 2,998 per dollar on September 30, nearly stable over the week. It remains down slightly by 1.2% since the start of the year. #Burundi $BIF",
+  "The naira held near 1,327 to the dollar, little changed this week. It remains stronger by 9.0% since the start of the year and 10.7% above its weakest point of the past 12 months. #Nigeria $NGN"
  ]
 }
