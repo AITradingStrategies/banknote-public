@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-01",
- "last_post": 1790856111,
+ "last_post": 1790859706,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -100,7 +101,7 @@
   "TMT": 1790481675,
   "TND": 1790812891,
   "TOP": 1790632890,
-  "TRY": 1790773300,
+  "TRY": 1790859706,
   "TTD": 1790694096,
   "TZS": 1790672492,
   "UAH": 1790438494,
@@ -116,9 +117,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The Algerian dinar stands at 133.8 per dollar, roughly stable over the past week, its weakest level of the year. Since the start of 2026 it has lost 3.2% of its value, coming from 129.6 dinars. #Algeria $DZD",
   "The peso trades at 1,525 per dollar, its weakest level of the past year. So far in 2026 it has accumulated a 4.8% decline, and compared to a year ago it is down 10.9%. #Argentina $ARS",
   "The taka traded at 123.0 per dollar, nearly unchanged over the past week. At the start of the year it was 122.3, meaning the taka has weakened 0.6% so far in 2026. #Bangladesh $BDT",
-  "same as post"
+  "same as post",
+  "The lira stands at 49.0 against the dollar, at its weakest point since tracking began in 2024. It is also at the bottom of the past year's 17.9% band; a year ago it was at 41.6."
  ]
 }
