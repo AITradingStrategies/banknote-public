@@ -3,13 +3,5 @@
  "alerted_at": {},
  "count": 0,
  "date": "2026-10-01",
- "pending": {
-  "RON": {
-   "bar": 2.0,
-   "outlier": 1.98,
-   "pct": -2.0349215153082634,
-   "rate": 4.7476007194,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
