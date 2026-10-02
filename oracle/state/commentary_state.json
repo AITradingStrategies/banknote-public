@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-01",
- "last_post": 1790895686,
+ "anchors_today": [],
+ "date": "2026-10-02",
+ "last_post": 1790899294,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -81,7 +75,7 @@
   "OMR": 1790035273,
   "PAB": 1790730092,
   "PEN": 1790607698,
-  "PGK": 1790384459,
+  "PGK": 1790899294,
   "PHP": 1790874099,
   "PKR": 1790884880,
   "PYG": 1790524901,
@@ -119,9 +113,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The Pakistani rupee held at 277.0 per dollar, little changed over the past week. It has strengthened 1.1% over the year and has not been stronger in the past 21 days. #Pakistan $PKR",
   "The lempira trades at 26.9 per dollar, practically stable over the past week but at its weakest point of the past year, accumulating a 1.5% drop so far in 2026. #Honduras $HNL",
   "The Guyana dollar sits at 209.2 per US dollar, little changed over the past week. It has held inside a 2.6% band for the past year and moves on about two of every three trading days. #Guyana $GYD",
-  "The rand sits at 16.6 per dollar, down 1.35% over 30 days despite South Africa's factory activity improving in September. Today's fixing saw its six contributing sources disagree by 1.72%, more than four times the usual spread. #SouthAfrica $ZAR"
+  "The rand sits at 16.6 per dollar, down 1.35% over 30 days despite South Africa's factory activity improving in September. Today's fixing saw its six contributing sources disagree by 1.72%, more than four times the usual spread. #SouthAfrica $ZAR",
+  "The kina has slid to 4.462 per dollar, its weakest since tracking began in March 2024. It is down 3.2% over 90 days and remains one of the most volatile currencies tracked, moving on 79% of trading days. #PapuaNewGuinea $PGK"
  ]
 }
