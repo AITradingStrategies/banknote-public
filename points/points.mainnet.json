@@ -30,7 +30,7 @@
   "184": 2,
   "35": 2
  },
- "generated": "2026-10-02T21:01:58+00:00",
+ "generated": "2026-10-02T21:16:31+00:00",
  "network": "mainnet",
  "rates": {
   "citizenBonus": 0.1,
@@ -492,7 +492,7 @@
    "citizenship": 1000,
    "country": 184,
    "handle": null,
-   "holding": 1566.95,
+   "holding": 1567.54,
    "quest": 0,
    "questVerdict": null,
    "seatBank": 40000,
@@ -534,7 +534,7 @@
    "citizenship": 1000,
    "country": 184,
    "handle": null,
-   "holding": 407.04,
+   "holding": 407.1,
    "quest": 2000,
    "questVerdict": "gone",
    "seatBank": 10000,
