@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-02",
- "last_post": 1790945514,
+ "last_post": 1790949712,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -100,7 +101,7 @@
   "TMT": 1790870533,
   "TND": 1790812891,
   "TOP": 1790632890,
-  "TRY": 1790859706,
+  "TRY": 1790949712,
   "TTD": 1790694096,
   "TZS": 1790672492,
   "UAH": 1790438494,
@@ -116,9 +117,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The peso trades at 1,525 per dollar, its weakest level of the past year, 11.6% below its best mark of the period. So far in 2026 it has accumulated a 4.8% decline, with barely a 0.6% drop in the past week. #Argentina $ARS",
   "The leu reaches 4.676 per dollar, its weakest level in the past 365 days, down 6.88% since the start of the year. The 6 sources setting the fixing differ among themselves by 2.23%, versus a usual deviation of 0.24%. #Romania $RON",
   "Dinar at 103.9 to the dollar, weakest in the past 365 days, fifth consecutive day weaker. Five sources involved in fixing the rate differ by 0.99%, against a usual 0.20%. #Serbia $RSD",
-  "The Mexican peso trades at 18.2 per dollar, its weakest level in 90 days. The currency has accumulated a 5.95% drop in the past month, though it remains just 0.4% below where it started the year. #Mexico $MXN"
+  "The Mexican peso trades at 18.2 per dollar, its weakest level in 90 days. The currency has accumulated a 5.95% drop in the past month, though it remains just 0.4% below where it started the year. #Mexico $MXN",
+  "The lira fell to 49.1 against the dollar, its weakest level since tracking began in 2024. The loss since the start of the year has reached 12.36%, a year ago it was at 41.6. #Turkiye $TRY"
  ]
 }
