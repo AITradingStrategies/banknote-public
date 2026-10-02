@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-02",
- "last_post": 1790917356,
+ "last_post": 1790920906,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -69,7 +71,7 @@
   "MYR": 1790647285,
   "MZN": 1790704906,
   "NAD": 1790665293,
-  "NGN": 1790834497,
+  "NGN": 1790920906,
   "NIO": 1790744483,
   "NPR": 1790636485,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The kwanza stands at 917.0/USD, practically stable over the past week. It has gone 9 days without a move of 0.25% and is 2.3% above its weakest point of the past year. #Angola $AOA",
   "The bol\u00edvar falls to 859.6 per dollar, its weakest level in 500 days. It has fallen 65.11% so far in 2026 and 79.55% over the past year, the worst among 132 tracked currencies. #Venezuela $VES",
   "The Comorian franc falls to 434.7 per dollar, its weakest level in 487 days. The spread between the 5 fixing sources reaches 0.84%, against a typical 0.22% for this currency. #Comoros $KMF",
-  "The shilling sits at 3,923/USD, its weakest point of the past year, having shed 3.8% over the past month alone. Dollar demand has been building, Reuters reports. #Uganda $UGX"
+  "The shilling sits at 3,923/USD, its weakest point of the past year, having shed 3.8% over the past month alone. Dollar demand has been building, Reuters reports. #Uganda $UGX",
+  "The naira trades at 1,329/USD, barely moved over the past week. It is up 8.8% so far in 2026, having strengthened from 1,446/USD at the start of the year. #Nigeria $NGN"
  ]
 }
