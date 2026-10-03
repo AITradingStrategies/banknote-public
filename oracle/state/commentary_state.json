@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-03",
- "last_post": 1791003686,
+ "last_post": 1791007288,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -69,7 +71,7 @@
   "MYR": 1790647285,
   "MZN": 1790704906,
   "NAD": 1790665293,
-  "NGN": 1790920906,
+  "NGN": 1791007288,
   "NIO": 1790744483,
   "NPR": 1790982086,
   "OMR": 1790035273,
@@ -113,9 +115,9 @@
   "ZMW": 1790715696
  },
  "recent_posts": [
-  "The Khmer riel stands at 4,055 per dollar, at its weakest point in the past year, though little changed over the past week. Since the start of the year, the currency has weakened by 1.1%. #Cambodia $KHR",
   "The hryvnia holds at 45.0 per dollar, nearly unchanged over the week. Since the start of the year the rate has weakened by 5.55%, trading in a narrow 1.2% band over the past 30 days. #Ukraine $UAH",
   "The quetzal holds at 7.643 per dollar, with no significant change over the past week. It has gone 13 days without a move exceeding 0.25%, within the 1.1% band it has held over the past year. #Guatemala $GTQ",
-  "The Cape Verdean escudo is at 98.0 per dollar, its weakest level in 488 days. The currency has lost 3.65% since the start of the year and is 5.6% below its strongest point of the past year. #CapeVerde $CVE"
+  "The Cape Verdean escudo is at 98.0 per dollar, its weakest level in 488 days. The currency has lost 3.65% since the start of the year and is 5.6% below its strongest point of the past year. #CapeVerde $CVE",
+  "The naira sits at 1,329/USD, barely moved over the past week but up 8.8% since January. It's the 5th-strongest performer of 132 currencies tracked this year, now 10.5% above its weakest point of the past 12 months. #Nigeria $NGN"
  ]
 }
