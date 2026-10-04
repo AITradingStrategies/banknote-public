@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-04",
- "last_post": 1791104492,
+ "last_post": 1791108097,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
   "ALL": 1790956898,
   "AMD": 1791043301,
   "AOA": 1790906486,
-  "ARS": 1791021785,
+  "ARS": 1791108097,
   "AZN": 1790420497,
   "BAM": 1790931698,
   "BBD": 1790409693,
@@ -115,9 +116,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "The naira sits at 1,329 per dollar, barely moved from last week yet up 8.8% for the year \u2014 the 5th-best performance among 132 currencies tracked in 2026. #Nigeria $NGN",
   "The Omani rial stands at 0.385 against the dollar, its strongest level in 34 days. Yet the currency has stayed confined within a band not exceeding 1.6% over the past year. #Oman $OMR",
   "The Lao kip stands at 22,438 per US dollar, its weakest in 30 days. Since the start of the year, the currency has fallen 4.13% from 21,616 per dollar. #Laos $LAK",
-  "The Fijian dollar has slipped to 2.252 per US dollar, its weakest level in 90 days. It has fallen 2.78% over the past 30 days, moving at 1.6 times its typical daily pace. #Fiji $FJD"
+  "The Fijian dollar has slipped to 2.252 per US dollar, its weakest level in 90 days. It has fallen 2.78% over the past 30 days, moving at 1.6 times its typical daily pace. #Fiji $FJD",
+  "The Argentine peso holds at 1,524 per dollar, little changed in the past week and at its weakest level of the past year. So far in 2026 it has lost 4.7%. #Argentina $ARS"
  ]
 }
