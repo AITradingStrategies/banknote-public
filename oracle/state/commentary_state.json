@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-04",
- "last_post": 1791115290,
+ "last_post": 1791118901,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -100,7 +101,7 @@
   "TMT": 1790870533,
   "TND": 1790812891,
   "TOP": 1790632890,
-  "TRY": 1791032494,
+  "TRY": 1791118901,
   "TTD": 1790694096,
   "TZS": 1791082882,
   "UAH": 1790996475,
@@ -116,9 +117,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "The Fijian dollar has slipped to 2.252 per US dollar, its weakest level in 90 days. It has fallen 2.78% over the past 30 days, moving at 1.6 times its typical daily pace. #Fiji $FJD",
   "The Argentine peso holds at 1,524 per dollar, little changed in the past week and at its weakest level of the past year. So far in 2026 it has lost 4.7%. #Argentina $ARS",
   "The baht stands at 33.6 per US dollar, little changed over the past week, but since the start of the year the currency has weakened 6.1% from 31.5 per dollar. #Thailand $THB",
-  "The cedi trades at 11.7 per US dollar, down 10.5% since the start of the year from 10.5. Over the past 30 days alone it has shed 3.8%, among the steepest declines of any currency tracked this year. #Ghana $GHS"
+  "The cedi trades at 11.7 per US dollar, down 10.5% since the start of the year from 10.5. Over the past 30 days alone it has shed 3.8%, among the steepest declines of any currency tracked this year. #Ghana $GHS",
+  "USD/TRY rose to 49.1; this is the weakest level seen since tracking began on 2024-03-06. The rate, which was 43.0 at the start of the year, became the 4th weakest of 132 currencies this year. #Turkiye $TRY"
  ]
 }
