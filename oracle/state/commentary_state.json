@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-10-04",
- "last_post": 1791129738,
+ "last_post": 1791133294,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -80,7 +81,7 @@
   "PAB": 1790730092,
   "PEN": 1790953305,
   "PGK": 1790899294,
-  "PHP": 1791046934,
+  "PHP": 1791133294,
   "PKR": 1791057712,
   "PYG": 1790524901,
   "QAR": 1791068477,
@@ -117,9 +118,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "USD/TRY rose to 49.1; this is the weakest level seen since tracking began on 2024-03-06. The rate, which was 43.0 at the start of the year, became the 4th weakest of 132 currencies this year. #Turkiye $TRY",
   "The denar trades at 54.7 per dollar, its weakest level in the past year. It has lost 2.8% over the last 30 days and 4.0% since the start of the year. #NorthMacedonia $MKD",
   "The Kyrgyz som stands at 87.5 per dollar, its weakest level of the past year. Still, the rate has gone 44 days without moving more than 0.25%, ranking among the 5th steadiest of 132 currencies tracked. #Kyrgyzstan $KGS",
-  "The Djiboutian franc remains at 177.7 per dollar, almost unchanged for a week. It has not moved more than 0.25% in 15 days, and sits close to the 177.9 recorded a year ago. #Djibouti $DJF"
+  "The Djiboutian franc remains at 177.7 per dollar, almost unchanged for a week. It has not moved more than 0.25% in 15 days, and sits close to the 177.9 recorded a year ago. #Djibouti $DJF",
+  "The peso remains at 62.6 per dollar, almost unchanged over the past week. This year, it has fallen 5.8%, from 58.9 at the start of 2026. #Philippines $PHP"
  ]
 }
