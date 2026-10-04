@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-03",
- "last_post": 1791068477,
+ "anchors_today": [],
+ "date": "2026-10-04",
+ "last_post": 1791072079,
  "recent": {
   "AED": 1790550083,
   "AFN": 1790708501,
@@ -21,7 +15,7 @@
   "BDT": 1790852491,
   "BHD": 1790370069,
   "BIF": 1790830883,
-  "BND": 1790640092,
+  "BND": 1791072079,
   "BRL": 1790791321,
   "BSD": 1790816489,
   "BWP": 1790924481,
@@ -119,9 +113,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "The Pakistani rupee stands at 277.0 per dollar, its strongest level in the past 43 days. Over the year, the rupee has stayed within a band of just 2.6%. #Pakistan $PKR",
   "The krona stands at 121.9 against the dollar, 0.9% weaker than a week ago. Since the start of the year it has nonetheless strengthened by 3.0%, and continues to hold within a 1.5% band over the past 30 days. #Iceland $ISK",
   "Zambia's kwacha trades at 19.7 per dollar, its weakest in 90 days, though it remains the 2nd strongest currency in the world over the past year and still up 12.84% since January. #Zambia $ZMW",
-  "The Qatari riyal stands at 3.64 against the dollar, the same level since the start of the year and a full year ago. The currency has not seen a move exceeding 0.25% for 135 consecutive sessions. #Qatar $QAR"
+  "The Qatari riyal stands at 3.64 against the dollar, the same level since the start of the year and a full year ago. The currency has not seen a move exceeding 0.25% for 135 consecutive sessions. #Qatar $QAR",
+  "The Brunei dollar stands at 1.279 against the US dollar, barely changed from last week. Over eight consecutive days, no move exceeding 0.25% has been recorded, and the currency remains 0.7% stronger than a year ago. #Brunei $BND"
  ]
 }
