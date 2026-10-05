@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-05",
- "last_post": 1791201691,
+ "last_post": 1791205289,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -100,7 +101,7 @@
   "TMT": 1790870533,
   "TND": 1791201691,
   "TOP": 1791151295,
-  "TRY": 1791118901,
+  "TRY": 1791205289,
   "TTD": 1791158494,
   "TZS": 1791082882,
   "UAH": 1790996475,
@@ -116,9 +117,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "South Sudan's pound sits at 5,713 to the dollar, its weakest point in the past year. It has lost 20.3% of its value since January and 71.4% over the past year, the second-worst performance of 132 currencies tracked. #SouthSudan $SSP",
   "The Argentine peso trades at 1,524 per dollar, its weakest point of the past year. It has gone eight sessions without a move of 0.25%, and has fallen 4.7% so far in 2026. #Argentina $ARS",
   "The vatu trades at 119.9 per dollar, down 0.9% over the past week and 1.2% over the past month, though it remains 0.7% stronger than where it started the year. #Vanuatu $VUV",
-  "The Tunisian dinar records 2.994 against the dollar, its weakest level in 491 days. The currency has fallen for a sixth consecutive session, and is now 5.7% weaker than its highest point over the past year. #Tunisia $TND"
+  "The Tunisian dinar records 2.994 against the dollar, its weakest level in 491 days. The currency has fallen for a sixth consecutive session, and is now 5.7% weaker than its highest point over the past year. #Tunisia $TND",
+  "The lira stands at 49.1 against the dollar, its lowest point of the past year. There has been no move greater than 0.25 for the past 56 days, but the loss since the start of the year has reached 12.6%. #Turkiye $TRY"
  ]
 }
