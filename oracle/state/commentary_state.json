@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-05",
- "last_post": 1791190535,
+ "last_post": 1791194502,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
   "ALL": 1790956898,
   "AMD": 1791043301,
   "AOA": 1790906486,
-  "ARS": 1791108097,
+  "ARS": 1791194502,
   "AZN": 1790420497,
   "BAM": 1790931698,
   "BBD": 1790409693,
@@ -115,9 +116,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "The naira held near 1,329 per dollar, little changed on the week. It is up 8.7% since January, the fifth-strongest performance among 132 currencies tracked this year. #Nigeria $NGN",
   "The Costa Rican col\u00f3n trades at 458.2 per dollar, its weakest level in 90 days. It has not been weaker in 115 days, and has depreciated 8.4% since the start of the year. #CostaRica $CRC",
   "The Samoan tala has reached 2.763 to the US dollar, its weakest level in the past 90 days. The currency has not been weaker in 258 days, and has fallen 2.23% over the past 30 days. #Samoa $WST",
-  "South Sudan's pound sits at 5,713 to the dollar, its weakest point in the past year. It has lost 20.3% of its value since January and 71.4% over the past year, the second-worst performance of 132 currencies tracked. #SouthSudan $SSP"
+  "South Sudan's pound sits at 5,713 to the dollar, its weakest point in the past year. It has lost 20.3% of its value since January and 71.4% over the past year, the second-worst performance of 132 currencies tracked. #SouthSudan $SSP",
+  "The Argentine peso trades at 1,524 per dollar, its weakest point of the past year. It has gone eight sessions without a move of 0.25%, and has fallen 4.7% so far in 2026. #Argentina $ARS"
  ]
 }
