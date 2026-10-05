@@ -3,5 +3,13 @@
  "alerted_at": {},
  "count": 0,
  "date": "2026-10-05",
- "pending": {}
+ "pending": {
+  "BRL": {
+   "bar": 2.56,
+   "outlier": 4.4,
+   "pct": 5.085319529869148,
+   "rate": 4.9751008843,
+   "seen": 1
+  }
+ }
 }
