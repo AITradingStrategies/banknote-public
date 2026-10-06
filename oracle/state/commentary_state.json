@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-06",
- "last_post": 1791264669,
+ "last_post": 1791268279,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -69,7 +71,7 @@
   "MYR": 1791075687,
   "MZN": 1791239469,
   "NAD": 1791036078,
-  "NGN": 1791180080,
+  "NGN": 1791268279,
   "NIO": 1791212491,
   "NPR": 1790982086,
   "OMR": 1791097301,
@@ -113,9 +115,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "While the Maldivian rufiyaa stands at 15.5 per dollar, this is the weakest level of the past year. It has gone 127 days without a move greater than 0.25%. #Maldives $MVR",
   "The bol\u00edvar trades at 869.0 per dollar, its weakest level in 365 days. It falls 22.8% over 90 days and has lost 65.46% year to date, the worst performance among 132 currencies tracked. #Venezuela $VES",
   "The Comorian franc trades at 439.1 per dollar, its lowest level in 365 days. It has fallen 2.2% over 90 days and had not been this weak in 502 days. #Comoros $KMF",
-  "The Ugandan shilling sits at 3,989/USD, its weakest point of the past year. It is down 9.2% so far in 2026 and ranks 5th weakest among 132 currencies tracked over the period. #Uganda $UGX"
+  "The Ugandan shilling sits at 3,989/USD, its weakest point of the past year. It is down 9.2% so far in 2026 and ranks 5th weakest among 132 currencies tracked over the period. #Uganda $UGX",
+  "The naira sits at 1,327/USD, barely moved from a week ago. It is up 8.9% this year, the 5th strongest performance among 132 currencies tracked. #Nigeria $NGN"
  ]
 }
