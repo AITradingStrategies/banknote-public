@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-06",
- "last_post": 1791289918,
+ "last_post": 1791293135,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -100,7 +101,7 @@
   "TMT": 1791226888,
   "TND": 1791201691,
   "TOP": 1791151295,
-  "TRY": 1791205289,
+  "TRY": 1791293135,
   "TTD": 1791158494,
   "TZS": 1791082882,
   "UAH": 1790996475,
@@ -116,9 +117,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "The convertible mark trades at 1.743 to the dollar, its weakest in the past 365 days. The rate has fallen 3.71% over the past 30 days, after trading all year within a narrow 7.2% band. #BosniaAndHerzegovina $BAM",
   "The Argentine peso trades at 1,523/USD, its weakest level since tracking began in March 2024. The daily drop of 0.56% is the largest in 41 sessions. #Argentina $ARS",
   "The leu trades at 4.762/USD, its weakest level in the past 365 days. The currency has weakened 9.2% since the start of the year, and the prolonged political crisis, marked by the nomination of a fourth prime-minister candidate, remains unresolved. #Romania $RON",
-  "The dinar stands at 104.6 to the dollar, its weakest level in the past 502 days. It has weakened 4.41% since the start of the year, and in just the past 30 days it fell 3.3%. #Serbia $RSD"
+  "The dinar stands at 104.6 to the dollar, its weakest level in the past 502 days. It has weakened 4.41% since the start of the year, and in just the past 30 days it fell 3.3%. #Serbia $RSD",
+  "USD/TRY stands at 49.2, the weakest point since tracking began in March 2024. The lira has lost 12.6% since the start of the year, having stood at 41.7 a year ago. #Turkiye $TRY"
  ]
 }
