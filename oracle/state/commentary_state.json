@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-06",
- "last_post": 1791279084,
+ "last_post": 1791282681,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
   "ALL": 1790956898,
   "AMD": 1791043301,
   "AOA": 1790906486,
-  "ARS": 1791194502,
+  "ARS": 1791282681,
   "AZN": 1790420497,
   "BAM": 1791279084,
   "BBD": 1790409693,
@@ -115,9 +116,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "The naira sits at 1,327/USD, barely moved from a week ago. It is up 8.9% this year, the 5th strongest performance among 132 currencies tracked. #Nigeria $NGN",
   "The Liberian dollar sits at 171.2/USD, little changed over the past week. It is still up 4.1% over both the past 30 days and year to date, the strongest showing among 132 currencies tracked this month. #Liberia $LRD",
   "The Moroccan dirham trades at 9.946 per dollar, down 7.5% since the start of the year and 5.0% over the past 30 days. The currency remains 8.3% below its strongest point of the past year. #Morocco $MAD",
-  "The convertible mark trades at 1.743 to the dollar, its weakest in the past 365 days. The rate has fallen 3.71% over the past 30 days, after trading all year within a narrow 7.2% band. #BosniaAndHerzegovina $BAM"
+  "The convertible mark trades at 1.743 to the dollar, its weakest in the past 365 days. The rate has fallen 3.71% over the past 30 days, after trading all year within a narrow 7.2% band. #BosniaAndHerzegovina $BAM",
+  "The Argentine peso trades at 1,523/USD, its weakest level since tracking began in March 2024. The daily drop of 0.56% is the largest in 41 sessions. #Argentina $ARS"
  ]
 }
