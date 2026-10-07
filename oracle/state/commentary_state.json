@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-07",
- "last_post": 1791351079,
+ "last_post": 1791354681,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -69,7 +71,7 @@
   "MYR": 1791075687,
   "MZN": 1791239469,
   "NAD": 1791036078,
-  "NGN": 1791268279,
+  "NGN": 1791354681,
   "NIO": 1791212491,
   "NPR": 1791329470,
   "OMR": 1791097301,
@@ -113,9 +115,9 @@
   "ZMW": 1791064898
  },
  "recent_posts": [
-  "The riel traded at 4,059 per dollar, little changed this week, but this is its weakest point over the past year, down 1.1% since the start of the year. #Cambodia $KHR",
   "The Barbados dollar held at 2 per US dollar, unchanged from a year ago and from the start of this year. It has gone 16 straight days without moving as much as 0.25%. #Barbados $BBD",
   "The Bahamian dollar held at 1 to the US dollar, unchanged from a year ago and from the start of 2026. It has gone 141 days without moving as much as 0.25%, the 4th steadiest currency of 132 tracked. #Bahamas $BSD",
-  "The Cape Verdean escudo is at 98.0 per dollar, its weakest level in the last 365 days. The currency has fallen 4.79% since the start of the year, from 93.9 a year ago. #CapeVerde $CVE"
+  "The Cape Verdean escudo is at 98.0 per dollar, its weakest level in the last 365 days. The currency has fallen 4.79% since the start of the year, from 93.9 a year ago. #CapeVerde $CVE",
+  "The naira firmed to 1,325 per dollar, up 0.38% on the day, its biggest daily move in 34 days. It has not been this strong in 27 days and is now 3.8% firmer than three months ago. #Nigeria $NGN"
  ]
 }
