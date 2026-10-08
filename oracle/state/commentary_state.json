@@ -3,10 +3,11 @@
   "NGN",
   "ARS",
   "TRY",
-  "PHP"
+  "PHP",
+  "PKR"
  ],
  "date": "2026-10-08",
- "last_post": 1791487924,
+ "last_post": 1791491482,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -82,7 +83,7 @@
   "PEN": 1791300717,
   "PGK": 1790899294,
   "PHP": 1791480675,
-  "PKR": 1791405076,
+  "PKR": 1791491482,
   "PYG": 1791246664,
   "QAR": 1791068477,
   "RON": 1791286294,
@@ -118,9 +119,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "The manat remains at 1.7 against the dollar, unchanged from the start of the year. For the past 18 days no move greater than 0.25% has been recorded. #Azerbaijan $AZN",
   "The peso remains at 62.8 per dollar, almost unchanged over the past week. However, this is its weakest level of the past year, down 6.1% from the start of 2026. #Philippines $PHP",
   "The Jordanian dinar stands at 0.709 dollars, the same level as a year ago and at the start of the year. For 943 days it has not recorded a move greater than 0.25%, remaining the second steadiest among 132 currencies tracked. #Jordan $JOD",
-  "The real was quoted at 5.004 per dollar, its best level in 146 days. The currency has gained 10.65% this year and is the strongest among 132 currencies tracked this month."
+  "The real was quoted at 5.004 per dollar, its best level in 146 days. The currency has gained 10.65% this year and is the strongest among 132 currencies tracked this month.",
+  "The Pakistani rupee is stable at 276.9 per dollar, with no significant change over the past week. The rupee has strengthened 1.2% so far this year, and for 12 consecutive days no move greater than 0.25% has been recorded. #Pakistan $PKR"
  ]
 }
