@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-08",
- "last_post": 1791451893,
+ "last_post": 1791455497,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
   "ALL": 1791304289,
   "AMD": 1791397906,
   "AOA": 1790906486,
-  "ARS": 1791369084,
+  "ARS": 1791455497,
   "AZN": 1790420497,
   "BAM": 1791279084,
   "BBD": 1791343860,
@@ -115,9 +116,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "The naira trades at 1,328 to the dollar, barely moved from a week ago but up 9.0% since January, from 1,446 at the start of the year. It now ranks as the 5th strongest performer among 132 currencies tracked over the past year. #Nigeria $NGN",
   "The Kuwaiti dinar records 0.309 against the dollar, its weakest level in 67 days. The five fixing sources diverge by 0.50% this time, compared to a usual 0.30%. #Kuwait $KWD",
   "The Guyana dollar held at 209.2 to the US dollar, little changed over the past week and barely off the 209.3 it started the year at. #Guyana $GYD",
-  "The Fiji dollar sits at 2.253 to the US dollar, little changed over the past week. It's down 2.2% over 30 days yet still up 1.0% for the year, within a band that has held to 3.1% over the past month. #Fiji $FJD"
+  "The Fiji dollar sits at 2.253 to the US dollar, little changed over the past week. It's down 2.2% over 30 days yet still up 1.0% for the year, within a band that has held to 3.1% over the past month. #Fiji $FJD",
+  "The peso trades at 1,520 per dollar, practically stable over the past week. For the year it has fallen 4.5%, within a 13.6% band it has held for the past year."
  ]
 }
