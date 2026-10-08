@@ -3,13 +3,5 @@
  "alerted_at": {},
  "count": 0,
  "date": "2026-10-08",
- "pending": {
-  "IQD": {
-   "bar": 2.0,
-   "outlier": 15.23,
-   "pct": -13.26273712671644,
-   "rate": 1511.000244185,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
