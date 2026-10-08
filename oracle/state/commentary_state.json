@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-10-08",
- "last_post": 1791477106,
+ "last_post": 1791480675,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -80,7 +81,7 @@
   "PAB": 1790730092,
   "PEN": 1791300717,
   "PGK": 1790899294,
-  "PHP": 1791394281,
+  "PHP": 1791480675,
   "PKR": 1791405076,
   "PYG": 1791246664,
   "QAR": 1791068477,
@@ -117,9 +118,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "Against the dollar the lira fell to 49.2; this is the weakest level tracked since March 2024. Having lost 15.2% over the past year, the lira is the fourth weakest of 132 currencies this year.",
   "The denar trades at 54.8 per dollar, the weakest level in the past year, 6.1% below its highest point. The five sources for fixing the rate diverge by 1.33%, against a usual 0.55%. #NorthMacedonia $MKD",
   "The som stands at 87.5 against the dollar, matching both its level a year ago and at the start of the year. For 48 days there has been no move greater than 0.25% \u2014 the fifth steadiest of 132 currencies tracked. #Kyrgyzstan $KGS",
-  "The manat remains at 1.7 against the dollar, unchanged from the start of the year. For the past 18 days no move greater than 0.25% has been recorded. #Azerbaijan $AZN"
+  "The manat remains at 1.7 against the dollar, unchanged from the start of the year. For the past 18 days no move greater than 0.25% has been recorded. #Azerbaijan $AZN",
+  "The peso remains at 62.8 per dollar, almost unchanged over the past week. However, this is its weakest level of the past year, down 6.1% from the start of 2026. #Philippines $PHP"
  ]
 }
