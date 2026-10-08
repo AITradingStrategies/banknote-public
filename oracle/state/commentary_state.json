@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-08",
- "last_post": 1791437480,
+ "last_post": 1791441079,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -69,7 +71,7 @@
   "MYR": 1791075687,
   "MZN": 1791239469,
   "NAD": 1791383520,
-  "NGN": 1791354681,
+  "NGN": 1791441079,
   "NIO": 1791212491,
   "NPR": 1791329470,
   "OMR": 1791097301,
@@ -113,9 +115,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "The Mauritanian ouguiya stands at 40.0 to the dollar, nearly unchanged over the past week, up 0.6% over the past month, but still weaker by 0.7% since the start of the year. #Mauritania $MRU",
   "The quetzal stands at 7.638 per dollar, practically unchanged over the past week and with 18 days without a move of 0.25%. Over the year it has gained 0.5%. #Guatemala $GTQ",
   "The Bahraini dinar stands at 0.376 against the dollar, its strongest level in 552 days. The currency has not moved by more than 0.25% over 94 consecutive sessions. #Bahrain $BHD",
-  "The Lebanese lira records 89,500 against the dollar, down 0.5% over the past week. The rate moves on 89% of trading days, within an annual range that has not exceeded 8.7%. #Lebanon $LBP"
+  "The Lebanese lira records 89,500 against the dollar, down 0.5% over the past week. The rate moves on 89% of trading days, within an annual range that has not exceeded 8.7%. #Lebanon $LBP",
+  "The naira trades at 1,328 to the dollar, barely moved from a week ago but up 9.0% since January, from 1,446 at the start of the year. It now ranks as the 5th strongest performer among 132 currencies tracked over the past year. #Nigeria $NGN"
  ]
 }
