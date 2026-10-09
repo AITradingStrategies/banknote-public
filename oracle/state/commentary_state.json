@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-09",
- "last_post": 1791523857,
+ "last_post": 1791527469,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -69,7 +71,7 @@
   "MYR": 1791075687,
   "MZN": 1791239469,
   "NAD": 1791383520,
-  "NGN": 1791441079,
+  "NGN": 1791527469,
   "NIO": 1791212491,
   "NPR": 1791329470,
   "OMR": 1791097301,
@@ -113,9 +115,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "The Solomon Islands dollar sits at 8.07 per US dollar, little changed over the past week despite a 1.2% slide over the last month. It remains up 3.9% from a year ago, when it traded at 8.384. #SolomonIslands $SBD",
   "The TT dollar sits at 6.773 per US dollar, barely changed from this time last week. It has held within a 1.3% band for the past month and a 1.5% band over the entire year.",
   "The Moldovan leu stands at 17.8 per dollar, stable over the past week. However, over 30 days it has lost 3.4%, and since the start of the year it is weaker by 5.7%. #Moldova $MDL",
-  "The dalasi trades at 74.3 per dollar, little changed over the past week. It is 1.5% weaker than a year ago, when it stood at 73.1, though it has held within a 4.2% band over that span. #Gambia $GMD"
+  "The dalasi trades at 74.3 per dollar, little changed over the past week. It is 1.5% weaker than a year ago, when it stood at 73.1, though it has held within a 4.2% band over that span. #Gambia $GMD",
+  "The naira trades at 1,330/USD, barely moved this week. It sits 8.8% stronger than where 2026 began, and 10.0% above its weakest point of the past year. #Nigeria $NGN"
  ]
 }
