@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-10",
- "last_post": 1791635467,
+ "last_post": 1791639099,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
@@ -100,7 +101,7 @@
   "TMT": 1791226888,
   "TND": 1791549096,
   "TOP": 1791595860,
-  "TRY": 1791552673,
+  "TRY": 1791639099,
   "TTD": 1791516662,
   "TZS": 1791082882,
   "UAH": 1791423079,
@@ -116,9 +117,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "The Moroccan dirham stands at 9.9 per dollar, down 5.5% over the past month and 8.1% since the start of the year, its weakest level since the beginning of this year. #Morocco $MAD",
   "The Argentine peso trades at 1,517 per dollar, up 0.5% over the past week despite falling 4.3% so far this year, within a 1.7% band it has held for 30 days. #Argentina $ARS",
   "The convertible mark stands at 1.745 to the dollar, almost unchanged from last week. Still, over the past 30 days it has weakened 3.4%, and since the start of the year it is down 4.3%, currently at its weakest point in the past year. #BosniaAndHerzegovina $BAM",
-  "The leu trades at 4.765 per dollar, almost unchanged from last week, but at its weakest level in the past year. Since the start of the year it has lost 8.8%. #Romania $RON"
+  "The leu trades at 4.765 per dollar, almost unchanged from last week, but at its weakest level in the past year. Since the start of the year it has lost 8.8%. #Romania $RON",
+  "The lira fell to 49.3 against the dollar, its weakest level since tracking began in 2024. The daily loss of 0.21% is the sharpest move in the last 35 days. Meanwhile, the gap between the 6 sources setting the fix widened to 0.40%, several times the usual level. #Turkiye $TRY"
  ]
 }
