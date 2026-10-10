@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-10",
- "last_post": 1791624670,
+ "last_post": 1791628261,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791176494,
   "ALL": 1791304289,
   "AMD": 1791397906,
   "AOA": 1791574278,
-  "ARS": 1791541905,
+  "ARS": 1791628261,
   "AZN": 1791477106,
   "BAM": 1791279084,
   "BBD": 1791343860,
@@ -115,9 +116,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "The naira sits at 1,331/USD, barely moved this week and down just 0.7% over the past month. It's up 8.7% since the start of the year, having traded as high as 1,446/USD in January. Fitch has revised Nigeria's outlook to positive. #Nigeria $NGN",
   "The Comorian franc trades at 439.0 per dollar, stable over the week but down 3.4% over thirty days, at its lowest point of the past year. #Comoros $KMF",
   "The Iraqi dinar fell 12.99% in a single day to 1,514 against the dollar, the largest daily drop recorded since tracking began in March 2024, bringing the currency to its weakest level ever. Iraq announced a devaluation of its currency amid opposition from some MPs. #Iraq $IQD",
-  "The Moroccan dirham stands at 9.9 per dollar, down 5.5% over the past month and 8.1% since the start of the year, its weakest level since the beginning of this year. #Morocco $MAD"
+  "The Moroccan dirham stands at 9.9 per dollar, down 5.5% over the past month and 8.1% since the start of the year, its weakest level since the beginning of this year. #Morocco $MAD",
+  "The Argentine peso trades at 1,517 per dollar, up 0.5% over the past week despite falling 4.3% so far this year, within a 1.7% band it has held for 30 days. #Argentina $ARS"
  ]
 }
