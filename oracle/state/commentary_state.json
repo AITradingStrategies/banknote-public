@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-11",
- "last_post": 1791696667,
+ "last_post": 1791700271,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -69,7 +71,7 @@
   "MYR": 1791075687,
   "MZN": 1791239469,
   "NAD": 1791383520,
-  "NGN": 1791613867,
+  "NGN": 1791700271,
   "NIO": 1791212491,
   "NPR": 1791675074,
   "OMR": 1791559888,
@@ -113,9 +115,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "The afghani trades at 64.9 against the dollar, nearly unchanged over the past week. Still, it has strengthened 1.2% since the start of the year and 3.1% over the past year.\n#Afghanistan $AFN",
   "The lempira trades at 26.8 per dollar, its weakest level of the past year. Over the week it has barely moved, but it has accumulated a 1.4% drop so far in 2026. #Honduras $HNL",
   "The kwacha sits at 1,734 per dollar, barely different from the 1,735 it traded at both a year ago and at the start of 2026. It has held inside a 1.2% band all year, moving on roughly two of every three days. #Malawi $MWK",
-  "The Somali shilling stands at 571.4 to the dollar, unchanged this week. A year ago it was 571.3, and at the start of the year 571.5 \u2014 whenever it moves, it stays within a band of about 3.7% over the past 30 days. #Somalia $SOS"
+  "The Somali shilling stands at 571.4 to the dollar, unchanged this week. A year ago it was 571.3, and at the start of the year 571.5 \u2014 whenever it moves, it stays within a band of about 3.7% over the past 30 days. #Somalia $SOS",
+  "The naira held near 1,331/USD, little changed over the past week and down just 0.6% over 30 days. It remains 8.7% stronger on the year, from 1,446 at the start of January. #Nigeria $NGN"
  ]
 }
