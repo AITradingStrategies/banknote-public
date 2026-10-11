@@ -30,7 +30,7 @@
   "184": 2,
   "35": 2
  },
- "generated": "2026-10-10T20:33:15+00:00",
+ "generated": "2026-10-11T05:49:38+00:00",
  "network": "mainnet",
  "rates": {
   "citizenBonus": 0.1,
@@ -492,12 +492,12 @@
    "citizenship": 1000,
    "country": 184,
    "handle": null,
-   "holding": 2001.19,
+   "holding": 2022.22,
    "quest": 0,
    "questVerdict": null,
    "seatBank": 40000,
    "seats": 8,
-   "total": 43416,
+   "total": 43437,
    "trade": 415
   },
   "0x6947fc8d4661b205916907a1c486328cea8ba041": {
@@ -534,12 +534,12 @@
    "citizenship": 1000,
    "country": 184,
    "handle": null,
-   "holding": 452.74,
+   "holding": 454.95,
    "quest": 2000,
    "questVerdict": "gone",
    "seatBank": 10000,
    "seats": 2,
-   "total": 18610,
+   "total": 18612,
    "trade": 5157
   },
   "0xd376f87249f959555efd518129e29d4d792d4847": {
@@ -548,7 +548,7 @@
    "citizenship": 1000,
    "country": 166,
    "handle": "armadsjt",
-   "holding": 2256.26,
+   "holding": 2256.29,
    "quest": 2000,
    "questVerdict": "ok",
    "seatBank": 100000,
