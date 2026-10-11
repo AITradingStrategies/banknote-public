@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-11",
- "last_post": 1791721885,
+ "last_post": 1791725478,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -100,7 +101,7 @@
   "TMT": 1791226888,
   "TND": 1791549096,
   "TOP": 1791595860,
-  "TRY": 1791639099,
+  "TRY": 1791725478,
   "TTD": 1791516662,
   "TZS": 1791082882,
   "UAH": 1791423079,
@@ -116,9 +117,9 @@
   "ZMW": 1791412268
  },
  "recent_posts": [
-  "The rufiyaa holds at 15.4 to the dollar, little changed over the past week. This is its weakest level of the past year, and it has gone 132 days without a move of 0.25%. #Maldives $MVR",
   "The peso trades at 1,517 per dollar, practically unchanged over the past week. So far this year it has accumulated a 4.3% drop, starting from 1,451 in January. #Argentina $ARS",
   "The Yemeni rial stands at 236.2 per dollar, little changed this week. That makes 63 days without a move exceeding 0.25%, keeping it the 8th steadiest among 132 currencies tracked. #Yemen $YER",
-  "The Algerian dinar registers 134.4 against the dollar, its weakest level in 557 days. The currency has lost 3.8% since the start of the year, coming from 129.6 dinars in January. #Algeria $DZD"
+  "The Algerian dinar registers 134.4 against the dollar, its weakest level in 557 days. The currency has lost 3.8% since the start of the year, coming from 129.6 dinars in January. #Algeria $DZD",
+  "The dollar/TL rate rose to 49.3, up 0.23% day on day, the sharpest move in the last 43 days. The lira is at its weakest level since data tracking began in 2024, well below the 43.0 level at the start of the year. #Turkiye $TRY"
  ]
 }
