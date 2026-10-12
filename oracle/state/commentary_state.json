@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-11",
- "last_post": 1791761464,
+ "anchors_today": [],
+ "date": "2026-10-12",
+ "last_post": 1791765066,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -55,7 +49,7 @@
   "KMF": 1791617470,
   "KWD": 1791444698,
   "KZT": 1791372721,
-  "LAK": 1791100885,
+  "LAK": 1791765066,
   "LBP": 1791437480,
   "LKR": 1791147679,
   "LRD": 1791660679,
@@ -119,9 +113,9 @@
   "ZMW": 1791757877
  },
  "recent_posts": [
-  "The rupee stands steady at 277.0 per dollar, little changed over the past week. It is up 1.2% since the start of the year, and has gone 15 straight days without a move past 0.25%. #Pakistan $PKR",
   "The metical stands at 63.8 per dollar, practically stable over the past week \u2014 and at its weakest point of the past year. It has now been 77 days without a move of 0.25%. #Mozambique $MZN",
   "The kwacha trades at 19.9 per dollar, down 3.0% over the past month even as it remains up 11.8% for the year \u2014 the third-strongest performer of 132 currencies tracked in 2026. #Zambia $ZMW",
-  "The Qatari riyal stands at 3.64 per dollar, the same level since the start of the year and a year ago. It has not moved 0.25% for 143 consecutive days, making it the 7th steadiest among 132 currencies tracked. #Qatar $QAR"
+  "The Qatari riyal stands at 3.64 per dollar, the same level since the start of the year and a year ago. It has not moved 0.25% for 143 consecutive days, making it the 7th steadiest among 132 currencies tracked. #Qatar $QAR",
+  "The Lao kip stands at 22,349 per dollar, little changed over the past week. But since the start of the year it has weakened 3.7%, and is 5.2% below its strongest point of the past year. #Laos $LAK"
  ]
 }
