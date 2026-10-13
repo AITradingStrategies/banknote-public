@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-13",
- "last_post": 1791869474,
+ "last_post": 1791873067,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -69,7 +71,7 @@
   "MYR": 1791075687,
   "MZN": 1791754266,
   "NAD": 1791865867,
-  "NGN": 1791786663,
+  "NGN": 1791873067,
   "NIO": 1791736281,
   "NPR": 1791675074,
   "OMR": 1791559888,
@@ -113,9 +115,9 @@
   "ZMW": 1791757877
  },
  "recent_posts": [
-  "The Mauritian rupee trades at 47.5 per dollar, up 1.9% over the week but down 2.7% since the start of the year. It stood at 45.5/USD a year ago. #Mauritius $MUR",
   "The lilangeni stands at 16.5 per dollar, up 1.4% over the past week but down 2.2% over the last month. It traded at 17.5/USD a year ago, leaving it 6.0% stronger over that span. #Eswatini $SZL",
   "The Namibian dollar trades at 16.5 per US dollar, up 1.4% on the week despite a 2.2% slide over the past month. It is little changed from where it began the year, and 6.0% stronger than a year ago. #Namibia $NAD",
-  "The Moldovan leu trades at 17.8 per dollar, nearly unchanged over the past week. However, over the past 30 days it has lost 3.4%, and since the start of the year it is weaker by 6.1%, its weakest level of the past year. #Moldova $MDL"
+  "The Moldovan leu trades at 17.8 per dollar, nearly unchanged over the past week. However, over the past 30 days it has lost 3.4%, and since the start of the year it is weaker by 6.1%, its weakest level of the past year. #Moldova $MDL",
+  "The naira holds at 1,331 per dollar, barely moved over the past week. It has still gained 8.6% this year, up from 1,446/USD in January and 1,464/USD a year ago. #Nigeria $NGN"
  ]
 }
