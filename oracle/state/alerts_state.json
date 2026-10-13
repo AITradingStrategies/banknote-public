@@ -1,15 +1,11 @@
 {
- "alerted": [],
- "alerted_at": {},
- "count": 0,
+ "alerted": [
+  "ALL"
+ ],
+ "alerted_at": {
+  "ALL": 1791922382
+ },
+ "count": 1,
  "date": "2026-10-13",
- "pending": {
-  "ALL": {
-   "bar": 2.0,
-   "outlier": 2.79,
-   "pct": -2.917453957514249,
-   "rate": 84.3200138965,
-   "seen": 1
-  }
- }
+ "pending": {}
 }
