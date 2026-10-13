@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-13",
- "last_post": 1791883898,
+ "last_post": 1791887477,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
   "ALL": 1791649927,
   "AMD": 1791855065,
   "AOA": 1791574278,
-  "ARS": 1791801068,
+  "ARS": 1791887477,
   "AZN": 1791847882,
   "BAM": 1791631870,
   "BBD": 1791743486,
@@ -115,9 +116,9 @@
   "ZMW": 1791757877
  },
  "recent_posts": [
-  "The naira holds at 1,331 per dollar, barely moved over the past week. It has still gained 8.6% this year, up from 1,446/USD in January and 1,464/USD a year ago. #Nigeria $NGN",
   "The Icelandic krona stands at 122.1 against the dollar, nearly unchanged for the week. It has given back 1.5% over the past 30 days but is still 2.6% stronger since the start of the year. #Iceland $ISK",
   "The Jordanian dinar stands at 0.709 to the dollar, the same level as a year ago and at the start of the year. The currency has not moved by 0.25% in 948 days, and is the 2nd steadiest among 132 currencies tracked. #Jordan $JOD",
-  "The lari stands at 2.594 against the dollar, nearly unchanged over the past week. This year it has strengthened by 3.8%, it was 2.692 at the start of the year, and it is 5.1% above its yearly low. #Georgia $GEL"
+  "The lari stands at 2.594 against the dollar, nearly unchanged over the past week. This year it has strengthened by 3.8%, it was 2.692 at the start of the year, and it is 5.1% above its yearly low. #Georgia $GEL",
+  "The Argentine peso trades at 1,517 per dollar, 1.0% firmer than a week ago. So far this year it has fallen 4.3% and has gone six sessions without moving more than 0.25%."
  ]
 }
