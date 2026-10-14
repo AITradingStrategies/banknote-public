@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-14",
- "last_post": 1791954020,
+ "last_post": 1791957618,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -69,7 +71,7 @@
   "MYR": 1791954020,
   "MZN": 1791754266,
   "NAD": 1791865867,
-  "NGN": 1791873067,
+  "NGN": 1791957618,
   "NIO": 1791736281,
   "NPR": 1791675074,
   "OMR": 1791932416,
@@ -113,9 +115,9 @@
   "ZMW": 1791757877
  },
  "recent_posts": [
-  "The Mauritanian ouguiya records 40.3 to the dollar, up 0.6% over the past week. The currency has stayed within a band of no more than 1.1% over the past 30 days, despite moving on 82% of trading days. #Mauritania $MRU",
   "The dobra stands at 22.0 per dollar, practically stable over the past week. However, it has accumulated a 3.7% drop over 30 days and 4.7% since the start of the year. #SaoTomeAndPrincipe $STN",
   "The bol\u00edvar trades at 875.4 per dollar, its weakest level of the past year. It has accumulated a drop of 65.8% so far in 2026 and 4.6% over the past 30 days, the largest depreciation among 132 currencies in that span. #Venezuela $VES",
-  "The Malaysian ringgit trades at 4.086 per dollar, 24 days running without a move exceeding 0.25%. Still, it remains 3.4% stronger than a year ago even as it is down slightly 0.7% since the start of the year. #Malaysia $MYR"
+  "The Malaysian ringgit trades at 4.086 per dollar, 24 days running without a move exceeding 0.25%. Still, it remains 3.4% stronger than a year ago even as it is down slightly 0.7% since the start of the year. #Malaysia $MYR",
+  "The naira holds near 1,330 per dollar, barely moved over the past week. It remains 8.9% stronger than at the start of the year and 10% above its weakest point of the past 12 months. #Nigeria $NGN"
  ]
 }
