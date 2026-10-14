@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-13",
- "last_post": 1791935658,
+ "anchors_today": [],
+ "date": "2026-10-14",
+ "last_post": 1791939616,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -60,7 +54,7 @@
   "LKR": 1791925309,
   "LRD": 1791660679,
   "LSL": 1791903806,
-  "LYD": 1791592260,
+  "LYD": 1791939616,
   "MAD": 1791624670,
   "MDL": 1791869474,
   "MGA": 1791739884,
@@ -119,9 +113,9 @@
   "ZMW": 1791757877
  },
  "recent_posts": [
-  "The Sri Lankan rupee stands at 331.0 to the dollar, little changed over almost the whole past week. Though the rupee has weakened 6.3% this year, there has been no move greater than 0.25% over the past 19 days. #SriLanka $LKR",
   "The Samoan tala is at 2.775 to the dollar, little changed over the past week. However it has fallen 1.8% over the past 30 days, though still within a 2.4% band for that period. #Samoa $WST",
   "The Omani rial is steady at 0.385 against the dollar, the same level it was a year ago and at the start of this year. The currency has not seen a move exceeding 0.25% for 42 straight days. #Oman $OMR",
-  "The rand sits at 16.5 to the dollar, up 1.4% over the past week despite a 2.2% slide over the past month. Over the past year it's firmed 6.0%, now 5.9% above its weakest point in that span. #SouthAfrica $ZAR"
+  "The rand sits at 16.5 to the dollar, up 1.4% over the past week despite a 2.2% slide over the past month. Over the past year it's firmed 6.0%, now 5.9% above its weakest point in that span. #SouthAfrica $ZAR",
+  "The Libyan dinar records 6.427 against the dollar, at its weakest level over the past year. It has fallen 15.7% since the start of 2026, making it the third weakest currency among 132 currencies over this period. #Libya $LYD"
  ]
 }
