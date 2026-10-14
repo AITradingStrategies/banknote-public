@@ -1,11 +1,7 @@
 {
- "alerted": [
-  "ALL"
- ],
- "alerted_at": {
-  "ALL": 1791922382
- },
- "count": 1,
- "date": "2026-10-13",
+ "alerted": [],
+ "alerted_at": {},
+ "count": 0,
+ "date": "2026-10-14",
  "pending": {}
 }
