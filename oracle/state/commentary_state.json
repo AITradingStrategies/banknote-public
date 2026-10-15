@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-15",
- "last_post": 1792040471,
+ "last_post": 1792044074,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -69,7 +71,7 @@
   "MYR": 1791954020,
   "MZN": 1791754266,
   "NAD": 1791865867,
-  "NGN": 1791957618,
+  "NGN": 1792044074,
   "NIO": 1791736281,
   "NPR": 1792022469,
   "OMR": 1791932416,
@@ -113,9 +115,9 @@
   "ZMW": 1791757877
  },
  "recent_posts": [
-  "The rupiah stands at 17,919 per dollar, stable over the past week. However, this year it has weakened 6.8%, and it is now 7.7% below its strongest point of the past year.",
   "The Solomon Islands dollar firmed 0.45% against the US dollar, its largest daily move in 31 days, to 8.065. It had traded in a 1.0% band over the past month and moves just 0.18% on a typical day. #SolomonIslands $SBD",
   "The kwanza is trading at 918.5/USD, its strongest level in 245 days. It is 2.9% above the weakest point of the past year, having moved just 3.1% over that period. #Angola $AOA",
-  "The hryvnia is trading at 45.1 per dollar \u2014 the weakest level since observations began on March 6, 2024. A year ago the rate was 41.7, meaning a 7.8% weakening from the year's strongest mark. #Ukraine $UAH"
+  "The hryvnia is trading at 45.1 per dollar \u2014 the weakest level since observations began on March 6, 2024. A year ago the rate was 41.7, meaning a 7.8% weakening from the year's strongest mark. #Ukraine $UAH",
+  "The naira sits at 1,330/USD, barely budged over the past week. Zoom out, though: it's up 9.2% since January and 10.2% above its weakest point of the past year. #Nigeria $NGN"
  ]
 }
