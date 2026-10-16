@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-16",
- "last_post": 1792141272,
+ "last_post": 1792144870,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
   "ALL": 1792000817,
   "AMD": 1791855065,
   "AOA": 1792036871,
-  "ARS": 1792062071,
+  "ARS": 1792144870,
   "AZN": 1791847882,
   "BAM": 1791979221,
   "BBD": 1791743486,
@@ -115,9 +116,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The naira slipped 0.47% to 1,331 per dollar, its sharpest daily move in 44 days. It remains 3.7% stronger than three months ago, and well off the 1,457 level seen a year ago. #Nigeria $NGN",
   "The Bahamian dollar remains pegged at 1 to the US dollar, exactly where it stood a year ago and at the start of the year. It has gone 151 days without moving more than 0.25%. #Bahamas $BSD",
   "The Belarusian ruble holds at 3.02 per dollar, having strengthened 1.5% over the week. Over the year the ruble gained 12.5%, remaining the fifth strongest of 132 world currencies. #Belarus $BYN",
-  "The Kuwaiti dinar stands at 0.311 to the dollar, its weakest level in the past year, after falling 0.8% over the past 30 days. This comes as reports speak of rising debt burdens amid oil market turmoil. #Kuwait $KWD"
+  "The Kuwaiti dinar stands at 0.311 to the dollar, its weakest level in the past year, after falling 0.8% over the past 30 days. This comes as reports speak of rising debt burdens amid oil market turmoil. #Kuwait $KWD",
+  "The Argentine peso trades at 1,513 per dollar, practically unchanged over the past week. For the year it has fallen 4.1%, and 10.3% compared with twelve months ago. #Argentina $ARS"
  ]
 }
