@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-16",
- "last_post": 1792126871,
+ "last_post": 1792130473,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -69,7 +71,7 @@
   "MYR": 1791954020,
   "MZN": 1792101069,
   "NAD": 1791865867,
-  "NGN": 1792044074,
+  "NGN": 1792130473,
   "NIO": 1791736281,
   "NPR": 1792022469,
   "OMR": 1791932416,
@@ -113,9 +115,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The Brunei dollar held steady at 1.282 per US dollar this week, not moving more than 0.25% for 20 consecutive days. A year ago the level was 1.298. #Brunei $BND",
   "The Saudi riyal stands at 3.75 to the dollar, the same level as a year ago and since the start of the year. The rate has not moved by more than 0.25% for 25 consecutive days. #SaudiArabia $SAR",
   "The Lao kip is trading at 22,437 per US dollar, its strongest in 31 days. Compared with 21,702 a year ago, the currency remains weaker than that level. #Laos $LAK",
-  "The Fijian dollar fell to 2.265 per US dollar, its weakest in 90 days. It has traded in a 2.4% band over the past month, swinging 2.3% lower in that time. #Fiji $FJD"
+  "The Fijian dollar fell to 2.265 per US dollar, its weakest in 90 days. It has traded in a 2.4% band over the past month, swinging 2.3% lower in that time. #Fiji $FJD",
+  "The naira slipped 0.47% to 1,331 per dollar, its sharpest daily move in 44 days. It remains 3.7% stronger than three months ago, and well off the 1,457 level seen a year ago. #Nigeria $NGN"
  ]
 }
