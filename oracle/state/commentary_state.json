@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-16",
- "last_post": 1792152075,
+ "last_post": 1792155669,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -100,7 +101,7 @@
   "TMT": 1791797525,
   "TND": 1792026069,
   "TOP": 1792047674,
-  "TRY": 1792069272,
+  "TRY": 1792155669,
   "TTD": 1791516662,
   "TZS": 1791829865,
   "UAH": 1792040471,
@@ -116,9 +117,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The Kuwaiti dinar stands at 0.311 to the dollar, its weakest level in the past year, after falling 0.8% over the past 30 days. This comes as reports speak of rising debt burdens amid oil market turmoil. #Kuwait $KWD",
   "The Argentine peso trades at 1,513 per dollar, practically unchanged over the past week. For the year it has fallen 4.1%, and 10.3% compared with twelve months ago. #Argentina $ARS",
   "The Seychelles rupee trades at 14.6 per dollar, down 3.2% over the past month and 6.8% weaker than a year ago, even as it remains up 3.5% since the start of the year. It is the second most volatile currency of 132 tracked. #Seychelles $SCR",
-  "Kenya's shilling is trading at 129.8 to the dollar, at its weakest point of the past year. It has fallen 0.6% since the start of the year, while remaining within a narrow band of 1.2% over the past 30 days."
+  "Kenya's shilling is trading at 129.8 to the dollar, at its weakest point of the past year. It has fallen 0.6% since the start of the year, while remaining within a narrow band of 1.2% over the past 30 days.",
+  "USD/TRY is at 49.4, the weakest level since tracking began in 2024. The rate has fallen 15.4% from its strongest point of the past year, and has been losing value steadily since the start-of-year level of 43.0. #Turkiye $TRY"
  ]
 }
