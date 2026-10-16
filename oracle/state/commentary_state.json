@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-15",
- "last_post": 1792105272,
+ "anchors_today": [],
+ "date": "2026-10-16",
+ "last_post": 1792108869,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -26,7 +20,7 @@
   "BSD": 1791347477,
   "BWP": 1791325862,
   "BYN": 1791790275,
-  "BZD": 1791495065,
+  "BZD": 1792108869,
   "CLP": 1792080075,
   "COP": 1791678674,
   "CRC": 1791729078,
@@ -119,9 +113,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The Pakistani rupee is stable at 276.9 against the dollar, little changed over the past week. Since the start of the year the rupee has strengthened by 1.2%, and it has gone 19 straight days without a move exceeding 0.25%. #Pakistan $PKR",
   "The dollar exchange rate stands at 1,475 FRW, little changed over the past week. But today it is the weakest point of the past year, and it is down 1.1% since the start of the year. #Rwanda $RWF",
   "The metical quoted at 63.8 per dollar is at its strongest point in the past 854 days. The currency typically changes on 52% of trading days, but daily swings rarely exceed 0.10%. #Mozambique $MZN",
-  "The kwacha sits at 20.0 per dollar, little changed for six straight days. It remains up 11.7% so far this year, the 4th strongest performer among 132 currencies tracked in 2026. #Zambia $ZMW"
+  "The kwacha sits at 20.0 per dollar, little changed for six straight days. It remains up 11.7% so far this year, the 4th strongest performer among 132 currencies tracked in 2026. #Zambia $ZMW",
+  "The Belize dollar sits at 2.00 per US dollar, little changed over the past week. It has held inside a 1.6% band for the past year despite moving on 69% of trading days. #Belize $BZD"
  ]
 }
