@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-16",
- "last_post": 1792191676,
+ "anchors_today": [],
+ "date": "2026-10-17",
+ "last_post": 1792195271,
  "recent": {
   "AED": 1791162084,
   "AFN": 1791685861,
@@ -17,7 +11,7 @@
   "ARS": 1792144870,
   "AZN": 1791847882,
   "BAM": 1791979221,
-  "BBD": 1791743486,
+  "BBD": 1792195271,
   "BDT": 1791336678,
   "BHD": 1791433863,
   "BIF": 1791606662,
@@ -119,9 +113,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The rupee holds steady against the dollar at 276.9, with no move beyond 0.25% in the past 20 days. Since the start of the year it has strengthened 1.1%. #Pakistan $PKR",
   "The Surinamese dollar trades at 37.8 per US dollar, almost unchanged from last week. Since the start of the year the currency has strengthened 0.8%, against 38.1 on January 1. #Suriname $SRD",
   "The real trades at 5.078 per dollar, losing 0.6% this week, but accumulates a 9.2% gain this year. It is the 3rd strongest currency in October among 132 tracked. #Brazil $BRL",
-  "The tenge stands at 452.8 to the dollar, having strengthened 12.4% since the start of the year, and 19.1% over the past year \u2014 3rd among 132 currencies this year."
+  "The tenge stands at 452.8 to the dollar, having strengthened 12.4% since the start of the year, and 19.1% over the past year \u2014 3rd among 132 currencies this year.",
+  "The Barbados dollar sits at 2 per US dollar, exactly where it stood a year ago and at the start of this year. It has not been weaker in 27 days, and typical daily moves run near 0.18%. #Barbados $BBD"
  ]
 }
