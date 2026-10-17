@@ -3,10 +3,11 @@
   "NGN",
   "ARS",
   "TRY",
-  "PHP"
+  "PHP",
+  "PKR"
  ],
  "date": "2026-10-17",
- "last_post": 1792263659,
+ "last_post": 1792267257,
  "recent": {
   "AED": 1792234859,
   "AFN": 1791685861,
@@ -82,7 +83,7 @@
   "PEN": 1792018821,
   "PGK": 1792076472,
   "PHP": 1792260059,
-  "PKR": 1792180868,
+  "PKR": 1792267257,
   "PYG": 1792054871,
   "QAR": 1791761464,
   "RON": 1791986419,
@@ -118,9 +119,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The pula sits at 13.8 to the dollar, barely moved this week. It's down 4.4% since January, though still within the 5.4% range it has held over the past month. #Botswana $BWP",
   "The col\u00f3n trades at 454.2 per dollar, practically unchanged over the past week. So far this year it has gained 9.4%, the fifth strongest among 132 currencies. #CostaRica $CRC",
   "The peso is at 63.0 per dollar, barely changed over the past week. But this is its weakest point in the past year, down 6.5% since January. #Philippines $PHP",
-  "The Djiboutian franc remains nearly stable at 177.7 per dollar this week, but it's its weakest level in a year, versus 177.9 at the start of the year. #Djibouti $DJF"
+  "The Djiboutian franc remains nearly stable at 177.7 per dollar this week, but it's its weakest level in a year, versus 177.9 at the start of the year. #Djibouti $DJF",
+  "The Pakistani rupee stands stable at 276.9 against the dollar, little changed over the past week. So far this year the rupee has strengthened 1.2%, and for 21 straight days there has been no move greater than 0.25%. #Pakistan $PKR"
  ]
 }
