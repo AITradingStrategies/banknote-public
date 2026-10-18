@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-18",
- "last_post": 1792299621,
+ "last_post": 1792303220,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
@@ -69,7 +71,7 @@
   "MYR": 1791954020,
   "MZN": 1792101069,
   "NAD": 1791865867,
-  "NGN": 1792216872,
+  "NGN": 1792303220,
   "NIO": 1791736281,
   "NPR": 1792022469,
   "OMR": 1792299621,
@@ -113,9 +115,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The Dominican peso trades at 61.3 per dollar, practically unchanged over the past week. Over 30 days it has accumulated a 3.5% drop, but so far this year it remains 3.0% stronger.",
   "The TT dollar sits at 6.772 per US dollar, its weakest in a year, though barely changed over the past week. It has held inside a 1.3% range for 30 days and moved just 0.12% since January.",
   "The Venezuelan bolivar trades at 878.6 per dollar, its weakest level in 365 days. It falls 16.5% over the past 90 days and has accumulated a 77.11% collapse over the past year, the largest among 132 currencies. #Venezuela $VES",
-  "The Omani rial records 0.385 against the dollar, its strongest level in 209 days, after a daily jump of 0.60%, the largest in 208 days. The currency typically moves only 0.13% a day. #Oman $OMR"
+  "The Omani rial records 0.385 against the dollar, its strongest level in 209 days, after a daily jump of 0.60%, the largest in 208 days. The currency typically moves only 0.13% a day. #Oman $OMR",
+  "The naira holds at 1,331/USD, barely moved over the past week. It is still 8.6% stronger this year, up from 1,446 at the start of January. #Nigeria $NGN"
  ]
 }
