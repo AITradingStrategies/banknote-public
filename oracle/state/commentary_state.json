@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-18",
- "last_post": 1792314024,
+ "last_post": 1792317626,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
   "ALL": 1792000817,
   "AMD": 1792249258,
   "AOA": 1792036871,
-  "ARS": 1792231258,
+  "ARS": 1792317626,
   "AZN": 1792245303,
   "BAM": 1791979221,
   "BBD": 1792195271,
@@ -115,9 +116,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The naira holds at 1,331/USD, barely moved over the past week. It is still 8.6% stronger this year, up from 1,446 at the start of January. #Nigeria $NGN",
   "With the rate reaching 15.5 rupiyaa to the dollar, this is the lowest level recorded since tracking began in March 2024. Over the past year the rate has stayed within a 1.2% band. #Maldives $MVR",
   "Turkmenistan's manat stands at 3.5 to the dollar \u2014 its strongest level in the past 69 days. It is the 4th strongest currency this month among 132 currencies, though its daily range is usually quite narrow. #Turkmenistan $TMT",
-  "The Comorian franc trades at 437.8 to the dollar, nearly stable over the week. It is down 4.3% since the start of the year, from 418.8 in January. #Comoros $KMF"
+  "The Comorian franc trades at 437.8 to the dollar, nearly stable over the week. It is down 4.3% since the start of the year, from 418.8 in January. #Comoros $KMF",
+  "The Argentine peso trades at 1,514 per dollar, its strongest level in 31 days. Despite that, it has lost 2.1% over the past 90 days and has stayed within a 1.5% band over the past month."
  ]
 }
