@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-17",
- "last_post": 1792278059,
+ "anchors_today": [],
+ "date": "2026-10-18",
+ "last_post": 1792281658,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
@@ -57,7 +51,7 @@
   "KZT": 1792191676,
   "LAK": 1792123278,
   "LBP": 1792083670,
-  "LKR": 1791925309,
+  "LKR": 1792281658,
   "LRD": 1792011619,
   "LSL": 1791903806,
   "LYD": 1791939616,
@@ -119,9 +113,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The Pakistani rupee stands stable at 276.9 against the dollar, little changed over the past week. So far this year the rupee has strengthened 1.2%, and for 21 straight days there has been no move greater than 0.25%. #Pakistan $PKR",
   "The ruble is trading at 83.6 per dollar, having strengthened 1.5% over the week. Since the start of the year the currency has lost 5.7%, and a year ago the dollar cost 78.6 rubles. #Russia $RUB",
   "The somoni stands at 9.228 to the dollar, the weekly change is negligible. Over the past year the rate has stayed within a 4.9% band, and it is 4.2% stronger than its weakest point of the past year. #Tajikistan $TJS",
-  "The afghani has gone five days without moving more than 0.25% and stands steady at 64.9 per dollar. Since the start of the year it has strengthened 0.9%, though it is counted among the world's most volatile currencies."
+  "The afghani has gone five days without moving more than 0.25% and stands steady at 64.9 per dollar. Since the start of the year it has strengthened 0.9%, though it is counted among the world's most volatile currencies.",
+  "The Sri Lankan rupee stands at 331.2 to the dollar, nearly unchanged over the past week. It has not been weaker than this level in 27 days, but it has depreciated 6.4% so far this year. #SriLanka $LKR"
  ]
 }
