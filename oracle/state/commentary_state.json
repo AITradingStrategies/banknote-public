@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-19",
- "last_post": 1792400420,
+ "last_post": 1792404022,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
   "ALL": 1792346425,
   "AMD": 1792249258,
   "AOA": 1792386023,
-  "ARS": 1792317626,
+  "ARS": 1792404022,
   "AZN": 1792245303,
   "BAM": 1792324823,
   "BBD": 1792195271,
@@ -115,9 +116,9 @@
   "ZMW": 1792105272
  },
  "recent_posts": [
-  "The naira held at 1,331 per dollar, barely changed from a week ago. It remains 8.6% stronger than where it started the year, a gain built up over months of steady movement rather than any single swing. #Nigeria $NGN",
   "The balboa holds at 1 per dollar, unchanged from a week ago. It has not moved more than 0.25% in 158 consecutive sessions, and remains exactly where it started the year. #Panama $PAB",
   "The Tunisian dinar stands at 2.995 against the dollar, little changed over the past week. But the currency sits at its weakest point in a full year, after falling 2.8% over the past 30 days and 3.5% since the start of the year.",
-  "The Cape Verdean escudo stands at 98.1 per dollar, practically stable over the past week. Even so, it has accumulated a decline of 2.1% in 30 days and 4.3% since the start of the year. #CapeVerde $CVE"
+  "The Cape Verdean escudo stands at 98.1 per dollar, practically stable over the past week. Even so, it has accumulated a decline of 2.1% in 30 days and 4.3% since the start of the year. #CapeVerde $CVE",
+  "The Argentine peso trades at 1,514 per dollar, barely changed on the week. It has accumulated a 4.4% decline this year, and sits 10.7% below its best level of the past twelve months. #Argentina $ARS"
  ]
 }
