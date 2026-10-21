@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-10-21",
- "last_post": 1792598421,
+ "last_post": 1792602020,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
@@ -80,7 +81,7 @@
   "PAB": 1792393221,
   "PEN": 1792483222,
   "PGK": 1792076472,
-  "PHP": 1792515621,
+  "PHP": 1792602020,
   "PKR": 1792526422,
   "PYG": 1792407623,
   "QAR": 1792375221,
@@ -117,9 +118,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "USD/TRY is at 49.6, nearly motionless over the past week. Since the start of the year the lira has lost 13.3% of its value and currently sits at its weakest point of the past year. #Turkiye $TRY",
   "The Burundian franc trades at 3,001 per dollar, stable over the week. It has given up only 1.1% since the start of the year, despite daily swings 1.8 times stronger than its yearly average. #Burundi $BIF",
   "The South Sudanese pound trades at 5,752 per dollar, its weakest point of the past year. It has shed 71.7% over twelve months \u2014 second weakest of 132 currencies tracked \u2014 against 1,634 a year ago. #SouthSudan $SSP",
-  "The lari is trading at 2.597 against the dollar, nearly unchanged over the week. It has strengthened 3.7% since the start of the year and stands 5.0% above its yearly low. #Georgia $GEL"
+  "The lari is trading at 2.597 against the dollar, nearly unchanged over the week. It has strengthened 3.7% since the start of the year and stands 5.0% above its yearly low. #Georgia $GEL",
+  "The peso is at 63.1 per dollar, the weakest since tracking began in March 2024. From 58.9 at the start of the year, it has fallen 6.63%, even though it remains within a narrow 1.1% range over the past month."
  ]
 }
