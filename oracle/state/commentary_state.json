@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-21",
- "last_post": 1792584019,
+ "last_post": 1792587623,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
@@ -100,7 +101,7 @@
   "TMT": 1792310423,
   "TND": 1792396820,
   "TOP": 1792580420,
-  "TRY": 1792501221,
+  "TRY": 1792587623,
   "TTD": 1792292458,
   "TZS": 1792227659,
   "UAH": 1792540819,
@@ -116,9 +117,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The metical is at 63.8 per dollar, its weakest level of the past year, but practically stable over the past week. It has gone 5 days without a move of 0.25%. #Mozambique $MZN",
   "The peso fell 0.86% against the dollar, its biggest daily move in 62 sessions, and trades at 1,524 per dollar. The 5 sources behind the fixing differ by 0.88%, more than four times the usual amount. #Argentina $ARS",
   "One pa'anga is traded for 2.387 US dollars. It has weakened by 1.0% over the past week, and 1.1% over the last 30 days. But it has only shifted within a 1.4% band over those 30 days. #Tonga $TOP",
-  "The Belarusian ruble is trading at 2.981 per dollar \u2014 its strongest level in the past 68 days. Over the year the ruble has strengthened 14.31%, remaining the 4th most stable currency out of 132. #Belarus $BYN"
+  "The Belarusian ruble is trading at 2.981 per dollar \u2014 its strongest level in the past 68 days. Over the year the ruble has strengthened 14.31%, remaining the 4th most stable currency out of 132. #Belarus $BYN",
+  "USD/TRY is at 49.6, nearly motionless over the past week. Since the start of the year the lira has lost 13.3% of its value and currently sits at its weakest point of the past year. #Turkiye $TRY"
  ]
 }
