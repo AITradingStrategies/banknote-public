@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-21",
- "last_post": 1792558821,
+ "last_post": 1792562423,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
@@ -69,7 +71,7 @@
   "MYR": 1792360318,
   "MZN": 1792101069,
   "NAD": 1792530020,
-  "NGN": 1792476019,
+  "NGN": 1792562423,
   "NIO": 1791736281,
   "NPR": 1792371621,
   "OMR": 1792299621,
@@ -113,9 +115,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The Barbados dollar sits at 2 per USD, exactly where it stood a year ago and at the start of this year. It is the 2nd steadiest of 132 currencies tracked, holding a 1.2% band for twelve straight months. #Barbados $BBD",
   "The ariary is 4,550 per dollar, down 3.9% over 30 days, yet still up 1.7% since the start of the year. It moved 1.1% over the past week. #Madagascar $MGA",
   "The Mauritian rupee is trading at 47.2 per dollar, its strongest level in 33 days. It remains down 2.11% since the start of the year and has traded in a 7.6% band over the past 12 months. #Mauritius $MUR",
-  "The Chilean peso remains nearly unchanged this week at 980.6 per dollar, though it has accumulated an 8.2% drop so far this year. A year ago it traded at 956.3. #Chile $CLP"
+  "The Chilean peso remains nearly unchanged this week at 980.6 per dollar, though it has accumulated an 8.2% drop so far this year. A year ago it traded at 956.3. #Chile $CLP",
+  "The naira sits at 1,333 per dollar, barely moved from a week ago. It has still firmed 8.7% this year, from 1,446 at the start of January and 1,470 a year ago. #Nigeria $NGN"
  ]
 }
