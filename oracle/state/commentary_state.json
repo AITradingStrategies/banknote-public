@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-21",
- "last_post": 1792573221,
+ "last_post": 1792576820,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
   "ALL": 1792346425,
   "AMD": 1792249258,
   "AOA": 1792386023,
-  "ARS": 1792490424,
+  "ARS": 1792576820,
   "AZN": 1792245303,
   "BAM": 1792324823,
   "BBD": 1792548022,
@@ -115,9 +116,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The naira sits at 1,333 per dollar, barely moved from a week ago. It has still firmed 8.7% this year, from 1,446 at the start of January and 1,470 a year ago. #Nigeria $NGN",
   "The som stands at 87.5 per dollar \u2014 the same level as at the start of the year, the same as a year ago. Over the past 61 days there has been no move greater than 0.25%. #Kyrgyzstan $KGS",
   "The Moldovan leu is trading at 17.9 per dollar, its weakest level in the past year. The rate is nearly unchanged over the past week, but has lost 6.0% since the start of the year. #Moldova $MDL",
-  "The metical is at 63.8 per dollar, its weakest level of the past year, but practically stable over the past week. It has gone 5 days without a move of 0.25%. #Mozambique $MZN"
+  "The metical is at 63.8 per dollar, its weakest level of the past year, but practically stable over the past week. It has gone 5 days without a move of 0.25%. #Mozambique $MZN",
+  "The peso fell 0.86% against the dollar, its biggest daily move in 62 sessions, and trades at 1,524 per dollar. The 5 sources behind the fixing differ by 0.88%, more than four times the usual amount. #Argentina $ARS"
  ]
 }
