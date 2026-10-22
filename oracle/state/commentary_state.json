@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-22",
- "last_post": 1792648661,
+ "last_post": 1792652434,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
@@ -69,7 +71,7 @@
   "MYR": 1792360318,
   "MZN": 1792573221,
   "NAD": 1792530020,
-  "NGN": 1792562423,
+  "NGN": 1792652434,
   "NIO": 1792634421,
   "NPR": 1792371621,
   "OMR": 1792299621,
@@ -113,9 +115,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The kina trades at 4.466 per dollar, having gained 1.1% over the past week even as it sits 2.8% weaker than a month ago. It remains the 3rd most volatile currency among 132 tracked. #PapuaNewGuinea $PGK",
   "The tenge stands at 449.5 to the dollar, virtually unchanged over the past week. Yet since the start of the year it has strengthened 12.7%, and over the past year 19.6%, ranking 3rd among 132 currencies over both periods. #Kazakhstan $KZT",
   "The bol\u00edvar trades at 881.6 per dollar, its weakest level in 365 days. It has fallen 65.97% so far this year and 76.89% over twelve months, the largest depreciation among 132 currencies in both periods. #Venezuela $VES",
-  "The gourde trades at 131.0 per dollar, up 1.6% over the week. It remains close to its level a year ago, 131.8, and most often moves within a narrow 1.9% band over 30 days. #Haiti $HTG"
+  "The gourde trades at 131.0 per dollar, up 1.6% over the week. It remains close to its level a year ago, 131.8, and most often moves within a narrow 1.9% band over 30 days. #Haiti $HTG",
+  "The naira held at 1,332/USD, barely moved over the past week. It's still up 8.6% so far this year, from 1,446 at the start of January. #Nigeria $NGN"
  ]
 }
