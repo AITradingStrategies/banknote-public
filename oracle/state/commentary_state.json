@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-22",
- "last_post": 1792659649,
+ "last_post": 1792663241,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
   "ALL": 1792346425,
   "AMD": 1792623620,
   "AOA": 1792386023,
-  "ARS": 1792576820,
+  "ARS": 1792663241,
   "AZN": 1792245303,
   "BAM": 1792324823,
   "BBD": 1792548022,
@@ -115,9 +116,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The gourde trades at 131.0 per dollar, up 1.6% over the week. It remains close to its level a year ago, 131.8, and most often moves within a narrow 1.9% band over 30 days. #Haiti $HTG",
   "The naira held at 1,332/USD, barely moved over the past week. It's still up 8.6% so far this year, from 1,446 at the start of January. #Nigeria $NGN",
   "The rufiyaa stands at 15.5/USD, little changed over the past week. This is its weakest rate of the past year, with 143 days passing without a move larger than 0.25%. #Maldives $MVR",
-  "The Comorian franc trades at 438.2 per dollar, its weakest level of the past year. It is down 2.2% over 30 days and 4.4% since the start of the year. #Comoros $KMF"
+  "The Comorian franc trades at 438.2 per dollar, its weakest level of the past year. It is down 2.2% over 30 days and 4.4% since the start of the year. #Comoros $KMF",
+  "The Argentine peso trades at 1,525 per dollar, its weakest level of the past year. So far in 2026 it has accumulated a 4.8% drop, after a year of economic rebound described as \"sluggish\" by the international financial press. #Argentina $ARS"
  ]
 }
