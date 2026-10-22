@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-22",
- "last_post": 1792670434,
+ "last_post": 1792674065,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
@@ -100,7 +101,7 @@
   "TMT": 1792310423,
   "TND": 1792396820,
   "TOP": 1792580420,
-  "TRY": 1792587623,
+  "TRY": 1792674065,
   "TTD": 1792292458,
   "TZS": 1792616421,
   "UAH": 1792540819,
@@ -116,9 +117,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The Comorian franc trades at 438.2 per dollar, its weakest level of the past year. It is down 2.2% over 30 days and 4.4% since the start of the year. #Comoros $KMF",
   "The Argentine peso trades at 1,525 per dollar, its weakest level of the past year. So far in 2026 it has accumulated a 4.8% drop, after a year of economic rebound described as \"sluggish\" by the international financial press. #Argentina $ARS",
   "The shilling traded at 4,184/USD, its weakest level since tracking began in March 2024. It is down 13.34% so far this year and has moved on 69% of trading days. #Uganda $UGX",
-  "The convertible mark is at its lowest level in the past year, 1.741 to the dollar. It has fallen 2.2% over the past 30 days and 4.4% since the start of the year, though the past week has passed without major moves."
+  "The convertible mark is at its lowest level in the past year, 1.741 to the dollar. It has fallen 2.2% over the past 30 days and 4.4% since the start of the year, though the past week has passed without major moves.",
+  "USD/TRY rose to 49.6; the lira is at its weakest level since tracking began in March 2024. It has lost 13.4% since the start of the year, having been at 42.0 a year ago. #Turkiye $TRY"
  ]
 }
