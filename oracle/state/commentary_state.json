@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-21",
- "last_post": 1792623620,
+ "anchors_today": [],
+ "date": "2026-10-22",
+ "last_post": 1792627218,
  "recent": {
   "AED": 1792234859,
   "AFN": 1792278059,
@@ -99,7 +93,7 @@
   "STN": 1792543819,
   "SZL": 1792367884,
   "THB": 1792458022,
-  "TJS": 1792274461,
+  "TJS": 1792627218,
   "TMT": 1792310423,
   "TND": 1792396820,
   "TOP": 1792580420,
@@ -119,9 +113,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The rupee against the dollar held steady at 276.9 this week. It has strengthened 1.2% since the start of the year, and is 2.3% better than its weakest point of the past year. #Pakistan $PKR",
   "The Tanzanian shilling is at 2,644 per dollar, at its weakest point of the entire year. It has fallen by 6.6% since January, though the past week showed no major change.",
   "The Colombian peso trades at 3,175 per dollar, its strongest level in 32 days. It has gained 18.68% so far this year, the largest among 132 currencies tracked. #Colombia $COP",
-  "The dram has barely changed over the week, at 361.4 dram/dollar. It has strengthened 5.5% since the start of the year, and over the past year has traded within a 7.6% band. #Armenia $AMD"
+  "The dram has barely changed over the week, at 361.4 dram/dollar. It has strengthened 5.5% since the start of the year, and over the past year has traded within a 7.6% band. #Armenia $AMD",
+  "The somoni stands at 9.224 to the dollar, nearly the same level it started the year at (9.236). Over the past year the somoni has moved within a narrow 4.9% band. #Tajikistan $TJS"
  ]
 }
