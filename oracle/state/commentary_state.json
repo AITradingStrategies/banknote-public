@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-23",
- "last_post": 1792746033,
+ "last_post": 1792749631,
  "recent": {
   "AED": 1792728032,
   "AFN": 1792278059,
   "ALL": 1792692036,
   "AMD": 1792623620,
   "AOA": 1792386023,
-  "ARS": 1792663241,
+  "ARS": 1792749631,
   "AZN": 1792245303,
   "BAM": 1792670434,
   "BBD": 1792548022,
@@ -115,9 +116,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The naira trades at 1,333/USD, little changed over the past week but up 8.5% since January. A year ago it stood near 1,467, having spent most of 2026 clawing back from its weakest levels. #Nigeria $NGN",
   "The ruble trades at 81.9 per dollar \u2014 its strongest level in the last 76 days. Over 30 days the currency strengthened 2.81%, though it remains weaker by 3.05% since the start of the year. #Russia $RUB",
   "The balboa holds at 1 per dollar, unchanged from a year ago and from the start of the year. It has gone 162 days without moving more than 0.25%. #Panama $PAB",
-  "The Cape Verdean escudo stands at 98.3 per dollar, practically stable over the past week, but down 4.3% this year and 8 straight days without a move of 0.25%."
+  "The Cape Verdean escudo stands at 98.3 per dollar, practically stable over the past week, but down 4.3% this year and 8 straight days without a move of 0.25%.",
+  "The Argentine peso trades at 1,527 per dollar, its weakest level of the past year. It is down 4.9% so far in 2026 and held nearly stable, 0.8% weaker, over the past week. #Argentina $ARS"
  ]
 }
