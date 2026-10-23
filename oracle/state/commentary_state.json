@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-23",
- "last_post": 1792756796,
+ "last_post": 1792760438,
  "recent": {
   "AED": 1792728032,
   "AFN": 1792278059,
@@ -100,7 +101,7 @@
   "TMT": 1792310423,
   "TND": 1792396820,
   "TOP": 1792580420,
-  "TRY": 1792674065,
+  "TRY": 1792760438,
   "TTD": 1792292458,
   "TZS": 1792616421,
   "UAH": 1792540819,
@@ -116,9 +117,9 @@
   "ZMW": 1792454419
  },
  "recent_posts": [
-  "The Cape Verdean escudo stands at 98.3 per dollar, practically stable over the past week, but down 4.3% this year and 8 straight days without a move of 0.25%.",
   "The Argentine peso trades at 1,527 per dollar, its weakest level of the past year. It is down 4.9% so far in 2026 and held nearly stable, 0.8% weaker, over the past week. #Argentina $ARS",
   "The guaran\u00ed trades at 5,740 per dollar, up 17.4% so far this year. It is the world's strongest currency over the past year among 132 currencies tracked, despite questions directed at the Central Bank over the Ueno Bank case. #Paraguay $PYG",
-  "The Somali shilling stands at 571.4 to the dollar, barely changed from last year's level of 571.5. The currency changes value on 69% of days, but over the past week it has stayed stable."
+  "The Somali shilling stands at 571.4 to the dollar, barely changed from last year's level of 571.5. The currency changes value on 69% of days, but over the past week it has stayed stable.",
+  "The lira stands at 49.6 against the dollar, its weakest point since tracking began in 2024. It has lost 4.6% over the past 90 days and 13.4% since the start of the year. #Turkiye $TRY"
  ]
 }
