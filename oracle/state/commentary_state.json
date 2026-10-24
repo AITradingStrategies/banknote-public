@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-24",
- "last_post": 1792843233,
+ "last_post": 1792846832,
  "recent": {
   "AED": 1792728032,
   "AFN": 1792807231,
@@ -100,7 +101,7 @@
   "TMT": 1792310423,
   "TND": 1792771233,
   "TOP": 1792580420,
-  "TRY": 1792760438,
+  "TRY": 1792846832,
   "TTD": 1792774642,
   "TZS": 1792616421,
   "UAH": 1792540819,
@@ -116,9 +117,9 @@
   "ZMW": 1792800033
  },
  "recent_posts": [
-  "The Bahraini dinar is steady at 0.376 to the dollar, the same level recorded a year ago and at the start of the year. The currency has not recorded a move of 0.25% or more in 111 days, remaining the 3rd steadiest among 132 currencies tracked. #Bahrain $BHD",
   "The Argentine peso trades at 1,528 per dollar, its weakest level of the past year. It has fallen 5.0% so far in 2026 and 0.9% over the past 30 days. #Argentina $ARS",
   "The Kuwaiti dinar stands at 0.310 against the dollar, its weakest level over the past year. The currency has fallen 0.9% since the start of the year, and typically trades within a narrow band of no more than 1.0% over 30 days. #Kuwait $KWD",
-  "The rand trades at 16.6 per dollar, little changed over the past week despite a 1.9% slide over the past 30 days. It remains 5.6% stronger than a year ago. #SouthAfrica $ZAR"
+  "The rand trades at 16.6 per dollar, little changed over the past week despite a 1.9% slide over the past 30 days. It remains 5.6% stronger than a year ago. #SouthAfrica $ZAR",
+  "The Turkish lira is at 49.7 against the dollar, its weakest point since tracking began in 2024. It has lost 4.8% over the past 90 days and 13.6% since the start of the year. #Turkiye $TRY"
  ]
 }
