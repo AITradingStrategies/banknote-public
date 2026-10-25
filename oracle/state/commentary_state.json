@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-25",
- "last_post": 1792922076,
+ "last_post": 1792926033,
  "recent": {
   "AED": 1792728032,
   "AFN": 1792807231,
   "ALL": 1792692036,
   "AMD": 1792623620,
   "AOA": 1792911636,
-  "ARS": 1792836030,
+  "ARS": 1792926033,
   "AZN": 1792875638,
   "BAM": 1792670434,
   "BBD": 1792548022,
@@ -115,9 +116,9 @@
   "ZMW": 1792800033
  },
  "recent_posts": [
-  "The kwanza traded at 917.2 per dollar, nearly equal to 917.6 a year ago. In the last five days, no move exceeded 0.25%, within a narrow 2.5% band over 30 days. #Angola $AOA",
   "The Moldovan leu reached 17.9 per dollar, its weakest level in the past 572 days. The currency has depreciated 6.49% since the start of the year, compared to 16.8/USD in January. #Moldova $MDL",
   "The dong rose 0.75% in one session, its largest gain in 235 days, bringing the rate to 25,832 VND/USD, its strongest level in 90 days. The rate has risen 2.6% over the past 90 days. #Vietnam $VND",
-  "The Chilean peso trades at 986.5 per dollar, its weakest level in 561 days. The currency has fallen 9.57% so far this year, from 899.9 at the start of January. #Chile $CLP"
+  "The Chilean peso trades at 986.5 per dollar, its weakest level in 561 days. The currency has fallen 9.57% so far this year, from 899.9 at the start of January. #Chile $CLP",
+  "The Argentine peso trades at 1,528 per dollar, 4.7% weaker so far this year, versus 1,451 in January. In the past week it gave up 0.9%, within a 1.5% band it has held for 30 days. #Argentina $ARS"
  ]
 }
