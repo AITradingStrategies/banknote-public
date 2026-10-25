@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-25",
- "last_post": 1792904432,
+ "last_post": 1792908038,
  "recent": {
   "AED": 1792728032,
   "AFN": 1792807231,
@@ -69,7 +71,7 @@
   "MYR": 1792360318,
   "MZN": 1792573221,
   "NAD": 1792530020,
-  "NGN": 1792821628,
+  "NGN": 1792908038,
   "NIO": 1792634421,
   "NPR": 1792371621,
   "OMR": 1792299621,
@@ -113,9 +115,9 @@
   "ZMW": 1792800033
  },
  "recent_posts": [
-  "Turkmenistan's manat stands at 3.501 to the dollar, nearly unchanged over the past week. Compared to 3.507 a year ago, the rate also remains close to the 3.496 level at the start of the year. #Turkmenistan $TMT",
   "The exchange rate of the taka against the dollar stands at 123.7, the lowest in the last 36 days. It was 122.3 at the start of the year, and 122.1 a year ago. #Bangladesh $BDT",
   "The Djiboutian franc trades at 177.7 per dollar, nearly stable over the past week. It was at 177.9 at the start of the year and 178.0 a year ago. #Djibouti $DJF",
-  "The hryvnia fell to 45.2 per dollar \u2014 the weakest level since observations began in March 2024. The daily change of 0.60% was the largest in the last 84 days. #Ukraine $UAH"
+  "The hryvnia fell to 45.2 per dollar \u2014 the weakest level since observations began in March 2024. The daily change of 0.60% was the largest in the last 84 days. #Ukraine $UAH",
+  "The naira's five independent fixing sources disagreed by 2.24% today, nearly eight times the usual 0.29% spread, even as the rate itself held near 1,333/USD. That's still 9.2% above its weakest point of the past year, against 1,460/USD twelve months ago. #Nigeria $NGN"
  ]
 }
