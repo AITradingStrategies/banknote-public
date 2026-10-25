@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-24",
- "last_post": 1792882833,
+ "anchors_today": [],
+ "date": "2026-10-25",
+ "last_post": 1792886431,
  "recent": {
   "AED": 1792728032,
   "AFN": 1792807231,
@@ -90,7 +84,7 @@
   "RSD": 1792681236,
   "RUB": 1792738832,
   "RWF": 1792497623,
-  "SAR": 1792468818,
+  "SAR": 1792886431,
   "SBD": 1792731636,
   "SCR": 1792695641,
   "SOS": 1792756796,
@@ -119,9 +113,9 @@
   "ZMW": 1792800033
  },
  "recent_posts": [
-  "The Pakistani rupee stands at 276.8 per dollar, almost unchanged from last week. However, it has strengthened 1.3% this year and has stayed within a 2.4% band over the past year. #Pakistan $PKR",
   "The manat has settled at 1.7 against the dollar, unchanged from the start of the year. For 34 days running there has been no jump larger than 0.25%, and the currency's band over the past year has been just 4.4%. #Azerbaijan $AZN",
   "The Belize dollar sits at 2 per USD, little changed over the past week. It has held within a 1.6% band for the past year despite changing hands on 69% of trading days. #Belize $BZD",
-  "The Moroccan dirham trades at 9.813 per dollar, down 2.3% over 30 days and 7.1% since the start of the year. The currency has lost 7.9% from its highest point over the past year. #Morocco $MAD"
+  "The Moroccan dirham trades at 9.813 per dollar, down 2.3% over 30 days and 7.1% since the start of the year. The currency has lost 7.9% from its highest point over the past year. #Morocco $MAD",
+  "The Saudi riyal continues its stability at 3.75 against the dollar, the same level since the start of the year and a full year ago. The currency has not recorded a move exceeding 0.25% in 34 days. #SaudiArabia $SAR"
  ]
 }
