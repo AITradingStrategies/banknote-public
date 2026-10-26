@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-26",
- "last_post": 1793005232,
+ "last_post": 1793008836,
  "recent": {
   "AED": 1792728032,
   "AFN": 1792807231,
   "ALL": 1792692036,
   "AMD": 1792623620,
   "AOA": 1792911636,
-  "ARS": 1792926033,
+  "ARS": 1793008836,
   "AZN": 1792875638,
   "BAM": 1792670434,
   "BBD": 1792548022,
@@ -115,9 +116,9 @@
   "ZMW": 1792800033
  },
  "recent_posts": [
-  "The naira fell 1.00% in a day to 1,333/USD, its sharpest daily drop in 178 days and its weakest level in 30 days. The five fixing sources that set the rate disagreed by 2.24%, well above the usual 0.29%. #Nigeria $NGN",
   "The bol\u00edvar trades at 884.3 per dollar, its weakest level in 365 days. It has accumulated a drop of 75.79% over the past year and 66.14% so far in 2026. #Venezuela $VES",
   "The Algerian dinar registers 134.8 against the dollar, its weakest level in 599 days. It has lost 4.09% since the start of the year, though it has moved within a narrow band not exceeding 1.0% over the past 30 days.",
-  "The ariary reached 4,550 to the dollar, its weakest in 90 days. It has fallen 4.6% over that period, and is down 9.5% from its highest point in the past year. #Madagascar $MGA"
+  "The ariary reached 4,550 to the dollar, its weakest in 90 days. It has fallen 4.6% over that period, and is down 9.5% from its highest point in the past year. #Madagascar $MGA",
+  "The Argentine peso trades at 1,528 per dollar, its weakest level of the past year and 4.8% below where it started 2026. Over the last 30 days it stayed within a 1.5% band. #Argentina $ARS"
  ]
 }
