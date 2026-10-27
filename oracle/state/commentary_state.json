@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-10-27",
- "last_post": 1793116831,
+ "last_post": 1793120434,
  "recent": {
   "AED": 1792728032,
   "AFN": 1792807231,
@@ -80,7 +81,7 @@
   "PAB": 1792742432,
   "PEN": 1793066430,
   "PGK": 1792987233,
-  "PHP": 1793037638,
+  "PHP": 1793120434,
   "PKR": 1793044835,
   "PYG": 1793098835,
   "QAR": 1792375221,
@@ -117,9 +118,9 @@
   "ZMW": 1792800033
  },
  "recent_posts": [
-  "The lira is at 49.8 against the dollar, its weakest point since tracking began in March 2024. It was at 43.0 at the start of the year; it ranks as the 5th weakest currency of the year. #Turkiye $TRY",
   "While the rufiyaa stands at 15.5 per dollar, this is its weakest point over the past year. For 148 days there has been no move greater than 0.25%. Over the year it is down 0.9%. #Maldives $MVR",
   "The Yemeni rial holds at 236.2 per dollar, little changed this week. The currency remains stronger by 1.0% since the start of the year, within a range that has not exceeded 1.4% over the past year.",
-  "The Seychelles rupee trades at 14.7 per dollar, down 4.4% over the past month yet still 4.3% stronger than where it started the year. It remains the 2nd most volatile of 132 currencies tracked. #Seychelles $SCR"
+  "The Seychelles rupee trades at 14.7 per dollar, down 4.4% over the past month yet still 4.3% stronger than where it started the year. It remains the 2nd most volatile of 132 currencies tracked. #Seychelles $SCR",
+  "The peso is at 63.9 per dollar, weaker by 0.46% compared to the previous day \u2014 its largest change in 51 days. This is its weakest level since tracking began in March 2024. #Philippines $PHP"
  ]
 }
