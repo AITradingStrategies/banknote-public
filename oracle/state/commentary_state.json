@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-28",
- "last_post": 1793178032,
+ "last_post": 1793181628,
  "recent": {
   "AED": 1792728032,
   "AFN": 1793163633,
   "ALL": 1792692036,
   "AMD": 1793088031,
   "AOA": 1792911636,
-  "ARS": 1793095231,
+  "ARS": 1793181628,
   "AZN": 1792875638,
   "BAM": 1793016036,
   "BBD": 1793127674,
@@ -115,9 +116,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The naira trades at 1,346/USD, little changed on the week but still 7.6% stronger than where it started 2026. A year ago it stood at 1,460, and it has held inside a narrow 1.9% band over the past month. #Nigeria $NGN",
   "The Sri Lankan rupee has weakened 0.25% day on day to 332.3 to the dollar, its largest single-day move in 34 days, and its weakest level in 71 days. A year ago it stood at 303.2. #SriLanka $LKR",
   "The rupiah stands at 18,144 per US dollar, its weakest point in the past 90 days and also for the whole year. A year ago the rupiah was still at 16,600, and since the start of the year it has weakened 7.93%. #Indonesia $IDR",
-  "The Namibia dollar sits at 16.6 to the US dollar, down 2.0% over the past month yet still 3.5% stronger than a year ago, when it traded at 17.2. #Namibia $NAD"
+  "The Namibia dollar sits at 16.6 to the US dollar, down 2.0% over the past month yet still 3.5% stronger than a year ago, when it traded at 17.2. #Namibia $NAD",
+  "The Argentine peso falls 1.24% in one session, its largest daily move in 181 days, and reaches 1,540 per dollar, its weakest level since this tracking began in March 2024. The IMF confirmed a preliminary deal with Argentina. #Argentina $ARS"
  ]
 }
