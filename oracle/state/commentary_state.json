@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-29",
- "last_post": 1793264287,
+ "last_post": 1793268072,
  "recent": {
   "AED": 1792728032,
   "AFN": 1793163633,
   "ALL": 1793264287,
   "AMD": 1793088031,
   "AOA": 1792911636,
-  "ARS": 1793181628,
+  "ARS": 1793268072,
   "AZN": 1792875638,
   "BAM": 1793016036,
   "BBD": 1793127674,
@@ -115,9 +116,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The naira trades at 1,344 per US dollar, up 7.8% since January despite slipping 1.0% over the past 30 days. It remains 8.2% above its weakest point of the past year.",
   "The Brunei dollar stands at 1.281, almost unchanged from last week. But a year ago it was at 1.296, making it 1.1% stronger than the same period last year. #Brunei $BND",
   "The Moldovan leu reached 18.0 per dollar, its weakest level in the past 586 days. Since the start of the year it has lost 6.88%, and a year ago the rate was 17.1/USD. #Moldova $MDL",
-  "The lek falls to 81.5 per dollar, 1.0% weaker than 30 days ago, but remains 1.0% stronger than at the start of the year. Movements within the month have not exceeded the 1.6% band. #Albania $ALL"
+  "The lek falls to 81.5 per dollar, 1.0% weaker than 30 days ago, but remains 1.0% stronger than at the start of the year. Movements within the month have not exceeded the 1.6% band. #Albania $ALL",
+  "The Argentine peso stands at 1,539 per dollar, its weakest point of the past year. It has fallen 5.6% so far in 2026 and 0.9% over the past week. #Argentina $ARS"
  ]
 }
