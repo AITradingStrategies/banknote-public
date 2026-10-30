@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-30",
- "last_post": 1793350838,
+ "last_post": 1793354435,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
   "ALL": 1793264287,
   "AMD": 1793088031,
   "AOA": 1793336434,
-  "ARS": 1793268072,
+  "ARS": 1793354435,
   "AZN": 1792875638,
   "BAM": 1793016036,
   "BBD": 1793127674,
@@ -115,9 +116,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The naira sits at 1,346 per dollar, down 1.0% over 30 days. It remains 7.8% stronger this year than where it started at 1,446, having traded in just a 1.9% band this month. #Nigeria $NGN",
   "The Nepali rupee stands at 152.4 per dollar, 7.4% weaker than 141.2 a year ago. This level is 7.4% below its strongest point of the past year, but over the past 30 days the rate has stayed confined to just a 2.5% band.",
   "The bol\u00edvar trades at 887.7 per dollar, its weakest level in 365 days. It fell 16.2% in 90 days and is the most depreciated currency of the year among 132 tracked, from 299.5 at the start of 2026. #Venezuela $VES",
-  "The Algerian dinar stands at 135.3 to the dollar, its weakest level in the past year. It has fallen 4.2% since the start of the year, and dropped 1.1% over the past 30 days. #Algeria $DZD"
+  "The Algerian dinar stands at 135.3 to the dollar, its weakest level in the past year. It has fallen 4.2% since the start of the year, and dropped 1.1% over the past 30 days. #Algeria $DZD",
+  "The Argentine peso trades at 1,540 per dollar, its weakest level since tracking began in March 2024. It is down 5.85% so far this year and 3.4% over the past 90 days. #Argentina $ARS"
  ]
 }
