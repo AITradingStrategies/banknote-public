@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-30",
- "last_post": 1793336434,
+ "last_post": 1793340036,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -69,7 +71,7 @@
   "MYR": 1793210433,
   "MZN": 1793156431,
   "NAD": 1793178032,
-  "NGN": 1793253669,
+  "NGN": 1793340036,
   "NIO": 1792634421,
   "NPR": 1792371621,
   "OMR": 1792969232,
@@ -113,9 +115,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The Jamaican dollar sits at 158.7 per US dollar, barely changed from 158.9 at the start of the year. It has gone nine straight sessions without a move of 0.25%, inside a band it has held within 3.7% all year. #Jamaica $JMD",
   "The Ghanaian cedi sits at 11.6 per dollar, little changed over the past week. It has still slid 9.9% since the start of the year, from 10.5, even as daily swings stay inside a tight 2.3% band over the past 30 days. #Ghana $GHS",
   "The kina sits at 4.479 per dollar, down 4.9% since the start of the year and 0.8% weaker over the past week. It remains the 4th most volatile of 132 currencies tracked, moving 1.62% on a typical day. #PapuaNewGuinea $PGK",
-  "The kwanza is at 918.5 per dollar, practically the same as 917.7 a year ago. The currency moves on 75% of days, but has stayed within a band of just 2.5% over the past 30 days. #Angola $AOA"
+  "The kwanza is at 918.5 per dollar, practically the same as 917.7 a year ago. The currency moves on 75% of days, but has stayed within a band of just 2.5% over the past 30 days. #Angola $AOA",
+  "The naira sits at 1,346 per dollar, down 1.0% over 30 days. It remains 7.8% stronger this year than where it started at 1,446, having traded in just a 1.9% band this month. #Nigeria $NGN"
  ]
 }
