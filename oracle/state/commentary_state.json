@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-30",
- "last_post": 1793361635,
+ "last_post": 1793365232,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -100,7 +101,7 @@
   "TMT": 1792893630,
   "TND": 1793271671,
   "TOP": 1793282468,
-  "TRY": 1793278875,
+  "TRY": 1793365232,
   "TTD": 1792774642,
   "TZS": 1793232034,
   "UAH": 1793250072,
@@ -116,9 +117,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The Algerian dinar stands at 135.3 to the dollar, its weakest level in the past year. It has fallen 4.2% since the start of the year, and dropped 1.1% over the past 30 days. #Algeria $DZD",
   "The Argentine peso trades at 1,540 per dollar, its weakest level since tracking began in March 2024. It is down 5.85% so far this year and 3.4% over the past 90 days. #Argentina $ARS",
   "The Belarusian ruble trades at 2.948 per dollar \u2014 4th strongest of 132 currencies this month. Since the start of the year the rate has barely changed, but over the year the ruble strengthened by 15.7%. #Belarus $BYN",
-  "The Ugandan shilling trades at 4,355 per dollar, down 10.1% over the past month and 16.9% for the year. It is the 2nd weakest of 132 currencies tracked this month, from 3,620 at the start of January. #Uganda $UGX"
+  "The Ugandan shilling trades at 4,355 per dollar, down 10.1% over the past month and 16.9% for the year. It is the 2nd weakest of 132 currencies tracked this month, from 3,620 at the start of January. #Uganda $UGX",
+  "The dollar/TL retreated to the level of 49.9; this is the weakest value since March 2024. Over the past year a loss of 15.8%, the decline since the start of the year is 13.79%. Over the last 30 days the band has been only 1.7% wide. #Turkiye $TRY"
  ]
 }
