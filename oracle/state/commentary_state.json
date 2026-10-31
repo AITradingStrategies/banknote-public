@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-10-31",
- "last_post": 1793448042,
+ "last_post": 1793451641,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -100,7 +101,7 @@
   "TMT": 1792893630,
   "TND": 1793271671,
   "TOP": 1793282468,
-  "TRY": 1793365232,
+  "TRY": 1793451641,
   "TTD": 1793437240,
   "TZS": 1793232034,
   "UAH": 1793250072,
@@ -116,9 +117,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The TT dollar sits at 6.761 per US dollar, little changed over the past week and barely off the 6.767 seen a year ago. It has held in a 1.2% band for the past 30 days, moving on 68% of trading days. #TrinidadAndTobago $TTD",
   "The peso trades at 1,538 per dollar, its weakest level of the past year. So far in 2026 it has accumulated a 5.7% decline, though in the past week it moved just 0.7%. #Argentina $ARS",
   "The Iraqi dinar records 1,516 against the dollar, its weakest level in the past year. It fell 13.5% over 30 days and 13.4% since the start of the year, despite near-total stability in the past week. #Iraq $IQD",
-  "The Rwandan franc trades at 1,476 per dollar, its weakest point compared to the past year. Over the past week it has not changed much, but since the start of the year it has declined by 1.2%."
+  "The Rwandan franc trades at 1,476 per dollar, its weakest point compared to the past year. Over the past week it has not changed much, but since the start of the year it has declined by 1.2%.",
+  "The Turkish lira fell to 49.9 against the dollar; this is the weakest level seen since March 2024. Over the past 12 months the loss has reached 15.85%, and the decline continues from the 43.0 level at the start of the year. #Turkiye $TRY"
  ]
 }
