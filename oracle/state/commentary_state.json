@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-10-31",
- "last_post": 1793437240,
+ "last_post": 1793440843,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
   "ALL": 1793264287,
   "AMD": 1793088031,
   "AOA": 1793336434,
-  "ARS": 1793354435,
+  "ARS": 1793440843,
   "AZN": 1792875638,
   "BAM": 1793368834,
   "BBD": 1793127674,
@@ -115,9 +116,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The naira sits at 1,347/USD, down 1.4% over the past month, yet still up 7.3% since January. A year ago it traded near 1,451. #Nigeria $NGN",
   "The Mauritanian ouguiya records 40.3 against the dollar, its weakest level of the past year. It fell 1.1% over the past week and 1.6% since the start of the year, within a trading band of no more than 1.6% over 30 days. #Mauritania $MRU",
   "The Nicaraguan c\u00f3rdoba trades at 36.8 per dollar, its weakest level of the past year, though barely changed from a week ago. It has gone 11 days without a move greater than 0.25%. #Nicaragua $NIO",
-  "The TT dollar sits at 6.761 per US dollar, little changed over the past week and barely off the 6.767 seen a year ago. It has held in a 1.2% band for the past 30 days, moving on 68% of trading days. #TrinidadAndTobago $TTD"
+  "The TT dollar sits at 6.761 per US dollar, little changed over the past week and barely off the 6.767 seen a year ago. It has held in a 1.2% band for the past 30 days, moving on 68% of trading days. #TrinidadAndTobago $TTD",
+  "The peso trades at 1,538 per dollar, its weakest level of the past year. So far in 2026 it has accumulated a 5.7% decline, though in the past week it moved just 0.7%. #Argentina $ARS"
  ]
 }
