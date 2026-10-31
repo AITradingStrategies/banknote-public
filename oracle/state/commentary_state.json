@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-10-31",
- "last_post": 1793422835,
+ "last_post": 1793426428,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -69,7 +71,7 @@
   "MYR": 1793210433,
   "MZN": 1793156431,
   "NAD": 1793178032,
-  "NGN": 1793340036,
+  "NGN": 1793426428,
   "NIO": 1792634421,
   "NPR": 1793343628,
   "OMR": 1792969232,
@@ -113,9 +115,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The dobra is at 22.0 per dollar, its weakest point of the past year. It has fallen 5.3% since the start of 2026 and just 0.8% in the past week alone. #SaoTomeAndPrincipe $STN",
   "The tugrik reached 3,602 against the dollar, its weakest level in the past 410 days. Compared to 0.626 a year ago, such a sharp decline is rarely observed. #Mongolia $MNT",
   "The Costa Rican col\u00f3n holds at 454.8 per dollar, barely changed over the past week. So far this year it has gained 9.4%, the fifth best among 132 currencies. #CostaRica $CRC",
-  "The Djiboutian franc trades at 177.7 per dollar, almost at the level of a year ago (177.9). The 5 reference sources behind the fixing diverge by 0.50%, however, against 0.22% usually. #Djibouti $DJF"
+  "The Djiboutian franc trades at 177.7 per dollar, almost at the level of a year ago (177.9). The 5 reference sources behind the fixing diverge by 0.50%, however, against 0.22% usually. #Djibouti $DJF",
+  "The naira sits at 1,347/USD, down 1.4% over the past month, yet still up 7.3% since January. A year ago it traded near 1,451. #Nigeria $NGN"
  ]
 }
