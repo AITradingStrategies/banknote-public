@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-10-31",
- "last_post": 1793489441,
+ "anchors_today": [],
+ "date": "2026-11-01",
+ "last_post": 1793493041,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -109,7 +103,7 @@
   "UAH": 1793250072,
   "UGX": 1793361635,
   "UYU": 1793489441,
-  "UZS": 1793073632,
+  "UZS": 1793493041,
   "VES": 1793347238,
   "VND": 1792918834,
   "VUV": 1793145630,
@@ -119,9 +113,9 @@
   "ZMW": 1793149235
  },
  "recent_posts": [
-  "The rupee held steady at 276.6 per dollar over the past week. It has strengthened 1.3% since the start of the year, while over the past year it has stayed confined within a 2.3% band.",
   "The Omani rial is steady at 0.385 against the dollar, the same level as a year ago and at the start of this year as well. The currency has not recorded a move of 0.25% for 5 consecutive days. #Oman $OMR",
   "The Dominican peso trades at 60.7 per dollar, its strongest level in 22 days. So far this year it has gained 4.1%, though over the past 30 days it fell 1.9%. #DominicanRepublic $DOP",
-  "The Uruguayan peso trades at 40.2 per dollar, little changed over the past week. So far this year it has accumulated a 2.8% decline, within an 8.7% band it has held for a year. #Uruguay $UYU"
+  "The Uruguayan peso trades at 40.2 per dollar, little changed over the past week. So far this year it has accumulated a 2.8% decline, within an 8.7% band it has held for a year. #Uruguay $UYU",
+  "The som stands at 11,995 to the dollar, down 1.1% over the past week and 1.7% over 30 days. Even so, this level remains within the 2.7% band it has held over the month. #Uzbekistan $UZS"
  ]
 }
