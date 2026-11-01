@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-11-01",
- "last_post": 1793525440,
+ "last_post": 1793529039,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
   "ALL": 1793264287,
   "AMD": 1793462442,
   "AOA": 1793336434,
-  "ARS": 1793440843,
+  "ARS": 1793529039,
   "AZN": 1792875638,
   "BAM": 1793368834,
   "BBD": 1793127674,
@@ -115,9 +116,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The naira trades at 1,347 per dollar, down 1.4% over the past month. Even so, it remains 7.4% stronger than where it began the year and well above its weakest level of the past twelve months. #Nigeria $NGN",
   "The rupee has fallen to 332.6 per dollar, reaching its weakest level in 30 days. It has weakened 6.86% since the start of the year, and is now weaker than it was 75 days ago. #SriLanka $LKR",
   "The manat weakened to 3.499 to the dollar, falling 2.87% day on day \u2014 its lowest level since tracking began (March 2024). For a currency that typically moves only 0.79% a day, this is 3.3 times its usual pace.",
-  "The rupiah stands at 18,146 per dollar, its weakest point in the past year and 8.6% below its strongest level in the same period. Through 2026 the rupiah has weakened 7.9%, though the past week has been relatively stable. #Indonesia $IDR"
+  "The rupiah stands at 18,146 per dollar, its weakest point in the past year and 8.6% below its strongest level in the same period. Through 2026 the rupiah has weakened 7.9%, though the past week has been relatively stable. #Indonesia $IDR",
+  "The Argentine peso trades at 1,538 per dollar, only 0.5% weaker than a week ago. Over the year it has accumulated a 5.2% decline, within the 13.8% band it has held over the past twelve months. #Argentina $ARS"
  ]
 }
