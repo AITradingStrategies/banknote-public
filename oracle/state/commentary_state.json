@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-11-01",
- "last_post": 1793511042,
+ "last_post": 1793514639,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -69,7 +71,7 @@
   "MYR": 1793210433,
   "MZN": 1793156431,
   "NAD": 1793178032,
-  "NGN": 1793426428,
+  "NGN": 1793514639,
   "NIO": 1793433641,
   "NPR": 1793343628,
   "OMR": 1793482253,
@@ -113,9 +115,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The dalasi sits at 74.1 per dollar, barely moved from a week ago. Over the past year it has slipped just 1.3%, staying inside a 3.6% band it has kept the whole time. #Gambia $GMD",
   "The Yemeni rial stands at 236.2 to the dollar, little changed this week. The currency is stronger by 0.9% since the start of the year, and has moved within a band no wider than 1.4% over the past year.",
   "The lari is trading at 2.594 to the dollar, nearly unchanged over the past week. Since the start of the year the lari has strengthened 3.8% and remains close to its yearly high, 5.1% above its weakest point of the year. #Georgia $GEL",
-  "The guarani trades at 5,771 per dollar, with a streak of 6 sessions without moving more than 0.25%. Despite that calm, the 5 sources behind the fixing differ today by 3.88%, well above the usual 0.59%. #Paraguay $PYG"
+  "The guarani trades at 5,771 per dollar, with a streak of 6 sessions without moving more than 0.25%. Despite that calm, the 5 sources behind the fixing differ today by 3.88%, well above the usual 0.59%. #Paraguay $PYG",
+  "The naira trades at 1,347 per dollar, down 1.4% over the past month. Even so, it remains 7.4% stronger than where it began the year and well above its weakest level of the past twelve months. #Nigeria $NGN"
  ]
 }
