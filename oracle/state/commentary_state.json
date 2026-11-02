@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-11-01",
- "last_post": 1793575841,
+ "anchors_today": [],
+ "date": "2026-11-02",
+ "last_post": 1793579442,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -105,7 +99,7 @@
   "TOP": 1793282468,
   "TRY": 1793539842,
   "TTD": 1793437240,
-  "TZS": 1793232034,
+  "TZS": 1793579442,
   "UAH": 1793250072,
   "UGX": 1793361635,
   "UYU": 1793489441,
@@ -119,9 +113,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The Pakistani rupee is stable at 276.6 per dollar, almost unchanged over the past week. At the start of the year it was at 280.2, meaning the rupee has strengthened 1.3% this year. #Pakistan $PKR",
   "The Liberian dollar sits at 170.4 per US dollar, little moved this week. It has firmed 4.6% since January and is 7.3% stronger than a year ago, when it traded near 183.4. #Liberia $LRD",
   "The ruble is trading at 80.6 per dollar, having strengthened 3.3% over the past month \u2014 the third-strongest result among 132 tracked currencies. Since the start of the year, the ruble is still 2.2% weaker. #Russia $RUB",
-  "The Khmer riel is trading at 4,080 per dollar, near its weakest point in the past year. The rate has fallen 0.6% over the last 30 days and dropped 1.7% since the start of the year. #Cambodia $KHR"
+  "The Khmer riel is trading at 4,080 per dollar, near its weakest point in the past year. The rate has fallen 0.6% over the last 30 days and dropped 1.7% since the start of the year. #Cambodia $KHR",
+  "The Tanzanian shilling trades at 2,642 per dollar, a level little changed this week. Since January it has fallen 6.5%, and it is 8.1% below its strongest point this year. #Tanzania $TZS"
  ]
 }
