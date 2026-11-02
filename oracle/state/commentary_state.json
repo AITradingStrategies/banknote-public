@@ -1,10 +1,11 @@
 {
  "anchors_today": [
   "NGN",
-  "ARS"
+  "ARS",
+  "TRY"
  ],
  "date": "2026-11-02",
- "last_post": 1793622625,
+ "last_post": 1793626214,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -100,7 +101,7 @@
   "TMT": 1793521843,
   "TND": 1793271671,
   "TOP": 1793282468,
-  "TRY": 1793539842,
+  "TRY": 1793626214,
   "TTD": 1793437240,
   "TZS": 1793579442,
   "UAH": 1793597443,
@@ -116,9 +117,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The kr\u00f3na stands at 121.8 against the dollar, nearly unchanged for the week. Since the start of the year it has strengthened by 3.0%, and is now 4.9% above its lowest point of the past year. #Iceland $ISK",
   "The Argentine peso trades at 1,538 per dollar, its weakest level of the past year. It falls 5.5% so far in 2026 and has lost 0.7% over the past week. #Argentina $ARS",
   "The metical is at 63.8 per dollar, practically stable over the past week, but it is the currency's weakest point in a year, not having matched that level in the last 22 days.",
-  "The Peruvian sol trades at 3.462 per dollar, its weakest level in 30 days. It falls 0.7% in the week and has lost 3.0% so far this year. #Peru $PEN"
+  "The Peruvian sol trades at 3.462 per dollar, its weakest level in 30 days. It falls 0.7% in the week and has lost 3.0% so far this year. #Peru $PEN",
+  "The lira is at 49.9 against the dollar, its weakest level of the year. There hasn't even been a 0.25 move in the last 14 days, yet the loss since the start of the year has reached 14.0%."
  ]
 }
