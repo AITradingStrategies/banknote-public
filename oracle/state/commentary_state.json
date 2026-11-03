@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-11-02",
- "last_post": 1793662219,
+ "anchors_today": [],
+ "date": "2026-11-03",
+ "last_post": 1793665819,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -92,7 +86,7 @@
   "RWF": 1793448042,
   "SAR": 1793475163,
   "SBD": 1793637015,
-  "SCR": 1793116831,
+  "SCR": 1793665819,
   "SOS": 1793102436,
   "SRD": 1793408431,
   "SSP": 1793394033,
@@ -119,9 +113,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The Pakistani rupee stands at 276.7 per dollar, little changed over the past week. It is 1.2% stronger since the start of the year, while a year ago it was at 281.0 per dollar. #Pakistan $PKR",
   "The tenge stands at 453.4/USD, practically unchanged over the past week. Since the start of the year it has strengthened 11.8%, placing it among the top three of 132 currencies this year. #Kazakhstan $KZT",
   "The lek stands at 81.3 per dollar, weaker by 0.6% over the past week. Still, it remains 1.1% stronger since the start of the year, within a 1.6% band over the past 30 days. #Albania $ALL",
-  "The Bahamian dollar stands at 1 to the US dollar, exactly where it has been for 168 straight days without even a quarter-percent move. It was 1 a year ago and 1 at the start of the year. #Bahamas $BSD"
+  "The Bahamian dollar stands at 1 to the US dollar, exactly where it has been for 168 straight days without even a quarter-percent move. It was 1 a year ago and 1 at the start of the year. #Bahamas $BSD",
+  "The Seychelles rupee has gained 3.8% against the dollar in the past week alone, up 5.3% since January to 14.6/USD. It's the 2nd most volatile currency of 132 tracked, moving on 97% of trading days. #Seychelles $SCR"
  ]
 }
