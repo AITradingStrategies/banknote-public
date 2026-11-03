@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-11-03",
- "last_post": 1793698215,
+ "last_post": 1793701814,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
   "ALL": 1793658615,
   "AMD": 1793462442,
   "AOA": 1793691013,
-  "ARS": 1793615446,
+  "ARS": 1793701814,
   "AZN": 1793586642,
   "BAM": 1793368834,
   "BBD": 1793604640,
@@ -115,9 +116,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The naira held near 1,344 per dollar, little changed over the past week. It remains up 7.5% so far this year, from 1,446 at the start of January. #Nigeria $NGN",
   "The kwanza closed at 916.9 per dollar, its strongest level in 265 days. The currency is 2.9% above its weakest point of the past year, having started 2026 at 915.5. #Angola $AOA",
   "The bolivar trades at 888.6 per dollar, its weakest level in 533 days. It has fallen 66.28% so far this year and 74.88% over the past 365 days, the second-largest depreciation among 132 currencies in that span. #Venezuela $VES",
-  "The Algerian dinar stands at 135.9 to the dollar, its weakest level in the past year. The currency has lost 4.5% of its value since the start of the year, despite typically moving only about 0.19% on a given day."
+  "The Algerian dinar stands at 135.9 to the dollar, its weakest level in the past year. The currency has lost 4.5% of its value since the start of the year, despite typically moving only about 0.19% on a given day.",
+  "The Argentine peso trades at 1,538 per dollar, practically stable from a week ago. So far this year it has fallen 5.3%, within a 13.8% band it has held for the past year. #Argentina $ARS"
  ]
 }
