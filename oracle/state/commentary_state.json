@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-11-04",
- "last_post": 1793770215,
+ "last_post": 1793773814,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -69,7 +71,7 @@
   "MYR": 1793557849,
   "MZN": 1793619043,
   "NAD": 1793178032,
-  "NGN": 1793687414,
+  "NGN": 1793773814,
   "NIO": 1793433641,
   "NPR": 1793716227,
   "OMR": 1793482253,
@@ -113,9 +115,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The Surinamese dollar trades at 37.6 per dollar, the strongest level in 104 days. That is 1.0% stronger than three months ago, within a 4.7% range over the past year. #Suriname $SRD",
   "The kyat stands at 2,100 per dollar, having gone 831 straight days without a move exceeding 0.25%. It is sitting at the lowest point of the past year. #Myanmar $MMK",
   "The kina trades at 4.483 per dollar, up 1.1% over the past week even as it sits 2.4% weaker over the past month and 4.8% down for the year.",
-  "The Moroccan dirham stands at 9.822 to the dollar, little changed over the past week. Since the start of the year the currency has fallen 7.2%, despite rising 1.2% over the past 30 days."
+  "The Moroccan dirham stands at 9.822 to the dollar, little changed over the past week. Since the start of the year the currency has fallen 7.2%, despite rising 1.2% over the past 30 days.",
+  "The naira holds near 1,343/USD, little changed on the week. It's down 0.8% over 30 days but still up 7.8% since January, well off the 1,446 level it started the year at. #Nigeria $NGN"
  ]
 }
