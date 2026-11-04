@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-11-03",
- "last_post": 1793748615,
+ "anchors_today": [],
+ "date": "2026-11-04",
+ "last_post": 1793752214,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793163633,
@@ -34,7 +28,7 @@
   "DJF": 1793422835,
   "DOP": 1793485841,
   "DZD": 1793698215,
-  "EGP": 1793404835,
+  "EGP": 1793752214,
   "ETB": 1793228432,
   "FJD": 1793239230,
   "GEL": 1793507441,
@@ -119,9 +113,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The peso held steady at 63.5 per dollar over the past week, but this is already its weakest level in a year. It has fallen 7.5% since the start of the year and 1.8% over the past 30 days. #Philippines $PHP",
   "The Pakistani rupee held steady at 276.6 per dollar, little changed over the past week. Since the start of the year the rupee has strengthened 1.1%, and it is 2.0% better than its weakest level of the past year. #Pakistan $PKR",
   "The vatu sits at 119.7 per dollar, barely moved over the past week. It is 1.1% stronger than at the start of the year, within the tight 1.5% band it has held for 30 days. #Vanuatu $VUV",
-  "The Jordanian dinar stands at 0.709 against the dollar, with no notable change for 969 days without a move of 0.25%. The same level held a year ago and at the start of this year. #Jordan $JOD"
+  "The Jordanian dinar stands at 0.709 against the dollar, with no notable change for 969 days without a move of 0.25%. The same level held a year ago and at the start of this year. #Jordan $JOD",
+  "The Egyptian pound registers 55.4 per dollar, the second weakest performer among 132 currencies this month. It has lost 6.5% over 30 days and 14.6% since the start of the year. #Egypt $EGP"
  ]
 }
