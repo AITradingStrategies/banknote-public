@@ -1,16 +1,17 @@
 {
  "anchors_today": [
-  "NGN"
+  "NGN",
+  "ARS"
  ],
  "date": "2026-11-04",
- "last_post": 1793784614,
+ "last_post": 1793788218,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793781017,
   "ALL": 1793658615,
   "AMD": 1793462442,
   "AOA": 1793691013,
-  "ARS": 1793701814,
+  "ARS": 1793788218,
   "AZN": 1793586642,
   "BAM": 1793734229,
   "BBD": 1793604640,
@@ -115,9 +116,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "The naira holds near 1,343/USD, little changed on the week. It's down 0.8% over 30 days but still up 7.8% since January, well off the 1,446 level it started the year at. #Nigeria $NGN",
   "Ethiopia's birr stands at 162.1 to the dollar, little changed over the past week. But since the start of the year it has weakened by 4.4%, and over the past 30 days it fell by 0.8%. #Ethiopia $ETB",
   "The afghani had a quiet week and stands at 65.0 per dollar, 0.8% higher than the start of the year. Still, this currency is one of the most volatile in the world, changing on 74% of days. #Afghanistan $AFN",
-  "Kenya's shilling trades at 129.9 to the dollar, its weakest point in the past year. Still, it remains within the narrow 1.5% band held all year, down 0.7% since January. #Kenya $KES"
+  "Kenya's shilling trades at 129.9 to the dollar, its weakest point in the past year. Still, it remains within the narrow 1.5% band held all year, down 0.7% since January. #Kenya $KES",
+  "The Argentine peso trades at 1,545 per dollar, its weakest level since tracking began in March 2024. It has fallen 6.1% so far this year and sits 12.3% below its best mark of the past year. #Argentina $ARS"
  ]
 }
