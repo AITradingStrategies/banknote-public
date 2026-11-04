@@ -2,10 +2,11 @@
  "anchors_today": [
   "NGN",
   "ARS",
-  "TRY"
+  "TRY",
+  "PHP"
  ],
  "date": "2026-11-04",
- "last_post": 1793809816,
+ "last_post": 1793813420,
  "recent": {
   "AED": 1793307609,
   "AFN": 1793781017,
@@ -80,7 +81,7 @@
   "PAB": 1793246472,
   "PEN": 1793622625,
   "PGK": 1793766614,
-  "PHP": 1793737817,
+  "PHP": 1793813420,
   "PKR": 1793741423,
   "PYG": 1793511042,
   "QAR": 1793242869,
@@ -117,9 +118,9 @@
   "ZMW": 1793496640
  },
  "recent_posts": [
-  "USD/TRY is at the level 50.0, its weakest point since tracking began in 2024. The lira's decline since the start of the year has reached 14.05%, making it the 5th weakest of 132 currencies this year. #Turkiye $TRY",
   "The Mauritian rupee trades at 47.3 per dollar, nearly stable over the week. It has nonetheless gained 1.5% in a month, while remaining down 2.2% since the start of the year.",
   "The Trinidad and Tobago dollar sits at 6.758 per USD, little changed on the week and down 0.7% over the past month. It has held inside a tight 1.2% range over that span, matching a currency that moved just 0.01% over the past year. #TrinidadAndTobago $TTD",
-  "The Mauritanian ouguiya recorded 40.5 per dollar, its weakest level since tracking began in March 2024. The currency has moved on 82% of days, and declined 1.38% over the past month alone. #Mauritania $MRU"
+  "The Mauritanian ouguiya recorded 40.5 per dollar, its weakest level since tracking began in March 2024. The currency has moved on 82% of days, and declined 1.38% over the past month alone. #Mauritania $MRU",
+  "The peso is at 63.5 per dollar, up 0.7% over the past week even though it has fallen 7.2% since the start of the year. Year over year, it is 9.4% weaker than its strongest point. #Philippines $PHP"
  ]
 }
