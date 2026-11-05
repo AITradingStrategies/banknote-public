@@ -32,7 +32,7 @@
   "184": 1,
   "98": 1
  },
- "generated": "2026-11-05T22:16:04+00:00",
+ "generated": "2026-11-05T22:39:08+00:00",
  "network": "testnet",
  "rates": {
   "citizenBonus": 0.1,
@@ -448,12 +448,12 @@
    "citizenship": 1000,
    "country": 1,
    "handle": "solanalostboy",
-   "holding": 21028.84,
+   "holding": 21032.63,
    "quest": 2000,
    "questVerdict": null,
    "seatBank": 15000,
    "seats": 3,
-   "total": 41159,
+   "total": 41163,
    "trade": 2130
   },
   "0xae65583fa86a32f513ebee265ea91515ca2aa84b": {
@@ -490,7 +490,7 @@
    "citizenship": 0,
    "country": null,
    "handle": null,
-   "holding": 382.29,
+   "holding": 382.36,
    "quest": 0,
    "questVerdict": null,
    "seatBank": 0,
