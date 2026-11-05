@@ -1,7 +1,9 @@
 {
- "anchors_today": [],
+ "anchors_today": [
+  "NGN"
+ ],
  "date": "2026-11-05",
- "last_post": 1793856615,
+ "last_post": 1793860218,
  "recent": {
   "AED": 1793820615,
   "AFN": 1793781017,
@@ -69,7 +71,7 @@
   "MYR": 1793557849,
   "MZN": 1793619043,
   "NAD": 1793178032,
-  "NGN": 1793773814,
+  "NGN": 1793860218,
   "NIO": 1793831415,
   "NPR": 1793716227,
   "OMR": 1793838613,
@@ -113,9 +115,9 @@
   "ZMW": 1793845814
  },
  "recent_posts": [
-  "The kwacha sits at 20.3 per dollar, little changed over the past week despite a 3.3% slide over the past month. It remains the 5th strongest currency of 132 tracked this year, up 9.6% since January. #Zambia $ZMW",
   "The Cape Verdean escudo closed at 98.2 per dollar, up 1.0% over the past week, but down 4.4% for the year. #CapeVerde $CVE",
   "The Comorian franc trades at 438.0 per dollar, up 1.0% over the week but down 4.4% since January. It remains within a 1.1% band over 30 days. #Comoros $KMF",
-  "The leu is trading at 4.756 per dollar, 1.1% stronger than last week, but remains 8.8% weaker since the start of the year. The trading range has been only 1.6% over the past 30 days. #Romania $RON"
+  "The leu is trading at 4.756 per dollar, 1.1% stronger than last week, but remains 8.8% weaker since the start of the year. The trading range has been only 1.6% over the past 30 days. #Romania $RON",
+  "The naira trades at 1,346/USD, barely moved over the past week. Up 7.7% since January, it sits 8.1% above its weakest point of the past year. #Nigeria $NGN"
  ]
 }
