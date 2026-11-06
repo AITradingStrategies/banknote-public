@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-11-05",
- "last_post": 1793921414,
+ "anchors_today": [],
+ "date": "2026-11-06",
+ "last_post": 1793925014,
  "recent": {
   "AED": 1793820615,
   "AFN": 1793781017,
@@ -51,7 +45,7 @@
   "JOD": 1793748615,
   "KES": 1793784614,
   "KGS": 1793719818,
-  "KHR": 1793575841,
+  "KHR": 1793925014,
   "KMF": 1793853019,
   "KWD": 1793889016,
   "KZT": 1793655020,
@@ -119,9 +113,9 @@
   "ZMW": 1793845814
  },
  "recent_posts": [
-  "The Pakistani rupee reached 276.5 against the dollar, its strongest level since records began in March 2024. Over the past year it has stayed within just a 2.5% band.",
   "The Qatari riyal stands at 3.64 to the dollar, with no notable change for 168 days without any move exceeding 0.25%, the same level as a year ago and at the start of the year. #Qatar $QAR",
   "The Liberian dollar trades at 170.1 to the US dollar, its strongest level since tracking began in March 2024. It has gained 6.6% over the past 90 days and now sits 9.7% above its weakest point of the past year.",
-  "The Vietnamese dong is trading at 25,685 VND/USD, almost unchanged over the past week. Since the start of the year, the currency has strengthened 2.7%, after trading in a band of only 1.5% over 30 days. #Vietnam $VND"
+  "The Vietnamese dong is trading at 25,685 VND/USD, almost unchanged over the past week. Since the start of the year, the currency has strengthened 2.7%, after trading in a band of only 1.5% over 30 days. #Vietnam $VND",
+  "The Cambodian riel rose 0.6% over the past week to 4,080 per dollar, but remains 1.4% weaker since the start of the year. The rate changes on nearly 72% of trading days. #Cambodia $KHR"
  ]
 }
