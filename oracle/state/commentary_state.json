@@ -1,13 +1,7 @@
 {
- "anchors_today": [
-  "NGN",
-  "ARS",
-  "TRY",
-  "PHP",
-  "PKR"
- ],
- "date": "2026-11-06",
- "last_post": 1794007538,
+ "anchors_today": [],
+ "date": "2026-11-07",
+ "last_post": 1794011415,
  "recent": {
   "AED": 1793820615,
   "AFN": 1793781017,
@@ -26,7 +20,7 @@
   "BSD": 1793662219,
   "BWP": 1793633415,
   "BYN": 1793730618,
-  "BZD": 1793401235,
+  "BZD": 1794011415,
   "CLP": 1793669422,
   "COP": 1793755816,
   "CRC": 1793791814,
@@ -119,9 +113,9 @@
   "ZMW": 1793845814
  },
  "recent_posts": [
-  "The Pakistani rupee stood steady at 276.6 per dollar, little changed over the past week. The rupee has strengthened 1.3% against the dollar this year, while a year ago it stood at 281.6 per dollar. #Pakistan $PKR",
   "The Yemeni rial stands at 236.2 per dollar, little changed this week. The currency moves only 0.03% on a typical day, and 89 days have passed without a move exceeding 0.25%. #Yemen $YER",
   "The Mongolian tugrik reached 3,602 against the dollar, its weakest level since March 6, 2024. Compared to 0.821 a year ago, this is the largest decline among 132 tracked currencies.",
-  "The lek traded at 81.3 per dollar, 3.9% stronger than a year ago and 1.8% above January's level. The rate has moved within a 1.6% band over the past 30 days. #Albania $ALL"
+  "The lek traded at 81.3 per dollar, 3.9% stronger than a year ago and 1.8% above January's level. The rate has moved within a 1.6% band over the past 30 days. #Albania $ALL",
+  "The Belize dollar sits at 2.00 per dollar, exactly where it stood a year ago. It has held inside a 1.6% band all year, moving on 69% of trading days without going anywhere. #Belize $BZD"
  ]
 }
